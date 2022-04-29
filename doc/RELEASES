@@ -1,0 +1,326 @@
+RELEASE NOTES
+
+????_??_?? r20
+? release:
+Enhanced Immersion
+- Added foot stomp sounds
+Enhanced AI
+- Remembering damage
+- Counter attacking attacker
+Enhanced Models
+- Added Thunderbird mech model
+- Added Gausscan turret model
+- Added Twinblaster turret model
+- Added Warbuggy mech/tank model
+Enhanced Landscape Rendering
+- Added different rendering styles for foliage
+- Added many plant types
+Enhanced Cityscape Rendering
+- Added frames to windows
+- Added blinds to window frames
+Enhanced Sky Model:
+- Moving sun/moon light
+Enhanced Internals
+- Ability to configure some mech parameters.
+- Enhanced framework library
+- Added multiple main support
+Enhanced Mod-ability
+- Added global property file
+
+
+2011_04_17 r19
+Radiant Nature release:
+
+Enhanced Sky Model
+- Night is darker
+- Fog adjustments
+Enhanced Models
+- Adjusted collider to actual animated model size.
+- Added Scorpion mech model
+- Added Flopsy mech model
+- Added tank models
+- Added cockpit frame to basic mech model
+- Disabled weapon rendering in favor of model rendering
+- Selection of models randomized so far
+- Made walkcycle more natural
+- Added bird walkcycle
+Enhanced Landscape Rendering
+- Added crater-modification
+- Added Sprite based particle Trees
+- Added Tree-clusters frustum culling for speedup and quality
+- Adjusted texture grain
+- Woodland in this release
+Enhanced Immersion
+- Adjusted field of view
+- Added acceleration heaviness
+- Added steering heaviness
+- Added smoke after explosion
+Enhanced Usability
+- Camera mode can still be changed when wrecked
+Enhanced Internals
+- Object-role interdependencies split into decoupled bound-components
+- Glued component-attributes through bindings in objects
+- Component'ified Weapons and other functional structures
+- Replaced weapon mount matrix with quaternion+position for effective binding
+- Cleaned up model scaling
+
+This release has some visual highlights like the trees, smoke and new terrain.
+But there are major changes under the hood stepping beyond the object-with-roles concept:
+Object-with-components. But there is more to the new internals than just
+"hey, objects are built of components" (as if that would be new). No, it is how
+components are coupled or rather decoupled. A solution to this dilemma are
+chip-like components which only act on their own state without any method-calls
+to any other component. Interaction is achieved by binding input and output variables
+(ie. instance member variables) of two components at the object level. Like
+soldering chips to a printed circuit board. The idea itself isn't new.
+This concept of binding components is precedented by hardware-description-language's
+Entity+Portmap and by Bean+BeansBinding.
+
+
+2010_12_31 r18
+Hazy Blur release:
+
+Enhanced Landscape Rendering
+- Crude geoclipmapping
+- Improved performance/quality
+- More vegetation variation
+- Added indifferent normals for lighting
+Enhanced Sky Model
+- Added morning and evening coloration
+- Overhauled cloud textures
+- Cold ambient and warm direct daylight
+Enhanced Town
+- Procedural road textures
+- Procedural skyscraper textures
+Enhanced Immersion
+- Added jump-jet-thruster vibrations
+- Added jump-jet lighting
+- Added simple message display
+Enhanced World
+- Added location markers
+- Press P_ause to see zones
+- One small step for editing
+- Added messages for introductory mission
+Enhanced Internals
+- Changed message groups to dispatching objects
+- Refactored/Cleaned a lot of previous work (esp. PCG code)
+Enhanced Usability
+- Added simple loading screen with key-hints
+
+This release turns out to be a lot about graphics but there are some important steps towards a game.
+Notably there is some beginning of a story, a mission and finally a loadscreen.
+Behind the scenes there where changes for handling game events and towards an integrated editor.
+And yet there is a long way to go.
+As for the next release?
+Maybe something towards an editmode?
+Maybe some shiny new vehicles?
+Maybe some multitasking?
+
+
+
+2010_08_28 r17
+Silent Noise release:
+
+Added Procedural Landscape
+- Procedural dunes
+- Decal objects
+Enhanced Sky Model
+- Awesome Night-Sky - don't miss
+- Clouds
+- Galaxy
+- Solar bodies
+Enhanced Textures
+- Explosion FX
+- Camoflage
+Input Enhancement
+- Mapping of mouse to virtual gamepad for targeting.
+General Graphic Enhancement
+- Antialiasing/Multisample through option "--samples n" or short "-s n" with n 0 2 4.
+
+
+
+
+2010_03_20 r16
+Hadron Collider release:
+
+Enhanced Sky Model
+- textured sun and moon.
+- dramatic cloud layers.
+- mystic textured mountains on the horizon.
+Gimped Urban Textures
+- Textures are unter CC-BY-license (welcome to modify and enhance)
+Pimped Proecdural Textures
+- Simplex-Noise camoflage texture
+Cool Verlet-Integration of Constrained Particles.
+- Pure Physics - no fake (maybe some minor)
+- Collision Detection + Correction faster and easier
+- No more sticking on walls - ai can walk "around" obstacles
+- No more bouncing
+- There is no spoon - just particles
+Weapons now using particles instead of rays.
+- Rays emulated through particle-trails
+- No more shooting through buildings
+Scalable Weapons
+- Will allow customization
+Complex Loadable Models through text-based MD5Mesh-Format.
+- Finer models possible
+- More vehicle types to come
+- Easy moddability and community support (Blender and now MisfitModel 3D)
+- CC-BY-license models (welcome to modify and enhance)
+- MD5Format-Exporter for MisfitModel 3D included.
+Fixed a font-rendering bug on 64bit systems.
+Timed message passing to groups of objects - in preparation for
+- wingman orders.
+- timed events.
+- event passing.
+- ai group coordination.
+- mission scripting
+
+Please note that the project welcomes modifications
+of models, textures and sound under CC-BY.
+
+
+
+2009_11_08 r15 (5.0MB)
+Liberation release:
+
++ Added zone-damage.
++ Overhauled HUD.
++ Navigation-Computer.
++ Now log/linear hybrid radar.
++ Enhanced sample world.
++ Bound animation to velocity.
++ Tweaked physics.
++ Reintroduced sun and moon.
++ Now simple textured buildings and roads with streetlamps.
++ Added switchable view distance (1-9, 0 unlimited).
++ Adjusted controlls.
++ Reintroduced enemies targeting upwards.
++ Includes linux- and win-binary.
++ Preparations for further changes.
+
+
+
+0.6.5[beta 9] 2009_05_29 r14 (3.6MB)
+Spatial-Space release:
+
++ Spatial clustering of units => faster object filtering.
++ Initial PVS, faster collisions => larger/detailed landscapes possible.
++ Logarithmic distance radar.
++ Improved frame locking.
++ Text and messages.
++ Base- & turret-compass-number.
++ Unit move- & aim-targets.
++ Weaker jumpjets.
++ Can run w/o sound when device busy.
+
+
+
+0.6.3[beta 8] 2009_02_08 r13 (3.5MB)
+Birthday party release:
+
++ OpenAL positional audio.
++ Weapons sounds, vocal power-up sequence.
++ Ambient background drone.
++ Makefile with autodependencies.
++ Includes Windows-Binary.
+
+
+
+0.6.1[beta 7] 2008_12_24 r12 (2.0MB)
+Hohoho...release:
+
++ Visual weapon modells (animated).
++ Ammo and clips reloading.
++ Ammo and clips in Weapon-HUD.
++ Homing-Missile aquires target.
++ Try all weapons in --mission 2.
++ Preliminary Doxygen comments and config-file.
+
+
+
+0.6.1[beta 6] 2008_10_20 r11 (1.7MB)
+Ground and Mountain release:
++ Blooming mountains.
++ Groundplane-Texture.
++ WAIT-Opcode with timeout for AI-Stack-Engine.
++ First campaign mission underway (--mission 2).
+
+
+
+0.6.1[beta 5] 2008_09_21 r10
+Down-Town release:
+
++ Added Simple 3D-Texturing (no 2D-Texturing).
++ Citybuilder.
++ Pimped-Explosions.
++ Jump-Jet-Effect.
++ Single-Damage-Indicator.
++ GoTo and Repeat-Opcode for AI-Stack-Engine.
+
+
+
+0.6.1[beta 4] 2008_08_08 r9
+Lucky Number Release:
+
++ Inter-Object-Collisions & Physics
+
+
+
+0.6.1[beta 3] 2008_07_13 r8
+Unnamed Release:
+
++ Improved Head Up Display.
++ Improved Projectile-Collissions.
+
+
+
+0.6.1[beta 2] 2008_06_08 r7
+Gamepad release:
+
++ SDL and Gamepad support.
++ Contains (Linux) NetBeans C++ Project. + Hand compiled Windows binary.
+
+
+
+0.6.1[beta 1] 2008_05_17 r6
+On the way release:
+
++ Further refactoring and work towards SDL support but still GLUT.
+
+
+
+0.6.1[beta 0] 2008_03_09 r5
+Modern-Line release:
+
++ New look.
++ Major source clean up and refactoring.
++ Now using NetBeans C++ for Project-Workspace.
+
+
+
+0.6.0 2004_01_11 r4
+classic end:
+
++ Finishes the LinWarrior Classic Line after a long idle time.
+
+
+
+0.52 r3
+experimental:
+
++ Completly different
+
+
+
+0.51 r2
+classic version:
+
++ Minor changes
+
+
+
+0.50 (2000) r1
+very classic version:
+
++ First release version, mainly programmed over winter holydays 1999.

@@ -1,0 +1,158 @@
+- The Topics TODOs need a evaluation and priorization pass
+  [Note: Topics aren't ordered - individual TODOs approx top most next]
+
+
+Inspector-/Edit-Mode:
+
+- Provide command shell to provide tools
+
+- Render Debug-Object-Information when Paused/Debug-Mode.
+
+- Extend Pause/Debug-Mode to Simple Object-Placement Edit-Mode.
+
+- Logger, Logging-system and console output
+
+
+AI and behavior:
+
+- Should AI rather not be a component but something parallel to a human-game-client with different perception?
+
+- Reintroduce some random walking pattern when in close range combat (or in line of sight).
+
+- Think about blocked-left/-front/-right detectors for collision avoidance.
+
+- Wingmen shall maintain minimum distance to each other (collision avoidance).
+  [solvable by just avoiding the nearest unit at a time]
+
+- AI Target-Visibility (LOS): Don't shoot when target is behind a wall.
+
+- Waypoints and pathfinding? (works fine so far without)
+
+- AI shall support allied Objects (attack their targets/attackers, learn their enemies, follow allies on demand).
+
+- AI allies should pop follow command when leader is wrecked.
+
+
+Refactoring and cleanup:
+
+- Remove reliance on NaN for no destination (portability and fast-math problems).
+
+- Player's jumpjet light shall be moved to a component.
+
+- Use vec4 to utilize cpu vector ops?
+
+
+Backscape-System:
+
+- Particle snow with brownian motion.
+
+- Dark (rainy) / White (snowy) overcast sky.
+
+- Remove time scaling in favor of scaled world time?
+
+
+Cityscape-System:
+
+- Non-square convex building blocks
+
+- Different floor heights
+
+- Different height and texture on ground level floor
+
+- City-generator.
+
+- Roof-top applications (fence, vents, wires, tubes, commercials)
+
+- Wall applications (commercials, air condition)
+
+- Over-the-road applications (wires, traffic-/lights)
+
+
+Landscape-System:
+
+- Move Landscape-Mods (Planetmap inner class) to own component class file. (?)
+
+- Take slope into account for Planetmap erosion and material within second pass.
+
+- Biome and continents - pre-designed shape and automatic fill out?
+
+- Find a way to add Caves and sub-terrain to the Planetmap's height map (hole mod?).
+
+- Add vegetation growth mods.
+
+- Add water veins.
+
+- Add oceans.
+
+
+Physics-System:
+
+- What's next?
+
+
+Trigger-System:
+
+- What's next?
+
+
+Weapon-System:
+
+- Colored particles indicating damage inflicted (chipping off).
+
+- Weapon-Engage and -Disengage time. (necessary?)
+
+- Select target ahead (button). Implement Target ahead selection in tarcom?
+
+- Selected target should be identified (button/automatically-timed).
+
+
+Camera-System:
+
+- Implement camera lag and shake rig
+
+- Camera shall not pass through ground (implement camera particle physics)
+
+
+Immersion and FX:
+
+- Dust when walking/landing/jetting
+
+
+Gameplay:
+
+- Implement command scheme and gui for sending Wingmen Orders to group members
+
+- Reload/Refill/Repair Zones.
+
+- First real mission.
+
+- Radar LOS and Disturbances?
+
+- Portals
+
+
+Formats and Files:
+
+- OGG or FLAC loader instead of flat WAV?
+
+- Decide on static object format(s). (same as rigged meshes? special ones?)
+
+- Mission File Loading.
+
+
+Materials and lighting:
+
+- Someday with shaders: Shadowmapping for global sun/moon lightsource.
+
+- Someday with shaders: Environment-Ambient-lighting according to the dome.
+
+- Someday with shaders: Deferred lighting, necessary for multiple effect lights.
+
+
+Big leaps:
+
+- Proper BGM Music player
+
+- Shaders
+
+- Complex buildings
