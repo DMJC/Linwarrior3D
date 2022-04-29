@@ -544,16 +544,19 @@ void rRigged::poseJumping(float spf) {
 void rRigged::poseRunning(float spf) {
     // Animate legs according to real forward velocity.
     vec3 v;
-    if (vel != NULL && ori0 != NULL) {
+/*    if (vel != NULL && ori0 != NULL) {*/
         quat ori_inv;
         quat_cpy(ori_inv, ori0);
         quat_conj(ori_inv);
         quat_apply(v, ori_inv, vel);
-    } else if (vel != NULL) {
+//		std::cout << "wow I was called1" << std::endl;
+/*    } else if (vel != NULL) {
+		std::cout << "wow I was called2" << std::endl;
         vector_cpy(v, vel);
     } else {
-        vector_zero(v);
-    }
+		std::cout << "wow I was called3" << std::endl;
+        vector_zero(v);*/
+/*    }*/
 
     float fwdvel = copysign(sqrtf(v[0] * v[0] + v[2] * v[2]), v[2]) * -0.16f;
     if (fwdvel > 2.8) fwdvel = 2.8;

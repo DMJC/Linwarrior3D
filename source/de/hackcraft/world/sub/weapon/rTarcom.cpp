@@ -98,8 +98,8 @@ void rTarcom::animate(float spf) {
         switching = (switchnext || switchprev);
     }
 
-    unsigned long frame = World::getInstance()->getTiming()->getFrame();
-    unsigned long key = (((unsigned long) this) >> 1) * 174763;
+    //unsigned long frame = World::getInstance()->getTiming()->getFrame(); //Unused
+    //unsigned long key = (((unsigned long) this) >> 1) * 174763; // Unused
     //cout << "RANGING KEY CODE IS " << key << " !!\n";
     //unsigned int m = 3;
     // Find all objects in far range.

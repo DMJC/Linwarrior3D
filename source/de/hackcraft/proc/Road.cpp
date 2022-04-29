@@ -46,7 +46,7 @@ void Road::getBasicRoad(float x, float y, float z, float* color, unsigned char s
 }
 
 void Road::getStoplineMask(float x, float y, float z, float* color, unsigned char seed) {
-    float mark = 0.0f;
+    float mark = 0.0f; //Unused
     float a = 0.00f;
     float b = a + 0.04f;
     float u = 0.28f;

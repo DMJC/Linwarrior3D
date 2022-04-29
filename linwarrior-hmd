@@ -2,4 +2,3 @@
 
 # Run LinWarrior
 ./dist/linwarrior game -r 1280x800 --cyber 0.036 -m 0 -s 0 -l 0 -w
-

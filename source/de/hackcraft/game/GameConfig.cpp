@@ -122,7 +122,13 @@ int GameConfig::parseArgs(int argc, char** args) {
             this->mouseInput = (s.compare("1") == 0) ? true : false;
         } else if (arg_i("--bgm")) {
             advance_i();
-            std::string s = args[i];
+            std::string s;
+			if (args[i]!=NULL){
+				s = args[i];
+			}
+			else {
+				s = "/org/freesound/ambient.wav";
+			}
             this->bgm = s;
         }
     }
