@@ -10,6 +10,10 @@ Status:
 Build Instructions:
 - Checkout the repository and type "make clean all" requires ALut and OpenGL Libraries.
 
+Adding New Mechs:
+- Blender Plugin has been added to the repository under tools. Can Import/Export existing player models and edit/update them.
+- Further instructions to come.
+
 Roadmap: 
 - Upgrading art using Blender/Gimp.
 - Trying to remove hard coding from the engine where possible.
