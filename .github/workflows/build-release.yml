@@ -1,0 +1,28 @@
+on:
+  push:
+      branches: [ main ]
+  pull_request:
+      branches: [ main ]
+
+jobs:
+  build-and-test:
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v2
+      - name: install cppunit
+        run: sudo apt install -y libcppunit-dev
+      - name: make
+        run: make
+      - name: make test
+        run: make test
+      - name: release
+        uses: actions/create-release@v1
+        id: create_release
+        with:
+          draft: false
+          prerelease: false
+          release_name: ${{ github.ref }}
+          tag_name: ${{ github.ref }}
+          body_path: ./dist/linwarrior
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
