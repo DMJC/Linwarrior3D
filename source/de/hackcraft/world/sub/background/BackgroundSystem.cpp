@@ -81,7 +81,8 @@ BackgroundSystem::BackgroundSystem(Propmap* properties) {
 
 void BackgroundSystem::init(Propmap* properties) {
 
-    vector_set(light, 0.7, 0.9, -0.3);
+//    vector_set(light, 0.7, 0.9, -0.3);
+    vector_set(light, 0.2, 0.9, -0.3);
     light[3] = 0.0f;
     
     heightshift = fmax(-20, fmin(properties->getProperty("backscape.heightshift", 0.0f), 0));
@@ -682,7 +683,7 @@ void BackgroundSystem::drawUpperDome() {
         {
             GL::glLoadIdentity();
             GL::glMultMatrixf(m);
-            //GL::glScalef(100, 100 * 0.3, 100); //*0.25 original
+            //GL::glScalef(100, 100 * 0.3, 100); //*0.25 original*//
             GL::glScalef(100, 100 * 0.25, 100); // original
 
             int vsteps = DOME_YRES;
