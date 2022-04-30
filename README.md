@@ -7,7 +7,8 @@ Status:
 - Compilation is working on Debian Linux Bookworm.
 - Have not tested compilation on Windows or OSX.
 
-Build Instructions: Checkout the repository and type "make clean all" requires ALut and OpenGL Libraries.
+Build Instructions:
+- Checkout the repository and type "make clean all" requires ALut and OpenGL Libraries.
 
 Roadmap: 
 - Upgrading art using Blender/Gimp.
