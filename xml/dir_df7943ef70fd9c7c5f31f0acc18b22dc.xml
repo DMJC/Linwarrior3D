@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_df7943ef70fd9c7c5f31f0acc18b22dc" kind="dir">
+    <compoundname>de/hackcraft/world/sub/camera</compoundname>
+    <innerfile refid="CameraSystem_8cpp">CameraSystem.cpp</innerfile>
+    <innerfile refid="CameraSystem_8h">CameraSystem.h</innerfile>
+    <innerfile refid="rCamera_8cpp">rCamera.cpp</innerfile>
+    <innerfile refid="rCamera_8h">rCamera.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/camera/"/>
+  </compounddef>
+</doxygen>

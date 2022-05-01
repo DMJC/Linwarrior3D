@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Application_8cpp" kind="file" language="C++">
+    <compoundname>Application.cpp</compoundname>
+    <includes refid="Application_8h" local="yes">Application.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>Application.h</label>
+        <link refid="Application_8h"/>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/app/Application.cpp</label>
+        <link refid="Application_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/app/Application.cpp"/>
+  </compounddef>
+</doxygen>

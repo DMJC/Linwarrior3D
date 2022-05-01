@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="LandscapeSystem_8h" kind="file" language="C++">
+    <compoundname>LandscapeSystem.h</compoundname>
+    <includes refid="Subsystem_8h" local="yes">de/hackcraft/world/Subsystem.h</includes>
+    <includedby refid="BatchMission_8cpp" local="yes">de/hackcraft/game/BatchMission.cpp</includedby>
+    <includedby refid="OpenMission_8cpp" local="yes">de/hackcraft/game/OpenMission.cpp</includedby>
+    <includedby refid="LandscapeSystem_8cpp" local="yes">de/hackcraft/world/sub/landscape/LandscapeSystem.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/world/sub/landscape/LandscapeSystem.h</label>
+        <link refid="LandscapeSystem_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/world/Subsystem.h</label>
+        <link refid="Subsystem_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>de/hackcraft/world/sub/landscape/LandscapeSystem.h</label>
+        <link refid="LandscapeSystem_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/game/BatchMission.cpp</label>
+        <link refid="BatchMission_8cpp"/>
+      </node>
+      <node id="4">
+        <label>de/hackcraft/world/sub/landscape/LandscapeSystem.cpp</label>
+        <link refid="LandscapeSystem_8cpp"/>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/game/OpenMission.cpp</label>
+        <link refid="OpenMission_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classLandscapeSystem" prot="public">LandscapeSystem</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/landscape/LandscapeSystem.h"/>
+  </compounddef>
+</doxygen>

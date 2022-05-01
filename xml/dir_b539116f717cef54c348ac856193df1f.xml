@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_b539116f717cef54c348ac856193df1f" kind="dir">
+    <compoundname>de/hackcraft/world/sub/model</compoundname>
+    <innerfile refid="IModel_8h">IModel.h</innerfile>
+    <innerfile refid="ModelSystem_8cpp">ModelSystem.cpp</innerfile>
+    <innerfile refid="ModelSystem_8h">ModelSystem.h</innerfile>
+    <innerfile refid="rBillboard_8cpp">rBillboard.cpp</innerfile>
+    <innerfile refid="rBillboard_8h">rBillboard.h</innerfile>
+    <innerfile refid="rRigged_8cpp">rRigged.cpp</innerfile>
+    <innerfile refid="rRigged_8h">rRigged.h</innerfile>
+    <innerfile refid="rScatter_8cpp">rScatter.cpp</innerfile>
+    <innerfile refid="rScatter_8h">rScatter.h</innerfile>
+    <innerfile refid="rTree_8cpp">rTree.cpp</innerfile>
+    <innerfile refid="rTree_8h">rTree.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/model/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Landscape_8h" kind="file" language="C++">
+    <compoundname>Landscape.h</compoundname>
+    <includedby refid="Landscape_8cpp" local="yes">de/hackcraft/proc/Landscape.cpp</includedby>
+    <includedby refid="BackgroundSystem_8cpp" local="yes">de/hackcraft/world/sub/background/BackgroundSystem.cpp</includedby>
+    <includedby refid="rPlanetmap_8cpp" local="yes">de/hackcraft/world/sub/landscape/rPlanetmap.cpp</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>de/hackcraft/world/sub/background/BackgroundSystem.cpp</label>
+        <link refid="BackgroundSystem_8cpp"/>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/proc/Landscape.cpp</label>
+        <link refid="Landscape_8cpp"/>
+      </node>
+      <node id="4">
+        <label>de/hackcraft/world/sub/landscape/rPlanetmap.cpp</label>
+        <link refid="rPlanetmap_8cpp"/>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/proc/Landscape.h</label>
+        <link refid="Landscape_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structLandscape" prot="public">Landscape</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/proc/Landscape.h"/>
+  </compounddef>
+</doxygen>

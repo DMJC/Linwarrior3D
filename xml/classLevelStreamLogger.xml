@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classLevelStreamLogger" kind="class" language="C++" prot="public">
+    <compoundname>LevelStreamLogger</compoundname>
+    <includes local="no">LevelStreamLogger.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLevelStreamLogger_1a0009c186c3629201f6c24eded36605f4" prot="private" static="no" mutable="no">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger* logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <briefdescription>
+<para>The logger this level logger belongs to. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LevelStreamLogger.h" line="76" column="12" bodyfile="de/hackcraft/log/LevelStreamLogger.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLevelStreamLogger_1acf4d33ee4cff36f69b924471174dcb11" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <briefdescription>
+<para>The logging level this level logger logs for. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LevelStreamLogger.h" line="78" column="9" bodyfile="de/hackcraft/log/LevelStreamLogger.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLevelStreamLogger_1a6e659b0abf18d6260cddcda7954605b9" prot="private" static="no" mutable="no">
+        <type>std::stringstream</type>
+        <definition>std::stringstream logstream</definition>
+        <argsstring></argsstring>
+        <name>logstream</name>
+        <briefdescription>
+<para>As for now a temporary buffer to input before sending to the logger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LevelStreamLogger.h" line="80" column="23" bodyfile="de/hackcraft/log/LevelStreamLogger.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLevelStreamLogger_1ac8e34d3c122cf4e6c59c7bd525977ec4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LevelStreamLogger</definition>
+        <argsstring>(Logger *logger, int level)</argsstring>
+        <name>LevelStreamLogger</name>
+        <param>
+          <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Create new level-logger for a logger. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classLogger" kindref="compound">Logger</ref> this sub-logger or level-logger belongs to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The level this sub-logger is used for. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LevelStreamLogger.h" line="31" column="5" bodyfile="de/hackcraft/log/LevelStreamLogger.h" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classLevelStreamLogger_1adf2d8dc7cc873e9f815edc3627389b53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classLevelStreamLogger" kindref="compound">LevelStreamLogger</ref> &amp;</type>
+        <definition>LevelStreamLogger&amp; operator&lt;&lt;</definition>
+        <argsstring>(const T &amp;val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LevelStreamLogger.h" line="43" column="5" bodyfile="de/hackcraft/log/LevelStreamLogger.h" bodystart="43" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classLevelStreamLogger_1a6c181fbc7c3ba0c0e6f25885614110ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classLevelStreamLogger" kindref="compound">LevelStreamLogger</ref> &amp;</type>
+        <definition>LevelStreamLogger&amp; operator+</definition>
+        <argsstring>(const T &amp;val)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LevelStreamLogger.h" line="58" column="23" bodyfile="de/hackcraft/log/LevelStreamLogger.h" bodystart="58" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classLevelStreamLogger_1a14b429fc989122713caf32ad740c4d32" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void appendStream</definition>
+        <argsstring>()</argsstring>
+        <name>appendStream</name>
+        <briefdescription>
+<para>Called after data was written to the stream of this level logger. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Extracts a string (or line) from the stream and sends to the logger to which this level logger belongs to. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LevelStreamLogger.h" line="72" column="10" bodyfile="de/hackcraft/log/LevelStreamLogger.cpp" bodystart="8" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is used by the <ref refid="classLogger" kindref="compound">Logger</ref> class - don&apos;t use directly! </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>stringstream</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>LevelStreamLogger</label>
+        <link refid="classLevelStreamLogger"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-logstream</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>string</label>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="9">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>-infoLogger</edgelabel>
+          <edgelabel>-traceLogger</edgelabel>
+          <edgelabel>-warnLogger</edgelabel>
+          <edgelabel>-errorLogger</edgelabel>
+          <edgelabel>-debugLogger</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>-globalAppender</edgelabel>
+          <edgelabel>-appender</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>-qualifiedLoggerName</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>-parentLogger</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+      <node id="7">
+        <label>ios_base</label>
+      </node>
+      <node id="8">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/log/LevelStreamLogger.h" line="22" column="24" bodyfile="de/hackcraft/log/LevelStreamLogger.h" bodystart="22" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classLevelStreamLogger_1a14b429fc989122713caf32ad740c4d32" prot="private" virt="non-virtual"><scope>LevelStreamLogger</scope><name>appendStream</name></member>
+      <member refid="classLevelStreamLogger_1acf4d33ee4cff36f69b924471174dcb11" prot="private" virt="non-virtual"><scope>LevelStreamLogger</scope><name>level</name></member>
+      <member refid="classLevelStreamLogger_1ac8e34d3c122cf4e6c59c7bd525977ec4" prot="public" virt="non-virtual"><scope>LevelStreamLogger</scope><name>LevelStreamLogger</name></member>
+      <member refid="classLevelStreamLogger_1a0009c186c3629201f6c24eded36605f4" prot="private" virt="non-virtual"><scope>LevelStreamLogger</scope><name>logger</name></member>
+      <member refid="classLevelStreamLogger_1a6e659b0abf18d6260cddcda7954605b9" prot="private" virt="non-virtual"><scope>LevelStreamLogger</scope><name>logstream</name></member>
+      <member refid="classLevelStreamLogger_1a6c181fbc7c3ba0c0e6f25885614110ee" prot="public" virt="non-virtual"><scope>LevelStreamLogger</scope><name>operator+</name></member>
+      <member refid="classLevelStreamLogger_1adf2d8dc7cc873e9f815edc3627389b53" prot="public" virt="non-virtual"><scope>LevelStreamLogger</scope><name>operator&lt;&lt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

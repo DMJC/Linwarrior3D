@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_57fa0fef36a949639d170fed287201cc" kind="dir">
+    <compoundname>de/hackcraft/game</compoundname>
+    <innerfile refid="BatchMission_8cpp">BatchMission.cpp</innerfile>
+    <innerfile refid="BatchMission_8h">BatchMission.h</innerfile>
+    <innerfile refid="GameConfig_8cpp">GameConfig.cpp</innerfile>
+    <innerfile refid="GameConfig_8h">GameConfig.h</innerfile>
+    <innerfile refid="GameMain_8cpp">GameMain.cpp</innerfile>
+    <innerfile refid="GameMain_8h">GameMain.h</innerfile>
+    <innerfile refid="GameMission_8cpp">GameMission.cpp</innerfile>
+    <innerfile refid="GameMission_8h">GameMission.h</innerfile>
+    <innerfile refid="OpenMission_8cpp">OpenMission.cpp</innerfile>
+    <innerfile refid="OpenMission_8h">OpenMission.h</innerfile>
+    <innerfile refid="userkeys_8h">userkeys.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/game/"/>
+  </compounddef>
+</doxygen>

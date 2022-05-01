@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="HashMap_8h" kind="file" language="C++">
+    <compoundname>HashMap.h</compoundname>
+    <includes refid="Object_8h" local="yes">de/hackcraft/lang/Object.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="Main_8cpp" local="yes">de/hackcraft/Main.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/lang/Object.h</label>
+        <link refid="Object_8h"/>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/util/HashMap.h</label>
+        <link refid="HashMap_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>de/hackcraft/Main.cpp</label>
+        <link refid="Main_8cpp"/>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/util/HashMap.h</label>
+        <link refid="HashMap_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classHashMap" prot="public">HashMap</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/util/HashMap.h"/>
+  </compounddef>
+</doxygen>

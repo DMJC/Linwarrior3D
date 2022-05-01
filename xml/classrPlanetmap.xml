@@ -1,0 +1,1147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classrPlanetmap" kind="class" language="C++" prot="public">
+    <compoundname>rPlanetmap</compoundname>
+    <basecompoundref refid="structComponent" prot="public" virt="non-virtual">Component</basecompoundref>
+    <includes local="no">rPlanetmap.h</includes>
+    <innerclass refid="structrPlanetmap_1_1Growth" prot="private">rPlanetmap::Growth</innerclass>
+    <innerclass refid="structrPlanetmap_1_1sMod" prot="public">rPlanetmap::sMod</innerclass>
+    <innerclass refid="structrPlanetmap_1_1sPatch" prot="private">rPlanetmap::sPatch</innerclass>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classrPlanetmap_1af42b1d8da46f0bd6298acdc159027857" prot="private" static="yes" mutable="no">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger * logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="classLogger_1ac11c529e5152e544fbc4c6594add48b6" kindref="member">Logger::getLogger</ref>(&quot;de.hackcraft.world.sub.landscape.rPlanetmap&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="91" column="19" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrPlanetmap_1a470c3711cb351f23833be8a04522be1d" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int sInstances</definition>
+        <argsstring></argsstring>
+        <name>sInstances</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Instance counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="93" column="16" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrPlanetmap_1a8ccc9fa0727baf98ce6cb5970fb5ac97" prot="private" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float oneOver256</definition>
+        <argsstring></argsstring>
+        <name>oneOver256</name>
+        <initializer>= 0.003906f</initializer>
+        <briefdescription>
+<para>Constant for 1.0 divided by 256.0 for random number range conversion. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="95" column="24" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrPlanetmap_1a6d4c43fc6fa4b729df5f40d01fa0f9f4" prot="private" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float decalGridSize</definition>
+        <argsstring></argsstring>
+        <name>decalGridSize</name>
+        <initializer>= 16</initializer>
+        <briefdescription>
+<para>Foliage is generated and rendered in blocks of this size. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="97" column="24" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrPlanetmap_1aa2a332e3f518a522436b7f5d5515b0ec" prot="private" static="yes" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char perms</definition>
+        <argsstring>[3 *256]</argsstring>
+        <name>perms</name>
+        <briefdescription>
+<para>Three times repeating permutation of the numbers 0 to 255 (inclusive). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="99" column="26" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrPlanetmap_1a1334ae514c950765b5be2e1a37ce2fe6" prot="private" static="yes" mutable="no">
+        <type>std::vector&lt; long &gt;</type>
+        <definition>std::vector&lt; long &gt; sGrounds</definition>
+        <argsstring></argsstring>
+        <name>sGrounds</name>
+        <briefdescription>
+<para>Instance shared ground textures. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="101" column="24" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrPlanetmap_1ad9fbe140f6244b24923cee8e8e6d78dc" prot="private" static="yes" mutable="no">
+        <type>std::vector&lt; long &gt;</type>
+        <definition>std::vector&lt; long &gt; sGrasses</definition>
+        <argsstring></argsstring>
+        <name>sGrasses</name>
+        <briefdescription>
+<para>Instance shared foliage textures. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="103" column="24" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrPlanetmap_1ad813ca6b656fe260c580c082bfc526d5" prot="private" static="yes" mutable="no">
+        <type>std::vector&lt; <ref refid="structrPlanetmap_1_1Growth" kindref="compound">rPlanetmap::Growth</ref> * &gt;</type>
+        <definition>std::vector&lt; rPlanetmap::Growth * &gt; sGrowth</definition>
+        <argsstring></argsstring>
+        <name>sGrowth</name>
+        <briefdescription>
+<para><ref refid="structrPlanetmap_1_1Growth" kindref="compound">Growth</ref> and foliage template objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="105" column="24" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classrPlanetmap_1ae4d058e95cd9efa38bc4e76ade614e02" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structrPlanetmap_1_1sMod" kindref="compound">sMod</ref> * &gt;</type>
+        <definition>std::vector&lt;sMod*&gt; mods</definition>
+        <argsstring></argsstring>
+        <name>mods</name>
+        <briefdescription>
+<para>Lists all effective surface modifications. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="109" column="17" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrPlanetmap_1ae9ba162b7f7dfb6beb6dceb60ae2b836" prot="private" static="no" mutable="no">
+        <type><ref refid="rPlanetmap_8h_1a306995fb8e91f2bfc9d8c780f3390906" kindref="member">maptype</ref>&lt; unsigned long, <ref refid="structrPlanetmap_1_1sPatch" kindref="compound">sPatch</ref> * &gt;</type>
+        <definition>maptype&lt;unsigned long, sPatch*&gt; patches</definition>
+        <argsstring></argsstring>
+        <name>patches</name>
+        <briefdescription>
+<para>LRU <ref refid="structSurface" kindref="compound">Surface</ref> Cache. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="112" column="13" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrPlanetmap_1a4b1d20cab714a6edbd7b96a468f5cd2b" prot="private" static="no" mutable="no">
+        <type><ref refid="structrTree" kindref="compound">rTree</ref> *</type>
+        <definition>rTree* tree</definition>
+        <argsstring></argsstring>
+        <name>tree</name>
+        <briefdescription>
+<para>Tree template for drawing of all trees. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="114" column="11" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrPlanetmap_1a7b7723e1cab1012b9f97817e51fc9115" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int landtype</definition>
+        <argsstring></argsstring>
+        <name>landtype</name>
+        <briefdescription>
+<para><ref refid="structLandscape" kindref="compound">Landscape</ref> type 0-4: grassland, desert etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="116" column="9" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrPlanetmap_1aca122e5087da0dcaf2974c25da8a28d2" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double vegetation</definition>
+        <argsstring></argsstring>
+        <name>vegetation</name>
+        <briefdescription>
+<para>Vegetation density use small values near or below one (eg. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>0.7). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="118" column="12" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrPlanetmap_1aba06a9ba6823322a07b052443e213b6c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int groundtype</definition>
+        <argsstring></argsstring>
+        <name>groundtype</name>
+        <briefdescription>
+<para>Ground texture number used in rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="120" column="9" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrPlanetmap_1ad963ec525f235cefce3da2131defcf95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rPlanetmap</definition>
+        <argsstring>()</argsstring>
+        <name>rPlanetmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="123" column="5" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="116" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1a828f9f67922b5b0b99165c6f2701a2a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rPlanetmap</definition>
+        <argsstring>(Propmap *properties)</argsstring>
+        <name>rPlanetmap</name>
+        <param>
+          <type><ref refid="classPropmap" kindref="compound">Propmap</ref> *</type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="124" column="5" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1ae4f5daed0983e1d3bfb144a5078d75cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void invalidateCache</definition>
+        <argsstring>()</argsstring>
+        <name>invalidateCache</name>
+        <briefdescription>
+<para>Remove cached data - enforce recalculation (enforce cache miss). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="126" column="10" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="325" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1a491f41252e9da6f4724963300d23092c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void getHeight</definition>
+        <argsstring>(float x, float z, float *const color)</argsstring>
+        <name>getHeight</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *const</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Calculate Height and Color of the xz position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="128" column="10" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="344" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1aec97326e42282458e171e7fbb9287681" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void getCachedHeight</definition>
+        <argsstring>(float x, float z, float *const color)</argsstring>
+        <name>getCachedHeight</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *const</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves Height and Color of the xz position and calculates on demand. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="130" column="10" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="484" bodyend="604"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1a8e017194d3c7d32750cf69a456083fde" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float constrain</definition>
+        <argsstring>(float *worldpos, float radius, float *localpos, Entity *enactor)</argsstring>
+        <name>constrain</name>
+        <reimplements refid="structComponent_1af0c987007ef181ec233d8333d399bab6">constrain</reimplements>
+        <param>
+          <type>float *</type>
+          <declname>worldpos</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>localpos</declname>
+        </param>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>enactor</declname>
+        </param>
+        <briefdescription>
+<para>Re-adjust particle position by making multiple downward-hemispherical checks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="132" column="19" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="607" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1a0a388523941d911d0c3dd369f72cc81d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void animate</definition>
+        <argsstring>(float spf)</argsstring>
+        <name>animate</name>
+        <reimplements refid="structComponent_1a21737bd2efddc8007d58214f722959f1">animate</reimplements>
+        <param>
+          <type>float</type>
+          <declname>spf</declname>
+        </param>
+        <briefdescription>
+<para>Animate foliage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="134" column="18" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="817" bodyend="819"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1a044d5ff7d7174ed434fcebbef82bc275" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void drawSolid</definition>
+        <argsstring>()</argsstring>
+        <name>drawSolid</name>
+        <reimplements refid="structComponent_1a82d72d455a63508dd949d552ed3713b5">drawSolid</reimplements>
+        <briefdescription>
+<para>Draw <ref refid="structLandscape" kindref="compound">Landscape</ref> surrounding the current camera position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="136" column="18" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="847" bodyend="1029"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1a777e1926a0150b45a189753046343765" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void drawEffect</definition>
+        <argsstring>()</argsstring>
+        <name>drawEffect</name>
+        <reimplements refid="structComponent_1afa90087fb4f9485be9db86581d8ac822">drawEffect</reimplements>
+        <briefdescription>
+<para>Draw Decals surrounding the current camera position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="138" column="18" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="1165" bodyend="1304"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classrPlanetmap_1af6f93e7a14ee0758130442d533556f30" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init</definition>
+        <argsstring>(Propmap *properties)</argsstring>
+        <name>init</name>
+        <param>
+          <type><ref refid="classPropmap" kindref="compound">Propmap</ref> *</type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="141" column="10" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="131" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1a507727ecd75e3c02ea819a5e9678772f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int loadMaterial</definition>
+        <argsstring>()</argsstring>
+        <name>loadMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="143" column="18" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="822" bodyend="844"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1abb5390d204453736f5bf0f653f4f07f1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float constrainGround</definition>
+        <argsstring>(float *worldpos, float radius, float *localpos, Entity *enactor)</argsstring>
+        <name>constrainGround</name>
+        <param>
+          <type>float *</type>
+          <declname>worldpos</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>localpos</declname>
+        </param>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>enactor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="145" column="11" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="619" bodyend="698"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1af5ff089a8731c3fb0aa166979098b680" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float constrainFoliage</definition>
+        <argsstring>(float *worldpos, float radius, float *localpos, Entity *enactor)</argsstring>
+        <name>constrainFoliage</name>
+        <param>
+          <type>float *</type>
+          <declname>worldpos</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>localpos</declname>
+        </param>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>enactor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="146" column="11" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="701" bodyend="774"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1a6abeac03e85ebc2d924e32f36f770cd0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float constrainTrees</definition>
+        <argsstring>(float gridX, float gridZ, int visibletrees, unsigned int lfsr16, float *worldpos, float radius, float *localpos, Entity *enactor)</argsstring>
+        <name>constrainTrees</name>
+        <param>
+          <type>float</type>
+          <declname>gridX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>gridZ</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>visibletrees</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lfsr16</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>worldpos</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>localpos</declname>
+        </param>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>enactor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="147" column="11" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="777" bodyend="814"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1aa240e61f02292836d7ccf1687e55dbe5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawBillboardPlant</definition>
+        <argsstring>(float x, float h, float z, float scale, float *unrotateMatrix)</argsstring>
+        <name>drawBillboardPlant</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>unrotateMatrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="149" column="10" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="1032" bodyend="1049"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1a638e118f9a5e39b2f56e09cacf5ed161" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawStarPlant</definition>
+        <argsstring>(float x, float h, float z, float scale)</argsstring>
+        <name>drawStarPlant</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="150" column="10" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="1052" bodyend="1067"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1a3c09422b0938e7ade35399257a93a1ca" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawTrianglePlant</definition>
+        <argsstring>(float x, float h, float z, float scale)</argsstring>
+        <name>drawTrianglePlant</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="151" column="10" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="1070" bodyend="1085"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1a4986c52569e422b57a5d057fdd7af4a2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawCrossPlant</definition>
+        <argsstring>(float x, float h, float z, float scale)</argsstring>
+        <name>drawCrossPlant</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="152" column="10" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="1088" bodyend="1103"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1afc042eb9c6114c0255af35bb2f246a88" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawLeafPlant</definition>
+        <argsstring>(float x, float h, float z, float scale)</argsstring>
+        <name>drawLeafPlant</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="153" column="10" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="1106" bodyend="1144"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1a03eb1df29dad04f7de2004cee58c9128" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawStone</definition>
+        <argsstring>(float x, float h, float z, float scaleX, float scaleH, float scaleZ)</argsstring>
+        <name>drawStone</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scaleX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scaleH</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scaleZ</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="154" column="10" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="1147" bodyend="1162"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1a100b9eaecf266b8d1154b95160a3292e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawStones</definition>
+        <argsstring>(float gridX, float gridZ, int visiblestones, float opacity, unsigned int lfsr16)</argsstring>
+        <name>drawStones</name>
+        <param>
+          <type>float</type>
+          <declname>gridX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>gridZ</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>visiblestones</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>opacity</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lfsr16</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="156" column="10" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="1307" bodyend="1337"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1a074409a87d8afeafb035205ea6c5fb6b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawGrass</definition>
+        <argsstring>(float gridX, float gridZ, float opacity, unsigned int lfsr16)</argsstring>
+        <name>drawGrass</name>
+        <param>
+          <type>float</type>
+          <declname>gridX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>gridZ</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>opacity</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lfsr16</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="157" column="10" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="1340" bodyend="1398"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1adf8db56924b6af633d5704030ec9f3f0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawPlants</definition>
+        <argsstring>(float gridX, float gridZ, int visibleplants, float opacity, int maxplants, float plantscale, float plantdensity, float *billboardMatrix, unsigned int lfsr16)</argsstring>
+        <name>drawPlants</name>
+        <param>
+          <type>float</type>
+          <declname>gridX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>gridZ</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>visibleplants</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>opacity</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxplants</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>plantscale</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>plantdensity</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>billboardMatrix</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lfsr16</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="158" column="10" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="1401" bodyend="1459"/>
+      </memberdef>
+      <memberdef kind="function" id="classrPlanetmap_1a8447df6a0117409d26828ea30123e9d8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawTrees</definition>
+        <argsstring>(float gridX, float gridZ, int visibletrees, float opacity, unsigned int lfsr16)</argsstring>
+        <name>drawTrees</name>
+        <param>
+          <type>float</type>
+          <declname>gridX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>gridZ</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>visibletrees</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>opacity</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>lfsr16</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="159" column="10" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="1462" bodyend="1497"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Procedural <ref refid="structLandscape" kindref="compound">Landscape</ref> Rendering and Collision. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Component</label>
+        <link refid="structComponent"/>
+      </node>
+      <node id="1">
+        <label>rPlanetmap</label>
+        <link refid="classrPlanetmap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>stringstream</label>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vector&lt; Binding * &gt;</label>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>rTree</label>
+        <link refid="structrTree"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>#tree</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>-sBarktexs</edgelabel>
+          <edgelabel>-sLeaftexs</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>-sTrees</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+object</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+prebinds</edgelabel>
+          <edgelabel>+postbinds</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>TreeType</label>
+        <link refid="structrTree_1_1TreeType"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>+leaves</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>vector&lt; long &gt;</label>
+      </node>
+      <node id="18">
+        <label>LevelStreamLogger</label>
+        <link refid="classLevelStreamLogger"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>-logstream</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>vector&lt; rPlanetmap::Growth * &gt;</label>
+        <childnode refid="28" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>IModel</label>
+        <link refid="classIModel"/>
+      </node>
+      <node id="28">
+        <label>Growth</label>
+        <link refid="structrPlanetmap_1_1Growth"/>
+      </node>
+      <node id="16">
+        <label>map&lt; OID, rTree::TreeType * &gt;</label>
+        <childnode refid="13" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="17">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>-infoLogger</edgelabel>
+          <edgelabel>-traceLogger</edgelabel>
+          <edgelabel>-warnLogger</edgelabel>
+          <edgelabel>-errorLogger</edgelabel>
+          <edgelabel>-debugLogger</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>-globalAppender</edgelabel>
+          <edgelabel>-appender</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-qualifiedLoggerName</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>-parentLogger</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Entity</label>
+        <link refid="classEntity"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+components</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+name</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Binding</label>
+        <link refid="classBinding"/>
+      </node>
+      <node id="26">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+      <node id="24">
+        <label>ios_base</label>
+      </node>
+      <node id="25">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector&lt; Component * &gt;</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vector&lt; rPlanetmap::sMod * &gt;</label>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>sMod</label>
+        <link refid="structrPlanetmap_1_1sMod"/>
+      </node>
+      <node id="14">
+        <label>vector&lt; float &gt;</label>
+      </node>
+      <node id="1">
+        <label>rPlanetmap</label>
+        <link refid="classrPlanetmap"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>+mods</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>-tree</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>-sGrowth</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>-sGrasses</edgelabel>
+          <edgelabel>-sGrounds</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="41" column="34" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="41" bodyend="161"/>
+    <listofallmembers>
+      <member refid="structComponent_1a03c996f9fcf0e10baeb3e700be0c409a" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>active</name></member>
+      <member refid="structComponent_1a9be6e2d0e81c55db1578d42ec617cbca" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>addBinding</name></member>
+      <member refid="structComponent_1a76752321cf3827ebb052e7b9b93f3db0" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>addBinding</name></member>
+      <member refid="classrPlanetmap_1a0a388523941d911d0c3dd369f72cc81d" prot="public" virt="virtual"><scope>rPlanetmap</scope><name>animate</name></member>
+      <member refid="structComponent_1a2cd2e7e39bbe0feb04e3f49d92383051" prot="public" virt="virtual"><scope>rPlanetmap</scope><name>camera</name></member>
+      <member refid="structComponent_1a08d90b44549babc6b8c5154f371aa12f" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>cid</name></member>
+      <member refid="structComponent_1a12d7214a9a58d47b3bc3c2e91f6d0c32" prot="public" virt="virtual"><scope>rPlanetmap</scope><name>clone</name></member>
+      <member refid="structComponent_1ab6a3de68965b8f71ff914a03321757f4" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>cname</name></member>
+      <member refid="structComponent_1a6b5149d0ce5984ffa0fdfcb0660c7bd5" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>Component</name></member>
+      <member refid="classrPlanetmap_1a8e017194d3c7d32750cf69a456083fde" prot="public" virt="virtual"><scope>rPlanetmap</scope><name>constrain</name></member>
+      <member refid="classrPlanetmap_1af5ff089a8731c3fb0aa166979098b680" prot="protected" virt="non-virtual"><scope>rPlanetmap</scope><name>constrainFoliage</name></member>
+      <member refid="classrPlanetmap_1abb5390d204453736f5bf0f653f4f07f1" prot="protected" virt="non-virtual"><scope>rPlanetmap</scope><name>constrainGround</name></member>
+      <member refid="classrPlanetmap_1a6abeac03e85ebc2d924e32f36f770cd0" prot="protected" virt="non-virtual"><scope>rPlanetmap</scope><name>constrainTrees</name></member>
+      <member refid="structComponent_1abea7dc29223077e4c8b30eda0e487242" prot="public" virt="virtual"><scope>rPlanetmap</scope><name>damage</name></member>
+      <member refid="classrPlanetmap_1a6d4c43fc6fa4b729df5f40d01fa0f9f4" prot="private" virt="non-virtual"><scope>rPlanetmap</scope><name>decalGridSize</name></member>
+      <member refid="classrPlanetmap_1aa240e61f02292836d7ccf1687e55dbe5" prot="protected" virt="non-virtual"><scope>rPlanetmap</scope><name>drawBillboardPlant</name></member>
+      <member refid="classrPlanetmap_1a4986c52569e422b57a5d057fdd7af4a2" prot="protected" virt="non-virtual"><scope>rPlanetmap</scope><name>drawCrossPlant</name></member>
+      <member refid="classrPlanetmap_1a777e1926a0150b45a189753046343765" prot="public" virt="virtual"><scope>rPlanetmap</scope><name>drawEffect</name></member>
+      <member refid="classrPlanetmap_1a074409a87d8afeafb035205ea6c5fb6b" prot="protected" virt="non-virtual"><scope>rPlanetmap</scope><name>drawGrass</name></member>
+      <member refid="structComponent_1a98233a0af860521dafed683b50128886" prot="public" virt="virtual"><scope>rPlanetmap</scope><name>drawHUD</name></member>
+      <member refid="classrPlanetmap_1afc042eb9c6114c0255af35bb2f246a88" prot="protected" virt="non-virtual"><scope>rPlanetmap</scope><name>drawLeafPlant</name></member>
+      <member refid="classrPlanetmap_1adf8db56924b6af633d5704030ec9f3f0" prot="protected" virt="non-virtual"><scope>rPlanetmap</scope><name>drawPlants</name></member>
+      <member refid="classrPlanetmap_1a044d5ff7d7174ed434fcebbef82bc275" prot="public" virt="virtual"><scope>rPlanetmap</scope><name>drawSolid</name></member>
+      <member refid="classrPlanetmap_1a638e118f9a5e39b2f56e09cacf5ed161" prot="protected" virt="non-virtual"><scope>rPlanetmap</scope><name>drawStarPlant</name></member>
+      <member refid="classrPlanetmap_1a03eb1df29dad04f7de2004cee58c9128" prot="protected" virt="non-virtual"><scope>rPlanetmap</scope><name>drawStone</name></member>
+      <member refid="classrPlanetmap_1a100b9eaecf266b8d1154b95160a3292e" prot="protected" virt="non-virtual"><scope>rPlanetmap</scope><name>drawStones</name></member>
+      <member refid="classrPlanetmap_1a8447df6a0117409d26828ea30123e9d8" prot="protected" virt="non-virtual"><scope>rPlanetmap</scope><name>drawTrees</name></member>
+      <member refid="classrPlanetmap_1a3c09422b0938e7ade35399257a93a1ca" prot="protected" virt="non-virtual"><scope>rPlanetmap</scope><name>drawTrianglePlant</name></member>
+      <member refid="structComponent_1ad9819bfdd9490c9b319093ac5b97822f" prot="public" virt="virtual"><scope>rPlanetmap</scope><name>frag</name></member>
+      <member refid="classrPlanetmap_1aec97326e42282458e171e7fbb9287681" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>getCachedHeight</name></member>
+      <member refid="classrPlanetmap_1a491f41252e9da6f4724963300d23092c" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>getHeight</name></member>
+      <member refid="structComponent_1acdfa5be80a3b7f56ac515b1bb1305e68" prot="public" virt="virtual"><scope>rPlanetmap</scope><name>getId</name></member>
+      <member refid="classrPlanetmap_1aba06a9ba6823322a07b052443e213b6c" prot="private" virt="non-virtual"><scope>rPlanetmap</scope><name>groundtype</name></member>
+      <member refid="classrPlanetmap_1af6f93e7a14ee0758130442d533556f30" prot="protected" virt="non-virtual"><scope>rPlanetmap</scope><name>init</name></member>
+      <member refid="classrPlanetmap_1ae4f5daed0983e1d3bfb144a5078d75cc" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>invalidateCache</name></member>
+      <member refid="classrPlanetmap_1a7b7723e1cab1012b9f97817e51fc9115" prot="private" virt="non-virtual"><scope>rPlanetmap</scope><name>landtype</name></member>
+      <member refid="structComponent_1ab92eb9c4dcb16f9e63ca5fe371144983" prot="public" virt="virtual"><scope>rPlanetmap</scope><name>listener</name></member>
+      <member refid="classrPlanetmap_1a507727ecd75e3c02ea819a5e9678772f" prot="protected" virt="non-virtual"><scope>rPlanetmap</scope><name>loadMaterial</name></member>
+      <member refid="classrPlanetmap_1af42b1d8da46f0bd6298acdc159027857" prot="private" virt="non-virtual"><scope>rPlanetmap</scope><name>logger</name></member>
+      <member refid="classrPlanetmap_1ae4d058e95cd9efa38bc4e76ade614e02" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>mods</name></member>
+      <member refid="structComponent_1a4c442f22ef3b8c6790b56015beb57566" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>object</name></member>
+      <member refid="classrPlanetmap_1a8ccc9fa0727baf98ce6cb5970fb5ac97" prot="private" virt="non-virtual"><scope>rPlanetmap</scope><name>oneOver256</name></member>
+      <member refid="classrPlanetmap_1ae9ba162b7f7dfb6beb6dceb60ae2b836" prot="private" virt="non-virtual"><scope>rPlanetmap</scope><name>patches</name></member>
+      <member refid="classrPlanetmap_1aa2a332e3f518a522436b7f5d5515b0ec" prot="private" virt="non-virtual"><scope>rPlanetmap</scope><name>perms</name></member>
+      <member refid="structComponent_1ab7bcd2366fafecdcdd8bbcbfb0a43c51" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>postbind</name></member>
+      <member refid="structComponent_1abc081daafef3ffd221d8746b1e4c2f78" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>postbinds</name></member>
+      <member refid="structComponent_1a5bd6391b052df5d5a0db4554b2c3fe66" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>prebind</name></member>
+      <member refid="structComponent_1a4d900b2c72ca399a620b6eefce26c018" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>prebinds</name></member>
+      <member refid="classrPlanetmap_1ad963ec525f235cefce3da2131defcf95" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>rPlanetmap</name></member>
+      <member refid="classrPlanetmap_1a828f9f67922b5b0b99165c6f2701a2a0" prot="public" virt="non-virtual"><scope>rPlanetmap</scope><name>rPlanetmap</name></member>
+      <member refid="classrPlanetmap_1ad9fbe140f6244b24923cee8e8e6d78dc" prot="private" virt="non-virtual"><scope>rPlanetmap</scope><name>sGrasses</name></member>
+      <member refid="classrPlanetmap_1a1334ae514c950765b5be2e1a37ce2fe6" prot="private" virt="non-virtual"><scope>rPlanetmap</scope><name>sGrounds</name></member>
+      <member refid="classrPlanetmap_1ad813ca6b656fe260c580c082bfc526d5" prot="private" virt="non-virtual"><scope>rPlanetmap</scope><name>sGrowth</name></member>
+      <member refid="classrPlanetmap_1a470c3711cb351f23833be8a04522be1d" prot="private" virt="non-virtual"><scope>rPlanetmap</scope><name>sInstances</name></member>
+      <member refid="structComponent_1a2260c02c44eeca44f51bf4b76f3bd306" prot="public" virt="virtual"><scope>rPlanetmap</scope><name>spawn</name></member>
+      <member refid="structComponent_1a620c3ab0c7ebcfa486e3f3c3d1c442b3" prot="public" virt="virtual"><scope>rPlanetmap</scope><name>transform</name></member>
+      <member refid="classrPlanetmap_1a4b1d20cab714a6edbd7b96a468f5cd2b" prot="private" virt="non-virtual"><scope>rPlanetmap</scope><name>tree</name></member>
+      <member refid="classrPlanetmap_1aca122e5087da0dcaf2974c25da8a28d2" prot="private" virt="non-virtual"><scope>rPlanetmap</scope><name>vegetation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

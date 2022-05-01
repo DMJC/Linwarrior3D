@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_52b50f32190b6c99208d3901c4bca81f" kind="dir">
+    <compoundname>de/hackcraft/util</compoundname>
+    <innerdir refid="dir_7956f11106f70b3f0819f723a033e134">de/hackcraft/util/concurrent</innerdir>
+    <innerfile refid="Binding_8h">Binding.h</innerfile>
+    <innerfile refid="GapBuffer_8h">GapBuffer.h</innerfile>
+    <innerfile refid="Geomap_8h">Geomap.h</innerfile>
+    <innerfile refid="HashMap_8h">HashMap.h</innerfile>
+    <innerfile refid="KDTree_8h">KDTree.h</innerfile>
+    <innerfile refid="Propmap_8cpp">Propmap.cpp</innerfile>
+    <innerfile refid="Propmap_8h">Propmap.h</innerfile>
+    <innerfile refid="Timing_8cpp">Timing.cpp</innerfile>
+    <innerfile refid="Timing_8h">Timing.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/util/"/>
+  </compounddef>
+</doxygen>

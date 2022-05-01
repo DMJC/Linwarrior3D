@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classTestMain" kind="class" language="C++" prot="public">
+    <compoundname>TestMain</compoundname>
+    <basecompoundref refid="classMain" prot="public" virt="non-virtual">Main</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTestMain_1ac79034044ee7451281910ffcd2e65a47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>~TestMain</definition>
+        <argsstring>()</argsstring>
+        <name>~TestMain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/Main.cpp" line="22" column="5" bodyfile="de/hackcraft/Main.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classTestMain_1aa520c847b7ee5b2d67c8cad46eb25e7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int run</definition>
+        <argsstring>(int argc, char **args)</argsstring>
+        <name>run</name>
+        <reimplements refid="classMain_1ae82b1a64c0381d68ae2dc1a045b56c00">run</reimplements>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Called directly by the main entry point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/Main.cpp" line="27" column="17" bodyfile="de/hackcraft/Main.cpp" bodystart="27" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classTestMain_1a6a3dbc0e97758725884f1d52e3d3c984" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testHM1</definition>
+        <argsstring>()</argsstring>
+        <name>testHM1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/Main.cpp" line="47" column="10" bodyfile="de/hackcraft/Main.cpp" bodystart="47" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classTestMain_1a7c5c46dbedbee795131a02115a94783d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testHM2</definition>
+        <argsstring>()</argsstring>
+        <name>testHM2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/Main.cpp" line="57" column="10" bodyfile="de/hackcraft/Main.cpp" bodystart="57" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classTestMain_1a035844641b023f7727494b12c0ab2984" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testHM</definition>
+        <argsstring>()</argsstring>
+        <name>testHM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/Main.cpp" line="75" column="10" bodyfile="de/hackcraft/Main.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classTestMain_1ad60c03970edea14ae43c5070a5717878" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void testLogger</definition>
+        <argsstring>()</argsstring>
+        <name>testLogger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/Main.cpp" line="81" column="10" bodyfile="de/hackcraft/Main.cpp" bodystart="81" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Just a test class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>TestMain</label>
+        <link refid="classTestMain"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Main</label>
+        <link refid="classMain"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>TestMain</label>
+        <link refid="classTestMain"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Main</label>
+        <link refid="classMain"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/Main.cpp" line="19" column="27" bodyfile="de/hackcraft/Main.cpp" bodystart="19" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classTestMain_1aa520c847b7ee5b2d67c8cad46eb25e7a" prot="public" virt="virtual"><scope>TestMain</scope><name>run</name></member>
+      <member refid="classTestMain_1a035844641b023f7727494b12c0ab2984" prot="private" virt="non-virtual"><scope>TestMain</scope><name>testHM</name></member>
+      <member refid="classTestMain_1a6a3dbc0e97758725884f1d52e3d3c984" prot="private" virt="non-virtual"><scope>TestMain</scope><name>testHM1</name></member>
+      <member refid="classTestMain_1a7c5c46dbedbee795131a02115a94783d" prot="private" virt="non-virtual"><scope>TestMain</scope><name>testHM2</name></member>
+      <member refid="classTestMain_1ad60c03970edea14ae43c5070a5717878" prot="private" virt="non-virtual"><scope>TestMain</scope><name>testLogger</name></member>
+      <member refid="classMain_1ad314ad5c58a53766183aad4c65bec989" prot="public" virt="virtual"><scope>TestMain</scope><name>~Main</name></member>
+      <member refid="classTestMain_1ac79034044ee7451281910ffcd2e65a47" prot="public" virt="non-virtual"><scope>TestMain</scope><name>~TestMain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

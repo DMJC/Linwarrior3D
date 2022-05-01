@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classIComputer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IComputer</compoundname>
+    <derivedcompoundref refid="structrComcom" prot="public" virt="non-virtual">rComcom</derivedcompoundref>
+    <derivedcompoundref refid="structrController" prot="public" virt="non-virtual">rController</derivedcompoundref>
+    <derivedcompoundref refid="structrForcom" prot="public" virt="non-virtual">rForcom</derivedcompoundref>
+    <derivedcompoundref refid="structrNavcom" prot="public" virt="non-virtual">rNavcom</derivedcompoundref>
+    <includes local="no">IComputer.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIComputer_1a02c98f4332baa521de3c4df3c146d873" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void animate</definition>
+        <argsstring>(float spf)=0</argsstring>
+        <name>animate</name>
+        <reimplementedby refid="structrForcom_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrNavcom_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrComcom_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrController_1a3184c0aad27606b0d0317e03fe5622c7">animate</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>spf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/IComputer.h" line="18" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIComputer_1a2afdd9d1e58b4354834637210d1741ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void drawHUD</definition>
+        <argsstring>()=0</argsstring>
+        <name>drawHUD</name>
+        <reimplementedby refid="structrForcom_1aa02f40a5a708207a0f624f6dbde035f2">drawHUD</reimplementedby>
+        <reimplementedby refid="structrNavcom_1aa02f40a5a708207a0f624f6dbde035f2">drawHUD</reimplementedby>
+        <reimplementedby refid="structrComcom_1aa02f40a5a708207a0f624f6dbde035f2">drawHUD</reimplementedby>
+        <reimplementedby refid="structrController_1a98233a0af860521dafed683b50128886">drawHUD</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/IComputer.h" line="19" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class-Interface for computerized components. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Computers have to implement animate and drawHUD methods to be useful. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>rForcom</label>
+        <link refid="structrForcom"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rComcom</label>
+        <link refid="structrComcom"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IComputer</label>
+        <link refid="classIComputer"/>
+      </node>
+      <node id="3">
+        <label>rController</label>
+        <link refid="structrController"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>rNavcom</label>
+        <link refid="structrNavcom"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IComputer</label>
+        <link refid="classIComputer"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/computer/IComputer.h" line="16" column="16" bodyfile="de/hackcraft/world/sub/computer/IComputer.h" bodystart="16" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classIComputer_1a02c98f4332baa521de3c4df3c146d873" prot="public" virt="pure-virtual"><scope>IComputer</scope><name>animate</name></member>
+      <member refid="classIComputer_1a2afdd9d1e58b4354834637210d1741ee" prot="public" virt="pure-virtual"><scope>IComputer</scope><name>drawHUD</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

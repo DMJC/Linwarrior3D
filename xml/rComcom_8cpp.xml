@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="rComcom_8cpp" kind="file" language="C++">
+    <compoundname>rComcom.cpp</compoundname>
+    <includes refid="rComcom_8h" local="yes">rComcom.h</includes>
+    <includes refid="GLS_8h" local="yes">de/hackcraft/psi3d/GLS.h</includes>
+    <includes refid="GLF_8h" local="yes">de/hackcraft/psi3d/GLF.h</includes>
+    <includes refid="Console_8h" local="yes">de/hackcraft/psi3d/Console.h</includes>
+    <includes refid="World_8h" local="yes">de/hackcraft/world/World.h</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">cassert</includes>
+    <incdepgraph>
+      <node id="10">
+        <label>list</label>
+      </node>
+      <node id="21">
+        <label>stdarg.h</label>
+      </node>
+      <node id="41">
+        <label>queue</label>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/lang/OID.h</label>
+        <link refid="OID_8h"/>
+      </node>
+      <node id="4">
+        <label>de/hackcraft/world/Component.h</label>
+        <link refid="Component_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>de/hackcraft/psi3d/GLS.h</label>
+        <link refid="GLS_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>stdint.h</label>
+      </node>
+      <node id="34">
+        <label>de/hackcraft/psi3d/ctrl.h</label>
+        <link refid="ctrl_8h"/>
+      </node>
+      <node id="18">
+        <label>stdlib.h</label>
+      </node>
+      <node id="28">
+        <label>de/hackcraft/log/LevelStreamLogger.h</label>
+        <link refid="LevelStreamLogger_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>de/hackcraft/psi3d/Console.h</label>
+        <link refid="Console_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>de/hackcraft/psi3d/macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>cmath</label>
+      </node>
+      <node id="43">
+        <label>cassert</label>
+      </node>
+      <node id="16">
+        <label>de/hackcraft/opengl/GLU.h</label>
+        <link refid="GLU_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/world/sub/computer/rComcom.cpp</label>
+        <link refid="rComcom_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="15">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="39">
+        <label>map</label>
+      </node>
+      <node id="37">
+        <label>de/hackcraft/world/Entity.h</label>
+        <link refid="Entity_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stddef.h</label>
+      </node>
+      <node id="19">
+        <label>ostream</label>
+      </node>
+      <node id="35">
+        <label>de/hackcraft/psi3d/math3d.h</label>
+        <link refid="math3d_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>de/hackcraft/util/Geomap.h</label>
+        <link refid="Geomap_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>de/hackcraft/util/Timing.h</label>
+        <link refid="Timing_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>de/hackcraft/opengl/GL.h</label>
+        <link refid="GL_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>string.h</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="25">
+        <label>de/hackcraft/log/Logger.h</label>
+        <link refid="Logger_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>de/hackcraft/world/Subsystem.h</label>
+        <link refid="Subsystem_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>sstream</label>
+      </node>
+      <node id="26">
+        <label>de/hackcraft/log/Appender.h</label>
+        <link refid="Appender_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>math.h</label>
+      </node>
+      <node id="31">
+        <label>unordered_map</label>
+      </node>
+      <node id="24">
+        <label>de/hackcraft/world/World.h</label>
+        <link refid="World_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>de/hackcraft/util/Binding.h</label>
+        <link refid="Binding_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>set</label>
+      </node>
+      <node id="38">
+        <label>algorithm</label>
+      </node>
+      <node id="17">
+        <label>stdio.h</label>
+      </node>
+      <node id="9">
+        <label>de/hackcraft/world/sub/computer/IComputer.h</label>
+        <link refid="IComputer_8h"/>
+      </node>
+      <node id="20">
+        <label>de/hackcraft/psi3d/GLF.h</label>
+        <link refid="GLF_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>de/hackcraft/log/LoggerEvent.h</label>
+        <link refid="LoggerEvent_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rComcom.h</label>
+        <link refid="rComcom_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/computer/rComcom.cpp"/>
+  </compounddef>
+</doxygen>

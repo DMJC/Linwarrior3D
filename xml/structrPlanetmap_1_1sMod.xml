@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structrPlanetmap_1_1sMod" kind="struct" language="C++" prot="public">
+    <compoundname>rPlanetmap::sMod</compoundname>
+    <includes local="no">rPlanetmap.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structrPlanetmap_1_1sMod_1a436cf12afc77ac2ab8feb310f3c5398f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Modtype</name>
+        <enumvalue id="structrPlanetmap_1_1sMod_1a436cf12afc77ac2ab8feb310f3c5398faa849a3956fc82327a412ef1296deb0df" prot="public">
+          <name>MODTYPE_FLATSQUARE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrPlanetmap_1_1sMod_1a436cf12afc77ac2ab8feb310f3c5398fa6adf0fdd48aea380d7556694833cc472" prot="public">
+          <name>MODTYPE_SMOOTHSQUARE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrPlanetmap_1_1sMod_1a436cf12afc77ac2ab8feb310f3c5398fae1316eaa4346f9bad8016dad065de133" prot="public">
+          <name>MODTYPE_SMOOTHROUND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrPlanetmap_1_1sMod_1a436cf12afc77ac2ab8feb310f3c5398fa54f7a3d7a5040c2272aaa059a3785884" prot="public">
+          <name>MODTYPE_CRATER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="79" column="21" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="79" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrPlanetmap_1_1sMod_1a617e6b670348d89bfb267f3b5001bd4d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float pos[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="76" column="15" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrPlanetmap_1_1sMod_1a3930d1e8af0848833f4de0e0e9517dca" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float range</definition>
+        <argsstring></argsstring>
+        <name>range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="77" column="15" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrPlanetmap_1_1sMod_1a48083b65ac9a863566dc3e3fff09a5b4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="78" column="15" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrPlanetmap_1_1sMod_1a11ceaa86455b0751e40b06c4525e18cf" prot="public" static="no" mutable="no">
+        <type><ref refid="structrPlanetmap_1_1sMod_1a436cf12afc77ac2ab8feb310f3c5398f" kindref="member">Modtype</ref></type>
+        <definition>Modtype type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="85" column="17" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structrPlanetmap_1_1sMod_1a0d0274b3d01aed2c8ddfc3b8dee99b9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sMod</definition>
+        <argsstring>()</argsstring>
+        <name>sMod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="86" column="9" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="structrPlanetmap_1_1sMod_1a0926cd4ffb89cabfa36fe92efeab16e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float getModifiedHeight</definition>
+        <argsstring>(float x, float y, float h)</argsstring>
+        <name>getModifiedHeight</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="87" column="15" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.cpp" bodystart="47" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="structSurface" kindref="compound">Surface</ref> Modification. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>rPlanetmap::sMod</label>
+        <link refid="structrPlanetmap_1_1sMod"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="75" column="15" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="75" bodyend="88"/>
+    <listofallmembers>
+      <member refid="structrPlanetmap_1_1sMod_1a0926cd4ffb89cabfa36fe92efeab16e9" prot="public" virt="non-virtual"><scope>rPlanetmap::sMod</scope><name>getModifiedHeight</name></member>
+      <member refid="structrPlanetmap_1_1sMod_1a48083b65ac9a863566dc3e3fff09a5b4" prot="public" virt="non-virtual"><scope>rPlanetmap::sMod</scope><name>height</name></member>
+      <member refid="structrPlanetmap_1_1sMod_1a436cf12afc77ac2ab8feb310f3c5398f" prot="public" virt="non-virtual"><scope>rPlanetmap::sMod</scope><name>Modtype</name></member>
+      <member refid="structrPlanetmap_1_1sMod_1a436cf12afc77ac2ab8feb310f3c5398fa54f7a3d7a5040c2272aaa059a3785884" prot="public" virt="non-virtual"><scope>rPlanetmap::sMod</scope><name>MODTYPE_CRATER</name></member>
+      <member refid="structrPlanetmap_1_1sMod_1a436cf12afc77ac2ab8feb310f3c5398faa849a3956fc82327a412ef1296deb0df" prot="public" virt="non-virtual"><scope>rPlanetmap::sMod</scope><name>MODTYPE_FLATSQUARE</name></member>
+      <member refid="structrPlanetmap_1_1sMod_1a436cf12afc77ac2ab8feb310f3c5398fae1316eaa4346f9bad8016dad065de133" prot="public" virt="non-virtual"><scope>rPlanetmap::sMod</scope><name>MODTYPE_SMOOTHROUND</name></member>
+      <member refid="structrPlanetmap_1_1sMod_1a436cf12afc77ac2ab8feb310f3c5398fa6adf0fdd48aea380d7556694833cc472" prot="public" virt="non-virtual"><scope>rPlanetmap::sMod</scope><name>MODTYPE_SMOOTHSQUARE</name></member>
+      <member refid="structrPlanetmap_1_1sMod_1a617e6b670348d89bfb267f3b5001bd4d" prot="public" virt="non-virtual"><scope>rPlanetmap::sMod</scope><name>pos</name></member>
+      <member refid="structrPlanetmap_1_1sMod_1a3930d1e8af0848833f4de0e0e9517dca" prot="public" virt="non-virtual"><scope>rPlanetmap::sMod</scope><name>range</name></member>
+      <member refid="structrPlanetmap_1_1sMod_1a0d0274b3d01aed2c8ddfc3b8dee99b9a" prot="public" virt="non-virtual"><scope>rPlanetmap::sMod</scope><name>sMod</name></member>
+      <member refid="structrPlanetmap_1_1sMod_1a11ceaa86455b0751e40b06c4525e18cf" prot="public" virt="non-virtual"><scope>rPlanetmap::sMod</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_53e3a6bce793ec4ffe4189b35afb74cb" kind="dir">
+    <compoundname>de/hackcraft/world</compoundname>
+    <innerdir refid="dir_8df6d49f51b8aedf611eba25030fe535">de/hackcraft/world/object</innerdir>
+    <innerdir refid="dir_5f25c511366c028c242ccaa2b16e4e34">de/hackcraft/world/sub</innerdir>
+    <innerfile refid="Component_8cpp">Component.cpp</innerfile>
+    <innerfile refid="Component_8h">Component.h</innerfile>
+    <innerfile refid="Entity_8cpp">Entity.cpp</innerfile>
+    <innerfile refid="Entity_8h">Entity.h</innerfile>
+    <innerfile refid="Subsystem_8cpp">Subsystem.cpp</innerfile>
+    <innerfile refid="Subsystem_8h">Subsystem.h</innerfile>
+    <innerfile refid="World_8cpp">World.cpp</innerfile>
+    <innerfile refid="World_8h">World.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/"/>
+  </compounddef>
+</doxygen>

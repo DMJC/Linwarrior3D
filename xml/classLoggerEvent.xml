@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classLoggerEvent" kind="class" language="C++" prot="public">
+    <compoundname>LoggerEvent</compoundname>
+    <includes local="no">LoggerEvent.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLoggerEvent_1a0009c186c3629201f6c24eded36605f4" prot="private" static="no" mutable="no">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger* logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LoggerEvent.h" line="31" column="12" bodyfile="de/hackcraft/log/LoggerEvent.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLoggerEvent_1acf4d33ee4cff36f69b924471174dcb11" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LoggerEvent.h" line="32" column="9" bodyfile="de/hackcraft/log/LoggerEvent.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLoggerEvent_1a36bd74109f547f7f8198faf5a12d2879" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LoggerEvent.h" line="33" column="17" bodyfile="de/hackcraft/log/LoggerEvent.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLoggerEvent_1a7f77303a176661232767a92d30ed71e2" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int tid</definition>
+        <argsstring></argsstring>
+        <name>tid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LoggerEvent.h" line="34" column="18" bodyfile="de/hackcraft/log/LoggerEvent.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLoggerEvent_1a99368d0a797c947798ca659fb924c6db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LoggerEvent</definition>
+        <argsstring>(Logger *logger, int level, const char *message, unsigned int tid)</argsstring>
+        <name>LoggerEvent</name>
+        <param>
+          <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>tid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LoggerEvent.h" line="21" column="5" bodyfile="de/hackcraft/log/LoggerEvent.cpp" bodystart="5" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classLoggerEvent_1a53734983280c96323a420795faf0be86" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~LoggerEvent</definition>
+        <argsstring>()</argsstring>
+        <name>~LoggerEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LoggerEvent.h" line="23" column="13" bodyfile="de/hackcraft/log/LoggerEvent.cpp" bodystart="13" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLoggerEvent_1ae600312dde34dbed8622627eb8d86b8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger * getLogger</definition>
+        <argsstring>()</argsstring>
+        <name>getLogger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LoggerEvent.h" line="25" column="12" bodyfile="de/hackcraft/log/LoggerEvent.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classLoggerEvent_1a8c6fea79d2b1d923386e86255bcf9317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getLevel</definition>
+        <argsstring>()</argsstring>
+        <name>getLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LoggerEvent.h" line="26" column="9" bodyfile="de/hackcraft/log/LoggerEvent.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classLoggerEvent_1a1f5b7078e8aeb52e2280b393f9e02bc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * getMessage</definition>
+        <argsstring>()</argsstring>
+        <name>getMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LoggerEvent.h" line="27" column="16" bodyfile="de/hackcraft/log/LoggerEvent.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classLoggerEvent_1a181f4f763bd2b5bd954973298ee3367f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int getTid</definition>
+        <argsstring>()</argsstring>
+        <name>getTid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/LoggerEvent.h" line="28" column="18" bodyfile="de/hackcraft/log/LoggerEvent.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>stringstream</label>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>LevelStreamLogger</label>
+        <link refid="classLevelStreamLogger"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>-logstream</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>LoggerEvent</label>
+        <link refid="classLoggerEvent"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-message</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="4">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-infoLogger</edgelabel>
+          <edgelabel>-traceLogger</edgelabel>
+          <edgelabel>-warnLogger</edgelabel>
+          <edgelabel>-errorLogger</edgelabel>
+          <edgelabel>-debugLogger</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>-globalAppender</edgelabel>
+          <edgelabel>-appender</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-qualifiedLoggerName</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-parentLogger</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+      <node id="11">
+        <label>ios_base</label>
+      </node>
+      <node id="12">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/log/LoggerEvent.h" line="19" column="18" bodyfile="de/hackcraft/log/LoggerEvent.h" bodystart="19" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classLoggerEvent_1a8c6fea79d2b1d923386e86255bcf9317" prot="public" virt="non-virtual"><scope>LoggerEvent</scope><name>getLevel</name></member>
+      <member refid="classLoggerEvent_1ae600312dde34dbed8622627eb8d86b8f" prot="public" virt="non-virtual"><scope>LoggerEvent</scope><name>getLogger</name></member>
+      <member refid="classLoggerEvent_1a1f5b7078e8aeb52e2280b393f9e02bc6" prot="public" virt="non-virtual"><scope>LoggerEvent</scope><name>getMessage</name></member>
+      <member refid="classLoggerEvent_1a181f4f763bd2b5bd954973298ee3367f" prot="public" virt="non-virtual"><scope>LoggerEvent</scope><name>getTid</name></member>
+      <member refid="classLoggerEvent_1acf4d33ee4cff36f69b924471174dcb11" prot="private" virt="non-virtual"><scope>LoggerEvent</scope><name>level</name></member>
+      <member refid="classLoggerEvent_1a0009c186c3629201f6c24eded36605f4" prot="private" virt="non-virtual"><scope>LoggerEvent</scope><name>logger</name></member>
+      <member refid="classLoggerEvent_1a99368d0a797c947798ca659fb924c6db" prot="public" virt="non-virtual"><scope>LoggerEvent</scope><name>LoggerEvent</name></member>
+      <member refid="classLoggerEvent_1a36bd74109f547f7f8198faf5a12d2879" prot="private" virt="non-virtual"><scope>LoggerEvent</scope><name>message</name></member>
+      <member refid="classLoggerEvent_1a7f77303a176661232767a92d30ed71e2" prot="private" virt="non-virtual"><scope>LoggerEvent</scope><name>tid</name></member>
+      <member refid="classLoggerEvent_1a53734983280c96323a420795faf0be86" prot="public" virt="virtual"><scope>LoggerEvent</scope><name>~LoggerEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

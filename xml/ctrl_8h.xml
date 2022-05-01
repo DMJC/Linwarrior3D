@@ -1,0 +1,747 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="ctrl_8h" kind="file" language="C++">
+    <compoundname>ctrl.h</compoundname>
+    <includedby refid="Facade_8cpp" local="yes">de/hackcraft/proc/Facade.cpp</includedby>
+    <includedby refid="macros_8h" local="yes">de/hackcraft/psi3d/macros.h</includedby>
+    <includedby refid="rScatter_8cpp" local="yes">de/hackcraft/world/sub/model/rScatter.cpp</includedby>
+    <includedby refid="rTarcom_8cpp" local="yes">de/hackcraft/world/sub/weapon/rTarcom.cpp</includedby>
+    <invincdepgraph>
+      <node id="19">
+        <label>de/hackcraft/game/GameMission.cpp</label>
+        <link refid="GameMission_8cpp"/>
+      </node>
+      <node id="53">
+        <label>de/hackcraft/world/sub/chat/ChatSystem.cpp</label>
+        <link refid="ChatSystem_8cpp"/>
+      </node>
+      <node id="36">
+        <label>de/hackcraft/world/sub/weapon/WeaponSystem.cpp</label>
+        <link refid="WeaponSystem_8cpp"/>
+      </node>
+      <node id="31">
+        <label>de/hackcraft/world/sub/weapon/rWeaponHoming.cpp</label>
+        <link refid="rWeaponHoming_8cpp"/>
+      </node>
+      <node id="38">
+        <label>de/hackcraft/world/sub/cityscape/rTile.cpp</label>
+        <link refid="rTile_8cpp"/>
+      </node>
+      <node id="47">
+        <label>de/hackcraft/world/object/cMech.h</label>
+        <link refid="cMech_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>de/hackcraft/world/sub/computer/ComputerSystem.cpp</label>
+        <link refid="ComputerSystem_8cpp"/>
+      </node>
+      <node id="11">
+        <label>de/hackcraft/world/sub/physics/rCollider.cpp</label>
+        <link refid="rCollider_8cpp"/>
+      </node>
+      <node id="23">
+        <label>de/hackcraft/world/sub/weapon/rWeaponMachinegun.cpp</label>
+        <link refid="rWeaponMachinegun_8cpp"/>
+      </node>
+      <node id="22">
+        <label>de/hackcraft/world/sub/weapon/rWeaponMachinegun.h</label>
+        <link refid="rWeaponMachinegun_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>de/hackcraft/world/sub/weapon/rWeaponHoming.h</label>
+        <link refid="rWeaponHoming_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>de/hackcraft/world/sub/trigger/rTrigger.cpp</label>
+        <link refid="rTrigger_8cpp"/>
+      </node>
+      <node id="6">
+        <label>de/hackcraft/world/sub/background/BackgroundSystem.cpp</label>
+        <link refid="BackgroundSystem_8cpp"/>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/psi3d/ctrl.h</label>
+        <link refid="ctrl_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>de/hackcraft/world/sub/physics/rTraceable.h</label>
+        <link refid="rTraceable_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/psi3d/macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>de/hackcraft/world/sub/weapon/rWeaponPlasmagun.cpp</label>
+        <link refid="rWeaponPlasmagun_8cpp"/>
+      </node>
+      <node id="56">
+        <label>de/hackcraft/world/sub/computer/rComcom.cpp</label>
+        <link refid="rComcom_8cpp"/>
+      </node>
+      <node id="57">
+        <label>de/hackcraft/world/sub/computer/rNavcom.cpp</label>
+        <link refid="rNavcom_8cpp"/>
+      </node>
+      <node id="26">
+        <label>de/hackcraft/world/sub/weapon/rWeaponSparkgun.h</label>
+        <link refid="rWeaponSparkgun_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>de/hackcraft/world/sub/model/rRigged.cpp</label>
+        <link refid="rRigged_8cpp"/>
+      </node>
+      <node id="13">
+        <label>de/hackcraft/world/object/cMech.cpp</label>
+        <link refid="cMech_8cpp"/>
+      </node>
+      <node id="48">
+        <label>de/hackcraft/world/sub/computer/rController.cpp</label>
+        <link refid="rController_8cpp"/>
+      </node>
+      <node id="43">
+        <label>de/hackcraft/world/Entity.h</label>
+        <link refid="Entity_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>de/hackcraft/game/BatchMission.cpp</label>
+        <link refid="BatchMission_8cpp"/>
+      </node>
+      <node id="4">
+        <label>de/hackcraft/game/GameConfig.cpp</label>
+        <link refid="GameConfig_8cpp"/>
+      </node>
+      <node id="8">
+        <label>de/hackcraft/world/sub/mobile/rMobile.cpp</label>
+        <link refid="rMobile_8cpp"/>
+      </node>
+      <node id="27">
+        <label>de/hackcraft/world/sub/weapon/rWeaponSparkgun.cpp</label>
+        <link refid="rWeaponSparkgun_8cpp"/>
+      </node>
+      <node id="15">
+        <label>de/hackcraft/world/sub/physics/rSpringlink.cpp</label>
+        <link refid="rSpringlink_8cpp"/>
+      </node>
+      <node id="17">
+        <label>de/hackcraft/world/sub/trigger/rAlert.cpp</label>
+        <link refid="rAlert_8cpp"/>
+      </node>
+      <node id="14">
+        <label>de/hackcraft/world/sub/physics/PhysicsSystem.cpp</label>
+        <link refid="PhysicsSystem_8cpp"/>
+      </node>
+      <node id="58">
+        <label>de/hackcraft/world/sub/landscape/LandscapeSystem.cpp</label>
+        <link refid="LandscapeSystem_8cpp"/>
+      </node>
+      <node id="59">
+        <label>de/hackcraft/world/sub/misc/MiscSystem.cpp</label>
+        <link refid="MiscSystem_8cpp"/>
+      </node>
+      <node id="60">
+        <label>de/hackcraft/world/sub/mobile/MobileSystem.cpp</label>
+        <link refid="MobileSystem_8cpp"/>
+      </node>
+      <node id="39">
+        <label>de/hackcraft/world/sub/landscape/rPlanetmap.cpp</label>
+        <link refid="rPlanetmap_8cpp"/>
+      </node>
+      <node id="54">
+        <label>de/hackcraft/world/sub/chat/rChatMember.cpp</label>
+        <link refid="rChatMember_8cpp"/>
+      </node>
+      <node id="29">
+        <label>de/hackcraft/world/sub/weapon/rWeaponRaybeam.cpp</label>
+        <link refid="rWeaponRaybeam_8cpp"/>
+      </node>
+      <node id="45">
+        <label>de/hackcraft/game/GameMain.cpp</label>
+        <link refid="GameMain_8cpp"/>
+      </node>
+      <node id="41">
+        <label>de/hackcraft/world/sub/weapon/rTarcom.cpp</label>
+        <link refid="rTarcom_8cpp"/>
+      </node>
+      <node id="33">
+        <label>de/hackcraft/world/sub/weapon/rWeaponExplosion.cpp</label>
+        <link refid="rWeaponExplosion_8cpp"/>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/proc/Facade.cpp</label>
+        <link refid="Facade_8cpp"/>
+      </node>
+      <node id="24">
+        <label>de/hackcraft/world/sub/weapon/rWeaponPlasmagun.h</label>
+        <link refid="rWeaponPlasmagun_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>de/hackcraft/world/sub/weapon/rTarget.cpp</label>
+        <link refid="rTarget_8cpp"/>
+      </node>
+      <node id="61">
+        <label>de/hackcraft/world/sub/model/ModelSystem.cpp</label>
+        <link refid="ModelSystem_8cpp"/>
+      </node>
+      <node id="18">
+        <label>de/hackcraft/world/sub/weapon/rWeapon.h</label>
+        <link refid="rWeapon_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>de/hackcraft/world/sub/weapon/rWeaponRaybeam.h</label>
+        <link refid="rWeaponRaybeam_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>de/hackcraft/world/sub/model/rTree.cpp</label>
+        <link refid="rTree_8cpp"/>
+      </node>
+      <node id="63">
+        <label>de/hackcraft/world/World.cpp</label>
+        <link refid="World_8cpp"/>
+      </node>
+      <node id="46">
+        <label>de/hackcraft/world/Entity.cpp</label>
+        <link refid="Entity_8cpp"/>
+      </node>
+      <node id="5">
+        <label>de/hackcraft/psi3d/Particle.h</label>
+        <link refid="Particle_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>de/hackcraft/psi3d/Primitive.h</label>
+        <link refid="Primitive_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>de/hackcraft/world/sub/camera/CameraSystem.cpp</label>
+        <link refid="CameraSystem_8cpp"/>
+      </node>
+      <node id="7">
+        <label>de/hackcraft/world/sub/cityscape/rBuilding.cpp</label>
+        <link refid="rBuilding_8cpp"/>
+      </node>
+      <node id="20">
+        <label>de/hackcraft/game/OpenMission.cpp</label>
+        <link refid="OpenMission_8cpp"/>
+      </node>
+      <node id="35">
+        <label>de/hackcraft/world/sub/weapon/rWepcom.cpp</label>
+        <link refid="rWepcom_8cpp"/>
+      </node>
+      <node id="51">
+        <label>de/hackcraft/world/World.h</label>
+        <link refid="World_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>de/hackcraft/world/sub/cityscape/rPadmap.cpp</label>
+        <link refid="rPadmap_8cpp"/>
+      </node>
+      <node id="62">
+        <label>de/hackcraft/world/sub/trigger/TriggerSystem.cpp</label>
+        <link refid="TriggerSystem_8cpp"/>
+      </node>
+      <node id="9">
+        <label>de/hackcraft/world/sub/model/rScatter.cpp</label>
+        <link refid="rScatter_8cpp"/>
+      </node>
+      <node id="32">
+        <label>de/hackcraft/world/sub/weapon/rWeaponExplosion.h</label>
+        <link refid="rWeaponExplosion_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>de/hackcraft/world/sub/physics/rTraceable.cpp</label>
+        <link refid="rTraceable_8cpp"/>
+      </node>
+      <node id="34">
+        <label>de/hackcraft/world/sub/weapon/rWepcom.h</label>
+        <link refid="rWepcom_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>de/hackcraft/world/sub/weapon/rWeapon.cpp</label>
+        <link refid="rWeapon_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ctrl_8h_1a09555fda380a9a1ce96f912cfe938c8e" prot="public" static="no">
+        <name>loop</name>
+        <param><defname>variable</defname></param>
+        <param><defname>count</defname></param>
+        <initializer>for (int variable = 0; variable &lt; (int)(count); variable++)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="12" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1a37aa157c54cc42dfef7381ab67941bbb" prot="public" static="no">
+        <name>loopi</name>
+        <param><defname>n</defname></param>
+        <initializer><ref refid="ctrl_8h_1a09555fda380a9a1ce96f912cfe938c8e" kindref="member">loop</ref>(i, n)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="14" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1ac6fae0e4b2dbc6b9ff2a92f98f3ab5e0" prot="public" static="no">
+        <name>loopj</name>
+        <param><defname>n</defname></param>
+        <initializer><ref refid="ctrl_8h_1a09555fda380a9a1ce96f912cfe938c8e" kindref="member">loop</ref>(j, n)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="15" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1a32796d2f7805235826683634d7ef91e3" prot="public" static="no">
+        <name>loopk</name>
+        <param><defname>n</defname></param>
+        <initializer><ref refid="ctrl_8h_1a09555fda380a9a1ce96f912cfe938c8e" kindref="member">loop</ref>(k, n)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="16" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1a2936656f8b0c820fe4dd2a9a020c3ea0" prot="public" static="no">
+        <name>loopx</name>
+        <param><defname>n</defname></param>
+        <initializer><ref refid="ctrl_8h_1a09555fda380a9a1ce96f912cfe938c8e" kindref="member">loop</ref>(x, n)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="17" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1adacc2e62f1c880ee8bfa7ef917a4a1e7" prot="public" static="no">
+        <name>loopy</name>
+        <param><defname>n</defname></param>
+        <initializer><ref refid="ctrl_8h_1a09555fda380a9a1ce96f912cfe938c8e" kindref="member">loop</ref>(y, n)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="18" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1adf33d061e86b7e317df139ee3f36e81f" prot="public" static="no">
+        <name>loop3i</name>
+        <param><defname>iteration</defname></param>
+        <initializer><ref refid="ctrl_8h_1a37aa157c54cc42dfef7381ab67941bbb" kindref="member">loopi</ref>(3) { iteration; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="20" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1aa1e5e9d3f670b4ed8ca984759a87a844" prot="public" static="no">
+        <name>loopij</name>
+        <param><defname>in</defname></param>
+        <param><defname>jn</defname></param>
+        <initializer><ref refid="ctrl_8h_1a37aa157c54cc42dfef7381ab67941bbb" kindref="member">loopi</ref>(in) <ref refid="ctrl_8h_1ac6fae0e4b2dbc6b9ff2a92f98f3ab5e0" kindref="member">loopj</ref>(jn)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="22" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1aeff5072ba9580ecbd15e212920161639" prot="public" static="no">
+        <name>loopijk</name>
+        <param><defname>in</defname></param>
+        <param><defname>jn</defname></param>
+        <param><defname>kn</defname></param>
+        <initializer><ref refid="ctrl_8h_1a37aa157c54cc42dfef7381ab67941bbb" kindref="member">loopi</ref>(in) <ref refid="ctrl_8h_1ac6fae0e4b2dbc6b9ff2a92f98f3ab5e0" kindref="member">loopj</ref>(jn) <ref refid="ctrl_8h_1a32796d2f7805235826683634d7ef91e3" kindref="member">loopk</ref>(kn)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="24" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1aabf014ceb317944ea2056e9e11fbd7ae" prot="public" static="no">
+        <name>foreachNoInc</name>
+        <param><defname>loopvar</defname></param>
+        <param><defname>collection</defname></param>
+        <initializer>for (auto loopvar = (collection).begin(); loopvar != (collection).end();)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="34" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1a758840ea46c93ccfb6d4ef740e44383a" prot="public" static="no">
+        <name>foldl</name>
+        <param><defname>first</defname></param>
+        <param><defname>listvector</defname></param>
+        <param><defname>binaryfunc</defname></param>
+        <initializer>({ \
+    auto result = first; \
+    foreach(i, listvector) { \
+        if (i == listvector.begin()) result = binaryfunc(first, (*i)); \
+        else result = binaryfunc(result, (*i)); \
+    } \
+    result; \
+})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="46" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1a867685296edce102c652725070166657" prot="public" static="no">
+        <name>setbit</name>
+        <param><defname>var</defname></param>
+        <param><defname>bit</defname></param>
+        <initializer>var |= (1UL &lt;&lt; (unsigned long) bit)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="58" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1a00508acb20cdb29490ed3a1404503476" prot="public" static="no">
+        <name>rstbit</name>
+        <param><defname>var</defname></param>
+        <param><defname>bit</defname></param>
+        <initializer>var &amp;= ~(1UL &lt;&lt; (unsigned long) bit)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="59" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1a926dee08ccb99dbcca949d7d579bb080" prot="public" static="no">
+        <name>togbit</name>
+        <param><defname>var</defname></param>
+        <param><defname>bit</defname></param>
+        <initializer>var ^= (1UL &lt;&lt; (unsigned long) bit)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="60" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1a3ef821eb34dcca5433cfff266f59309b" prot="public" static="no">
+        <name>getbit</name>
+        <param><defname>var</defname></param>
+        <param><defname>bit</defname></param>
+        <initializer>(var &amp; (1UL &lt;&lt; (unsigned long) bit))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="61" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1aa4792aa65ed0048b51f21a94afe9cb90" prot="public" static="no">
+        <name>declareArray</name>
+        <param><defname>typ</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>size</defname></param>
+        <param><defname>expr</defname></param>
+        <initializer>typ name[size]; <ref refid="ctrl_8h_1a37aa157c54cc42dfef7381ab67941bbb" kindref="member">loopi</ref>(size) name[i] = expr;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="63" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ctrl_8h_1af0bb0e532951cdad40abe0b449c0d0d9" prot="public" static="no">
+        <name>declareValue</name>
+        <param><defname>typ</defname></param>
+        <param><defname>name</defname></param>
+        <param><defname>size</defname></param>
+        <param><defname>expr</defname></param>
+        <initializer>typ name = 0; <ref refid="ctrl_8h_1a37aa157c54cc42dfef7381ab67941bbb" kindref="member">loopi</ref>(size) name += expr;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/ctrl.h" line="64" column="9" bodyfile="de/hackcraft/psi3d/ctrl.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/psi3d/ctrl.h"/>
+  </compounddef>
+</doxygen>

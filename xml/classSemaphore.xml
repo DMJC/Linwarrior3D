@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classSemaphore" kind="class" language="C++" prot="public">
+    <compoundname>Semaphore</compoundname>
+    <basecompoundref refid="classObject" prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes local="no">Semaphore.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSemaphore_1a83324f0a93a76a6c99f5a21bbe9d9209" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* semaphore</definition>
+        <argsstring></argsstring>
+        <name>semaphore</name>
+        <briefdescription>
+<para>Handle for actual low level implementation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Semaphore.h" line="28" column="10" bodyfile="de/hackcraft/util/concurrent/Semaphore.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSemaphore_1a17d2760d6f175dc0266a0b4244bf09b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Semaphore</definition>
+        <argsstring>(int permits)</argsstring>
+        <name>Semaphore</name>
+        <param>
+          <type>int</type>
+          <declname>permits</declname>
+        </param>
+        <briefdescription>
+<para>Create a semaphore with max amount of permits (1 permit =&gt; mutex). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Semaphore.h" line="17" column="5" bodyfile="de/hackcraft/util/concurrent/Semaphore.cpp" bodystart="6" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classSemaphore_1a5e0394d4ca6109ccb52b3c1e5cf6c9b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~Semaphore</definition>
+        <argsstring>()</argsstring>
+        <name>~Semaphore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Semaphore.h" line="18" column="13" bodyfile="de/hackcraft/util/concurrent/Semaphore.cpp" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classSemaphore_1af3d45cefff609ed7b3bdcaf8094c5391" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tryAcquire</definition>
+        <argsstring>()</argsstring>
+        <name>tryAcquire</name>
+        <briefdescription>
+<para>Try to get one permit when available and then acquire the permit else return false. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Semaphore.h" line="21" column="10" bodyfile="de/hackcraft/util/concurrent/Semaphore.cpp" bodystart="20" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classSemaphore_1af9f5b35a212d21af601a8213ed325871" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void acquire</definition>
+        <argsstring>()</argsstring>
+        <name>acquire</name>
+        <briefdescription>
+<para>Block until one permit is available and then acquire the permit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Semaphore.h" line="23" column="10" bodyfile="de/hackcraft/util/concurrent/Semaphore.cpp" bodystart="35" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classSemaphore_1a23b477d0e2d399f75d585d154c346591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void release</definition>
+        <argsstring>()</argsstring>
+        <name>release</name>
+        <briefdescription>
+<para>Release one previously acquired permit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Semaphore.h" line="25" column="10" bodyfile="de/hackcraft/util/concurrent/Semaphore.cpp" bodystart="46" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Object</label>
+        <link refid="classObject"/>
+      </node>
+      <node id="1">
+        <label>Semaphore</label>
+        <link refid="classSemaphore"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Object</label>
+        <link refid="classObject"/>
+      </node>
+      <node id="1">
+        <label>Semaphore</label>
+        <link refid="classSemaphore"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/util/concurrent/Semaphore.h" line="14" column="30" bodyfile="de/hackcraft/util/concurrent/Semaphore.h" bodystart="14" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classSemaphore_1af9f5b35a212d21af601a8213ed325871" prot="public" virt="non-virtual"><scope>Semaphore</scope><name>acquire</name></member>
+      <member refid="classObject_1a9d682ddd9db854c4c5800b816d8f071a" prot="protected" virt="virtual"><scope>Semaphore</scope><name>clone</name></member>
+      <member refid="classObject_1a04ea2beb8d4571b0b4753ad3b4862699" prot="public" virt="virtual"><scope>Semaphore</scope><name>equals</name></member>
+      <member refid="classObject_1a077e18fe97323c7194e2665ffc766399" prot="public" virt="virtual"><scope>Semaphore</scope><name>hashCode</name></member>
+      <member refid="classSemaphore_1a23b477d0e2d399f75d585d154c346591" prot="public" virt="non-virtual"><scope>Semaphore</scope><name>release</name></member>
+      <member refid="classSemaphore_1a83324f0a93a76a6c99f5a21bbe9d9209" prot="private" virt="non-virtual"><scope>Semaphore</scope><name>semaphore</name></member>
+      <member refid="classSemaphore_1a17d2760d6f175dc0266a0b4244bf09b7" prot="public" virt="non-virtual"><scope>Semaphore</scope><name>Semaphore</name></member>
+      <member refid="classObject_1a719a81ee816e96b01f05361883d5435d" prot="public" virt="virtual"><scope>Semaphore</scope><name>toString</name></member>
+      <member refid="classSemaphore_1af3d45cefff609ed7b3bdcaf8094c5391" prot="public" virt="non-virtual"><scope>Semaphore</scope><name>tryAcquire</name></member>
+      <member refid="classSemaphore_1a5e0394d4ca6109ccb52b3c1e5cf6c9b5" prot="public" virt="virtual"><scope>Semaphore</scope><name>~Semaphore</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

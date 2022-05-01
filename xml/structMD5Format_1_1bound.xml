@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structMD5Format_1_1bound" kind="struct" language="C++" prot="public">
+    <compoundname>MD5Format::bound</compoundname>
+    <includes local="no">MD5Format.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMD5Format_1_1bound_1a2ac209dd0eefa3ceab458fc779e166ff" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float min[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/MD5Format.h" line="52" column="15" bodyfile="de/hackcraft/io/MD5Format.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMD5Format_1_1bound_1afba46e9b5a4598fba51b3552b44e9f1f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float max[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/MD5Format.h" line="53" column="15" bodyfile="de/hackcraft/io/MD5Format.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MD5Format::bound</label>
+        <link refid="structMD5Format_1_1bound"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/io/MD5Format.h" line="51" column="16" bodyfile="de/hackcraft/io/MD5Format.h" bodystart="51" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structMD5Format_1_1bound_1afba46e9b5a4598fba51b3552b44e9f1f" prot="public" virt="non-virtual"><scope>MD5Format::bound</scope><name>max</name></member>
+      <member refid="structMD5Format_1_1bound_1a2ac209dd0eefa3ceab458fc779e166ff" prot="public" virt="non-virtual"><scope>MD5Format::bound</scope><name>min</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

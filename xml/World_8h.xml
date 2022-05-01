@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="World_8h" kind="file" language="C++">
+    <compoundname>World.h</compoundname>
+    <includes refid="OID_8h" local="yes">de/hackcraft/lang/OID.h</includes>
+    <includes refid="Logger_8h" local="yes">de/hackcraft/log/Logger.h</includes>
+    <includes refid="Geomap_8h" local="yes">de/hackcraft/util/Geomap.h</includes>
+    <includes refid="Timing_8h" local="yes">de/hackcraft/util/Timing.h</includes>
+    <includes refid="macros_8h" local="yes">de/hackcraft/psi3d/macros.h</includes>
+    <includes refid="Entity_8h" local="yes">de/hackcraft/world/Entity.h</includes>
+    <includes refid="Subsystem_8h" local="yes">de/hackcraft/world/Subsystem.h</includes>
+    <includes local="no">list</includes>
+    <includes local="no">map</includes>
+    <includes local="no">queue</includes>
+    <includes local="no">set</includes>
+    <includes local="no">string</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="BatchMission_8cpp" local="yes">de/hackcraft/game/BatchMission.cpp</includedby>
+    <includedby refid="GameMain_8cpp" local="yes">de/hackcraft/game/GameMain.cpp</includedby>
+    <includedby refid="GameMission_8cpp" local="yes">de/hackcraft/game/GameMission.cpp</includedby>
+    <includedby refid="OpenMission_8cpp" local="yes">de/hackcraft/game/OpenMission.cpp</includedby>
+    <includedby refid="cMech_8cpp" local="yes">de/hackcraft/world/object/cMech.cpp</includedby>
+    <includedby refid="BackgroundSystem_8cpp" local="yes">de/hackcraft/world/sub/background/BackgroundSystem.cpp</includedby>
+    <includedby refid="CameraSystem_8cpp" local="yes">de/hackcraft/world/sub/camera/CameraSystem.cpp</includedby>
+    <includedby refid="ChatSystem_8cpp" local="yes">de/hackcraft/world/sub/chat/ChatSystem.cpp</includedby>
+    <includedby refid="rChatMember_8cpp" local="yes">de/hackcraft/world/sub/chat/rChatMember.cpp</includedby>
+    <includedby refid="rBuilding_8cpp" local="yes">de/hackcraft/world/sub/cityscape/rBuilding.cpp</includedby>
+    <includedby refid="rTile_8cpp" local="yes">de/hackcraft/world/sub/cityscape/rTile.cpp</includedby>
+    <includedby refid="ComputerSystem_8cpp" local="yes">de/hackcraft/world/sub/computer/ComputerSystem.cpp</includedby>
+    <includedby refid="rComcom_8cpp" local="yes">de/hackcraft/world/sub/computer/rComcom.cpp</includedby>
+    <includedby refid="rController_8cpp" local="yes">de/hackcraft/world/sub/computer/rController.cpp</includedby>
+    <includedby refid="rNavcom_8cpp" local="yes">de/hackcraft/world/sub/computer/rNavcom.cpp</includedby>
+    <includedby refid="LandscapeSystem_8cpp" local="yes">de/hackcraft/world/sub/landscape/LandscapeSystem.cpp</includedby>
+    <includedby refid="MiscSystem_8cpp" local="yes">de/hackcraft/world/sub/misc/MiscSystem.cpp</includedby>
+    <includedby refid="MobileSystem_8cpp" local="yes">de/hackcraft/world/sub/mobile/MobileSystem.cpp</includedby>
+    <includedby refid="rMobile_8cpp" local="yes">de/hackcraft/world/sub/mobile/rMobile.cpp</includedby>
+    <includedby refid="ModelSystem_8cpp" local="yes">de/hackcraft/world/sub/model/ModelSystem.cpp</includedby>
+    <includedby refid="PhysicsSystem_8cpp" local="yes">de/hackcraft/world/sub/physics/PhysicsSystem.cpp</includedby>
+    <includedby refid="rTraceable_8cpp" local="yes">de/hackcraft/world/sub/physics/rTraceable.cpp</includedby>
+    <includedby refid="rAlert_8cpp" local="yes">de/hackcraft/world/sub/trigger/rAlert.cpp</includedby>
+    <includedby refid="TriggerSystem_8cpp" local="yes">de/hackcraft/world/sub/trigger/TriggerSystem.cpp</includedby>
+    <includedby refid="rTarcom_8cpp" local="yes">de/hackcraft/world/sub/weapon/rTarcom.cpp</includedby>
+    <includedby refid="rWeapon_8cpp" local="yes">de/hackcraft/world/sub/weapon/rWeapon.cpp</includedby>
+    <includedby refid="rWeaponHoming_8cpp" local="yes">de/hackcraft/world/sub/weapon/rWeaponHoming.cpp</includedby>
+    <includedby refid="WeaponSystem_8cpp" local="yes">de/hackcraft/world/sub/weapon/WeaponSystem.cpp</includedby>
+    <includedby refid="World_8cpp" local="yes">de/hackcraft/world/World.cpp</includedby>
+    <incdepgraph>
+      <node id="11">
+        <label>list</label>
+      </node>
+      <node id="26">
+        <label>queue</label>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/lang/OID.h</label>
+        <link refid="OID_8h"/>
+      </node>
+      <node id="19">
+        <label>de/hackcraft/world/Component.h</label>
+        <link refid="Component_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>de/hackcraft/psi3d/ctrl.h</label>
+        <link refid="ctrl_8h"/>
+      </node>
+      <node id="12">
+        <label>stdlib.h</label>
+      </node>
+      <node id="7">
+        <label>de/hackcraft/log/LevelStreamLogger.h</label>
+        <link refid="LevelStreamLogger_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>de/hackcraft/psi3d/macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="24">
+        <label>map</label>
+      </node>
+      <node id="18">
+        <label>de/hackcraft/world/Entity.h</label>
+        <link refid="Entity_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>de/hackcraft/psi3d/math3d.h</label>
+        <link refid="math3d_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>de/hackcraft/util/Geomap.h</label>
+        <link refid="Geomap_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>de/hackcraft/util/Timing.h</label>
+        <link refid="Timing_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>string.h</label>
+      </node>
+      <node id="22">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/log/Logger.h</label>
+        <link refid="Logger_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>de/hackcraft/world/Subsystem.h</label>
+        <link refid="Subsystem_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>sstream</label>
+      </node>
+      <node id="4">
+        <label>de/hackcraft/log/Appender.h</label>
+        <link refid="Appender_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>math.h</label>
+      </node>
+      <node id="10">
+        <label>unordered_map</label>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/world/World.h</label>
+        <link refid="World_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>de/hackcraft/util/Binding.h</label>
+        <link refid="Binding_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>set</label>
+      </node>
+      <node id="23">
+        <label>algorithm</label>
+      </node>
+      <node id="5">
+        <label>de/hackcraft/log/LoggerEvent.h</label>
+        <link refid="LoggerEvent_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>de/hackcraft/game/GameMission.cpp</label>
+        <link refid="GameMission_8cpp"/>
+      </node>
+      <node id="9">
+        <label>de/hackcraft/world/sub/chat/ChatSystem.cpp</label>
+        <link refid="ChatSystem_8cpp"/>
+      </node>
+      <node id="29">
+        <label>de/hackcraft/world/sub/weapon/WeaponSystem.cpp</label>
+        <link refid="WeaponSystem_8cpp"/>
+      </node>
+      <node id="28">
+        <label>de/hackcraft/world/sub/weapon/rWeaponHoming.cpp</label>
+        <link refid="rWeaponHoming_8cpp"/>
+      </node>
+      <node id="12">
+        <label>de/hackcraft/world/sub/cityscape/rTile.cpp</label>
+        <link refid="rTile_8cpp"/>
+      </node>
+      <node id="13">
+        <label>de/hackcraft/world/sub/computer/ComputerSystem.cpp</label>
+        <link refid="ComputerSystem_8cpp"/>
+      </node>
+      <node id="7">
+        <label>de/hackcraft/world/sub/background/BackgroundSystem.cpp</label>
+        <link refid="BackgroundSystem_8cpp"/>
+      </node>
+      <node id="14">
+        <label>de/hackcraft/world/sub/computer/rComcom.cpp</label>
+        <link refid="rComcom_8cpp"/>
+      </node>
+      <node id="16">
+        <label>de/hackcraft/world/sub/computer/rNavcom.cpp</label>
+        <link refid="rNavcom_8cpp"/>
+      </node>
+      <node id="6">
+        <label>de/hackcraft/world/object/cMech.cpp</label>
+        <link refid="cMech_8cpp"/>
+      </node>
+      <node id="15">
+        <label>de/hackcraft/world/sub/computer/rController.cpp</label>
+        <link refid="rController_8cpp"/>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/game/BatchMission.cpp</label>
+        <link refid="BatchMission_8cpp"/>
+      </node>
+      <node id="20">
+        <label>de/hackcraft/world/sub/mobile/rMobile.cpp</label>
+        <link refid="rMobile_8cpp"/>
+      </node>
+      <node id="24">
+        <label>de/hackcraft/world/sub/trigger/rAlert.cpp</label>
+        <link refid="rAlert_8cpp"/>
+      </node>
+      <node id="22">
+        <label>de/hackcraft/world/sub/physics/PhysicsSystem.cpp</label>
+        <link refid="PhysicsSystem_8cpp"/>
+      </node>
+      <node id="17">
+        <label>de/hackcraft/world/sub/landscape/LandscapeSystem.cpp</label>
+        <link refid="LandscapeSystem_8cpp"/>
+      </node>
+      <node id="18">
+        <label>de/hackcraft/world/sub/misc/MiscSystem.cpp</label>
+        <link refid="MiscSystem_8cpp"/>
+      </node>
+      <node id="19">
+        <label>de/hackcraft/world/sub/mobile/MobileSystem.cpp</label>
+        <link refid="MobileSystem_8cpp"/>
+      </node>
+      <node id="10">
+        <label>de/hackcraft/world/sub/chat/rChatMember.cpp</label>
+        <link refid="rChatMember_8cpp"/>
+      </node>
+      <node id="26">
+        <label>de/hackcraft/world/sub/weapon/rTarcom.cpp</label>
+        <link refid="rTarcom_8cpp"/>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/game/GameMain.cpp</label>
+        <link refid="GameMain_8cpp"/>
+      </node>
+      <node id="21">
+        <label>de/hackcraft/world/sub/model/ModelSystem.cpp</label>
+        <link refid="ModelSystem_8cpp"/>
+      </node>
+      <node id="30">
+        <label>de/hackcraft/world/World.cpp</label>
+        <link refid="World_8cpp"/>
+      </node>
+      <node id="11">
+        <label>de/hackcraft/world/sub/cityscape/rBuilding.cpp</label>
+        <link refid="rBuilding_8cpp"/>
+      </node>
+      <node id="8">
+        <label>de/hackcraft/world/sub/camera/CameraSystem.cpp</label>
+        <link refid="CameraSystem_8cpp"/>
+      </node>
+      <node id="5">
+        <label>de/hackcraft/game/OpenMission.cpp</label>
+        <link refid="OpenMission_8cpp"/>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/world/World.h</label>
+        <link refid="World_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>de/hackcraft/world/sub/trigger/TriggerSystem.cpp</label>
+        <link refid="TriggerSystem_8cpp"/>
+      </node>
+      <node id="23">
+        <label>de/hackcraft/world/sub/physics/rTraceable.cpp</label>
+        <link refid="rTraceable_8cpp"/>
+      </node>
+      <node id="27">
+        <label>de/hackcraft/world/sub/weapon/rWeapon.cpp</label>
+        <link refid="rWeapon_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classWorld" prot="public">World</innerclass>
+    <innerclass refid="structWorld_1_1Group" prot="private">World::Group</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/World.h"/>
+  </compounddef>
+</doxygen>

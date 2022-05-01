@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classActivity" kind="class" language="C++" prot="public">
+    <compoundname>Activity</compoundname>
+    <includes local="no">Activity.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classActivity_1a23f25bcc02a0e94c2f5a4188496b04d0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Application</definition>
+        <argsstring></argsstring>
+        <name>Application</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/app/Activity.h" line="13" column="5" bodyfile="de/hackcraft/app/Activity.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classActivity_1a7cbaab5581ba98a8eca3939f5ba654a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Activity</definition>
+        <argsstring>()</argsstring>
+        <name>Activity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/app/Activity.h" line="16" column="5" bodyfile="de/hackcraft/app/Activity.cpp" bodystart="4" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classActivity_1a90498bdb05c2eecc7102cb15adac427c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Activity</definition>
+        <argsstring>(const Activity &amp;orig)</argsstring>
+        <name>Activity</name>
+        <param>
+          <type>const <ref refid="classActivity" kindref="compound">Activity</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/app/Activity.h" line="17" column="5" bodyfile="de/hackcraft/app/Activity.cpp" bodystart="8" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classActivity_1a9f9ef432d76a6ac7a1170dbebf11d8b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~Activity</definition>
+        <argsstring>()</argsstring>
+        <name>~Activity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/app/Activity.h" line="18" column="13" bodyfile="de/hackcraft/app/Activity.cpp" bodystart="12" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classActivity_1a664c1cf87598f75d568f4275bd61e074" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void onCreate</definition>
+        <argsstring>()</argsstring>
+        <name>onCreate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/app/Activity.h" line="21" column="10" bodyfile="de/hackcraft/app/Activity.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classActivity_1a11bcf4e3177fdb549350a4aa149e9e67" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void onStart</definition>
+        <argsstring>()</argsstring>
+        <name>onStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/app/Activity.h" line="22" column="10" bodyfile="de/hackcraft/app/Activity.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classActivity_1a78cea7fc8842531f82c0dde817130d2a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void onRestart</definition>
+        <argsstring>()</argsstring>
+        <name>onRestart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/app/Activity.h" line="23" column="10" bodyfile="de/hackcraft/app/Activity.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classActivity_1a14768c382cfd134f7688413a3eb56d08" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void onResume</definition>
+        <argsstring>()</argsstring>
+        <name>onResume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/app/Activity.h" line="24" column="10" bodyfile="de/hackcraft/app/Activity.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classActivity_1ad36a232bff79e67140875eff1a578827" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void onPause</definition>
+        <argsstring>()</argsstring>
+        <name>onPause</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/app/Activity.h" line="25" column="10" bodyfile="de/hackcraft/app/Activity.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classActivity_1a458397229d0b2076a739955b1cb8be35" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void onStop</definition>
+        <argsstring>()</argsstring>
+        <name>onStop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/app/Activity.h" line="26" column="10" bodyfile="de/hackcraft/app/Activity.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classActivity_1a8a744b43949a3939f448facad211e3d2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void onDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>onDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/app/Activity.h" line="27" column="10" bodyfile="de/hackcraft/app/Activity.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Activity</label>
+        <link refid="classActivity"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/app/Activity.h" line="12" column="15" bodyfile="de/hackcraft/app/Activity.h" bodystart="12" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classActivity_1a7cbaab5581ba98a8eca3939f5ba654a9" prot="public" virt="non-virtual"><scope>Activity</scope><name>Activity</name></member>
+      <member refid="classActivity_1a90498bdb05c2eecc7102cb15adac427c" prot="public" virt="non-virtual"><scope>Activity</scope><name>Activity</name></member>
+      <member refid="classActivity_1a23f25bcc02a0e94c2f5a4188496b04d0" prot="private" virt="non-virtual"><scope>Activity</scope><name>Application</name></member>
+      <member refid="classActivity_1a664c1cf87598f75d568f4275bd61e074" prot="protected" virt="non-virtual"><scope>Activity</scope><name>onCreate</name></member>
+      <member refid="classActivity_1a8a744b43949a3939f448facad211e3d2" prot="protected" virt="non-virtual"><scope>Activity</scope><name>onDestroy</name></member>
+      <member refid="classActivity_1ad36a232bff79e67140875eff1a578827" prot="protected" virt="non-virtual"><scope>Activity</scope><name>onPause</name></member>
+      <member refid="classActivity_1a78cea7fc8842531f82c0dde817130d2a" prot="protected" virt="non-virtual"><scope>Activity</scope><name>onRestart</name></member>
+      <member refid="classActivity_1a14768c382cfd134f7688413a3eb56d08" prot="protected" virt="non-virtual"><scope>Activity</scope><name>onResume</name></member>
+      <member refid="classActivity_1a11bcf4e3177fdb549350a4aa149e9e67" prot="protected" virt="non-virtual"><scope>Activity</scope><name>onStart</name></member>
+      <member refid="classActivity_1a458397229d0b2076a739955b1cb8be35" prot="protected" virt="non-virtual"><scope>Activity</scope><name>onStop</name></member>
+      <member refid="classActivity_1a9f9ef432d76a6ac7a1170dbebf11d8b2" prot="public" virt="virtual"><scope>Activity</scope><name>~Activity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

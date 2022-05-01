@@ -1,0 +1,810 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structComponent" kind="struct" language="C++" prot="public">
+    <compoundname>Component</compoundname>
+    <derivedcompoundref refid="classrAlert" prot="public" virt="non-virtual">rAlert</derivedcompoundref>
+    <derivedcompoundref refid="structrBillboard" prot="public" virt="non-virtual">rBillboard</derivedcompoundref>
+    <derivedcompoundref refid="classrBuilding" prot="public" virt="non-virtual">rBuilding</derivedcompoundref>
+    <derivedcompoundref refid="structrCamera" prot="public" virt="non-virtual">rCamera</derivedcompoundref>
+    <derivedcompoundref refid="classrChatGroup" prot="public" virt="non-virtual">rChatGroup</derivedcompoundref>
+    <derivedcompoundref refid="structrChatMember" prot="public" virt="non-virtual">rChatMember</derivedcompoundref>
+    <derivedcompoundref refid="classrChatMessage" prot="public" virt="non-virtual">rChatMessage</derivedcompoundref>
+    <derivedcompoundref refid="structrCollider" prot="public" virt="non-virtual">rCollider</derivedcompoundref>
+    <derivedcompoundref refid="structrComcom" prot="public" virt="non-virtual">rComcom</derivedcompoundref>
+    <derivedcompoundref refid="structrController" prot="public" virt="non-virtual">rController</derivedcompoundref>
+    <derivedcompoundref refid="structrForcom" prot="public" virt="non-virtual">rForcom</derivedcompoundref>
+    <derivedcompoundref refid="classrInputsource" prot="public" virt="non-virtual">rInputsource</derivedcompoundref>
+    <derivedcompoundref refid="classrLightsource" prot="public" virt="non-virtual">rLightsource</derivedcompoundref>
+    <derivedcompoundref refid="structrMobile" prot="public" virt="non-virtual">rMobile</derivedcompoundref>
+    <derivedcompoundref refid="structrNavcom" prot="public" virt="non-virtual">rNavcom</derivedcompoundref>
+    <derivedcompoundref refid="classrPadmap" prot="public" virt="non-virtual">rPadmap</derivedcompoundref>
+    <derivedcompoundref refid="classrPlanetmap" prot="public" virt="non-virtual">rPlanetmap</derivedcompoundref>
+    <derivedcompoundref refid="structrRigged" prot="public" virt="non-virtual">rRigged</derivedcompoundref>
+    <derivedcompoundref refid="classrScatter" prot="public" virt="non-virtual">rScatter</derivedcompoundref>
+    <derivedcompoundref refid="classrSoundsource" prot="public" virt="non-virtual">rSoundsource</derivedcompoundref>
+    <derivedcompoundref refid="classrSpringlink" prot="public" virt="non-virtual">rSpringlink</derivedcompoundref>
+    <derivedcompoundref refid="structrTarcom" prot="public" virt="non-virtual">rTarcom</derivedcompoundref>
+    <derivedcompoundref refid="structrTarget" prot="public" virt="non-virtual">rTarget</derivedcompoundref>
+    <derivedcompoundref refid="classrTile" prot="public" virt="non-virtual">rTile</derivedcompoundref>
+    <derivedcompoundref refid="classrTraceable" prot="public" virt="non-virtual">rTraceable</derivedcompoundref>
+    <derivedcompoundref refid="structrTree" prot="public" virt="non-virtual">rTree</derivedcompoundref>
+    <derivedcompoundref refid="classrTrigger" prot="public" virt="non-virtual">rTrigger</derivedcompoundref>
+    <derivedcompoundref refid="classrWeapon" prot="public" virt="non-virtual">rWeapon</derivedcompoundref>
+    <derivedcompoundref refid="structrWepcom" prot="public" virt="non-virtual">rWepcom</derivedcompoundref>
+    <includes local="no">Component.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structComponent_1ab6a3de68965b8f71ff914a03321757f4" prot="public" static="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string cname</definition>
+        <argsstring></argsstring>
+        <name>cname</name>
+        <initializer>= &quot;COMPONENT&quot;</initializer>
+        <briefdescription>
+<para>Identifier for this component (all uppercase letters without leading &quot;r&quot;). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="32" column="24" bodyfile="de/hackcraft/world/Component.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structComponent_1a08d90b44549babc6b8c5154f371aa12f" prot="public" static="yes" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int cid</definition>
+        <argsstring></argsstring>
+        <name>cid</name>
+        <initializer>= 2491</initializer>
+        <briefdescription>
+<para>A unique random number (0-9999) to identify this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="34" column="25" bodyfile="de/hackcraft/world/Component.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structComponent_1a4c442f22ef3b8c6790b56015beb57566" prot="public" static="no" mutable="no">
+        <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+        <definition>Entity* object</definition>
+        <argsstring></argsstring>
+        <name>object</name>
+        <briefdescription>
+<para>Parent object of which this component is a part of. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="37" column="12" bodyfile="de/hackcraft/world/Component.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structComponent_1a03c996f9fcf0e10baeb3e700be0c409a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool active</definition>
+        <argsstring></argsstring>
+        <name>active</name>
+        <briefdescription>
+<para>Indicates an active enabled component (or disabled if false). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="39" column="10" bodyfile="de/hackcraft/world/Component.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structComponent_1a4d900b2c72ca399a620b6eefce26c018" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classBinding" kindref="compound">Binding</ref> * &gt;</type>
+        <definition>std::vector&lt;Binding*&gt; prebinds</definition>
+        <argsstring></argsstring>
+        <name>prebinds</name>
+        <briefdescription>
+<para>Bindings to be executed before animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="41" column="17" bodyfile="de/hackcraft/world/Component.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structComponent_1abc081daafef3ffd221d8746b1e4c2f78" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classBinding" kindref="compound">Binding</ref> * &gt;</type>
+        <definition>std::vector&lt;Binding*&gt; postbinds</definition>
+        <argsstring></argsstring>
+        <name>postbinds</name>
+        <briefdescription>
+<para>Bindings to be executed after animation (if any). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="43" column="17" bodyfile="de/hackcraft/world/Component.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structComponent_1a6b5149d0ce5984ffa0fdfcb0660c7bd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Component</definition>
+        <argsstring>(Component *original=NULL)</argsstring>
+        <name>Component</name>
+        <param>
+          <type><ref refid="structComponent" kindref="compound">Component</ref> *</type>
+          <declname>original</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="46" column="5" bodyfile="de/hackcraft/world/Component.h" bodystart="46" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1a12d7214a9a58d47b3bc3c2e91f6d0c32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="structComponent" kindref="compound">Component</ref> *</type>
+        <definition>virtual Component* clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplementedby refid="classrTraceable_1a3f204a83136ee20e71df56132970c70d">clone</reimplementedby>
+        <reimplementedby refid="structrBillboard_1a3f204a83136ee20e71df56132970c70d">clone</reimplementedby>
+        <reimplementedby refid="structrTarget_1a3f204a83136ee20e71df56132970c70d">clone</reimplementedby>
+        <reimplementedby refid="structrController_1a12d7214a9a58d47b3bc3c2e91f6d0c32">clone</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="56" column="24" bodyfile="de/hackcraft/world/Component.h" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1a9be6e2d0e81c55db1578d42ec617cbca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void addBinding</definition>
+        <argsstring>(Binding *binding)</argsstring>
+        <name>addBinding</name>
+        <param>
+          <type><ref refid="classBinding" kindref="compound">Binding</ref> *</type>
+          <declname>binding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="60" column="10" bodyfile="de/hackcraft/world/Component.h" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1a76752321cf3827ebb052e7b9b93f3db0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void addBinding</definition>
+        <argsstring>(void *dst, void *src, unsigned int size)</argsstring>
+        <name>addBinding</name>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="64" column="10" bodyfile="de/hackcraft/world/Component.h" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1acdfa5be80a3b7f56ac515b1bb1305e68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>virtual OID getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <reimplementedby refid="structrWepcom_1acdfa5be80a3b7f56ac515b1bb1305e68">getId</reimplementedby>
+        <reimplementedby refid="structrTarcom_1acdfa5be80a3b7f56ac515b1bb1305e68">getId</reimplementedby>
+        <reimplementedby refid="structrTarget_1acdfa5be80a3b7f56ac515b1bb1305e68">getId</reimplementedby>
+        <reimplementedby refid="classrWeapon_1acdfa5be80a3b7f56ac515b1bb1305e68">getId</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="68" column="17" bodyfile="de/hackcraft/world/Component.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1a2260c02c44eeca44f51bf4b76f3bd306" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void spawn</definition>
+        <argsstring>()</argsstring>
+        <name>spawn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="72" column="18" bodyfile="de/hackcraft/world/Component.h" bodystart="72" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1ad9819bfdd9490c9b319093ac5b97822f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void frag</definition>
+        <argsstring>()</argsstring>
+        <name>frag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="75" column="18" bodyfile="de/hackcraft/world/Component.h" bodystart="75" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1a2cd2e7e39bbe0feb04e3f49d92383051" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void camera</definition>
+        <argsstring>()</argsstring>
+        <name>camera</name>
+        <reimplementedby refid="structrCamera_1a4c06b4173a35797d2ea1b39614382446">camera</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="78" column="18" bodyfile="de/hackcraft/world/Component.h" bodystart="78" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1ab92eb9c4dcb16f9e63ca5fe371144983" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void listener</definition>
+        <argsstring>()</argsstring>
+        <name>listener</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="81" column="18" bodyfile="de/hackcraft/world/Component.h" bodystart="81" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1af0c987007ef181ec233d8333d399bab6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float constrain</definition>
+        <argsstring>(float *worldpos, float radius, float *localpos=NULL, Entity *enactor=NULL)</argsstring>
+        <name>constrain</name>
+        <reimplementedby refid="structrCollider_1a8e017194d3c7d32750cf69a456083fde">constrain</reimplementedby>
+        <reimplementedby refid="classrPlanetmap_1a8e017194d3c7d32750cf69a456083fde">constrain</reimplementedby>
+        <reimplementedby refid="classrBuilding_1a2894537ad57a275ff8551870c27fcba2">constrain</reimplementedby>
+        <reimplementedby refid="classrPadmap_1a2894537ad57a275ff8551870c27fcba2">constrain</reimplementedby>
+        <reimplementedby refid="structrTree_1a2894537ad57a275ff8551870c27fcba2">constrain</reimplementedby>
+        <param>
+          <type>float *</type>
+          <declname>worldpos</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>localpos</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>enactor</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="84" column="19" bodyfile="de/hackcraft/world/Component.h" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1abea7dc29223077e4c8b30eda0e487242" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool damage</definition>
+        <argsstring>(float *localpos, float damage, Entity *enactor=NULL)</argsstring>
+        <name>damage</name>
+        <reimplementedby refid="structrTarget_1a61aa209b6312b30de75b459261d84319">damage</reimplementedby>
+        <param>
+          <type>float *</type>
+          <declname>localpos</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>damage</declname>
+        </param>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>enactor</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="88" column="18" bodyfile="de/hackcraft/world/Component.h" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1a5bd6391b052df5d5a0db4554b2c3fe66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void prebind</definition>
+        <argsstring>()</argsstring>
+        <name>prebind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="92" column="10" bodyfile="de/hackcraft/world/Component.h" bodystart="92" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1a21737bd2efddc8007d58214f722959f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void animate</definition>
+        <argsstring>(float spf)</argsstring>
+        <name>animate</name>
+        <reimplementedby refid="classrWeaponExplosion_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="classrWeaponSparkgun_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="classrWeaponRaybeam_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="classrWeaponPlasmagun_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="classrWeaponMachinegun_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="classrWeaponHoming_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrWepcom_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="classrSpringlink_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrForcom_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrNavcom_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrComcom_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrChatMember_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="classrInputsource_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="classrTraceable_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrCollider_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrCamera_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="classrSoundsource_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="classrScatter_1a21737bd2efddc8007d58214f722959f1">animate</reimplementedby>
+        <reimplementedby refid="structrBillboard_1a21737bd2efddc8007d58214f722959f1">animate</reimplementedby>
+        <reimplementedby refid="classrPadmap_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrTree_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrTarcom_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrTarget_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrRigged_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrMobile_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="classrPlanetmap_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="classrWeapon_1a02c98f4332baa521de3c4df3c146d873">animate</reimplementedby>
+        <reimplementedby refid="structrController_1a3184c0aad27606b0d0317e03fe5622c7">animate</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>spf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="98" column="18" bodyfile="de/hackcraft/world/Component.h" bodystart="98" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1ab7bcd2366fafecdcdd8bbcbfb0a43c51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void postbind</definition>
+        <argsstring>()</argsstring>
+        <name>postbind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="101" column="10" bodyfile="de/hackcraft/world/Component.h" bodystart="101" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1a620c3ab0c7ebcfa486e3f3c3d1c442b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void transform</definition>
+        <argsstring>()</argsstring>
+        <name>transform</name>
+        <reimplementedby refid="classrScatter_1a620c3ab0c7ebcfa486e3f3c3d1c442b3">transform</reimplementedby>
+        <reimplementedby refid="structrBillboard_1a620c3ab0c7ebcfa486e3f3c3d1c442b3">transform</reimplementedby>
+        <reimplementedby refid="structrTree_1a620c3ab0c7ebcfa486e3f3c3d1c442b3">transform</reimplementedby>
+        <reimplementedby refid="structrRigged_1abe0cf4a907cfd4631a4d7c7647692a0a">transform</reimplementedby>
+        <reimplementedby refid="structrMobile_1abe0cf4a907cfd4631a4d7c7647692a0a">transform</reimplementedby>
+        <reimplementedby refid="classrWeapon_1abe0cf4a907cfd4631a4d7c7647692a0a">transform</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="107" column="18" bodyfile="de/hackcraft/world/Component.h" bodystart="107" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1a82d72d455a63508dd949d552ed3713b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawSolid</definition>
+        <argsstring>()</argsstring>
+        <name>drawSolid</name>
+        <reimplementedby refid="classrWeaponExplosion_1a044d5ff7d7174ed434fcebbef82bc275">drawSolid</reimplementedby>
+        <reimplementedby refid="classrWeaponSparkgun_1a044d5ff7d7174ed434fcebbef82bc275">drawSolid</reimplementedby>
+        <reimplementedby refid="classrWeaponRaybeam_1a044d5ff7d7174ed434fcebbef82bc275">drawSolid</reimplementedby>
+        <reimplementedby refid="classrWeaponPlasmagun_1a044d5ff7d7174ed434fcebbef82bc275">drawSolid</reimplementedby>
+        <reimplementedby refid="classrWeaponMachinegun_1a044d5ff7d7174ed434fcebbef82bc275">drawSolid</reimplementedby>
+        <reimplementedby refid="classrWeaponHoming_1a044d5ff7d7174ed434fcebbef82bc275">drawSolid</reimplementedby>
+        <reimplementedby refid="classrBuilding_1a044d5ff7d7174ed434fcebbef82bc275">drawSolid</reimplementedby>
+        <reimplementedby refid="classrScatter_1a82d72d455a63508dd949d552ed3713b5">drawSolid</reimplementedby>
+        <reimplementedby refid="structrBillboard_1a82d72d455a63508dd949d552ed3713b5">drawSolid</reimplementedby>
+        <reimplementedby refid="classrTile_1a044d5ff7d7174ed434fcebbef82bc275">drawSolid</reimplementedby>
+        <reimplementedby refid="classrPadmap_1a044d5ff7d7174ed434fcebbef82bc275">drawSolid</reimplementedby>
+        <reimplementedby refid="structrTree_1a044d5ff7d7174ed434fcebbef82bc275">drawSolid</reimplementedby>
+        <reimplementedby refid="structrRigged_1a044d5ff7d7174ed434fcebbef82bc275">drawSolid</reimplementedby>
+        <reimplementedby refid="structrMobile_1a044d5ff7d7174ed434fcebbef82bc275">drawSolid</reimplementedby>
+        <reimplementedby refid="classrPlanetmap_1a044d5ff7d7174ed434fcebbef82bc275">drawSolid</reimplementedby>
+        <reimplementedby refid="classrWeapon_1a7037e4616081238dc81eb0e947cba4f1">drawSolid</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="110" column="18" bodyfile="de/hackcraft/world/Component.h" bodystart="110" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1afa90087fb4f9485be9db86581d8ac822" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawEffect</definition>
+        <argsstring>()</argsstring>
+        <name>drawEffect</name>
+        <reimplementedby refid="classrWeaponExplosion_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="classrWeaponSparkgun_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="classrWeaponRaybeam_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="classrWeaponPlasmagun_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="classrWeaponMachinegun_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="classrWeaponHoming_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="structrCollider_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="classrScatter_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="structrBillboard_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="structrTree_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="structrRigged_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="structrMobile_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="classrPlanetmap_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="classrWeapon_1a743d69df45ff83f7531c4eeb0e225405">drawEffect</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="113" column="18" bodyfile="de/hackcraft/world/Component.h" bodystart="113" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="structComponent_1a98233a0af860521dafed683b50128886" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawHUD</definition>
+        <argsstring>()</argsstring>
+        <name>drawHUD</name>
+        <reimplementedby refid="structrWepcom_1aa02f40a5a708207a0f624f6dbde035f2">drawHUD</reimplementedby>
+        <reimplementedby refid="classrWeaponSparkgun_1aa02f40a5a708207a0f624f6dbde035f2">drawHUD</reimplementedby>
+        <reimplementedby refid="classrWeaponRaybeam_1aa02f40a5a708207a0f624f6dbde035f2">drawHUD</reimplementedby>
+        <reimplementedby refid="classrWeaponPlasmagun_1aa02f40a5a708207a0f624f6dbde035f2">drawHUD</reimplementedby>
+        <reimplementedby refid="classrWeaponMachinegun_1aa02f40a5a708207a0f624f6dbde035f2">drawHUD</reimplementedby>
+        <reimplementedby refid="classrWeaponHoming_1aa02f40a5a708207a0f624f6dbde035f2">drawHUD</reimplementedby>
+        <reimplementedby refid="structrForcom_1aa02f40a5a708207a0f624f6dbde035f2">drawHUD</reimplementedby>
+        <reimplementedby refid="structrNavcom_1aa02f40a5a708207a0f624f6dbde035f2">drawHUD</reimplementedby>
+        <reimplementedby refid="structrComcom_1aa02f40a5a708207a0f624f6dbde035f2">drawHUD</reimplementedby>
+        <reimplementedby refid="structrChatMember_1aa02f40a5a708207a0f624f6dbde035f2">drawHUD</reimplementedby>
+        <reimplementedby refid="structrTarcom_1aa02f40a5a708207a0f624f6dbde035f2">drawHUD</reimplementedby>
+        <reimplementedby refid="structrTarget_1aa02f40a5a708207a0f624f6dbde035f2">drawHUD</reimplementedby>
+        <reimplementedby refid="structrController_1a98233a0af860521dafed683b50128886">drawHUD</reimplementedby>
+        <reimplementedby refid="classrWeapon_1a98233a0af860521dafed683b50128886">drawHUD</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/Component.h" line="116" column="18" bodyfile="de/hackcraft/world/Component.h" bodystart="116" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base-Class of all components. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A components can be understood as a set of attributes reflecting a certain part, component or aspect of the whole object. Input to and output from components should rely only on attributes or signal variables for i/o impulses. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="31">
+        <label>rWeaponHoming</label>
+        <link refid="classrWeaponHoming"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>rForcom</label>
+        <link refid="structrForcom"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>rWeaponPlasmagun</label>
+        <link refid="classrWeaponPlasmagun"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>rTree</label>
+        <link refid="structrTree"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Component</label>
+        <link refid="structComponent"/>
+      </node>
+      <node id="10">
+        <label>rComcom</label>
+        <link refid="structrComcom"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>rSpringlink</label>
+        <link refid="classrSpringlink"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>rWeaponRaybeam</label>
+        <link refid="classrWeaponRaybeam"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>rWeaponExplosion</label>
+        <link refid="classrWeaponExplosion"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>rWepcom</label>
+        <link refid="structrWepcom"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rAlert</label>
+        <link refid="classrAlert"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>rBuilding</label>
+        <link refid="classrBuilding"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>rMobile</label>
+        <link refid="structrMobile"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>rInputsource</label>
+        <link refid="classrInputsource"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>rRigged</label>
+        <link refid="structrRigged"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>rController</label>
+        <link refid="structrController"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>rSoundsource</label>
+        <link refid="classrSoundsource"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>rWeaponSparkgun</label>
+        <link refid="classrWeaponSparkgun"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>rCamera</label>
+        <link refid="structrCamera"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>rChatMember</label>
+        <link refid="structrChatMember"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>rLightsource</label>
+        <link refid="classrLightsource"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>rTraceable</label>
+        <link refid="classrTraceable"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>rCollider</label>
+        <link refid="structrCollider"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>rChatGroup</label>
+        <link refid="classrChatGroup"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>rPadmap</label>
+        <link refid="classrPadmap"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>rWeapon</label>
+        <link refid="classrWeapon"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>rChatMessage</label>
+        <link refid="classrChatMessage"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>rTarget</label>
+        <link refid="structrTarget"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>rNavcom</label>
+        <link refid="structrNavcom"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>rTrigger</label>
+        <link refid="classrTrigger"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>rScatter</label>
+        <link refid="classrScatter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>rTarcom</label>
+        <link refid="structrTarcom"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>rWeaponMachinegun</label>
+        <link refid="classrWeaponMachinegun"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>rPlanetmap</label>
+        <link refid="classrPlanetmap"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>rTile</label>
+        <link refid="classrTile"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rBillboard</label>
+        <link refid="structrBillboard"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>vector&lt; Binding * &gt;</label>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+object</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+prebinds</edgelabel>
+          <edgelabel>+postbinds</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="2">
+        <label>Entity</label>
+        <link refid="classEntity"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+components</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+name</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Binding</label>
+        <link refid="classBinding"/>
+      </node>
+      <node id="3">
+        <label>vector&lt; Component * &gt;</label>
+        <childnode refid="1" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/Component.h" line="30" column="16" bodyfile="de/hackcraft/world/Component.h" bodystart="30" bodyend="118"/>
+    <listofallmembers>
+      <member refid="structComponent_1a03c996f9fcf0e10baeb3e700be0c409a" prot="public" virt="non-virtual"><scope>Component</scope><name>active</name></member>
+      <member refid="structComponent_1a9be6e2d0e81c55db1578d42ec617cbca" prot="public" virt="non-virtual"><scope>Component</scope><name>addBinding</name></member>
+      <member refid="structComponent_1a76752321cf3827ebb052e7b9b93f3db0" prot="public" virt="non-virtual"><scope>Component</scope><name>addBinding</name></member>
+      <member refid="structComponent_1a21737bd2efddc8007d58214f722959f1" prot="public" virt="virtual"><scope>Component</scope><name>animate</name></member>
+      <member refid="structComponent_1a2cd2e7e39bbe0feb04e3f49d92383051" prot="public" virt="virtual"><scope>Component</scope><name>camera</name></member>
+      <member refid="structComponent_1a08d90b44549babc6b8c5154f371aa12f" prot="public" virt="non-virtual"><scope>Component</scope><name>cid</name></member>
+      <member refid="structComponent_1a12d7214a9a58d47b3bc3c2e91f6d0c32" prot="public" virt="virtual"><scope>Component</scope><name>clone</name></member>
+      <member refid="structComponent_1ab6a3de68965b8f71ff914a03321757f4" prot="public" virt="non-virtual"><scope>Component</scope><name>cname</name></member>
+      <member refid="structComponent_1a6b5149d0ce5984ffa0fdfcb0660c7bd5" prot="public" virt="non-virtual"><scope>Component</scope><name>Component</name></member>
+      <member refid="structComponent_1af0c987007ef181ec233d8333d399bab6" prot="public" virt="virtual"><scope>Component</scope><name>constrain</name></member>
+      <member refid="structComponent_1abea7dc29223077e4c8b30eda0e487242" prot="public" virt="virtual"><scope>Component</scope><name>damage</name></member>
+      <member refid="structComponent_1afa90087fb4f9485be9db86581d8ac822" prot="public" virt="virtual"><scope>Component</scope><name>drawEffect</name></member>
+      <member refid="structComponent_1a98233a0af860521dafed683b50128886" prot="public" virt="virtual"><scope>Component</scope><name>drawHUD</name></member>
+      <member refid="structComponent_1a82d72d455a63508dd949d552ed3713b5" prot="public" virt="virtual"><scope>Component</scope><name>drawSolid</name></member>
+      <member refid="structComponent_1ad9819bfdd9490c9b319093ac5b97822f" prot="public" virt="virtual"><scope>Component</scope><name>frag</name></member>
+      <member refid="structComponent_1acdfa5be80a3b7f56ac515b1bb1305e68" prot="public" virt="virtual"><scope>Component</scope><name>getId</name></member>
+      <member refid="structComponent_1ab92eb9c4dcb16f9e63ca5fe371144983" prot="public" virt="virtual"><scope>Component</scope><name>listener</name></member>
+      <member refid="structComponent_1a4c442f22ef3b8c6790b56015beb57566" prot="public" virt="non-virtual"><scope>Component</scope><name>object</name></member>
+      <member refid="structComponent_1ab7bcd2366fafecdcdd8bbcbfb0a43c51" prot="public" virt="non-virtual"><scope>Component</scope><name>postbind</name></member>
+      <member refid="structComponent_1abc081daafef3ffd221d8746b1e4c2f78" prot="public" virt="non-virtual"><scope>Component</scope><name>postbinds</name></member>
+      <member refid="structComponent_1a5bd6391b052df5d5a0db4554b2c3fe66" prot="public" virt="non-virtual"><scope>Component</scope><name>prebind</name></member>
+      <member refid="structComponent_1a4d900b2c72ca399a620b6eefce26c018" prot="public" virt="non-virtual"><scope>Component</scope><name>prebinds</name></member>
+      <member refid="structComponent_1a2260c02c44eeca44f51bf4b76f3bd306" prot="public" virt="virtual"><scope>Component</scope><name>spawn</name></member>
+      <member refid="structComponent_1a620c3ab0c7ebcfa486e3f3c3d1c442b3" prot="public" virt="virtual"><scope>Component</scope><name>transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

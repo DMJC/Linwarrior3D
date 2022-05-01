@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Subsystem_8cpp" kind="file" language="C++">
+    <compoundname>Subsystem.cpp</compoundname>
+    <includes refid="Subsystem_8h" local="yes">Subsystem.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/world/Subsystem.cpp</label>
+        <link refid="Subsystem_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Subsystem.h</label>
+        <link refid="Subsystem_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/Subsystem.cpp"/>
+  </compounddef>
+</doxygen>

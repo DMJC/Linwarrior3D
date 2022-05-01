@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classThreadpool" kind="class" language="C++" prot="public">
+    <compoundname>Threadpool</compoundname>
+    <includes local="no">Threadpool.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classThreadpool_1a735670d5e1431838952025ad2a0428cd" prot="private" static="no" mutable="no">
+        <type><ref refid="classSemaphore" kindref="compound">Semaphore</ref> *</type>
+        <definition>Semaphore* jobMutex</definition>
+        <argsstring></argsstring>
+        <name>jobMutex</name>
+        <briefdescription>
+<para>Mutex for job queue - minions wait until they can grab a job. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Threadpool.h" line="36" column="15" bodyfile="de/hackcraft/util/concurrent/Threadpool.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadpool_1ae07f64c244bbad2e87c2114d6d86f67e" prot="private" static="no" mutable="no">
+        <type>std::queue&lt; <ref refid="classRunnable" kindref="compound">Runnable</ref> * &gt; *</type>
+        <definition>std::queue&lt;Runnable*&gt;* jobQueue</definition>
+        <argsstring></argsstring>
+        <name>jobQueue</name>
+        <briefdescription>
+<para>The job queue itself - minions grab jobs here. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Threadpool.h" line="39" column="16" bodyfile="de/hackcraft/util/concurrent/Threadpool.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThreadpool_1a0f7df8d864df4514d820d6f807792136" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classMinion" kindref="compound">Minion</ref> * &gt; *</type>
+        <definition>std::vector&lt;Minion*&gt;* minions</definition>
+        <argsstring></argsstring>
+        <name>minions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Threadpool.h" line="41" column="17" bodyfile="de/hackcraft/util/concurrent/Threadpool.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classThreadpool_1ad62870f04508f70c4a59ed5d15217fe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Threadpool</definition>
+        <argsstring>()</argsstring>
+        <name>Threadpool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Threadpool.h" line="26" column="5" bodyfile="de/hackcraft/util/concurrent/Threadpool.cpp" bodystart="11" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadpool_1a10680e8013c90b056416dd4643c4d9bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~Threadpool</definition>
+        <argsstring>()</argsstring>
+        <name>~Threadpool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Threadpool.h" line="27" column="13" bodyfile="de/hackcraft/util/concurrent/Threadpool.cpp" bodystart="19" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadpool_1a6fe60e385c41b6898c8bca87c1ed2249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void addJob</definition>
+        <argsstring>(Runnable *job)</argsstring>
+        <name>addJob</name>
+        <param>
+          <type><ref refid="classRunnable" kindref="compound">Runnable</ref> *</type>
+          <declname>job</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Threadpool.h" line="29" column="10" bodyfile="de/hackcraft/util/concurrent/Threadpool.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadpool_1a4284fd70f5cdc3e4371dec422ea0b28e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void addThreads</definition>
+        <argsstring>(int n)</argsstring>
+        <name>addThreads</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Threadpool.h" line="31" column="10" bodyfile="de/hackcraft/util/concurrent/Threadpool.cpp" bodystart="35" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classThreadpool_1a7861ee1569802186a619778efc85af13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>shutdown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Threadpool.h" line="32" column="10" bodyfile="de/hackcraft/util/concurrent/Threadpool.cpp" bodystart="46" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Container for running worker threads (minions) that work on runnable tasks. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>stringstream</label>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>queue&lt; Runnable * &gt;</label>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Minion</label>
+        <link refid="classMinion"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>-jobQueue</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>-jobMutex</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>LevelStreamLogger</label>
+        <link refid="classLevelStreamLogger"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>-logstream</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>string</label>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Object</label>
+        <link refid="classObject"/>
+      </node>
+      <node id="2">
+        <label>vector&lt; Minion * &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="9">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>-infoLogger</edgelabel>
+          <edgelabel>-traceLogger</edgelabel>
+          <edgelabel>-warnLogger</edgelabel>
+          <edgelabel>-errorLogger</edgelabel>
+          <edgelabel>-debugLogger</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>-globalAppender</edgelabel>
+          <edgelabel>-appender</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>-qualifiedLoggerName</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>-parentLogger</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+      <node id="16">
+        <label>ios_base</label>
+      </node>
+      <node id="17">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Thread</label>
+        <link refid="classThread"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>-runnable</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Semaphore</label>
+        <link refid="classSemaphore"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Runnable</label>
+        <link refid="classRunnable"/>
+      </node>
+      <node id="1">
+        <label>Threadpool</label>
+        <link refid="classThreadpool"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-minions</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>-jobQueue</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>-jobMutex</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/util/concurrent/Threadpool.h" line="24" column="17" bodyfile="de/hackcraft/util/concurrent/Threadpool.h" bodystart="24" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classThreadpool_1a6fe60e385c41b6898c8bca87c1ed2249" prot="public" virt="non-virtual"><scope>Threadpool</scope><name>addJob</name></member>
+      <member refid="classThreadpool_1a4284fd70f5cdc3e4371dec422ea0b28e" prot="public" virt="non-virtual"><scope>Threadpool</scope><name>addThreads</name></member>
+      <member refid="classThreadpool_1a735670d5e1431838952025ad2a0428cd" prot="private" virt="non-virtual"><scope>Threadpool</scope><name>jobMutex</name></member>
+      <member refid="classThreadpool_1ae07f64c244bbad2e87c2114d6d86f67e" prot="private" virt="non-virtual"><scope>Threadpool</scope><name>jobQueue</name></member>
+      <member refid="classThreadpool_1a0f7df8d864df4514d820d6f807792136" prot="private" virt="non-virtual"><scope>Threadpool</scope><name>minions</name></member>
+      <member refid="classThreadpool_1a7861ee1569802186a619778efc85af13" prot="public" virt="non-virtual"><scope>Threadpool</scope><name>shutdown</name></member>
+      <member refid="classThreadpool_1ad62870f04508f70c4a59ed5d15217fe3" prot="public" virt="non-virtual"><scope>Threadpool</scope><name>Threadpool</name></member>
+      <member refid="classThreadpool_1a10680e8013c90b056416dd4643c4d9bd" prot="public" virt="virtual"><scope>Threadpool</scope><name>~Threadpool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classrInputsource" kind="class" language="C++" prot="public">
+    <compoundname>rInputsource</compoundname>
+    <basecompoundref refid="structComponent" prot="public" virt="non-virtual">Component</basecompoundref>
+    <includes local="no">rInputsource.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classrInputsource_1a62e1d111dbf181ece6d2b91f091e3188" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool fire</definition>
+        <argsstring></argsstring>
+        <name>fire</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="24" column="10" bodyfile="de/hackcraft/world/sub/misc/rInputsource.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrInputsource_1af3fbe933af5af84fb94e7e04ab9823f3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool nextTarget</definition>
+        <argsstring></argsstring>
+        <name>nextTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="26" column="10" bodyfile="de/hackcraft/world/sub/misc/rInputsource.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrInputsource_1a03a7003c3ccbbd4c88c1c7afc721a8af" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool prevTarget</definition>
+        <argsstring></argsstring>
+        <name>prevTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="27" column="10" bodyfile="de/hackcraft/world/sub/misc/rInputsource.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrInputsource_1a67bf8b54beb5f984b90279e4e32e5e4f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nextCamera</definition>
+        <argsstring></argsstring>
+        <name>nextCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="29" column="11" bodyfile="de/hackcraft/world/sub/misc/rInputsource.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrInputsource_1a4760078e39ffd1f7206a486754234bce" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float chassisUD</definition>
+        <argsstring></argsstring>
+        <name>chassisUD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="31" column="11" bodyfile="de/hackcraft/world/sub/misc/rInputsource.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrInputsource_1adb934ec9a70fa2a9fa78d6b203dacf8a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float chassisLR</definition>
+        <argsstring></argsstring>
+        <name>chassisLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="32" column="11" bodyfile="de/hackcraft/world/sub/misc/rInputsource.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrInputsource_1a483378c090f07c48d0d90c8dbae2e376" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float turretUD</definition>
+        <argsstring></argsstring>
+        <name>turretUD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="34" column="11" bodyfile="de/hackcraft/world/sub/misc/rInputsource.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrInputsource_1ac2eea092af1e0fb0218fbf999e14896a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float turretLR</definition>
+        <argsstring></argsstring>
+        <name>turretLR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="35" column="11" bodyfile="de/hackcraft/world/sub/misc/rInputsource.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrInputsource_1a9e25d30b9bbd26738d6dbbb1d427af21" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float jetEnable</definition>
+        <argsstring></argsstring>
+        <name>jetEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="37" column="11" bodyfile="de/hackcraft/world/sub/misc/rInputsource.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrInputsource_1ae24638eee84595b4219e9601c1945230" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float driveEnable</definition>
+        <argsstring></argsstring>
+        <name>driveEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="38" column="11" bodyfile="de/hackcraft/world/sub/misc/rInputsource.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrInputsource_1a06d29bac71f421532e1d162de1d30f47" prot="private" static="no" mutable="no">
+        <type><ref refid="classPad" kindref="compound">Pad</ref> *</type>
+        <definition>Pad* pad</definition>
+        <argsstring></argsstring>
+        <name>pad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="49" column="9" bodyfile="de/hackcraft/world/sub/misc/rInputsource.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrInputsource_1a27d3c03cc9942fea5ff46a9392252e24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rInputsource</definition>
+        <argsstring>(Entity *obj)</argsstring>
+        <name>rInputsource</name>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="40" column="5" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="22" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classrInputsource_1a306ce7ebcfb4d53d7d1934c9daa6c8d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~rInputsource</definition>
+        <argsstring>()</argsstring>
+        <name>~rInputsource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="41" column="13" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="46" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classrInputsource_1afdeb156cfb69a5cb6d5f1216e38f63d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setPad</definition>
+        <argsstring>(Pad *pad)</argsstring>
+        <name>setPad</name>
+        <param>
+          <type><ref refid="classPad" kindref="compound">Pad</ref> *</type>
+          <declname>pad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="43" column="10" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classrInputsource_1ae8fbc83880b28d49d8a34521d830bf46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classPad" kindref="compound">Pad</ref> *</type>
+        <definition>Pad * getPad</definition>
+        <argsstring>()</argsstring>
+        <name>getPad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="44" column="9" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classrInputsource_1a0a388523941d911d0c3dd369f72cc81d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void animate</definition>
+        <argsstring>(float spf)</argsstring>
+        <name>animate</name>
+        <reimplements refid="structComponent_1a21737bd2efddc8007d58214f722959f1">animate</reimplements>
+        <param>
+          <type>float</type>
+          <declname>spf</declname>
+        </param>
+        <briefdescription>
+<para>Copies values from pad to variables if applicable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="47" column="18" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="60" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configurable (not yet) input source. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Can be filled by binding other components (for auto-piloting) or by a plugged in input device. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Component</label>
+        <link refid="structComponent"/>
+      </node>
+      <node id="1">
+        <label>rInputsource</label>
+        <link refid="classrInputsource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>vector&lt; Binding * &gt;</label>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+object</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+prebinds</edgelabel>
+          <edgelabel>+postbinds</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>rInputsource</label>
+        <link refid="classrInputsource"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>-pad</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="3">
+        <label>Entity</label>
+        <link refid="classEntity"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+components</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+name</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Binding</label>
+        <link refid="classBinding"/>
+      </node>
+      <node id="4">
+        <label>vector&lt; Component * &gt;</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Pad</label>
+        <link refid="classPad"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/misc/rInputsource.h" line="22" column="36" bodyfile="de/hackcraft/world/sub/misc/rInputsource.h" bodystart="22" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structComponent_1a03c996f9fcf0e10baeb3e700be0c409a" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>active</name></member>
+      <member refid="structComponent_1a9be6e2d0e81c55db1578d42ec617cbca" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>addBinding</name></member>
+      <member refid="structComponent_1a76752321cf3827ebb052e7b9b93f3db0" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>addBinding</name></member>
+      <member refid="classrInputsource_1a0a388523941d911d0c3dd369f72cc81d" prot="public" virt="virtual"><scope>rInputsource</scope><name>animate</name></member>
+      <member refid="structComponent_1a2cd2e7e39bbe0feb04e3f49d92383051" prot="public" virt="virtual"><scope>rInputsource</scope><name>camera</name></member>
+      <member refid="classrInputsource_1adb934ec9a70fa2a9fa78d6b203dacf8a" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>chassisLR</name></member>
+      <member refid="classrInputsource_1a4760078e39ffd1f7206a486754234bce" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>chassisUD</name></member>
+      <member refid="structComponent_1a08d90b44549babc6b8c5154f371aa12f" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>cid</name></member>
+      <member refid="structComponent_1a12d7214a9a58d47b3bc3c2e91f6d0c32" prot="public" virt="virtual"><scope>rInputsource</scope><name>clone</name></member>
+      <member refid="structComponent_1ab6a3de68965b8f71ff914a03321757f4" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>cname</name></member>
+      <member refid="structComponent_1a6b5149d0ce5984ffa0fdfcb0660c7bd5" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>Component</name></member>
+      <member refid="structComponent_1af0c987007ef181ec233d8333d399bab6" prot="public" virt="virtual"><scope>rInputsource</scope><name>constrain</name></member>
+      <member refid="structComponent_1abea7dc29223077e4c8b30eda0e487242" prot="public" virt="virtual"><scope>rInputsource</scope><name>damage</name></member>
+      <member refid="structComponent_1afa90087fb4f9485be9db86581d8ac822" prot="public" virt="virtual"><scope>rInputsource</scope><name>drawEffect</name></member>
+      <member refid="structComponent_1a98233a0af860521dafed683b50128886" prot="public" virt="virtual"><scope>rInputsource</scope><name>drawHUD</name></member>
+      <member refid="structComponent_1a82d72d455a63508dd949d552ed3713b5" prot="public" virt="virtual"><scope>rInputsource</scope><name>drawSolid</name></member>
+      <member refid="classrInputsource_1ae24638eee84595b4219e9601c1945230" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>driveEnable</name></member>
+      <member refid="classrInputsource_1a62e1d111dbf181ece6d2b91f091e3188" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>fire</name></member>
+      <member refid="structComponent_1ad9819bfdd9490c9b319093ac5b97822f" prot="public" virt="virtual"><scope>rInputsource</scope><name>frag</name></member>
+      <member refid="structComponent_1acdfa5be80a3b7f56ac515b1bb1305e68" prot="public" virt="virtual"><scope>rInputsource</scope><name>getId</name></member>
+      <member refid="classrInputsource_1ae8fbc83880b28d49d8a34521d830bf46" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>getPad</name></member>
+      <member refid="classrInputsource_1a9e25d30b9bbd26738d6dbbb1d427af21" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>jetEnable</name></member>
+      <member refid="structComponent_1ab92eb9c4dcb16f9e63ca5fe371144983" prot="public" virt="virtual"><scope>rInputsource</scope><name>listener</name></member>
+      <member refid="classrInputsource_1a67bf8b54beb5f984b90279e4e32e5e4f" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>nextCamera</name></member>
+      <member refid="classrInputsource_1af3fbe933af5af84fb94e7e04ab9823f3" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>nextTarget</name></member>
+      <member refid="structComponent_1a4c442f22ef3b8c6790b56015beb57566" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>object</name></member>
+      <member refid="classrInputsource_1a06d29bac71f421532e1d162de1d30f47" prot="private" virt="non-virtual"><scope>rInputsource</scope><name>pad</name></member>
+      <member refid="structComponent_1ab7bcd2366fafecdcdd8bbcbfb0a43c51" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>postbind</name></member>
+      <member refid="structComponent_1abc081daafef3ffd221d8746b1e4c2f78" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>postbinds</name></member>
+      <member refid="structComponent_1a5bd6391b052df5d5a0db4554b2c3fe66" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>prebind</name></member>
+      <member refid="structComponent_1a4d900b2c72ca399a620b6eefce26c018" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>prebinds</name></member>
+      <member refid="classrInputsource_1a03a7003c3ccbbd4c88c1c7afc721a8af" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>prevTarget</name></member>
+      <member refid="classrInputsource_1a27d3c03cc9942fea5ff46a9392252e24" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>rInputsource</name></member>
+      <member refid="classrInputsource_1afdeb156cfb69a5cb6d5f1216e38f63d3" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>setPad</name></member>
+      <member refid="structComponent_1a2260c02c44eeca44f51bf4b76f3bd306" prot="public" virt="virtual"><scope>rInputsource</scope><name>spawn</name></member>
+      <member refid="structComponent_1a620c3ab0c7ebcfa486e3f3c3d1c442b3" prot="public" virt="virtual"><scope>rInputsource</scope><name>transform</name></member>
+      <member refid="classrInputsource_1ac2eea092af1e0fb0218fbf999e14896a" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>turretLR</name></member>
+      <member refid="classrInputsource_1a483378c090f07c48d0d90c8dbae2e376" prot="public" virt="non-virtual"><scope>rInputsource</scope><name>turretUD</name></member>
+      <member refid="classrInputsource_1a306ce7ebcfb4d53d7d1934c9daa6c8d9" prot="public" virt="virtual"><scope>rInputsource</scope><name>~rInputsource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

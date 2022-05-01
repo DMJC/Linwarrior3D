@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classrScatter" kind="class" language="C++" prot="public">
+    <compoundname>rScatter</compoundname>
+    <basecompoundref refid="structComponent" prot="public" virt="non-virtual">Component</basecompoundref>
+    <basecompoundref refid="classIModel" prot="public" virt="non-virtual">IModel</basecompoundref>
+    <includes local="no">rScatter.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classrScatter_1aab6fae4ef433698f35a07e5647d6be32" prot="public" static="no" strong="no">
+        <type></type>
+        <name>BillboardType</name>
+        <enumvalue id="classrScatter_1aab6fae4ef433698f35a07e5647d6be32a891b9e682686d247c4ef453f86678998" prot="public">
+          <name>BT_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classrScatter_1aab6fae4ef433698f35a07e5647d6be32a1a4d89ce38505a19779cb190347c9562" prot="public">
+          <name>BT_AROUND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classrScatter_1aab6fae4ef433698f35a07e5647d6be32ace051b9ad194b06555934947304d8819" prot="public">
+          <name>BT_AXIS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="44" column="23" bodyfile="de/hackcraft/world/sub/model/rScatter.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classrScatter_1ab6a3de68965b8f71ff914a03321757f4" prot="public" static="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string cname</definition>
+        <argsstring></argsstring>
+        <name>cname</name>
+        <initializer>= &quot;SCATTER&quot;</initializer>
+        <briefdescription>
+<para>Identifier for this component (all uppercase letters without leading &quot;r&quot;). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="36" column="24" bodyfile="de/hackcraft/world/sub/model/rScatter.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrScatter_1a08d90b44549babc6b8c5154f371aa12f" prot="public" static="yes" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int cid</definition>
+        <argsstring></argsstring>
+        <name>cid</name>
+        <initializer>= 8412</initializer>
+        <briefdescription>
+<para>A unique random number (0-9999) to identify this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="38" column="25" bodyfile="de/hackcraft/world/sub/model/rScatter.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrScatter_1a470c3711cb351f23833be8a04522be1d" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int sInstances</definition>
+        <argsstring></argsstring>
+        <name>sInstances</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Instance counter for resource allocation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="40" column="16" bodyfile="de/hackcraft/world/sub/model/rScatter.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrScatter_1a1c2113abd3895648bc7fbddb875bf084" prot="public" static="yes" mutable="no">
+        <type>std::map&lt; int, long &gt;</type>
+        <definition>std::map&lt; int, long &gt; sTextures</definition>
+        <argsstring></argsstring>
+        <name>sTextures</name>
+        <briefdescription>
+<para>Shared material bindings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="42" column="21" bodyfile="de/hackcraft/world/sub/model/rScatter.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classrScatter_1abeb6721219f255948ec38465cc6bc310" prot="protected" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="structParticle" kindref="compound">Particle</ref> * &gt;</type>
+        <definition>std::list&lt;Particle*&gt; decalParticles</definition>
+        <argsstring></argsstring>
+        <name>decalParticles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="48" column="15" bodyfile="de/hackcraft/world/sub/model/rScatter.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classrScatter_1afd52379f479751aa5754bce955328aa5" prot="public" static="no" mutable="no">
+        <type><ref refid="math3d_8h_1aa12dddc6c5b49b59657f5b9262d3196c" kindref="member">vec3</ref></type>
+        <definition>vec3 pos0</definition>
+        <argsstring></argsstring>
+        <name>pos0</name>
+        <briefdescription>
+<para>Base orientation (hook i). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="51" column="10" bodyfile="de/hackcraft/world/sub/model/rScatter.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrScatter_1a0854f6ba6bb461c5350a33905dce3f28" prot="public" static="no" mutable="no">
+        <type><ref refid="math3d_8h_1af5f140c7cfd64fec8b5126ae20ca327f" kindref="member">quat</ref></type>
+        <definition>quat ori0</definition>
+        <argsstring></argsstring>
+        <name>ori0</name>
+        <briefdescription>
+<para>Base position (hook i). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="53" column="10" bodyfile="de/hackcraft/world/sub/model/rScatter.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrScatter_1a96361cc23c7b963404cbe8de44c3ef01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rScatter</definition>
+        <argsstring>(Entity *obj, float radius=1.0f, float density=1.0f)</argsstring>
+        <name>rScatter</name>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>density</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="57" column="5" bodyfile="de/hackcraft/world/sub/model/rScatter.cpp" bodystart="18" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classrScatter_1a6277c64ae54f005c67255890466d0c9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~rScatter</definition>
+        <argsstring>()</argsstring>
+        <name>~rScatter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="58" column="13" bodyfile="de/hackcraft/world/sub/model/rScatter.cpp" bodystart="50" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classrScatter_1a524f2f68160160cc2bc0a87d112b2172" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int getPosX</definition>
+        <argsstring>()</argsstring>
+        <name>getPosX</name>
+        <reimplements refid="classIModel_1a20b934bae6654e29bcd9b204d10f2f7a">getPosX</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="60" column="17" bodyfile="de/hackcraft/world/sub/model/rScatter.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classrScatter_1a357b246af92b63db4436f46b130b2229" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int getPosY</definition>
+        <argsstring>()</argsstring>
+        <name>getPosY</name>
+        <reimplements refid="classIModel_1a855b01b48bb7d09cd79ecb752545a21d">getPosY</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="61" column="17" bodyfile="de/hackcraft/world/sub/model/rScatter.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classrScatter_1a87f720dc9bfa7937ca0e5004102181d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int getPosZ</definition>
+        <argsstring>()</argsstring>
+        <name>getPosZ</name>
+        <reimplements refid="classIModel_1a7d56539842687efc7ff93b3af2dda806">getPosZ</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="62" column="17" bodyfile="de/hackcraft/world/sub/model/rScatter.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classrScatter_1a21737bd2efddc8007d58214f722959f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void animate</definition>
+        <argsstring>(float spf)</argsstring>
+        <name>animate</name>
+        <reimplements refid="structComponent_1a21737bd2efddc8007d58214f722959f1">animate</reimplements>
+        <param>
+          <type>float</type>
+          <declname>spf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="63" column="18" bodyfile="de/hackcraft/world/sub/model/rScatter.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classrScatter_1a620c3ab0c7ebcfa486e3f3c3d1c442b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void transform</definition>
+        <argsstring>()</argsstring>
+        <name>transform</name>
+        <reimplements refid="structComponent_1a620c3ab0c7ebcfa486e3f3c3d1c442b3">transform</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="64" column="18" bodyfile="de/hackcraft/world/sub/model/rScatter.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classrScatter_1a82d72d455a63508dd949d552ed3713b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawSolid</definition>
+        <argsstring>()</argsstring>
+        <name>drawSolid</name>
+        <reimplements refid="structComponent_1a82d72d455a63508dd949d552ed3713b5">drawSolid</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="65" column="18" bodyfile="de/hackcraft/world/sub/model/rScatter.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classrScatter_1a777e1926a0150b45a189753046343765" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void drawEffect</definition>
+        <argsstring>()</argsstring>
+        <name>drawEffect</name>
+        <reimplements refid="structComponent_1afa90087fb4f9485be9db86581d8ac822">drawEffect</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rScatter.h" line="66" column="18" bodyfile="de/hackcraft/world/sub/model/rScatter.cpp" bodystart="53" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Just the beginning of a particle generator system. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Originally thought to display static scattered billboards only: Set/cluster/field of random distributed small environmental decal objects such as stones, flowers, grass, dirt and debris. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Component</label>
+        <link refid="structComponent"/>
+      </node>
+      <node id="3">
+        <label>IModel</label>
+        <link refid="classIModel"/>
+      </node>
+      <node id="1">
+        <label>rScatter</label>
+        <link refid="classrScatter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>list&lt; Particle * &gt;</label>
+        <childnode refid="12" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vector&lt; Binding * &gt;</label>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+object</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+prebinds</edgelabel>
+          <edgelabel>+postbinds</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>IModel</label>
+        <link refid="classIModel"/>
+      </node>
+      <node id="5">
+        <label>string</label>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Particle</label>
+        <link refid="structParticle"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>+trail</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="3">
+        <label>Entity</label>
+        <link refid="classEntity"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+components</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+name</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Binding</label>
+        <link refid="classBinding"/>
+      </node>
+      <node id="4">
+        <label>vector&lt; Component * &gt;</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>map&lt; int, long &gt;</label>
+      </node>
+      <node id="1">
+        <label>rScatter</label>
+        <link refid="classrScatter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+sTextures</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>#decalParticles</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/model/rScatter.h" line="33" column="47" bodyfile="de/hackcraft/world/sub/model/rScatter.h" bodystart="33" bodyend="69"/>
+    <listofallmembers>
+      <member refid="structComponent_1a03c996f9fcf0e10baeb3e700be0c409a" prot="public" virt="non-virtual"><scope>rScatter</scope><name>active</name></member>
+      <member refid="structComponent_1a9be6e2d0e81c55db1578d42ec617cbca" prot="public" virt="non-virtual"><scope>rScatter</scope><name>addBinding</name></member>
+      <member refid="structComponent_1a76752321cf3827ebb052e7b9b93f3db0" prot="public" virt="non-virtual"><scope>rScatter</scope><name>addBinding</name></member>
+      <member refid="classrScatter_1a21737bd2efddc8007d58214f722959f1" prot="public" virt="virtual"><scope>rScatter</scope><name>animate</name></member>
+      <member refid="classrScatter_1aab6fae4ef433698f35a07e5647d6be32" prot="public" virt="non-virtual"><scope>rScatter</scope><name>BillboardType</name></member>
+      <member refid="classrScatter_1aab6fae4ef433698f35a07e5647d6be32a1a4d89ce38505a19779cb190347c9562" prot="public" virt="non-virtual"><scope>rScatter</scope><name>BT_AROUND</name></member>
+      <member refid="classrScatter_1aab6fae4ef433698f35a07e5647d6be32ace051b9ad194b06555934947304d8819" prot="public" virt="non-virtual"><scope>rScatter</scope><name>BT_AXIS</name></member>
+      <member refid="classrScatter_1aab6fae4ef433698f35a07e5647d6be32a891b9e682686d247c4ef453f86678998" prot="public" virt="non-virtual"><scope>rScatter</scope><name>BT_NONE</name></member>
+      <member refid="structComponent_1a2cd2e7e39bbe0feb04e3f49d92383051" prot="public" virt="virtual"><scope>rScatter</scope><name>camera</name></member>
+      <member refid="classrScatter_1a08d90b44549babc6b8c5154f371aa12f" prot="public" virt="non-virtual"><scope>rScatter</scope><name>cid</name></member>
+      <member refid="structComponent_1a12d7214a9a58d47b3bc3c2e91f6d0c32" prot="public" virt="virtual"><scope>rScatter</scope><name>clone</name></member>
+      <member refid="classrScatter_1ab6a3de68965b8f71ff914a03321757f4" prot="public" virt="non-virtual"><scope>rScatter</scope><name>cname</name></member>
+      <member refid="structComponent_1a6b5149d0ce5984ffa0fdfcb0660c7bd5" prot="public" virt="non-virtual"><scope>rScatter</scope><name>Component</name></member>
+      <member refid="structComponent_1af0c987007ef181ec233d8333d399bab6" prot="public" virt="virtual"><scope>rScatter</scope><name>constrain</name></member>
+      <member refid="structComponent_1abea7dc29223077e4c8b30eda0e487242" prot="public" virt="virtual"><scope>rScatter</scope><name>damage</name></member>
+      <member refid="classrScatter_1abeb6721219f255948ec38465cc6bc310" prot="protected" virt="non-virtual"><scope>rScatter</scope><name>decalParticles</name></member>
+      <member refid="classrScatter_1a777e1926a0150b45a189753046343765" prot="public" virt="virtual"><scope>rScatter</scope><name>drawEffect</name></member>
+      <member refid="structComponent_1a98233a0af860521dafed683b50128886" prot="public" virt="virtual"><scope>rScatter</scope><name>drawHUD</name></member>
+      <member refid="classrScatter_1a82d72d455a63508dd949d552ed3713b5" prot="public" virt="virtual"><scope>rScatter</scope><name>drawSolid</name></member>
+      <member refid="structComponent_1ad9819bfdd9490c9b319093ac5b97822f" prot="public" virt="virtual"><scope>rScatter</scope><name>frag</name></member>
+      <member refid="structComponent_1acdfa5be80a3b7f56ac515b1bb1305e68" prot="public" virt="virtual"><scope>rScatter</scope><name>getId</name></member>
+      <member refid="classrScatter_1a524f2f68160160cc2bc0a87d112b2172" prot="public" virt="virtual"><scope>rScatter</scope><name>getPosX</name></member>
+      <member refid="classrScatter_1a357b246af92b63db4436f46b130b2229" prot="public" virt="virtual"><scope>rScatter</scope><name>getPosY</name></member>
+      <member refid="classrScatter_1a87f720dc9bfa7937ca0e5004102181d5" prot="public" virt="virtual"><scope>rScatter</scope><name>getPosZ</name></member>
+      <member refid="structComponent_1ab92eb9c4dcb16f9e63ca5fe371144983" prot="public" virt="virtual"><scope>rScatter</scope><name>listener</name></member>
+      <member refid="structComponent_1a4c442f22ef3b8c6790b56015beb57566" prot="public" virt="non-virtual"><scope>rScatter</scope><name>object</name></member>
+      <member refid="classrScatter_1a0854f6ba6bb461c5350a33905dce3f28" prot="public" virt="non-virtual"><scope>rScatter</scope><name>ori0</name></member>
+      <member refid="classrScatter_1afd52379f479751aa5754bce955328aa5" prot="public" virt="non-virtual"><scope>rScatter</scope><name>pos0</name></member>
+      <member refid="structComponent_1ab7bcd2366fafecdcdd8bbcbfb0a43c51" prot="public" virt="non-virtual"><scope>rScatter</scope><name>postbind</name></member>
+      <member refid="structComponent_1abc081daafef3ffd221d8746b1e4c2f78" prot="public" virt="non-virtual"><scope>rScatter</scope><name>postbinds</name></member>
+      <member refid="structComponent_1a5bd6391b052df5d5a0db4554b2c3fe66" prot="public" virt="non-virtual"><scope>rScatter</scope><name>prebind</name></member>
+      <member refid="structComponent_1a4d900b2c72ca399a620b6eefce26c018" prot="public" virt="non-virtual"><scope>rScatter</scope><name>prebinds</name></member>
+      <member refid="classrScatter_1a96361cc23c7b963404cbe8de44c3ef01" prot="public" virt="non-virtual"><scope>rScatter</scope><name>rScatter</name></member>
+      <member refid="classrScatter_1a470c3711cb351f23833be8a04522be1d" prot="public" virt="non-virtual"><scope>rScatter</scope><name>sInstances</name></member>
+      <member refid="structComponent_1a2260c02c44eeca44f51bf4b76f3bd306" prot="public" virt="virtual"><scope>rScatter</scope><name>spawn</name></member>
+      <member refid="classrScatter_1a1c2113abd3895648bc7fbddb875bf084" prot="public" virt="non-virtual"><scope>rScatter</scope><name>sTextures</name></member>
+      <member refid="classrScatter_1a620c3ab0c7ebcfa486e3f3c3d1c442b3" prot="public" virt="virtual"><scope>rScatter</scope><name>transform</name></member>
+      <member refid="classrScatter_1a6277c64ae54f005c67255890466d0c9e" prot="public" virt="virtual"><scope>rScatter</scope><name>~rScatter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

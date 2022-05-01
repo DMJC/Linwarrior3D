@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="rPadmap_8cpp" kind="file" language="C++">
+    <compoundname>rPadmap.cpp</compoundname>
+    <includes refid="rPadmap_8h" local="yes">rPadmap.h</includes>
+    <includes refid="Texfile_8h" local="yes">de/hackcraft/io/Texfile.h</includes>
+    <includes refid="GLS_8h" local="yes">de/hackcraft/psi3d/GLS.h</includes>
+    <includes refid="Entity_8h" local="yes">de/hackcraft/world/Entity.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>de/hackcraft/lang/OID.h</label>
+        <link refid="OID_8h"/>
+      </node>
+      <node id="6">
+        <label>de/hackcraft/world/Component.h</label>
+        <link refid="Component_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>de/hackcraft/psi3d/GLS.h</label>
+        <link refid="GLS_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>stdint.h</label>
+      </node>
+      <node id="24">
+        <label>de/hackcraft/psi3d/ctrl.h</label>
+        <link refid="ctrl_8h"/>
+      </node>
+      <node id="20">
+        <label>stdlib.h</label>
+      </node>
+      <node id="12">
+        <label>de/hackcraft/io/Texfile.h</label>
+        <link refid="Texfile_8h"/>
+      </node>
+      <node id="23">
+        <label>de/hackcraft/psi3d/macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>de/hackcraft/opengl/GLU.h</label>
+        <link refid="GLU_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rPadmap.h</label>
+        <link refid="rPadmap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="17">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="11">
+        <label>map</label>
+      </node>
+      <node id="22">
+        <label>de/hackcraft/world/Entity.h</label>
+        <link refid="Entity_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>stddef.h</label>
+      </node>
+      <node id="21">
+        <label>ostream</label>
+      </node>
+      <node id="4">
+        <label>de/hackcraft/psi3d/math3d.h</label>
+        <link refid="math3d_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>de/hackcraft/opengl/GL.h</label>
+        <link refid="GL_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>string.h</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="5">
+        <label>math.h</label>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/world/sub/cityscape/rPadmap.cpp</label>
+        <link refid="rPadmap_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>de/hackcraft/util/Binding.h</label>
+        <link refid="Binding_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>algorithm</label>
+      </node>
+      <node id="19">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/cityscape/rPadmap.cpp"/>
+  </compounddef>
+</doxygen>

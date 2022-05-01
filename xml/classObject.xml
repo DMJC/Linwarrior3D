@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classObject" kind="class" language="C++" prot="public">
+    <compoundname>Object</compoundname>
+    <derivedcompoundref refid="classHashMap" prot="public" virt="non-virtual">HashMap&lt; T1, T2 &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classSemaphore" prot="public" virt="non-virtual">Semaphore</derivedcompoundref>
+    <derivedcompoundref refid="classString" prot="public" virt="non-virtual">String</derivedcompoundref>
+    <derivedcompoundref refid="classThread" prot="public" virt="non-virtual">Thread</derivedcompoundref>
+    <includes local="no">Object.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classObject_1a04ea2beb8d4571b0b4753ad3b4862699" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool equals</definition>
+        <argsstring>(const Object *other)</argsstring>
+        <name>equals</name>
+        <param>
+          <type>const <ref refid="classObject" kindref="compound">Object</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/Object.h" line="16" column="18" bodyfile="de/hackcraft/lang/Object.cpp" bodystart="4" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classObject_1a077e18fe97323c7194e2665ffc766399" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int hashCode</definition>
+        <argsstring>()</argsstring>
+        <name>hashCode</name>
+        <reimplementedby refid="classString_1a077e18fe97323c7194e2665ffc766399">hashCode</reimplementedby>
+        <reimplementedby refid="classThread_1a077e18fe97323c7194e2665ffc766399">hashCode</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/Object.h" line="18" column="17" bodyfile="de/hackcraft/lang/Object.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classObject_1a719a81ee816e96b01f05361883d5435d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classString" kindref="compound">String</ref> *</type>
+        <definition>String * toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplementedby refid="classString_1a719a81ee816e96b01f05361883d5435d">toString</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/Object.h" line="20" column="20" bodyfile="de/hackcraft/lang/Object.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classObject_1a9d682ddd9db854c4c5800b816d8f071a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classObject" kindref="compound">Object</ref> *</type>
+        <definition>Object * clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/Object.h" line="23" column="20" bodyfile="de/hackcraft/lang/Object.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>Minion</label>
+        <link refid="classMinion"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>String</label>
+        <link refid="classString"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>HashMap&lt; T1, T2 &gt;</label>
+        <link refid="classHashMap"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Object</label>
+        <link refid="classObject"/>
+      </node>
+      <node id="5">
+        <label>Thread</label>
+        <link refid="classThread"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Semaphore</label>
+        <link refid="classSemaphore"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Object</label>
+        <link refid="classObject"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/lang/Object.h" line="14" column="13" bodyfile="de/hackcraft/lang/Object.h" bodystart="14" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classObject_1a9d682ddd9db854c4c5800b816d8f071a" prot="protected" virt="virtual"><scope>Object</scope><name>clone</name></member>
+      <member refid="classObject_1a04ea2beb8d4571b0b4753ad3b4862699" prot="public" virt="virtual"><scope>Object</scope><name>equals</name></member>
+      <member refid="classObject_1a077e18fe97323c7194e2665ffc766399" prot="public" virt="virtual"><scope>Object</scope><name>hashCode</name></member>
+      <member refid="classObject_1a719a81ee816e96b01f05361883d5435d" prot="public" virt="virtual"><scope>Object</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

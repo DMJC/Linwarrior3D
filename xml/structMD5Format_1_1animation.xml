@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structMD5Format_1_1animation" kind="struct" language="C++" prot="public">
+    <compoundname>MD5Format::animation</compoundname>
+    <includes local="no">MD5Format.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMD5Format_1_1animation_1aad880fc4455c253781e8968f2239d56f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/MD5Format.h" line="40" column="13" bodyfile="de/hackcraft/io/MD5Format.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMD5Format_1_1animation_1a2864bc77cc89c48df6fb9b3a534158fb" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char commandline[MD5COMMLINE]</definition>
+        <argsstring>[MD5COMMLINE]</argsstring>
+        <name>commandline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/MD5Format.h" line="41" column="14" bodyfile="de/hackcraft/io/MD5Format.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMD5Format_1_1animation_1a073ca41e4293534cb18779f83b13272b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int numJoints</definition>
+        <argsstring></argsstring>
+        <name>numJoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/MD5Format.h" line="42" column="13" bodyfile="de/hackcraft/io/MD5Format.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMD5Format_1_1animation_1a14a4f1258ea7e1c1f9c1ec71a3e86c61" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int numFrames</definition>
+        <argsstring></argsstring>
+        <name>numFrames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/MD5Format.h" line="43" column="13" bodyfile="de/hackcraft/io/MD5Format.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMD5Format_1_1animation_1aebcd9a87b695d3618612fcba5248dbf8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int frameRate</definition>
+        <argsstring></argsstring>
+        <name>frameRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/MD5Format.h" line="44" column="13" bodyfile="de/hackcraft/io/MD5Format.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structMD5Format_1_1animation_1acbdbb4f1f1eb5edf1385e4ae9c2a9a7a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int numAnimatedComponents</definition>
+        <argsstring></argsstring>
+        <name>numAnimatedComponents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/MD5Format.h" line="45" column="13" bodyfile="de/hackcraft/io/MD5Format.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>MD5Format::animation</label>
+        <link refid="structMD5Format_1_1animation"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/io/MD5Format.h" line="39" column="20" bodyfile="de/hackcraft/io/MD5Format.h" bodystart="39" bodyend="49"/>
+    <listofallmembers>
+      <member refid="structMD5Format_1_1animation_1a2864bc77cc89c48df6fb9b3a534158fb" prot="public" virt="non-virtual"><scope>MD5Format::animation</scope><name>commandline</name></member>
+      <member refid="structMD5Format_1_1animation_1aebcd9a87b695d3618612fcba5248dbf8" prot="public" virt="non-virtual"><scope>MD5Format::animation</scope><name>frameRate</name></member>
+      <member refid="structMD5Format_1_1animation_1acbdbb4f1f1eb5edf1385e4ae9c2a9a7a" prot="public" virt="non-virtual"><scope>MD5Format::animation</scope><name>numAnimatedComponents</name></member>
+      <member refid="structMD5Format_1_1animation_1a14a4f1258ea7e1c1f9c1ec71a3e86c61" prot="public" virt="non-virtual"><scope>MD5Format::animation</scope><name>numFrames</name></member>
+      <member refid="structMD5Format_1_1animation_1a073ca41e4293534cb18779f83b13272b" prot="public" virt="non-virtual"><scope>MD5Format::animation</scope><name>numJoints</name></member>
+      <member refid="structMD5Format_1_1animation_1aad880fc4455c253781e8968f2239d56f" prot="public" virt="non-virtual"><scope>MD5Format::animation</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="rPlanetmap_8h" kind="file" language="C++">
+    <compoundname>rPlanetmap.h</compoundname>
+    <includes refid="Component_8h" local="yes">de/hackcraft/world/Component.h</includes>
+    <includes local="no">unordered_map</includes>
+    <includedby refid="BatchMission_8cpp" local="yes">de/hackcraft/game/BatchMission.cpp</includedby>
+    <includedby refid="OpenMission_8cpp" local="yes">de/hackcraft/game/OpenMission.cpp</includedby>
+    <includedby refid="LandscapeSystem_8cpp" local="yes">de/hackcraft/world/sub/landscape/LandscapeSystem.cpp</includedby>
+    <includedby refid="rPlanetmap_8cpp" local="yes">de/hackcraft/world/sub/landscape/rPlanetmap.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>de/hackcraft/lang/OID.h</label>
+        <link refid="OID_8h"/>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/world/Component.h</label>
+        <link refid="Component_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="8">
+        <label>unordered_map</label>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/world/sub/landscape/rPlanetmap.h</label>
+        <link refid="rPlanetmap_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>de/hackcraft/util/Binding.h</label>
+        <link refid="Binding_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>de/hackcraft/game/BatchMission.cpp</label>
+        <link refid="BatchMission_8cpp"/>
+      </node>
+      <node id="4">
+        <label>de/hackcraft/world/sub/landscape/LandscapeSystem.cpp</label>
+        <link refid="LandscapeSystem_8cpp"/>
+      </node>
+      <node id="5">
+        <label>de/hackcraft/world/sub/landscape/rPlanetmap.cpp</label>
+        <link refid="rPlanetmap_8cpp"/>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/game/OpenMission.cpp</label>
+        <link refid="OpenMission_8cpp"/>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/world/sub/landscape/rPlanetmap.h</label>
+        <link refid="rPlanetmap_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classrPlanetmap" prot="public">rPlanetmap</innerclass>
+    <innerclass refid="structrPlanetmap_1_1Growth" prot="private">rPlanetmap::Growth</innerclass>
+    <innerclass refid="structrPlanetmap_1_1sPatch" prot="private">rPlanetmap::sPatch</innerclass>
+    <innerclass refid="structrPlanetmap_1_1sMod" prot="public">rPlanetmap::sMod</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="rPlanetmap_8h_1ab69ecda56acf8670f9ca31ab0afcbce5" prot="public" static="no">
+        <name>USE_UNORDERED_MAP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="16" column="9" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rPlanetmap_8h_1a306995fb8e91f2bfc9d8c780f3390906" prot="public" static="no">
+        <name>maptype</name>
+        <initializer>std::unordered_map</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="19" column="10" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rPlanetmap_8h_1a63c615354dd834c21d307f067d3d8171" prot="public" static="no">
+        <name>PLANETMAP_CACHESIZE</name>
+        <initializer>512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="30" column="9" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rPlanetmap_8h_1afb80ba90f729b5b062bba6bcbcdfd978" prot="public" static="no">
+        <name>PLANETMAP_TILESIZE</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="33" column="9" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rPlanetmap_8h_1a5923e6b2d86d4995f61dc89705e381c1" prot="public" static="no">
+        <name>PLANETMAP_DIVISIONS</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="36" column="9" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h"/>
+  </compounddef>
+</doxygen>

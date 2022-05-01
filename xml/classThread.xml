@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classThread" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Thread</compoundname>
+    <basecompoundref refid="classObject" prot="public" virt="non-virtual">Object</basecompoundref>
+    <basecompoundref refid="classRunnable" prot="public" virt="non-virtual">Runnable</basecompoundref>
+    <derivedcompoundref refid="classMinion" prot="public" virt="non-virtual">Minion</derivedcompoundref>
+    <includes local="no">Thread.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classThread_1af96dc80019779aec1839595c875b104e" prot="private" static="no" mutable="no">
+        <type><ref refid="classRunnable" kindref="compound">Runnable</ref> *</type>
+        <definition>Runnable* runnable</definition>
+        <argsstring></argsstring>
+        <name>runnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/Thread.h" line="20" column="14" bodyfile="de/hackcraft/lang/Thread.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classThread_1a655146e857fdead2dad71ab4c7464587" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* threadhandle</definition>
+        <argsstring></argsstring>
+        <name>threadhandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/Thread.h" line="21" column="10" bodyfile="de/hackcraft/lang/Thread.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classThread_1a7542b81caf3dbfcbd2b2f217fd10c240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Thread</definition>
+        <argsstring>()</argsstring>
+        <name>Thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/Thread.h" line="23" column="5" bodyfile="de/hackcraft/lang/Thread.cpp" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classThread_1a8ccb97f6ce042ae9e83c987b8543695e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Thread</definition>
+        <argsstring>(Runnable *runnable)</argsstring>
+        <name>Thread</name>
+        <param>
+          <type><ref refid="classRunnable" kindref="compound">Runnable</ref> *</type>
+          <declname>runnable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/Thread.h" line="24" column="5" bodyfile="de/hackcraft/lang/Thread.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classThread_1a60de64d75454385b23995437f1d72669" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/Thread.h" line="26" column="10" bodyfile="de/hackcraft/lang/Thread.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classThread_1a8c528baf37154d347366083f0f816846" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/Thread.h" line="27" column="10" bodyfile="de/hackcraft/lang/Thread.cpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classThread_1a18954417d3124a8095783ea13dc6d00b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void run</definition>
+        <argsstring>()=0</argsstring>
+        <name>run</name>
+        <reimplements refid="classRunnable_1a18954417d3124a8095783ea13dc6d00b">run</reimplements>
+        <reimplementedby refid="classMinion_1a13a43e6d814de94978c515cb084873b1">run</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/Thread.h" line="28" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classThread_1a077e18fe97323c7194e2665ffc766399" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int hashCode</definition>
+        <argsstring>()</argsstring>
+        <name>hashCode</name>
+        <reimplements refid="classObject_1a077e18fe97323c7194e2665ffc766399">hashCode</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/Thread.h" line="29" column="17" bodyfile="de/hackcraft/lang/Thread.cpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classThread_1a41adeb31ed2f82e869d0feef0cdcea34" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sleep</definition>
+        <argsstring>(unsigned int ms)</argsstring>
+        <name>sleep</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/Thread.h" line="31" column="17" bodyfile="de/hackcraft/lang/Thread.cpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classThread" kindref="compound">Thread</ref> class for starting and maintaining runnable threads. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>Minion</label>
+        <link refid="classMinion"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Object</label>
+        <link refid="classObject"/>
+      </node>
+      <node id="1">
+        <label>Thread</label>
+        <link refid="classThread"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Runnable</label>
+        <link refid="classRunnable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Object</label>
+        <link refid="classObject"/>
+      </node>
+      <node id="1">
+        <label>Thread</label>
+        <link refid="classThread"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-runnable</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Runnable</label>
+        <link refid="classRunnable"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/lang/Thread.h" line="18" column="44" bodyfile="de/hackcraft/lang/Thread.h" bodystart="18" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classObject_1a9d682ddd9db854c4c5800b816d8f071a" prot="protected" virt="virtual"><scope>Thread</scope><name>clone</name></member>
+      <member refid="classObject_1a04ea2beb8d4571b0b4753ad3b4862699" prot="public" virt="virtual"><scope>Thread</scope><name>equals</name></member>
+      <member refid="classThread_1a077e18fe97323c7194e2665ffc766399" prot="public" virt="virtual"><scope>Thread</scope><name>hashCode</name></member>
+      <member refid="classThread_1a18954417d3124a8095783ea13dc6d00b" prot="public" virt="pure-virtual"><scope>Thread</scope><name>run</name></member>
+      <member refid="classThread_1af96dc80019779aec1839595c875b104e" prot="private" virt="non-virtual"><scope>Thread</scope><name>runnable</name></member>
+      <member refid="classThread_1a41adeb31ed2f82e869d0feef0cdcea34" prot="public" virt="non-virtual"><scope>Thread</scope><name>sleep</name></member>
+      <member refid="classThread_1a60de64d75454385b23995437f1d72669" prot="public" virt="non-virtual"><scope>Thread</scope><name>start</name></member>
+      <member refid="classThread_1a8c528baf37154d347366083f0f816846" prot="public" virt="non-virtual"><scope>Thread</scope><name>stop</name></member>
+      <member refid="classThread_1a7542b81caf3dbfcbd2b2f217fd10c240" prot="public" virt="non-virtual"><scope>Thread</scope><name>Thread</name></member>
+      <member refid="classThread_1a8ccb97f6ce042ae9e83c987b8543695e" prot="public" virt="non-virtual"><scope>Thread</scope><name>Thread</name></member>
+      <member refid="classThread_1a655146e857fdead2dad71ab4c7464587" prot="private" virt="non-virtual"><scope>Thread</scope><name>threadhandle</name></member>
+      <member refid="classObject_1a719a81ee816e96b01f05361883d5435d" prot="public" virt="virtual"><scope>Thread</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

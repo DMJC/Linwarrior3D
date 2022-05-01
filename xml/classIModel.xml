@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classIModel" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IModel</compoundname>
+    <derivedcompoundref refid="structrBillboard" prot="public" virt="non-virtual">rBillboard</derivedcompoundref>
+    <derivedcompoundref refid="structrRigged" prot="public" virt="non-virtual">rRigged</derivedcompoundref>
+    <derivedcompoundref refid="classrScatter" prot="public" virt="non-virtual">rScatter</derivedcompoundref>
+    <derivedcompoundref refid="structrTree" prot="public" virt="non-virtual">rTree</derivedcompoundref>
+    <includes local="no">IModel.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIModel_1a20b934bae6654e29bcd9b204d10f2f7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int getPosX</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPosX</name>
+        <reimplementedby refid="classrScatter_1a524f2f68160160cc2bc0a87d112b2172">getPosX</reimplementedby>
+        <reimplementedby refid="structrBillboard_1a524f2f68160160cc2bc0a87d112b2172">getPosX</reimplementedby>
+        <reimplementedby refid="structrTree_1a524f2f68160160cc2bc0a87d112b2172">getPosX</reimplementedby>
+        <reimplementedby refid="structrRigged_1a524f2f68160160cc2bc0a87d112b2172">getPosX</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/IModel.h" line="19" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classIModel_1a855b01b48bb7d09cd79ecb752545a21d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int getPosY</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPosY</name>
+        <reimplementedby refid="classrScatter_1a357b246af92b63db4436f46b130b2229">getPosY</reimplementedby>
+        <reimplementedby refid="structrBillboard_1a357b246af92b63db4436f46b130b2229">getPosY</reimplementedby>
+        <reimplementedby refid="structrTree_1a357b246af92b63db4436f46b130b2229">getPosY</reimplementedby>
+        <reimplementedby refid="structrRigged_1a357b246af92b63db4436f46b130b2229">getPosY</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/IModel.h" line="20" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classIModel_1a7d56539842687efc7ff93b3af2dda806" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int getPosZ</definition>
+        <argsstring>()=0</argsstring>
+        <name>getPosZ</name>
+        <reimplementedby refid="classrScatter_1a87f720dc9bfa7937ca0e5004102181d5">getPosZ</reimplementedby>
+        <reimplementedby refid="structrBillboard_1a87f720dc9bfa7937ca0e5004102181d5">getPosZ</reimplementedby>
+        <reimplementedby refid="structrTree_1a87f720dc9bfa7937ca0e5004102181d5">getPosZ</reimplementedby>
+        <reimplementedby refid="structrRigged_1a87f720dc9bfa7937ca0e5004102181d5">getPosZ</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/IModel.h" line="21" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classIModel_1a02c98f4332baa521de3c4df3c146d873" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void animate</definition>
+        <argsstring>(float spf)=0</argsstring>
+        <name>animate</name>
+        <reimplementedby refid="classrScatter_1a21737bd2efddc8007d58214f722959f1">animate</reimplementedby>
+        <reimplementedby refid="structrBillboard_1a21737bd2efddc8007d58214f722959f1">animate</reimplementedby>
+        <reimplementedby refid="structrTree_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <reimplementedby refid="structrRigged_1a0a388523941d911d0c3dd369f72cc81d">animate</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>spf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/IModel.h" line="22" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIModel_1a3515c08d770acdf521c5ccd0a83218ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void transform</definition>
+        <argsstring>()=0</argsstring>
+        <name>transform</name>
+        <reimplementedby refid="classrScatter_1a620c3ab0c7ebcfa486e3f3c3d1c442b3">transform</reimplementedby>
+        <reimplementedby refid="structrBillboard_1a620c3ab0c7ebcfa486e3f3c3d1c442b3">transform</reimplementedby>
+        <reimplementedby refid="structrTree_1a620c3ab0c7ebcfa486e3f3c3d1c442b3">transform</reimplementedby>
+        <reimplementedby refid="structrRigged_1abe0cf4a907cfd4631a4d7c7647692a0a">transform</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/IModel.h" line="23" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIModel_1a7037e4616081238dc81eb0e947cba4f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void drawSolid</definition>
+        <argsstring>()=0</argsstring>
+        <name>drawSolid</name>
+        <reimplementedby refid="classrScatter_1a82d72d455a63508dd949d552ed3713b5">drawSolid</reimplementedby>
+        <reimplementedby refid="structrBillboard_1a82d72d455a63508dd949d552ed3713b5">drawSolid</reimplementedby>
+        <reimplementedby refid="structrTree_1a044d5ff7d7174ed434fcebbef82bc275">drawSolid</reimplementedby>
+        <reimplementedby refid="structrRigged_1a044d5ff7d7174ed434fcebbef82bc275">drawSolid</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/IModel.h" line="24" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classIModel_1a743d69df45ff83f7531c4eeb0e225405" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void drawEffect</definition>
+        <argsstring>()=0</argsstring>
+        <name>drawEffect</name>
+        <reimplementedby refid="classrScatter_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="structrBillboard_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="structrTree_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <reimplementedby refid="structrRigged_1a777e1926a0150b45a189753046343765">drawEffect</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/IModel.h" line="25" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Interface for models that have a position for spatial-indexing and that can be rendered. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>rTree</label>
+        <link refid="structrTree"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IModel</label>
+        <link refid="classIModel"/>
+      </node>
+      <node id="3">
+        <label>rRigged</label>
+        <link refid="structrRigged"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>rScatter</label>
+        <link refid="classrScatter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>rBillboard</label>
+        <link refid="structrBillboard"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>IModel</label>
+        <link refid="classIModel"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/model/IModel.h" line="17" column="13" bodyfile="de/hackcraft/world/sub/model/IModel.h" bodystart="17" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classIModel_1a02c98f4332baa521de3c4df3c146d873" prot="public" virt="pure-virtual"><scope>IModel</scope><name>animate</name></member>
+      <member refid="classIModel_1a743d69df45ff83f7531c4eeb0e225405" prot="public" virt="pure-virtual"><scope>IModel</scope><name>drawEffect</name></member>
+      <member refid="classIModel_1a7037e4616081238dc81eb0e947cba4f1" prot="public" virt="pure-virtual"><scope>IModel</scope><name>drawSolid</name></member>
+      <member refid="classIModel_1a20b934bae6654e29bcd9b204d10f2f7a" prot="public" virt="pure-virtual"><scope>IModel</scope><name>getPosX</name></member>
+      <member refid="classIModel_1a855b01b48bb7d09cd79ecb752545a21d" prot="public" virt="pure-virtual"><scope>IModel</scope><name>getPosY</name></member>
+      <member refid="classIModel_1a7d56539842687efc7ff93b3af2dda806" prot="public" virt="pure-virtual"><scope>IModel</scope><name>getPosZ</name></member>
+      <member refid="classIModel_1a3515c08d770acdf521c5ccd0a83218ad" prot="public" virt="pure-virtual"><scope>IModel</scope><name>transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

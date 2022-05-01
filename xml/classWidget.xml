@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classWidget" kind="class" language="C++" prot="public">
+    <compoundname>Widget</compoundname>
+    <includes local="no">Widget.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWidget_1ad25edacba00e4d0666a9959053b7cc10" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool dirty</definition>
+        <argsstring></argsstring>
+        <name>dirty</name>
+        <briefdescription>
+<para>Marks this widget as dirty - ie. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>need re-validation (re-layout) and repainting. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="68" column="10" bodyfile="de/hackcraft/widget/Widget.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWidget_1a8b518af257fa0fca31fa0be750c38b2f" prot="private" static="no" mutable="no">
+        <type><ref refid="classWidget" kindref="compound">Widget</ref> *</type>
+        <definition>Widget* parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+<para>Parent container component containing this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="70" column="12" bodyfile="de/hackcraft/widget/Widget.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWidget_1a4a2715cf402750e5d17c3634ed72e1d7" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="classWidget" kindref="compound">Widget</ref> * &gt; *</type>
+        <definition>std::list&lt;Widget*&gt;* widgets</definition>
+        <argsstring></argsstring>
+        <name>widgets</name>
+        <briefdescription>
+<para>Sub-widgets. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="72" column="15" bodyfile="de/hackcraft/widget/Widget.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWidget_1aa9b7b9846e3f42cc43273337240c6a8a" prot="private" static="no" mutable="no">
+        <type><ref refid="classLayout" kindref="compound">Layout</ref> *</type>
+        <definition>Layout* layout</definition>
+        <argsstring></argsstring>
+        <name>layout</name>
+        <briefdescription>
+<para>Layout-Manager responsible for sub-widget layout. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="74" column="12" bodyfile="de/hackcraft/widget/Widget.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWidget_1ad2a269f5df7a1c3e89b4d05f76d92313" prot="private" static="no" mutable="no">
+        <type><ref refid="classBorder" kindref="compound">Border</ref> *</type>
+        <definition>Border* border</definition>
+        <argsstring></argsstring>
+        <name>border</name>
+        <briefdescription>
+<para>Visual border of this widget within the bounds of the total area - defines insets. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="76" column="12" bodyfile="de/hackcraft/widget/Widget.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWidget_1a130d3d4f68e2fcdb846f0e0960a8d995" prot="private" static="no" mutable="no">
+        <type><ref refid="classGapBuffer" kindref="compound">GapBuffer</ref> *</type>
+        <definition>GapBuffer* text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+<para>Text-buffer with editing capabilities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="78" column="15" bodyfile="de/hackcraft/widget/Widget.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWidget_1a855a7c3f6839e9705b48a83df8266a7b" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* minimumSize</definition>
+        <argsstring></argsstring>
+        <name>minimumSize</name>
+        <briefdescription>
+<para><ref refid="classLayout" kindref="compound">Layout</ref> input: 2d Minimum size for this widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="80" column="12" bodyfile="de/hackcraft/widget/Widget.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWidget_1a3803c8ae3b4ddee89913eabb5d666a52" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* maximumSize</definition>
+        <argsstring></argsstring>
+        <name>maximumSize</name>
+        <briefdescription>
+<para><ref refid="classLayout" kindref="compound">Layout</ref> input: 2d Maximum size for this widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="82" column="12" bodyfile="de/hackcraft/widget/Widget.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWidget_1a33ac803fde09cce97b26184ea23d3101" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* preferredSize</definition>
+        <argsstring></argsstring>
+        <name>preferredSize</name>
+        <briefdescription>
+<para><ref refid="classLayout" kindref="compound">Layout</ref> input: 2d Preferred size for this widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="84" column="12" bodyfile="de/hackcraft/widget/Widget.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWidget_1a2c19c72ef61904a551f432148ee79c8b" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para><ref refid="classLayout" kindref="compound">Layout</ref> output: 2d Actual size of this widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="86" column="12" bodyfile="de/hackcraft/widget/Widget.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWidget_1a49ce4805ac4c02f4893ab4e3bcc5fcd5" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+<para><ref refid="classLayout" kindref="compound">Layout</ref> output: 2d Actual absolute position of this widget. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="88" column="12" bodyfile="de/hackcraft/widget/Widget.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWidget_1a4aecdb998b8b28b278843eaa1644998b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Widget</definition>
+        <argsstring>()</argsstring>
+        <name>Widget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="29" column="5" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="10" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1ae4171a22a36c0a394704c594fd856b0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~Widget</definition>
+        <argsstring>()</argsstring>
+        <name>~Widget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="30" column="13" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="33" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a893f1101c650c08c98612515c2b1a89c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void invalidate</definition>
+        <argsstring>()</argsstring>
+        <name>invalidate</name>
+        <briefdescription>
+<para>Mark this widget and parents dirty (need validation/re-layout) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="34" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="44" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a41d45236c37b75848f4b1667a11fb50e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void validate</definition>
+        <argsstring>()</argsstring>
+        <name>validate</name>
+        <briefdescription>
+<para><ref refid="classLayout" kindref="compound">Layout</ref> this widget if dirty (and all dirty sub-widgets as necessary). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="36" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="54" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a5222644319a8b6c43ddad11c843a2f22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * getPosition</definition>
+        <argsstring>()</argsstring>
+        <name>getPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="38" column="12" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a35ff44994d3a6f44bf70fb8dc808b1ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * getSize</definition>
+        <argsstring>()</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="39" column="12" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1ae22fe9688d0a9fef495d50cec828c2e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * getPreferredSize</definition>
+        <argsstring>()</argsstring>
+        <name>getPreferredSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="40" column="12" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a7ce0b0efdb6af363154f323cc37a3820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * getMaximumSize</definition>
+        <argsstring>()</argsstring>
+        <name>getMaximumSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="41" column="12" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a74435f455c5a3df24582e85684d29482" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double *</type>
+        <definition>double * getMinimumSize</definition>
+        <argsstring>()</argsstring>
+        <name>getMinimumSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="42" column="12" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1ae5ba923f3e1365ce8469d983520039ab" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGapBuffer" kindref="compound">GapBuffer</ref> *</type>
+        <definition>GapBuffer * getText</definition>
+        <argsstring>() const</argsstring>
+        <name>getText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="43" column="15" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a7cd188a9c655b6df80a96916d8416ddb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classBorder" kindref="compound">Border</ref> *</type>
+        <definition>Border * getBorder</definition>
+        <argsstring>() const</argsstring>
+        <name>getBorder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="44" column="12" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a71958b7d1af14d8995c57ce195dfec4a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classLayout" kindref="compound">Layout</ref> *</type>
+        <definition>Layout * getLayout</definition>
+        <argsstring>() const</argsstring>
+        <name>getLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="45" column="12" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1ae4a68104a28f109c6c7b52f9ff787714" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="classWidget" kindref="compound">Widget</ref> * &gt; *</type>
+        <definition>std::list&lt; Widget * &gt; * getWidgets</definition>
+        <argsstring>() const</argsstring>
+        <name>getWidgets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="46" column="15" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a949bb8b405a493be36ce480ab0bb312f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classWidget" kindref="compound">Widget</ref> *</type>
+        <definition>Widget * getParent</definition>
+        <argsstring>() const</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="47" column="12" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a0a30315aafa09dceca81d0cbcd80253e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool isDirty</definition>
+        <argsstring>() const</argsstring>
+        <name>isDirty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="48" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="103" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a5ea4f4271114a9ac25e9ee10d9771d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setPosition</definition>
+        <argsstring>(double *position)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>double *</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="50" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="107" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a0209fca58abfbdff114cd03cc926a5f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setPosition</definition>
+        <argsstring>(double positionX, double positionY)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>double</type>
+          <declname>positionX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>positionY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="51" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1ad88bb9d68845f490c6eecbddeb9881f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setSize</definition>
+        <argsstring>(double *size)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>double *</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="52" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a4dbf93bcdeab6b8d4cd4853c6faddf08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setSize</definition>
+        <argsstring>(double sizeX, double sizeY)</argsstring>
+        <name>setSize</name>
+        <param>
+          <type>double</type>
+          <declname>sizeX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sizeY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="53" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1aca26f45984134622091cf38f0903506c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setPreferredSize</definition>
+        <argsstring>(double *preferredSize)</argsstring>
+        <name>setPreferredSize</name>
+        <param>
+          <type>double *</type>
+          <declname>preferredSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="54" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="125" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a9e7e256cb8a82f780bfdf916ddc10730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setPreferredSize</definition>
+        <argsstring>(double preferredSizeX, double preferredSizeY)</argsstring>
+        <name>setPreferredSize</name>
+        <param>
+          <type>double</type>
+          <declname>preferredSizeX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>preferredSizeY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="55" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a06ea066a5dc05d88e9595d2bdacaf283" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setMaximumSize</definition>
+        <argsstring>(double *maximumSize)</argsstring>
+        <name>setMaximumSize</name>
+        <param>
+          <type>double *</type>
+          <declname>maximumSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="56" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1ac6317c4333681b67fbc647d55a6dbccb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setMaximumSize</definition>
+        <argsstring>(double maximumSizeX, double maximumSizeY)</argsstring>
+        <name>setMaximumSize</name>
+        <param>
+          <type>double</type>
+          <declname>maximumSizeX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>maximumSizeY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="57" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a9f22c650e30513294bb7f4e0a9df0fd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setMinimumSize</definition>
+        <argsstring>(double *minimumSize)</argsstring>
+        <name>setMinimumSize</name>
+        <param>
+          <type>double *</type>
+          <declname>minimumSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="58" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="143" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a898873ef1e6205a1ffb47637821caab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setMinimumSize</definition>
+        <argsstring>(double minimumSizeX, double minimumSizeY)</argsstring>
+        <name>setMinimumSize</name>
+        <param>
+          <type>double</type>
+          <declname>minimumSizeX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>minimumSizeY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="59" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a0e6f913149e7579c44a8643f0e63149b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setText</definition>
+        <argsstring>(GapBuffer *text)</argsstring>
+        <name>setText</name>
+        <param>
+          <type><ref refid="classGapBuffer" kindref="compound">GapBuffer</ref> *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="60" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="152" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1af7c2c70c13b15c7e6caff7d566222e1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setBorder</definition>
+        <argsstring>(Border *border)</argsstring>
+        <name>setBorder</name>
+        <param>
+          <type><ref refid="classBorder" kindref="compound">Border</ref> *</type>
+          <declname>border</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="61" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1ae038df4ca1583ea1c60670b435c49ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setLayout</definition>
+        <argsstring>(Layout *layout)</argsstring>
+        <name>setLayout</name>
+        <param>
+          <type><ref refid="classLayout" kindref="compound">Layout</ref> *</type>
+          <declname>layout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="62" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="160" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1aff7f5d424cd4d53cb6710862bad2e466" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setWidgets</definition>
+        <argsstring>(std::list&lt; Widget * &gt; *widgets)</argsstring>
+        <name>setWidgets</name>
+        <param>
+          <type>std::list&lt; <ref refid="classWidget" kindref="compound">Widget</ref> * &gt; *</type>
+          <declname>widgets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="63" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="164" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1a6676e3c06b87032f84812276769715e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setParent</definition>
+        <argsstring>(Widget *parent)</argsstring>
+        <name>setParent</name>
+        <param>
+          <type><ref refid="classWidget" kindref="compound">Widget</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="64" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classWidget_1aa95b1ef33ed5ae1c7ea9c8663ae11f77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setDirty</definition>
+        <argsstring>(bool dirty)</argsstring>
+        <name>setDirty</name>
+        <param>
+          <type>bool</type>
+          <declname>dirty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/widget/Widget.h" line="65" column="10" bodyfile="de/hackcraft/widget/Widget.cpp" bodystart="172" bodyend="174"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Widget</label>
+        <link refid="classWidget"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>-parent</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-border</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-layout</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-text</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-widgets</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Border</label>
+        <link refid="classBorder"/>
+      </node>
+      <node id="5">
+        <label>list&lt; Widget * &gt;</label>
+        <childnode refid="1" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>GapBuffer</label>
+        <link refid="classGapBuffer"/>
+      </node>
+      <node id="3">
+        <label>Layout</label>
+        <link refid="classLayout"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/widget/Widget.h" line="27" column="13" bodyfile="de/hackcraft/widget/Widget.h" bodystart="27" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classWidget_1ad2a269f5df7a1c3e89b4d05f76d92313" prot="private" virt="non-virtual"><scope>Widget</scope><name>border</name></member>
+      <member refid="classWidget_1ad25edacba00e4d0666a9959053b7cc10" prot="private" virt="non-virtual"><scope>Widget</scope><name>dirty</name></member>
+      <member refid="classWidget_1a7cd188a9c655b6df80a96916d8416ddb" prot="public" virt="non-virtual"><scope>Widget</scope><name>getBorder</name></member>
+      <member refid="classWidget_1a71958b7d1af14d8995c57ce195dfec4a" prot="public" virt="non-virtual"><scope>Widget</scope><name>getLayout</name></member>
+      <member refid="classWidget_1a7ce0b0efdb6af363154f323cc37a3820" prot="public" virt="non-virtual"><scope>Widget</scope><name>getMaximumSize</name></member>
+      <member refid="classWidget_1a74435f455c5a3df24582e85684d29482" prot="public" virt="non-virtual"><scope>Widget</scope><name>getMinimumSize</name></member>
+      <member refid="classWidget_1a949bb8b405a493be36ce480ab0bb312f" prot="public" virt="non-virtual"><scope>Widget</scope><name>getParent</name></member>
+      <member refid="classWidget_1a5222644319a8b6c43ddad11c843a2f22" prot="public" virt="non-virtual"><scope>Widget</scope><name>getPosition</name></member>
+      <member refid="classWidget_1ae22fe9688d0a9fef495d50cec828c2e6" prot="public" virt="non-virtual"><scope>Widget</scope><name>getPreferredSize</name></member>
+      <member refid="classWidget_1a35ff44994d3a6f44bf70fb8dc808b1ab" prot="public" virt="non-virtual"><scope>Widget</scope><name>getSize</name></member>
+      <member refid="classWidget_1ae5ba923f3e1365ce8469d983520039ab" prot="public" virt="non-virtual"><scope>Widget</scope><name>getText</name></member>
+      <member refid="classWidget_1ae4a68104a28f109c6c7b52f9ff787714" prot="public" virt="non-virtual"><scope>Widget</scope><name>getWidgets</name></member>
+      <member refid="classWidget_1a893f1101c650c08c98612515c2b1a89c" prot="public" virt="non-virtual"><scope>Widget</scope><name>invalidate</name></member>
+      <member refid="classWidget_1a0a30315aafa09dceca81d0cbcd80253e" prot="public" virt="non-virtual"><scope>Widget</scope><name>isDirty</name></member>
+      <member refid="classWidget_1aa9b7b9846e3f42cc43273337240c6a8a" prot="private" virt="non-virtual"><scope>Widget</scope><name>layout</name></member>
+      <member refid="classWidget_1a3803c8ae3b4ddee89913eabb5d666a52" prot="private" virt="non-virtual"><scope>Widget</scope><name>maximumSize</name></member>
+      <member refid="classWidget_1a855a7c3f6839e9705b48a83df8266a7b" prot="private" virt="non-virtual"><scope>Widget</scope><name>minimumSize</name></member>
+      <member refid="classWidget_1a8b518af257fa0fca31fa0be750c38b2f" prot="private" virt="non-virtual"><scope>Widget</scope><name>parent</name></member>
+      <member refid="classWidget_1a49ce4805ac4c02f4893ab4e3bcc5fcd5" prot="private" virt="non-virtual"><scope>Widget</scope><name>position</name></member>
+      <member refid="classWidget_1a33ac803fde09cce97b26184ea23d3101" prot="private" virt="non-virtual"><scope>Widget</scope><name>preferredSize</name></member>
+      <member refid="classWidget_1af7c2c70c13b15c7e6caff7d566222e1f" prot="public" virt="non-virtual"><scope>Widget</scope><name>setBorder</name></member>
+      <member refid="classWidget_1aa95b1ef33ed5ae1c7ea9c8663ae11f77" prot="public" virt="non-virtual"><scope>Widget</scope><name>setDirty</name></member>
+      <member refid="classWidget_1ae038df4ca1583ea1c60670b435c49ada" prot="public" virt="non-virtual"><scope>Widget</scope><name>setLayout</name></member>
+      <member refid="classWidget_1a06ea066a5dc05d88e9595d2bdacaf283" prot="public" virt="non-virtual"><scope>Widget</scope><name>setMaximumSize</name></member>
+      <member refid="classWidget_1ac6317c4333681b67fbc647d55a6dbccb" prot="public" virt="non-virtual"><scope>Widget</scope><name>setMaximumSize</name></member>
+      <member refid="classWidget_1a9f22c650e30513294bb7f4e0a9df0fd9" prot="public" virt="non-virtual"><scope>Widget</scope><name>setMinimumSize</name></member>
+      <member refid="classWidget_1a898873ef1e6205a1ffb47637821caab2" prot="public" virt="non-virtual"><scope>Widget</scope><name>setMinimumSize</name></member>
+      <member refid="classWidget_1a6676e3c06b87032f84812276769715e5" prot="public" virt="non-virtual"><scope>Widget</scope><name>setParent</name></member>
+      <member refid="classWidget_1a5ea4f4271114a9ac25e9ee10d9771d64" prot="public" virt="non-virtual"><scope>Widget</scope><name>setPosition</name></member>
+      <member refid="classWidget_1a0209fca58abfbdff114cd03cc926a5f9" prot="public" virt="non-virtual"><scope>Widget</scope><name>setPosition</name></member>
+      <member refid="classWidget_1aca26f45984134622091cf38f0903506c" prot="public" virt="non-virtual"><scope>Widget</scope><name>setPreferredSize</name></member>
+      <member refid="classWidget_1a9e7e256cb8a82f780bfdf916ddc10730" prot="public" virt="non-virtual"><scope>Widget</scope><name>setPreferredSize</name></member>
+      <member refid="classWidget_1ad88bb9d68845f490c6eecbddeb9881f9" prot="public" virt="non-virtual"><scope>Widget</scope><name>setSize</name></member>
+      <member refid="classWidget_1a4dbf93bcdeab6b8d4cd4853c6faddf08" prot="public" virt="non-virtual"><scope>Widget</scope><name>setSize</name></member>
+      <member refid="classWidget_1a0e6f913149e7579c44a8643f0e63149b" prot="public" virt="non-virtual"><scope>Widget</scope><name>setText</name></member>
+      <member refid="classWidget_1aff7f5d424cd4d53cb6710862bad2e466" prot="public" virt="non-virtual"><scope>Widget</scope><name>setWidgets</name></member>
+      <member refid="classWidget_1a2c19c72ef61904a551f432148ee79c8b" prot="private" virt="non-virtual"><scope>Widget</scope><name>size</name></member>
+      <member refid="classWidget_1a130d3d4f68e2fcdb846f0e0960a8d995" prot="private" virt="non-virtual"><scope>Widget</scope><name>text</name></member>
+      <member refid="classWidget_1a41d45236c37b75848f4b1667a11fb50e" prot="public" virt="non-virtual"><scope>Widget</scope><name>validate</name></member>
+      <member refid="classWidget_1a4aecdb998b8b28b278843eaa1644998b" prot="public" virt="non-virtual"><scope>Widget</scope><name>Widget</name></member>
+      <member refid="classWidget_1a4a2715cf402750e5d17c3634ed72e1d7" prot="private" virt="non-virtual"><scope>Widget</scope><name>widgets</name></member>
+      <member refid="classWidget_1ae4171a22a36c0a394704c594fd856b0e" prot="public" virt="virtual"><scope>Widget</scope><name>~Widget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1031 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structrController" kind="struct" language="C++" prot="public">
+    <compoundname>rController</compoundname>
+    <basecompoundref refid="structComponent" prot="public" virt="non-virtual">Component</basecompoundref>
+    <basecompoundref refid="classIComputer" prot="public" virt="non-virtual">IComputer</basecompoundref>
+    <includes local="no">rController.h</includes>
+      <sectiondef kind="protected-type">
+      <memberdef kind="enum" id="structrController_1abeeee4622d9285fa92e9b61857002cac" prot="protected" static="no" strong="no">
+        <type></type>
+        <name>Opcodes</name>
+        <enumvalue id="structrController_1abeeee4622d9285fa92e9b61857002caca79a322ccb4b29b85b3cab52dbccefd17" prot="protected">
+          <name>WAIT</name>
+          <briefdescription>
+<para>Play idle until something happens. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrController_1abeeee4622d9285fa92e9b61857002caca831c130f9c83adc963152d232a9d61c7" prot="protected">
+          <name>ATTACK</name>
+          <briefdescription>
+<para>Attack a target. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrController_1abeeee4622d9285fa92e9b61857002cacafc2d929d777e6aacbcd9fe9f1ce43555" prot="protected">
+          <name>FOLLOW</name>
+          <briefdescription>
+<para>Follow a target (and watchout). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrController_1abeeee4622d9285fa92e9b61857002cacadf1256e4198172eedfbf12c770d11589" prot="protected">
+          <name>GOTO</name>
+          <briefdescription>
+<para>Goto a target (and watchout). </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrController_1abeeee4622d9285fa92e9b61857002caca972f3df9d279a3d3acc88bcbe4452d51" prot="protected">
+          <name>REPEAT</name>
+          <briefdescription>
+<para>Repeat stack commands. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrController_1abeeee4622d9285fa92e9b61857002cacaaa7293040b5f6abdb57f4a0ef8444289" prot="protected">
+          <name>OPCODE_MAX</name>
+          <briefdescription>
+<para>The Amount of Opcodes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Available opcodes of stack-machine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="73" column="17" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="73" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="structrController_1af42b1d8da46f0bd6298acdc159027857" prot="private" static="yes" mutable="no">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger * logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="classLogger_1ac11c529e5152e544fbc4c6594add48b6" kindref="member">Logger::getLogger</ref>(&quot;de.hackcraft.world.sub.computer.rController&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="36" column="19" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structrController_1ab6a3de68965b8f71ff914a03321757f4" prot="public" static="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string cname</definition>
+        <argsstring></argsstring>
+        <name>cname</name>
+        <initializer>= &quot;CONTROLLER&quot;</initializer>
+        <briefdescription>
+<para>Identifier for this component (all uppercase letters without leading &quot;r&quot;). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="40" column="24" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrController_1a08d90b44549babc6b8c5154f371aa12f" prot="public" static="yes" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int cid</definition>
+        <argsstring></argsstring>
+        <name>cid</name>
+        <initializer>= 3637</initializer>
+        <briefdescription>
+<para>A unique random number (0-9999) to identify this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="42" column="25" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrController_1a8740ba80e30dd75e71d09fa1dcf04f3d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+<para>Whether control is enabled (autopilot/ai enabled/disabled). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="46" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrController_1a2e401783b8f3e6a821da27faa16126da" prot="public" static="no" mutable="no">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID disturbedBy</definition>
+        <argsstring></argsstring>
+        <name>disturbedBy</name>
+        <briefdescription>
+<para>Set to any offending/attacking object if any. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(hook i) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="48" column="9" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrController_1a183910a41790c03f5a89cedcbc555078" prot="public" static="no" mutable="no">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID enemyNearby</definition>
+        <argsstring></argsstring>
+        <name>enemyNearby</name>
+        <briefdescription>
+<para>Set to nearby enemy object if any. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(hook i) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="50" column="9" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrController_1a94c75e27bfcb34e2a21134bd4d253ae7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float aimrange</definition>
+        <argsstring></argsstring>
+        <name>aimrange</name>
+        <briefdescription>
+<para>Indicator of distance to aim-target, see Mobile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(hook i) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="52" column="11" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrController_1a14d74b23528bfac10d568230075042cc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float walkrange</definition>
+        <argsstring></argsstring>
+        <name>walkrange</name>
+        <briefdescription>
+<para>Indicator of distance to walk-target, see Mobile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(hook i) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="54" column="11" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrController_1af7428699703b61a12e99afce996efb79" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float nearToDistance</definition>
+        <argsstring></argsstring>
+        <name>nearToDistance</name>
+        <briefdescription>
+<para>Distance set-point for considering a target to be near. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="56" column="11" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrController_1a14b34ed5e24a38d404a51b3461fa2d8c" prot="public" static="no" mutable="no">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID aimtarget</definition>
+        <argsstring></argsstring>
+        <name>aimtarget</name>
+        <briefdescription>
+<para>Target for aiming or zero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(hook o) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="60" column="9" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrController_1a9a1bf683a953fb6c07514cd1cdaafeae" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool firetarget</definition>
+        <argsstring></argsstring>
+        <name>firetarget</name>
+        <briefdescription>
+<para>Enable firing onto target. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(hook o) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="62" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrController_1ab695e0b25a31fd03b1d2b076dbb36f5e" prot="public" static="no" mutable="no">
+        <type><ref refid="math3d_8h_1aa12dddc6c5b49b59657f5b9262d3196c" kindref="member">vec3</ref></type>
+        <definition>vec3 walktarget</definition>
+        <argsstring></argsstring>
+        <name>walktarget</name>
+        <briefdescription>
+<para>Walk target. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(hook o) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="64" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrController_1a91b1c6a725fc6dd40580a536b50e6662" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float walktargetdist</definition>
+        <argsstring></argsstring>
+        <name>walktargetdist</name>
+        <briefdescription>
+<para>Desired distance to walk-target. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(hook o) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="66" column="11" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrController_1aea61f2ee9a24e2fa725bd4032a41f8ac" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool idling</definition>
+        <argsstring></argsstring>
+        <name>idling</name>
+        <briefdescription>
+<para>Disable any action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(hook o) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="68" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="structrController_1a971725939dd67348928261e619d1a80a" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref> &gt;</type>
+        <definition>std::vector&lt;OID&gt; commandStack</definition>
+        <argsstring></argsstring>
+        <name>commandStack</name>
+        <briefdescription>
+<para>The command stack: n Values may form a command frame (command+arguments). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="89" column="17" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrController_1a47447cf22b6f2888dd877ccbaa148c60" prot="protected" static="no" mutable="no">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID lastDisturbedBy</definition>
+        <argsstring></argsstring>
+        <name>lastDisturbedBy</name>
+        <briefdescription>
+<para>Who disturbed me the last time - ignore now. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="91" column="9" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrController_1a4d97a1816f55efd1a2a5eea0c0eef502" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool debugState</definition>
+        <argsstring></argsstring>
+        <name>debugState</name>
+        <briefdescription>
+<para>Log debug info about current state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="93" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrController_1a6446e4d102b8239257405909de9d3958" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool debugTransitions</definition>
+        <argsstring></argsstring>
+        <name>debugTransitions</name>
+        <briefdescription>
+<para>Log debug info about state transition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="95" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrController_1aaa43958849723a44a26bdbde36f56056" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool debugStep</definition>
+        <argsstring></argsstring>
+        <name>debugStep</name>
+        <briefdescription>
+<para>Log iteration debug info. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="97" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structrController_1af12527df77e975f471f1f21f344a4663" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rController</definition>
+        <argsstring>(Entity *entity=NULL, bool enable=true)</argsstring>
+        <name>rController</name>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>entity</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Initialises a en-/disabled controller for the given entity-&gt; </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="101" column="5" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="25" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1aed56a8ac28c93a4fb201522f0903fb68" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~rController</definition>
+        <argsstring>()</argsstring>
+        <name>~rController</name>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="103" column="13" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a12d7214a9a58d47b3bc3c2e91f6d0c32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="structComponent" kindref="compound">Component</ref> *</type>
+        <definition>virtual Component* clone</definition>
+        <argsstring>()</argsstring>
+        <name>clone</name>
+        <reimplements refid="structComponent_1a12d7214a9a58d47b3bc3c2e91f6d0c32">clone</reimplements>
+        <briefdescription>
+<para>Clone this. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="106" column="24" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a3184c0aad27606b0d0317e03fe5622c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void animate</definition>
+        <argsstring>(float spf=1.0f)</argsstring>
+        <name>animate</name>
+        <reimplements refid="structComponent_1a21737bd2efddc8007d58214f722959f1">animate</reimplements>
+        <param>
+          <type>float</type>
+          <declname>spf</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+<para>Do a single Instruction step as the top frame on the stack says. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="111" column="18" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="169" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a98233a0af860521dafed683b50128886" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawHUD</definition>
+        <argsstring>()</argsstring>
+        <name>drawHUD</name>
+        <reimplements refid="structComponent_1a98233a0af860521dafed683b50128886">drawHUD</reimplements>
+        <briefdescription>
+<para>Currently there is no hud. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="115" column="18" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="115" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a5aaf516d78b7caef2d2b9867b02542e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printState</definition>
+        <argsstring>()</argsstring>
+        <name>printState</name>
+        <briefdescription>
+<para>Print out State and Stackinformation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="119" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="93" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a8295d9ea5eb5ecb7a53743a9e5f92a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pushWaitEvent</definition>
+        <argsstring>(long mseconds=-1, bool patrol=true)</argsstring>
+        <name>pushWaitEvent</name>
+        <param>
+          <type>long</type>
+          <declname>mseconds</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>patrol</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Wait until a Timeout occures or the selected event occures (patrol==true =&gt; Enemy Contact). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="151" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="204" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a3c887647d3d7a4ba5c51589ccbbe05f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void waitEvent</definition>
+        <argsstring>()</argsstring>
+        <name>waitEvent</name>
+        <briefdescription>
+<para>Execute wait command. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="153" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="212" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a96e22efadd2b53a194590a4489d65312" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pushAttackEnemy</definition>
+        <argsstring>(OID entity)</argsstring>
+        <name>pushAttackEnemy</name>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>entity</declname>
+        </param>
+        <briefdescription>
+<para>Attack that entity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="156" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="266" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1afd7046105c161ca32a94a20163e926f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void attackEnemy</definition>
+        <argsstring>()</argsstring>
+        <name>attackEnemy</name>
+        <briefdescription>
+<para>Execute attack command. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="158" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="282" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1af020b029cee8871c9e8b2f9810643a65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pushFollowLeader</definition>
+        <argsstring>(OID entity, bool patrol=true)</argsstring>
+        <name>pushFollowLeader</name>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>entity</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>patrol</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Follow the given entity and patrol (watchout) if required. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="161" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="328" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a3e7c30261c1bbc89ae5fd59847565f30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void followLeader</definition>
+        <argsstring>()</argsstring>
+        <name>followLeader</name>
+        <briefdescription>
+<para>Execute follow command. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="163" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="340" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a2691cc755d979b1288a43b88691d24b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pushGotoDestination</definition>
+        <argsstring>(float *v, bool patrol=true)</argsstring>
+        <name>pushGotoDestination</name>
+        <param>
+          <type>float *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>patrol</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Go to the given location and patrol (watchout) if required. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="166" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="364" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a36ba226e1b0f5bce30fd2cbe0a1eb039" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gotoDestination</definition>
+        <argsstring>()</argsstring>
+        <name>gotoDestination</name>
+        <briefdescription>
+<para>Execute goto command. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="168" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="382" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a357be0f4916c0d0d81c08a6c0a9ae85c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pushRepeatInstructions</definition>
+        <argsstring>(int n)</argsstring>
+        <name>pushRepeatInstructions</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Repeat the n commands below this one (copies/pushes n frames onto stack). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="171" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="430" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a024e7341b00dff26481ab5f5dc23dc61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void repeatInstructions</definition>
+        <argsstring>()</argsstring>
+        <name>repeatInstructions</name>
+        <briefdescription>
+<para>Execute repeat command. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="173" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="441" bodyend="467"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="structrController_1a6e337293ae2d86950430bb77ab1f8c8d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void doit</definition>
+        <argsstring>(OID aim, float *go, bool fire, float distance=0.25f)</argsstring>
+        <name>doit</name>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>aim</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>go</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fire</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>distance</declname>
+          <defval>0.25f</defval>
+        </param>
+        <briefdescription>
+<para>Set output impulses. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="123" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="55" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a78d24292f26a22218fc6495e88de648e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>string getFrameName</definition>
+        <argsstring>()</argsstring>
+        <name>getFrameName</name>
+        <briefdescription>
+<para>Get the name of the current stack/command frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="126" column="17" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="101" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a742d03e9ada444c464c29f26ef883808" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int getFrameSizeOf</definition>
+        <argsstring>(int opcode)</argsstring>
+        <name>getFrameSizeOf</name>
+        <param>
+          <type>int</type>
+          <declname>opcode</declname>
+        </param>
+        <briefdescription>
+<para>Get the stack frame size of the opcode (command+arguments). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="129" column="18" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="118" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1ae087489d50e99ed2efb46e98f771f273" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int getFrameSize</definition>
+        <argsstring>()</argsstring>
+        <name>getFrameSize</name>
+        <briefdescription>
+<para>Get the stack frame size of the current command. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="132" column="18" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="131" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a9be8c140f3ff3243af0971b928bc2ce0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setParameter</definition>
+        <argsstring>(int offset, OID value)</argsstring>
+        <name>setParameter</name>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set Parameter value at top of the stack minus offset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="135" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1afbecc0688db752114343f7cc9262e2a7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID getParameter</definition>
+        <argsstring>(int offset)</argsstring>
+        <name>getParameter</name>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Get Parameter value from top of the stack minus offset. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="138" column="9" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="136" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1ad34c14127ce1b4ff5734d0ab14e82501" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void push</definition>
+        <argsstring>(OID value)</argsstring>
+        <name>push</name>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Push a single value onto the stack. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="141" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="146" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="structrController_1a98cd566e30e2140273d689871abb0417" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pop</definition>
+        <argsstring>(std::string reason)</argsstring>
+        <name>pop</name>
+        <param>
+          <type>std::string</type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>Remove whole instruction/frame from stack. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/computer/rController.h" line="144" column="10" bodyfile="de/hackcraft/world/sub/computer/rController.cpp" bodystart="151" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Autopilot/AI object controller, controlls Mechs. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Implements an stack-automaton for object behavior control and plan execution. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Component</label>
+        <link refid="structComponent"/>
+      </node>
+      <node id="3">
+        <label>IComputer</label>
+        <link refid="classIComputer"/>
+      </node>
+      <node id="1">
+        <label>rController</label>
+        <link refid="structrController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>stringstream</label>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vector&lt; Binding * &gt;</label>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+object</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+prebinds</edgelabel>
+          <edgelabel>+postbinds</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>LevelStreamLogger</label>
+        <link refid="classLevelStreamLogger"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>-logstream</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>IComputer</label>
+        <link refid="classIComputer"/>
+      </node>
+      <node id="1">
+        <label>rController</label>
+        <link refid="structrController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>#commandStack</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="11">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>-infoLogger</edgelabel>
+          <edgelabel>-traceLogger</edgelabel>
+          <edgelabel>-warnLogger</edgelabel>
+          <edgelabel>-errorLogger</edgelabel>
+          <edgelabel>-debugLogger</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>-globalAppender</edgelabel>
+          <edgelabel>-appender</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-qualifiedLoggerName</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>-parentLogger</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Entity</label>
+        <link refid="classEntity"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+components</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+name</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Binding</label>
+        <link refid="classBinding"/>
+      </node>
+      <node id="20">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+      <node id="18">
+        <label>ios_base</label>
+      </node>
+      <node id="10">
+        <label>vector&lt; OID &gt;</label>
+      </node>
+      <node id="19">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector&lt; Component * &gt;</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/computer/rController.h" line="34" column="53" bodyfile="de/hackcraft/world/sub/computer/rController.h" bodystart="34" bodyend="180"/>
+    <listofallmembers>
+      <member refid="structComponent_1a03c996f9fcf0e10baeb3e700be0c409a" prot="public" virt="non-virtual"><scope>rController</scope><name>active</name></member>
+      <member refid="structComponent_1a9be6e2d0e81c55db1578d42ec617cbca" prot="public" virt="non-virtual"><scope>rController</scope><name>addBinding</name></member>
+      <member refid="structComponent_1a76752321cf3827ebb052e7b9b93f3db0" prot="public" virt="non-virtual"><scope>rController</scope><name>addBinding</name></member>
+      <member refid="structrController_1a94c75e27bfcb34e2a21134bd4d253ae7" prot="public" virt="non-virtual"><scope>rController</scope><name>aimrange</name></member>
+      <member refid="structrController_1a14b34ed5e24a38d404a51b3461fa2d8c" prot="public" virt="non-virtual"><scope>rController</scope><name>aimtarget</name></member>
+      <member refid="structrController_1a3184c0aad27606b0d0317e03fe5622c7" prot="public" virt="virtual"><scope>rController</scope><name>animate</name></member>
+      <member refid="structrController_1abeeee4622d9285fa92e9b61857002caca831c130f9c83adc963152d232a9d61c7" prot="protected" virt="non-virtual"><scope>rController</scope><name>ATTACK</name></member>
+      <member refid="structrController_1afd7046105c161ca32a94a20163e926f3" prot="public" virt="non-virtual"><scope>rController</scope><name>attackEnemy</name></member>
+      <member refid="structComponent_1a2cd2e7e39bbe0feb04e3f49d92383051" prot="public" virt="virtual"><scope>rController</scope><name>camera</name></member>
+      <member refid="structrController_1a08d90b44549babc6b8c5154f371aa12f" prot="public" virt="non-virtual"><scope>rController</scope><name>cid</name></member>
+      <member refid="structrController_1a12d7214a9a58d47b3bc3c2e91f6d0c32" prot="public" virt="virtual"><scope>rController</scope><name>clone</name></member>
+      <member refid="structrController_1ab6a3de68965b8f71ff914a03321757f4" prot="public" virt="non-virtual"><scope>rController</scope><name>cname</name></member>
+      <member refid="structrController_1a971725939dd67348928261e619d1a80a" prot="protected" virt="non-virtual"><scope>rController</scope><name>commandStack</name></member>
+      <member refid="structComponent_1a6b5149d0ce5984ffa0fdfcb0660c7bd5" prot="public" virt="non-virtual"><scope>rController</scope><name>Component</name></member>
+      <member refid="structComponent_1af0c987007ef181ec233d8333d399bab6" prot="public" virt="virtual"><scope>rController</scope><name>constrain</name></member>
+      <member refid="structComponent_1abea7dc29223077e4c8b30eda0e487242" prot="public" virt="virtual"><scope>rController</scope><name>damage</name></member>
+      <member refid="structrController_1a4d97a1816f55efd1a2a5eea0c0eef502" prot="protected" virt="non-virtual"><scope>rController</scope><name>debugState</name></member>
+      <member refid="structrController_1aaa43958849723a44a26bdbde36f56056" prot="protected" virt="non-virtual"><scope>rController</scope><name>debugStep</name></member>
+      <member refid="structrController_1a6446e4d102b8239257405909de9d3958" prot="protected" virt="non-virtual"><scope>rController</scope><name>debugTransitions</name></member>
+      <member refid="structrController_1a2e401783b8f3e6a821da27faa16126da" prot="public" virt="non-virtual"><scope>rController</scope><name>disturbedBy</name></member>
+      <member refid="structrController_1a6e337293ae2d86950430bb77ab1f8c8d" prot="protected" virt="non-virtual"><scope>rController</scope><name>doit</name></member>
+      <member refid="structComponent_1afa90087fb4f9485be9db86581d8ac822" prot="public" virt="virtual"><scope>rController</scope><name>drawEffect</name></member>
+      <member refid="structrController_1a98233a0af860521dafed683b50128886" prot="public" virt="virtual"><scope>rController</scope><name>drawHUD</name></member>
+      <member refid="structComponent_1a82d72d455a63508dd949d552ed3713b5" prot="public" virt="virtual"><scope>rController</scope><name>drawSolid</name></member>
+      <member refid="structrController_1a8740ba80e30dd75e71d09fa1dcf04f3d" prot="public" virt="non-virtual"><scope>rController</scope><name>enabled</name></member>
+      <member refid="structrController_1a183910a41790c03f5a89cedcbc555078" prot="public" virt="non-virtual"><scope>rController</scope><name>enemyNearby</name></member>
+      <member refid="structrController_1a9a1bf683a953fb6c07514cd1cdaafeae" prot="public" virt="non-virtual"><scope>rController</scope><name>firetarget</name></member>
+      <member refid="structrController_1abeeee4622d9285fa92e9b61857002cacafc2d929d777e6aacbcd9fe9f1ce43555" prot="protected" virt="non-virtual"><scope>rController</scope><name>FOLLOW</name></member>
+      <member refid="structrController_1a3e7c30261c1bbc89ae5fd59847565f30" prot="public" virt="non-virtual"><scope>rController</scope><name>followLeader</name></member>
+      <member refid="structComponent_1ad9819bfdd9490c9b319093ac5b97822f" prot="public" virt="virtual"><scope>rController</scope><name>frag</name></member>
+      <member refid="structrController_1a78d24292f26a22218fc6495e88de648e" prot="protected" virt="non-virtual"><scope>rController</scope><name>getFrameName</name></member>
+      <member refid="structrController_1ae087489d50e99ed2efb46e98f771f273" prot="protected" virt="non-virtual"><scope>rController</scope><name>getFrameSize</name></member>
+      <member refid="structrController_1a742d03e9ada444c464c29f26ef883808" prot="protected" virt="non-virtual"><scope>rController</scope><name>getFrameSizeOf</name></member>
+      <member refid="structComponent_1acdfa5be80a3b7f56ac515b1bb1305e68" prot="public" virt="virtual"><scope>rController</scope><name>getId</name></member>
+      <member refid="structrController_1afbecc0688db752114343f7cc9262e2a7" prot="protected" virt="non-virtual"><scope>rController</scope><name>getParameter</name></member>
+      <member refid="structrController_1abeeee4622d9285fa92e9b61857002cacadf1256e4198172eedfbf12c770d11589" prot="protected" virt="non-virtual"><scope>rController</scope><name>GOTO</name></member>
+      <member refid="structrController_1a36ba226e1b0f5bce30fd2cbe0a1eb039" prot="public" virt="non-virtual"><scope>rController</scope><name>gotoDestination</name></member>
+      <member refid="structrController_1aea61f2ee9a24e2fa725bd4032a41f8ac" prot="public" virt="non-virtual"><scope>rController</scope><name>idling</name></member>
+      <member refid="structrController_1a47447cf22b6f2888dd877ccbaa148c60" prot="protected" virt="non-virtual"><scope>rController</scope><name>lastDisturbedBy</name></member>
+      <member refid="structComponent_1ab92eb9c4dcb16f9e63ca5fe371144983" prot="public" virt="virtual"><scope>rController</scope><name>listener</name></member>
+      <member refid="structrController_1af42b1d8da46f0bd6298acdc159027857" prot="private" virt="non-virtual"><scope>rController</scope><name>logger</name></member>
+      <member refid="structrController_1af7428699703b61a12e99afce996efb79" prot="public" virt="non-virtual"><scope>rController</scope><name>nearToDistance</name></member>
+      <member refid="structComponent_1a4c442f22ef3b8c6790b56015beb57566" prot="public" virt="non-virtual"><scope>rController</scope><name>object</name></member>
+      <member refid="structrController_1abeeee4622d9285fa92e9b61857002cacaaa7293040b5f6abdb57f4a0ef8444289" prot="protected" virt="non-virtual"><scope>rController</scope><name>OPCODE_MAX</name></member>
+      <member refid="structrController_1abeeee4622d9285fa92e9b61857002cac" prot="protected" virt="non-virtual"><scope>rController</scope><name>Opcodes</name></member>
+      <member refid="structrController_1a98cd566e30e2140273d689871abb0417" prot="protected" virt="non-virtual"><scope>rController</scope><name>pop</name></member>
+      <member refid="structComponent_1ab7bcd2366fafecdcdd8bbcbfb0a43c51" prot="public" virt="non-virtual"><scope>rController</scope><name>postbind</name></member>
+      <member refid="structComponent_1abc081daafef3ffd221d8746b1e4c2f78" prot="public" virt="non-virtual"><scope>rController</scope><name>postbinds</name></member>
+      <member refid="structComponent_1a5bd6391b052df5d5a0db4554b2c3fe66" prot="public" virt="non-virtual"><scope>rController</scope><name>prebind</name></member>
+      <member refid="structComponent_1a4d900b2c72ca399a620b6eefce26c018" prot="public" virt="non-virtual"><scope>rController</scope><name>prebinds</name></member>
+      <member refid="structrController_1a5aaf516d78b7caef2d2b9867b02542e7" prot="public" virt="non-virtual"><scope>rController</scope><name>printState</name></member>
+      <member refid="structrController_1ad34c14127ce1b4ff5734d0ab14e82501" prot="protected" virt="non-virtual"><scope>rController</scope><name>push</name></member>
+      <member refid="structrController_1a96e22efadd2b53a194590a4489d65312" prot="public" virt="non-virtual"><scope>rController</scope><name>pushAttackEnemy</name></member>
+      <member refid="structrController_1af020b029cee8871c9e8b2f9810643a65" prot="public" virt="non-virtual"><scope>rController</scope><name>pushFollowLeader</name></member>
+      <member refid="structrController_1a2691cc755d979b1288a43b88691d24b6" prot="public" virt="non-virtual"><scope>rController</scope><name>pushGotoDestination</name></member>
+      <member refid="structrController_1a357be0f4916c0d0d81c08a6c0a9ae85c" prot="public" virt="non-virtual"><scope>rController</scope><name>pushRepeatInstructions</name></member>
+      <member refid="structrController_1a8295d9ea5eb5ecb7a53743a9e5f92a03" prot="public" virt="non-virtual"><scope>rController</scope><name>pushWaitEvent</name></member>
+      <member refid="structrController_1af12527df77e975f471f1f21f344a4663" prot="public" virt="non-virtual"><scope>rController</scope><name>rController</name></member>
+      <member refid="structrController_1abeeee4622d9285fa92e9b61857002caca972f3df9d279a3d3acc88bcbe4452d51" prot="protected" virt="non-virtual"><scope>rController</scope><name>REPEAT</name></member>
+      <member refid="structrController_1a024e7341b00dff26481ab5f5dc23dc61" prot="public" virt="non-virtual"><scope>rController</scope><name>repeatInstructions</name></member>
+      <member refid="structrController_1a9be8c140f3ff3243af0971b928bc2ce0" prot="protected" virt="non-virtual"><scope>rController</scope><name>setParameter</name></member>
+      <member refid="structComponent_1a2260c02c44eeca44f51bf4b76f3bd306" prot="public" virt="virtual"><scope>rController</scope><name>spawn</name></member>
+      <member refid="structComponent_1a620c3ab0c7ebcfa486e3f3c3d1c442b3" prot="public" virt="virtual"><scope>rController</scope><name>transform</name></member>
+      <member refid="structrController_1abeeee4622d9285fa92e9b61857002caca79a322ccb4b29b85b3cab52dbccefd17" prot="protected" virt="non-virtual"><scope>rController</scope><name>WAIT</name></member>
+      <member refid="structrController_1a3c887647d3d7a4ba5c51589ccbbe05f7" prot="public" virt="non-virtual"><scope>rController</scope><name>waitEvent</name></member>
+      <member refid="structrController_1a14d74b23528bfac10d568230075042cc" prot="public" virt="non-virtual"><scope>rController</scope><name>walkrange</name></member>
+      <member refid="structrController_1ab695e0b25a31fd03b1d2b076dbb36f5e" prot="public" virt="non-virtual"><scope>rController</scope><name>walktarget</name></member>
+      <member refid="structrController_1a91b1c6a725fc6dd40580a536b50e6662" prot="public" virt="non-virtual"><scope>rController</scope><name>walktargetdist</name></member>
+      <member refid="structrController_1aed56a8ac28c93a4fb201522f0903fb68" prot="public" virt="virtual"><scope>rController</scope><name>~rController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

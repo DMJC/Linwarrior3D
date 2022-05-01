@@ -1,0 +1,817 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classChatSystem" kind="class" language="C++" prot="public">
+    <compoundname>ChatSystem</compoundname>
+    <basecompoundref refid="classSubsystem" prot="public" virt="non-virtual">Subsystem</basecompoundref>
+    <includes local="no">ChatSystem.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classChatSystem_1af42b1d8da46f0bd6298acdc159027857" prot="private" static="yes" mutable="no">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger * logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="classLogger_1ac11c529e5152e544fbc4c6594add48b6" kindref="member">Logger::getLogger</ref>(&quot;de.hackcraft.world.sub.chat.ChatSystem&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="102" column="19" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classChatSystem_1ae09c160f066e1cf820e1292a6d3bf055" prot="private" static="yes" mutable="no">
+        <type><ref refid="classChatSystem" kindref="compound">ChatSystem</ref> *</type>
+        <definition>ChatSystem * instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+<para>Current singleton instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="105" column="23" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classChatSystem_1a650c63b8a6563c0215b40b35d6cdad2f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structrChatMember" kindref="compound">rChatMember</ref> * &gt;</type>
+        <definition>std::vector&lt;rChatMember*&gt; members</definition>
+        <argsstring></argsstring>
+        <name>members</name>
+        <briefdescription>
+<para>Chat or communication participants (Communication computers). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="109" column="17" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classChatSystem_1ab120bc3687987227ec453d9976a990e8" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref>, <ref refid="structrChatMember" kindref="compound">rChatMember</ref> * &gt;</type>
+        <definition>std::map&lt;OID,rChatMember*&gt; membersIndex</definition>
+        <argsstring></argsstring>
+        <name>membersIndex</name>
+        <briefdescription>
+<para>Members by id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="111" column="14" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classChatSystem_1a8f7193a679652938f5dac72626577ab9" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref>, <ref refid="structrChatMember" kindref="compound">rChatMember</ref> * &gt;</type>
+        <definition>std::map&lt;OID,rChatMember*&gt; membersByEntity</definition>
+        <argsstring></argsstring>
+        <name>membersByEntity</name>
+        <briefdescription>
+<para>For resolving an entity&apos;s currently registered chat member. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="113" column="14" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classChatSystem_1a1ad1116ebd480384ebb616fa6911c9a7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classrChatGroup" kindref="compound">rChatGroup</ref> * &gt;</type>
+        <definition>std::vector&lt;rChatGroup*&gt; groups</definition>
+        <argsstring></argsstring>
+        <name>groups</name>
+        <briefdescription>
+<para>Groups of objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="116" column="17" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classChatSystem_1af8226821a1506cbcba86a1f1d1d167d0" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref>, <ref refid="classrChatGroup" kindref="compound">rChatGroup</ref> * &gt;</type>
+        <definition>std::map&lt;OID,rChatGroup*&gt; groupsIndex</definition>
+        <argsstring></argsstring>
+        <name>groupsIndex</name>
+        <briefdescription>
+<para>Groups by id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="118" column="14" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classChatSystem_1a957d1a982afa2489aaf5b1ce87ac5fe6" prot="private" static="no" mutable="no">
+        <type>std::priority_queue&lt; <ref refid="classrChatMessage" kindref="compound">rChatMessage</ref> *, std::vector&lt; <ref refid="classrChatMessage" kindref="compound">rChatMessage</ref> * &gt;, <ref refid="classrChatMessage" kindref="compound">rChatMessage</ref> &gt;</type>
+        <definition>std::priority_queue&lt;rChatMessage*, std::vector&lt;rChatMessage*&gt;, rChatMessage&gt; messagesByTimestamp</definition>
+        <argsstring></argsstring>
+        <name>messagesByTimestamp</name>
+        <briefdescription>
+<para>Not yet dispatched messages (because they are not yet overdue). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="121" column="25" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classChatSystem_1aaf14c5e0da9adfa222845285146123a5" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="classrChatMessage" kindref="compound">rChatMessage</ref> * &gt;</type>
+        <definition>std::list&lt;rChatMessage*&gt; messagesAsDispatched</definition>
+        <argsstring></argsstring>
+        <name>messagesAsDispatched</name>
+        <briefdescription>
+<para>Messages already delivered to group participants as they were dispatched. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="123" column="15" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classChatSystem_1a393d69de6add50084ca5161f8f4d3b68" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classChatSystem" kindref="compound">ChatSystem</ref> *</type>
+        <definition>ChatSystem * getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+<para>Get current singleton instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="33" column="23" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.cpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classChatSystem_1a17e29fc7cfe9aacf62d8b190c19cb57a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ChatSystem</definition>
+        <argsstring>()</argsstring>
+        <name>ChatSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="36" column="5" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1a783a8fc23966f18a6c40fda9e97b4965" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~ChatSystem</definition>
+        <argsstring>()</argsstring>
+        <name>~ChatSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="37" column="13" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.cpp" bodystart="30" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1a95348e90be36514df5e725e94a6f607f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID getGroup</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>getGroup</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Finds and returns a group or creates a new one. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="40" column="9" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.cpp" bodystart="34" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1a626e1bf59dacae5eff0bd2a55eb68270" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void addToGroup</definition>
+        <argsstring>(OID gid, Entity *member)</argsstring>
+        <name>addToGroup</name>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>gid</declname>
+        </param>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>member</declname>
+        </param>
+        <briefdescription>
+<para>Adds a managed member to an existing group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="43" column="10" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.cpp" bodystart="54" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1ae6ec1a6041b9bd59f832e673f4495930" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add</definition>
+        <argsstring>(rChatMember *member)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structrChatMember" kindref="compound">rChatMember</ref> *</type>
+          <declname>member</declname>
+        </param>
+        <briefdescription>
+<para>Adds a chat member to the managed members (without adding to group) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="46" column="10" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.cpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1a2c1c99cb484adcd0da7e05b0b1f96378" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structrChatMember" kindref="compound">rChatMember</ref> *</type>
+        <definition>rChatMember * findChatMemberByEntity</definition>
+        <argsstring>(OID entityID)</argsstring>
+        <name>findChatMemberByEntity</name>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>entityID</declname>
+        </param>
+        <briefdescription>
+<para>For resolving an entity&apos;s currently registered chat member. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="49" column="17" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.cpp" bodystart="85" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1a778a28302a6cdf2a1db34032f0893987" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void sendMessage</definition>
+        <argsstring>(OID delay, OID sender, OID recvid, std::string type, std::string text, void *blob=NULL)</argsstring>
+        <name>sendMessage</name>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>delay</declname>
+        </param>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>recvid</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>blob</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Sent messages are currently collected with an attached timestamp. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time offset for sending see getOID() for calculation. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a value of 0 currently defines a broadcast. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recvid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the receiver the message is sent to - 0 null/def receiver. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the message subject/text to send, will be copied to string. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blob</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>binary data, you give away ownership may be deleted by world. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="59" column="18" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.cpp" bodystart="103" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1ad0f555122462d7c7444758ba58689010" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float constrainParticle</definition>
+        <argsstring>(Entity *ex, float *worldpos, float radius)</argsstring>
+        <name>constrainParticle</name>
+        <reimplements refid="classSubsystem_1a1954eb6f5a3752d2f1fd6d119fd3fde8">constrainParticle</reimplements>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>ex</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>worldpos</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+<para>Limit position to accessible areas and returns impact depth. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>worldpos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The particle position to be constrained given in world coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the particle in terms of a radius. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if there was no collision, else the maximum impact depth. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="69" column="19" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1ad6a7b46bef07e40d079342cb85364f50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void advanceTime</definition>
+        <argsstring>(int deltamsec)</argsstring>
+        <name>advanceTime</name>
+        <reimplements refid="classSubsystem_1ae539443a3a32579b89439ec22aaba32b">advanceTime</reimplements>
+        <param>
+          <type>int</type>
+          <declname>deltamsec</declname>
+        </param>
+        <briefdescription>
+<para>Advance simulation time for one frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="73" column="18" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1afca955411c811e1a0af97e0969f6956e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void clusterObjects</definition>
+        <argsstring>()</argsstring>
+        <name>clusterObjects</name>
+        <reimplements refid="classSubsystem_1aac346cec652a4bb213bee2a5e74c7fc9">clusterObjects</reimplements>
+        <briefdescription>
+<para>Re-build spatial clustering of objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="76" column="18" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1aefcbc39cc731e1c193c09a6a98e3ddeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void dispatchMessages</definition>
+        <argsstring>()</argsstring>
+        <name>dispatchMessages</name>
+        <reimplements refid="classSubsystem_1affbd764192264a4e1e440cf073999278">dispatchMessages</reimplements>
+        <briefdescription>
+<para>Deliver overdue messages to objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="79" column="18" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.cpp" bodystart="115" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1a4291f25a3b069aa2b69f039cb45ff457" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void animateObjects</definition>
+        <argsstring>()</argsstring>
+        <name>animateObjects</name>
+        <reimplements refid="classSubsystem_1a1981e562883e5e69767bec35bcee7af1">animateObjects</reimplements>
+        <briefdescription>
+<para>Let all objects process input, adjust pose and calculate physics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="82" column="18" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1a6f3997a696073fafdf6226143824eab4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void transformObjects</definition>
+        <argsstring>()</argsstring>
+        <name>transformObjects</name>
+        <reimplements refid="classSubsystem_1af1f4f853081af6fcb5037b99618009d2">transformObjects</reimplements>
+        <briefdescription>
+<para>Let all objects calculate transformation matrices etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="85" column="18" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1a079b6cd12491c571db088711044fa8bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setupView</definition>
+        <argsstring>(float *pos, float *ori)</argsstring>
+        <name>setupView</name>
+        <reimplements refid="classSubsystem_1a7e9713a6b941a1ff3e85a2e10cd4946f">setupView</reimplements>
+        <param>
+          <type>float *</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>ori</declname>
+        </param>
+        <briefdescription>
+<para>Setup structures for rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="88" column="18" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1ad6ad3f680e505f98d83d049e15f0d797" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool drawBack</definition>
+        <argsstring>()</argsstring>
+        <name>drawBack</name>
+        <reimplements refid="classSubsystem_1ab6879b94c7c750768750669e7feb9c97">drawBack</reimplements>
+        <briefdescription>
+<para>Draws background (skybox). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>False if the background was not painted or is not covered completely - true otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="93" column="18" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1a82d72d455a63508dd949d552ed3713b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawSolid</definition>
+        <argsstring>()</argsstring>
+        <name>drawSolid</name>
+        <reimplements refid="classSubsystem_1a7037e4616081238dc81eb0e947cba4f1">drawSolid</reimplements>
+        <briefdescription>
+<para>Draw all <ref refid="classObject" kindref="compound">Object</ref>&apos;s solid surfaces (calls their drawSolid method). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="96" column="18" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classChatSystem_1afa90087fb4f9485be9db86581d8ac822" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawEffect</definition>
+        <argsstring>()</argsstring>
+        <name>drawEffect</name>
+        <reimplements refid="classSubsystem_1a743d69df45ff83f7531c4eeb0e225405">drawEffect</reimplements>
+        <briefdescription>
+<para>Draw all <ref refid="classObject" kindref="compound">Object</ref>&apos;s effects (calls their drawEffect method). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="99" column="18" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Subsystem</label>
+        <link refid="classSubsystem"/>
+      </node>
+      <node id="1">
+        <label>ChatSystem</label>
+        <link refid="classChatSystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="22">
+        <label>stringstream</label>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vector&lt; Binding * &gt;</label>
+        <childnode refid="11" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+object</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+prebinds</edgelabel>
+          <edgelabel>+postbinds</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>LevelStreamLogger</label>
+        <link refid="classLevelStreamLogger"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>-logstream</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>map&lt; OID, rChatGroup * &gt;</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>list&lt; rChatMessage * &gt;</label>
+        <childnode refid="14" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>string</label>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>vector&lt; rChatMember * &gt;</label>
+        <childnode refid="18" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Subsystem</label>
+        <link refid="classSubsystem"/>
+      </node>
+      <node id="9">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="18">
+        <label>rChatMember</label>
+        <link refid="structrChatMember"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>#mConsole</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>-infoLogger</edgelabel>
+          <edgelabel>-traceLogger</edgelabel>
+          <edgelabel>-warnLogger</edgelabel>
+          <edgelabel>-errorLogger</edgelabel>
+          <edgelabel>-debugLogger</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>-globalAppender</edgelabel>
+          <edgelabel>-appender</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>-qualifiedLoggerName</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>-parentLogger</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Entity</label>
+        <link refid="classEntity"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+components</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+name</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Binding</label>
+        <link refid="classBinding"/>
+      </node>
+      <node id="29">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+      <node id="27">
+        <label>ios_base</label>
+      </node>
+      <node id="4">
+        <label>rChatGroup</label>
+        <link refid="classrChatGroup"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>+members</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+name</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ChatSystem</label>
+        <link refid="classChatSystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-groups</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>-messagesAsDispatched</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>-groupsIndex</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>-messagesByTimestamp</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>-members</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>-instance</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>-membersByEntity</edgelabel>
+          <edgelabel>-membersIndex</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>map&lt; OID, rChatMember * &gt;</label>
+        <childnode refid="18" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>rChatMessage</label>
+        <link refid="classrChatMessage"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>-mType</edgelabel>
+          <edgelabel>-mText</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>priority_queue&lt; rChatMessage *, std::vector&lt; rChatMessage * &gt;, rChatMessage &gt;</label>
+        <childnode refid="14" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vector&lt; Component * &gt;</label>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>list&lt; OID &gt;</label>
+      </node>
+      <node id="3">
+        <label>vector&lt; rChatGroup * &gt;</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Console</label>
+        <link refid="classConsole"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/chat/ChatSystem.h" line="30" column="34" bodyfile="de/hackcraft/world/sub/chat/ChatSystem.h" bodystart="30" bodyend="124"/>
+    <listofallmembers>
+      <member refid="classChatSystem_1ae6ec1a6041b9bd59f832e673f4495930" prot="public" virt="non-virtual"><scope>ChatSystem</scope><name>add</name></member>
+      <member refid="classChatSystem_1a626e1bf59dacae5eff0bd2a55eb68270" prot="public" virt="non-virtual"><scope>ChatSystem</scope><name>addToGroup</name></member>
+      <member refid="classChatSystem_1ad6a7b46bef07e40d079342cb85364f50" prot="public" virt="virtual"><scope>ChatSystem</scope><name>advanceTime</name></member>
+      <member refid="classChatSystem_1a4291f25a3b069aa2b69f039cb45ff457" prot="public" virt="virtual"><scope>ChatSystem</scope><name>animateObjects</name></member>
+      <member refid="classChatSystem_1a17e29fc7cfe9aacf62d8b190c19cb57a" prot="public" virt="non-virtual"><scope>ChatSystem</scope><name>ChatSystem</name></member>
+      <member refid="classChatSystem_1afca955411c811e1a0af97e0969f6956e" prot="public" virt="virtual"><scope>ChatSystem</scope><name>clusterObjects</name></member>
+      <member refid="classChatSystem_1ad0f555122462d7c7444758ba58689010" prot="public" virt="virtual"><scope>ChatSystem</scope><name>constrainParticle</name></member>
+      <member refid="classChatSystem_1aefcbc39cc731e1c193c09a6a98e3ddeb" prot="public" virt="virtual"><scope>ChatSystem</scope><name>dispatchMessages</name></member>
+      <member refid="classChatSystem_1ad6ad3f680e505f98d83d049e15f0d797" prot="public" virt="virtual"><scope>ChatSystem</scope><name>drawBack</name></member>
+      <member refid="classChatSystem_1afa90087fb4f9485be9db86581d8ac822" prot="public" virt="virtual"><scope>ChatSystem</scope><name>drawEffect</name></member>
+      <member refid="classChatSystem_1a82d72d455a63508dd949d552ed3713b5" prot="public" virt="virtual"><scope>ChatSystem</scope><name>drawSolid</name></member>
+      <member refid="classChatSystem_1a2c1c99cb484adcd0da7e05b0b1f96378" prot="public" virt="non-virtual"><scope>ChatSystem</scope><name>findChatMemberByEntity</name></member>
+      <member refid="classChatSystem_1a95348e90be36514df5e725e94a6f607f" prot="public" virt="non-virtual"><scope>ChatSystem</scope><name>getGroup</name></member>
+      <member refid="classSubsystem_1a8e36b642c7e1cc84986eee262c235b0b" prot="public" virt="virtual"><scope>ChatSystem</scope><name>getId</name></member>
+      <member refid="classChatSystem_1a393d69de6add50084ca5161f8f4d3b68" prot="public" virt="non-virtual"><scope>ChatSystem</scope><name>getInstance</name></member>
+      <member refid="classSubsystem_1a4ee385cf4aecac6d59e8fa07a9aa890d" prot="public" virt="virtual"><scope>ChatSystem</scope><name>getName</name></member>
+      <member refid="classChatSystem_1a1ad1116ebd480384ebb616fa6911c9a7" prot="private" virt="non-virtual"><scope>ChatSystem</scope><name>groups</name></member>
+      <member refid="classChatSystem_1af8226821a1506cbcba86a1f1d1d167d0" prot="private" virt="non-virtual"><scope>ChatSystem</scope><name>groupsIndex</name></member>
+      <member refid="classChatSystem_1ae09c160f066e1cf820e1292a6d3bf055" prot="private" virt="non-virtual"><scope>ChatSystem</scope><name>instance</name></member>
+      <member refid="classChatSystem_1af42b1d8da46f0bd6298acdc159027857" prot="private" virt="non-virtual"><scope>ChatSystem</scope><name>logger</name></member>
+      <member refid="classChatSystem_1a650c63b8a6563c0215b40b35d6cdad2f" prot="private" virt="non-virtual"><scope>ChatSystem</scope><name>members</name></member>
+      <member refid="classChatSystem_1a8f7193a679652938f5dac72626577ab9" prot="private" virt="non-virtual"><scope>ChatSystem</scope><name>membersByEntity</name></member>
+      <member refid="classChatSystem_1ab120bc3687987227ec453d9976a990e8" prot="private" virt="non-virtual"><scope>ChatSystem</scope><name>membersIndex</name></member>
+      <member refid="classChatSystem_1aaf14c5e0da9adfa222845285146123a5" prot="private" virt="non-virtual"><scope>ChatSystem</scope><name>messagesAsDispatched</name></member>
+      <member refid="classChatSystem_1a957d1a982afa2489aaf5b1ce87ac5fe6" prot="private" virt="non-virtual"><scope>ChatSystem</scope><name>messagesByTimestamp</name></member>
+      <member refid="classChatSystem_1a778a28302a6cdf2a1db34032f0893987" prot="public" virt="virtual"><scope>ChatSystem</scope><name>sendMessage</name></member>
+      <member refid="classChatSystem_1a079b6cd12491c571db088711044fa8bd" prot="public" virt="virtual"><scope>ChatSystem</scope><name>setupView</name></member>
+      <member refid="classChatSystem_1a6f3997a696073fafdf6226143824eab4" prot="public" virt="virtual"><scope>ChatSystem</scope><name>transformObjects</name></member>
+      <member refid="classChatSystem_1a783a8fc23966f18a6c40fda9e97b4965" prot="public" virt="virtual"><scope>ChatSystem</scope><name>~ChatSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

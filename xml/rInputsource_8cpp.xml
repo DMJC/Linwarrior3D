@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="rInputsource_8cpp" kind="file" language="C++">
+    <compoundname>rInputsource.cpp</compoundname>
+    <includes refid="rInputsource_8h" local="yes">rInputsource.h</includes>
+    <includes refid="Pad_8h" local="yes">de/hackcraft/io/Pad.h</includes>
+    <includes local="no">math.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>de/hackcraft/io/Pad.h</label>
+        <link refid="Pad_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>de/hackcraft/lang/OID.h</label>
+        <link refid="OID_8h"/>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/world/Component.h</label>
+        <link refid="Component_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>string.h</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="11">
+        <label>sstream</label>
+      </node>
+      <node id="12">
+        <label>math.h</label>
+      </node>
+      <node id="2">
+        <label>rInputsource.h</label>
+        <link refid="rInputsource_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/world/sub/misc/rInputsource.cpp</label>
+        <link refid="rInputsource_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>de/hackcraft/util/Binding.h</label>
+        <link refid="Binding_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="rInputsource_8cpp_1a63ac9028fb5e7d866b038386daf23316" prot="public" static="no">
+        <name>MECH_CHASSIS_LR_AXIS</name>
+        <initializer>AX_LR1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.cpp" line="9" column="9" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rInputsource_8cpp_1a23df261c2aed4f08050074fa2d63e7c1" prot="public" static="no">
+        <name>MECH_TURRET_LR_AXIS</name>
+        <initializer>AX_LR2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.cpp" line="10" column="9" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rInputsource_8cpp_1a265cf43e545e7d515a48886d47af604b" prot="public" static="no">
+        <name>MECH_TURRET_UD_AXIS</name>
+        <initializer>AX_UD2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.cpp" line="11" column="9" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rInputsource_8cpp_1a1d46d96d5c22857354f8fd8d1f4b4346" prot="public" static="no">
+        <name>MECH_THROTTLE_AXIS</name>
+        <initializer>AX_UD1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.cpp" line="12" column="9" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rInputsource_8cpp_1a36be8bfbb1d2914bb4ec02a117305493" prot="public" static="no">
+        <name>MECH_FIRE_BUTTON1</name>
+        <initializer>BT_R1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.cpp" line="13" column="9" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rInputsource_8cpp_1ad72f88689d5a64dd1ec0ea332d4c0f04" prot="public" static="no">
+        <name>MECH_FIRE_BUTTON2</name>
+        <initializer>BT_R2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.cpp" line="14" column="9" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rInputsource_8cpp_1a41b2ae615dacec18bd0b6805fd35d798" prot="public" static="no">
+        <name>MECH_JET_BUTTON1</name>
+        <initializer>BT_PD</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.cpp" line="15" column="9" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rInputsource_8cpp_1aa25a27552b8afd3e2842b8fb4fee69e9" prot="public" static="no">
+        <name>MECH_JET_BUTTON2</name>
+        <initializer>BT_L2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.cpp" line="16" column="9" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rInputsource_8cpp_1abb33555df47237255a07e0cc424a6667" prot="public" static="no">
+        <name>MECH_CAMERA_BUTTON</name>
+        <initializer>BT_PU</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.cpp" line="17" column="9" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rInputsource_8cpp_1a5703058608552aee8a85c2ce8de44591" prot="public" static="no">
+        <name>MECH_NEXT_BUTTON</name>
+        <initializer>BT_PR</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.cpp" line="18" column="9" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rInputsource_8cpp_1ad7bf0c606df301e806a34151bb8ecd85" prot="public" static="no">
+        <name>MECH_PREV_BUTTON</name>
+        <initializer>BT_PL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/misc/rInputsource.cpp" line="19" column="9" bodyfile="de/hackcraft/world/sub/misc/rInputsource.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/misc/rInputsource.cpp"/>
+  </compounddef>
+</doxygen>

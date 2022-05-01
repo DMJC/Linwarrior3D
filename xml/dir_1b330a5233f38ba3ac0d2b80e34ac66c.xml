@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_1b330a5233f38ba3ac0d2b80e34ac66c" kind="dir">
+    <compoundname>de/hackcraft/world/sub/trigger</compoundname>
+    <innerfile refid="rAlert_8cpp">rAlert.cpp</innerfile>
+    <innerfile refid="rAlert_8h">rAlert.h</innerfile>
+    <innerfile refid="rTrigger_8cpp">rTrigger.cpp</innerfile>
+    <innerfile refid="rTrigger_8h">rTrigger.h</innerfile>
+    <innerfile refid="TriggerSystem_8cpp">TriggerSystem.cpp</innerfile>
+    <innerfile refid="TriggerSystem_8h">TriggerSystem.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/trigger/"/>
+  </compounddef>
+</doxygen>

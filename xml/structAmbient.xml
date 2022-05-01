@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structAmbient" kind="struct" language="C++" prot="public">
+    <compoundname>Ambient</compoundname>
+    <includes local="no">Ambient.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structAmbient_1a1ac7ef7ce14e1da3b6b51804ac3ba7ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void galaxy</definition>
+        <argsstring>(float x, float y, float z, float *color, float scale)</argsstring>
+        <name>galaxy</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/proc/Ambient.h" line="13" column="21" bodyfile="de/hackcraft/proc/Ambient.cpp" bodystart="7" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structAmbient_1a8d2bfce1cf53af16e0b0e3373e6e3d88" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clouds</definition>
+        <argsstring>(float x, float y, float z, float *color)</argsstring>
+        <name>clouds</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/proc/Ambient.h" line="14" column="21" bodyfile="de/hackcraft/proc/Ambient.cpp" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="structAmbient_1a3cb9659b58abe6db159b4e6875cb8693" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sky</definition>
+        <argsstring>(float x, float y, float z, float *color, float hour=24.00f)</argsstring>
+        <name>sky</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>hour</declname>
+          <defval>24.00f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/proc/Ambient.h" line="15" column="21" bodyfile="de/hackcraft/proc/Ambient.cpp" bodystart="26" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Ambient</label>
+        <link refid="structAmbient"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/proc/Ambient.h" line="12" column="14" bodyfile="de/hackcraft/proc/Ambient.h" bodystart="12" bodyend="16"/>
+    <listofallmembers>
+      <member refid="structAmbient_1a8d2bfce1cf53af16e0b0e3373e6e3d88" prot="public" virt="non-virtual"><scope>Ambient</scope><name>clouds</name></member>
+      <member refid="structAmbient_1a1ac7ef7ce14e1da3b6b51804ac3ba7ae" prot="public" virt="non-virtual"><scope>Ambient</scope><name>galaxy</name></member>
+      <member refid="structAmbient_1a3cb9659b58abe6db159b4e6875cb8693" prot="public" virt="non-virtual"><scope>Ambient</scope><name>sky</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

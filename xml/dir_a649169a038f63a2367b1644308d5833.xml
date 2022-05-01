@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_a649169a038f63a2367b1644308d5833" kind="dir">
+    <compoundname>de/hackcraft/widget</compoundname>
+    <innerfile refid="Border_8cpp">Border.cpp</innerfile>
+    <innerfile refid="Border_8h">Border.h</innerfile>
+    <innerfile refid="Layout_8cpp">Layout.cpp</innerfile>
+    <innerfile refid="Layout_8h">Layout.h</innerfile>
+    <innerfile refid="Widget_8cpp">Widget.cpp</innerfile>
+    <innerfile refid="Widget_8h">Widget.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/widget/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="rTree_8h" kind="file" language="C++">
+    <compoundname>rTree.h</compoundname>
+    <includes refid="OID_8h" local="yes">de/hackcraft/lang/OID.h</includes>
+    <includes refid="GL_8h" local="yes">de/hackcraft/opengl/GL.h</includes>
+    <includes refid="math3d_8h" local="yes">de/hackcraft/psi3d/math3d.h</includes>
+    <includes refid="Component_8h" local="yes">de/hackcraft/world/Component.h</includes>
+    <includes refid="IModel_8h" local="yes">de/hackcraft/world/sub/model/IModel.h</includes>
+    <includes local="no">list</includes>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <includedby refid="OpenMission_8cpp" local="yes">de/hackcraft/game/OpenMission.cpp</includedby>
+    <includedby refid="rPlanetmap_8cpp" local="yes">de/hackcraft/world/sub/landscape/rPlanetmap.cpp</includedby>
+    <includedby refid="ModelSystem_8cpp" local="yes">de/hackcraft/world/sub/model/ModelSystem.cpp</includedby>
+    <includedby refid="rTree_8cpp" local="yes">de/hackcraft/world/sub/model/rTree.cpp</includedby>
+    <incdepgraph>
+      <node id="15">
+        <label>list</label>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/lang/OID.h</label>
+        <link refid="OID_8h"/>
+      </node>
+      <node id="9">
+        <label>de/hackcraft/world/Component.h</label>
+        <link refid="Component_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/world/sub/model/rTree.h</label>
+        <link refid="rTree_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="16">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+      </node>
+      <node id="14">
+        <label>de/hackcraft/world/sub/model/IModel.h</label>
+        <link refid="IModel_8h"/>
+      </node>
+      <node id="7">
+        <label>de/hackcraft/psi3d/math3d.h</label>
+        <link refid="math3d_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/opengl/GL.h</label>
+        <link refid="GL_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>string.h</label>
+      </node>
+      <node id="13">
+        <label>vector</label>
+      </node>
+      <node id="8">
+        <label>math.h</label>
+      </node>
+      <node id="10">
+        <label>de/hackcraft/util/Binding.h</label>
+        <link refid="Binding_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>de/hackcraft/world/sub/model/rTree.h</label>
+        <link refid="rTree_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/world/sub/landscape/rPlanetmap.cpp</label>
+        <link refid="rPlanetmap_8cpp"/>
+      </node>
+      <node id="4">
+        <label>de/hackcraft/world/sub/model/ModelSystem.cpp</label>
+        <link refid="ModelSystem_8cpp"/>
+      </node>
+      <node id="5">
+        <label>de/hackcraft/world/sub/model/rTree.cpp</label>
+        <link refid="rTree_8cpp"/>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/game/OpenMission.cpp</label>
+        <link refid="OpenMission_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structrTree" prot="public">rTree</innerclass>
+    <innerclass refid="structrTree_1_1TreeType" prot="protected">rTree::TreeType</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/model/rTree.h"/>
+  </compounddef>
+</doxygen>

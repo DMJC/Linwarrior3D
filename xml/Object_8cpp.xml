@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Object_8cpp" kind="file" language="C++">
+    <compoundname>Object.cpp</compoundname>
+    <includes refid="Object_8h" local="yes">Object.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>de/hackcraft/lang/Object.cpp</label>
+        <link refid="Object_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Object.h</label>
+        <link refid="Object_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/lang/Object.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="IComputer_8h" kind="file" language="C++">
+    <compoundname>IComputer.h</compoundname>
+    <includedby refid="rComcom_8h" local="yes">de/hackcraft/world/sub/computer/rComcom.h</includedby>
+    <includedby refid="rController_8h" local="yes">de/hackcraft/world/sub/computer/rController.h</includedby>
+    <includedby refid="rForcom_8h" local="yes">de/hackcraft/world/sub/computer/rForcom.h</includedby>
+    <includedby refid="rNavcom_8h" local="yes">de/hackcraft/world/sub/computer/rNavcom.h</includedby>
+    <invincdepgraph>
+      <node id="7">
+        <label>de/hackcraft/game/GameMission.cpp</label>
+        <link refid="GameMission_8cpp"/>
+      </node>
+      <node id="4">
+        <label>de/hackcraft/world/sub/computer/ComputerSystem.cpp</label>
+        <link refid="ComputerSystem_8cpp"/>
+      </node>
+      <node id="5">
+        <label>de/hackcraft/world/sub/computer/rComcom.cpp</label>
+        <link refid="rComcom_8cpp"/>
+      </node>
+      <node id="6">
+        <label>de/hackcraft/world/sub/computer/rController.h</label>
+        <link refid="rController_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>de/hackcraft/world/sub/computer/rForcom.cpp</label>
+        <link refid="rForcom_8cpp"/>
+      </node>
+      <node id="13">
+        <label>de/hackcraft/world/sub/computer/rNavcom.cpp</label>
+        <link refid="rNavcom_8cpp"/>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/world/object/cMech.cpp</label>
+        <link refid="cMech_8cpp"/>
+      </node>
+      <node id="9">
+        <label>de/hackcraft/world/sub/computer/rController.cpp</label>
+        <link refid="rController_8cpp"/>
+      </node>
+      <node id="12">
+        <label>de/hackcraft/world/sub/computer/rNavcom.h</label>
+        <link refid="rNavcom_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>de/hackcraft/game/OpenMission.cpp</label>
+        <link refid="OpenMission_8cpp"/>
+      </node>
+      <node id="10">
+        <label>de/hackcraft/world/sub/computer/rForcom.h</label>
+        <link refid="rForcom_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/world/sub/computer/IComputer.h</label>
+        <link refid="IComputer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/world/sub/computer/rComcom.h</label>
+        <link refid="rComcom_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classIComputer" prot="public">IComputer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/computer/IComputer.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1014 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classModelSystem" kind="class" language="C++" prot="public">
+    <compoundname>ModelSystem</compoundname>
+    <basecompoundref refid="classSubsystem" prot="public" virt="non-virtual">Subsystem</basecompoundref>
+    <includes local="no">ModelSystem.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classModelSystem_1af42b1d8da46f0bd6298acdc159027857" prot="private" static="yes" mutable="no">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger * logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="classLogger_1ac11c529e5152e544fbc4c6594add48b6" kindref="member">Logger::getLogger</ref>(&quot;de.hackcraft.world.sub.model.ModelSystem&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="88" column="19" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classModelSystem_1a5136e50fa3803f05a9ac1729c6cafc2f" prot="private" static="yes" mutable="no">
+        <type><ref refid="classModelSystem" kindref="compound">ModelSystem</ref> *</type>
+        <definition>ModelSystem * instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="90" column="24" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classModelSystem_1a9edc733edce325337da4e63eccfe3ff6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structrBillboard" kindref="compound">rBillboard</ref> * &gt;</type>
+        <definition>std::vector&lt;rBillboard*&gt; billboards</definition>
+        <argsstring></argsstring>
+        <name>billboards</name>
+        <briefdescription>
+<para>Allocated components of this type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="94" column="17" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classModelSystem_1a6b0bfc5b765ed8d14605beec47bd7763" prot="private" static="no" mutable="no">
+        <type><ref refid="classGeomap" kindref="compound">Geomap</ref>&lt; <ref refid="structrBillboard" kindref="compound">rBillboard</ref> * &gt;</type>
+        <definition>Geomap&lt;rBillboard*&gt; billboardsGeodex</definition>
+        <argsstring></argsstring>
+        <name>billboardsGeodex</name>
+        <briefdescription>
+<para>Allows searching the world in a structured manner. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="96" column="12" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classModelSystem_1ae79dfe529ce0e7d1ce5b3d5242585dc0" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="structrBillboard" kindref="compound">rBillboard</ref> * &gt; *</type>
+        <definition>std::list&lt;rBillboard*&gt;* billboardsVisible</definition>
+        <argsstring></argsstring>
+        <name>billboardsVisible</name>
+        <briefdescription>
+<para>Lists visible components of this type for the current frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="98" column="15" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classModelSystem_1a6a25f62b924d658f9781ed9ba6b16bc4" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structrRigged" kindref="compound">rRigged</ref> * &gt;</type>
+        <definition>std::vector&lt;rRigged*&gt; riggeds</definition>
+        <argsstring></argsstring>
+        <name>riggeds</name>
+        <briefdescription>
+<para>Allocated components of this type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="101" column="17" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classModelSystem_1a662784869161d47a0b0f9374fc0eaf84" prot="private" static="no" mutable="no">
+        <type><ref refid="classGeomap" kindref="compound">Geomap</ref>&lt; <ref refid="structrRigged" kindref="compound">rRigged</ref> * &gt;</type>
+        <definition>Geomap&lt;rRigged*&gt; riggedsGeodex</definition>
+        <argsstring></argsstring>
+        <name>riggedsGeodex</name>
+        <briefdescription>
+<para>Allows searching the world in a structured manner. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="103" column="12" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classModelSystem_1adca64c72af7353d648bf5ac8e0db0de5" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="structrRigged" kindref="compound">rRigged</ref> * &gt; *</type>
+        <definition>std::list&lt;rRigged*&gt;* riggedsVisible</definition>
+        <argsstring></argsstring>
+        <name>riggedsVisible</name>
+        <briefdescription>
+<para>Lists visible components of this type for the current frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="105" column="15" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classModelSystem_1ab72bfc0978707464f51ad0aa6d8328eb" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classrScatter" kindref="compound">rScatter</ref> * &gt;</type>
+        <definition>std::vector&lt;rScatter*&gt; scatters</definition>
+        <argsstring></argsstring>
+        <name>scatters</name>
+        <briefdescription>
+<para>Allocated components of this type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="108" column="17" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classModelSystem_1a96bcb480ec9e2a24a09ec977a309d146" prot="private" static="no" mutable="no">
+        <type><ref refid="classGeomap" kindref="compound">Geomap</ref>&lt; <ref refid="classrScatter" kindref="compound">rScatter</ref> * &gt;</type>
+        <definition>Geomap&lt;rScatter*&gt; scattersGeodex</definition>
+        <argsstring></argsstring>
+        <name>scattersGeodex</name>
+        <briefdescription>
+<para>Allows searching the world in a structured manner. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="110" column="12" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classModelSystem_1a0c3e2063abd2ca097f8d4e19a46ba8f4" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="classrScatter" kindref="compound">rScatter</ref> * &gt; *</type>
+        <definition>std::list&lt;rScatter*&gt;* scattersVisible</definition>
+        <argsstring></argsstring>
+        <name>scattersVisible</name>
+        <briefdescription>
+<para>Lists visible components of this type for the current frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="112" column="15" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classModelSystem_1a31a3d8999ced144677ce956a28a5ae4c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structrTree" kindref="compound">rTree</ref> * &gt;</type>
+        <definition>std::vector&lt;rTree*&gt; trees</definition>
+        <argsstring></argsstring>
+        <name>trees</name>
+        <briefdescription>
+<para>Allocated components of this type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="115" column="17" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classModelSystem_1a465c676ea4e802fe70af9658f2e08cef" prot="private" static="no" mutable="no">
+        <type><ref refid="classGeomap" kindref="compound">Geomap</ref>&lt; <ref refid="structrTree" kindref="compound">rTree</ref> * &gt;</type>
+        <definition>Geomap&lt;rTree*&gt; treesGeodex</definition>
+        <argsstring></argsstring>
+        <name>treesGeodex</name>
+        <briefdescription>
+<para>Allows searching the world in a structured manner. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="117" column="12" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classModelSystem_1a2e238cd910bba5b75aa21cea1c189c94" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="structrTree" kindref="compound">rTree</ref> * &gt; *</type>
+        <definition>std::list&lt;rTree*&gt;* treesVisible</definition>
+        <argsstring></argsstring>
+        <name>treesVisible</name>
+        <briefdescription>
+<para>Lists visible components of this type for the current frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="119" column="15" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classModelSystem_1a3ed6eaefb9faf59f36c88dd7c53e2344" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float viewdistance</definition>
+        <argsstring></argsstring>
+        <name>viewdistance</name>
+        <briefdescription>
+<para>Render only objects that far away. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="122" column="11" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classModelSystem_1a1016b79f939323bd7f8420951bb0e5aa" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float visorigin[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>visorigin</name>
+        <briefdescription>
+<para>Rendering origin or camera position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="125" column="11" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classModelSystem_1a570cf0832d2e5b7080c7dd8dce171c98" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classModelSystem" kindref="compound">ModelSystem</ref> *</type>
+        <definition>ModelSystem * getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="36" column="24" bodyfile="de/hackcraft/world/sub/model/ModelSystem.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classModelSystem_1af4ac192491ef8c840a9c6fb96d7da78e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ModelSystem</definition>
+        <argsstring>()</argsstring>
+        <name>ModelSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="39" column="5" bodyfile="de/hackcraft/world/sub/model/ModelSystem.cpp" bodystart="27" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classModelSystem_1aa610f9e3cd36464cdee887c033301342" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~ModelSystem</definition>
+        <argsstring>()</argsstring>
+        <name>~ModelSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="40" column="13" bodyfile="de/hackcraft/world/sub/model/ModelSystem.cpp" bodystart="40" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classModelSystem_1a9dd824417c1ef87818cd5ecf4cbdb8af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add</definition>
+        <argsstring>(rBillboard *model)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structrBillboard" kindref="compound">rBillboard</ref> *</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="42" column="10" bodyfile="de/hackcraft/world/sub/model/ModelSystem.cpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classModelSystem_1a52aaec08aa6011f877d381a169c780e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add</definition>
+        <argsstring>(rRigged *model)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structrRigged" kindref="compound">rRigged</ref> *</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="43" column="10" bodyfile="de/hackcraft/world/sub/model/ModelSystem.cpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classModelSystem_1a302ef4b70404c5a5ba03b95c48d0d98c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add</definition>
+        <argsstring>(rScatter *model)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="classrScatter" kindref="compound">rScatter</ref> *</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="44" column="10" bodyfile="de/hackcraft/world/sub/model/ModelSystem.cpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classModelSystem_1ac9b96bc1fc96307bf556a5e7c5680101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add</definition>
+        <argsstring>(rTree *model)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structrTree" kindref="compound">rTree</ref> *</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="45" column="10" bodyfile="de/hackcraft/world/sub/model/ModelSystem.cpp" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classModelSystem_1ad0f555122462d7c7444758ba58689010" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float constrainParticle</definition>
+        <argsstring>(Entity *ex, float *worldpos, float radius)</argsstring>
+        <name>constrainParticle</name>
+        <reimplements refid="classSubsystem_1a1954eb6f5a3752d2f1fd6d119fd3fde8">constrainParticle</reimplements>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>ex</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>worldpos</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+<para>Limit position to accessible areas and returns impact depth. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>worldpos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The particle position to be constrained given in world coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the particle in terms of a radius. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if there was no collision, else the maximum impact depth. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="55" column="19" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classModelSystem_1ad6a7b46bef07e40d079342cb85364f50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void advanceTime</definition>
+        <argsstring>(int deltamsec)</argsstring>
+        <name>advanceTime</name>
+        <reimplements refid="classSubsystem_1ae539443a3a32579b89439ec22aaba32b">advanceTime</reimplements>
+        <param>
+          <type>int</type>
+          <declname>deltamsec</declname>
+        </param>
+        <briefdescription>
+<para>Advance simulation time for one frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="59" column="18" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classModelSystem_1a306921a31f28265fb44dce35ce857e87" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void clusterObjects</definition>
+        <argsstring>()</argsstring>
+        <name>clusterObjects</name>
+        <reimplements refid="classSubsystem_1aac346cec652a4bb213bee2a5e74c7fc9">clusterObjects</reimplements>
+        <briefdescription>
+<para>Re-build spatial clustering of objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="62" column="18" bodyfile="de/hackcraft/world/sub/model/ModelSystem.cpp" bodystart="64" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classModelSystem_1a1cfbbbc439131c5353cd1e766478da27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dispatchMessages</definition>
+        <argsstring>()</argsstring>
+        <name>dispatchMessages</name>
+        <reimplements refid="classSubsystem_1affbd764192264a4e1e440cf073999278">dispatchMessages</reimplements>
+        <briefdescription>
+<para>Deliver overdue messages to objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="65" column="18" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classModelSystem_1a1604b9015255299958252d39b1ebb942" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void animateObjects</definition>
+        <argsstring>()</argsstring>
+        <name>animateObjects</name>
+        <reimplements refid="classSubsystem_1a1981e562883e5e69767bec35bcee7af1">animateObjects</reimplements>
+        <briefdescription>
+<para>Let all objects process input, adjust pose and calculate physics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="68" column="18" bodyfile="de/hackcraft/world/sub/model/ModelSystem.cpp" bodystart="115" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classModelSystem_1a56676650cac0479af5dde54ada1884e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void transformObjects</definition>
+        <argsstring>()</argsstring>
+        <name>transformObjects</name>
+        <reimplements refid="classSubsystem_1af1f4f853081af6fcb5037b99618009d2">transformObjects</reimplements>
+        <briefdescription>
+<para>Let all objects calculate transformation matrices etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="71" column="18" bodyfile="de/hackcraft/world/sub/model/ModelSystem.cpp" bodystart="145" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classModelSystem_1ad5fb828f792b28fac443a1e1311259b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void setupView</definition>
+        <argsstring>(float *pos, float *ori)</argsstring>
+        <name>setupView</name>
+        <reimplements refid="classSubsystem_1a7e9713a6b941a1ff3e85a2e10cd4946f">setupView</reimplements>
+        <param>
+          <type>float *</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>ori</declname>
+        </param>
+        <briefdescription>
+<para>Setup structures for rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="74" column="18" bodyfile="de/hackcraft/world/sub/model/ModelSystem.cpp" bodystart="159" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classModelSystem_1ad6ad3f680e505f98d83d049e15f0d797" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool drawBack</definition>
+        <argsstring>()</argsstring>
+        <name>drawBack</name>
+        <reimplements refid="classSubsystem_1ab6879b94c7c750768750669e7feb9c97">drawBack</reimplements>
+        <briefdescription>
+<para>Draws background (skybox). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>False if the background was not painted or is not covered completely - true otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="79" column="18" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classModelSystem_1a044d5ff7d7174ed434fcebbef82bc275" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void drawSolid</definition>
+        <argsstring>()</argsstring>
+        <name>drawSolid</name>
+        <reimplements refid="classSubsystem_1a7037e4616081238dc81eb0e947cba4f1">drawSolid</reimplements>
+        <briefdescription>
+<para>Draw all <ref refid="classObject" kindref="compound">Object</ref>&apos;s solid surfaces (calls their drawSolid method). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="82" column="18" bodyfile="de/hackcraft/world/sub/model/ModelSystem.cpp" bodystart="198" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classModelSystem_1a777e1926a0150b45a189753046343765" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void drawEffect</definition>
+        <argsstring>()</argsstring>
+        <name>drawEffect</name>
+        <reimplements refid="classSubsystem_1a743d69df45ff83f7531c4eeb0e225405">drawEffect</reimplements>
+        <briefdescription>
+<para>Draw all <ref refid="classObject" kindref="compound">Object</ref>&apos;s effects (calls their drawEffect method). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="85" column="18" bodyfile="de/hackcraft/world/sub/model/ModelSystem.cpp" bodystart="234" bodyend="296"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages small to medium scale model rendering, collision and so on. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Subsystem</label>
+        <link refid="classSubsystem"/>
+      </node>
+      <node id="1">
+        <label>ModelSystem</label>
+        <link refid="classModelSystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="16">
+        <label>list&lt; Particle * &gt;</label>
+        <childnode refid="17" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="51">
+        <label>Geomap&lt; rBillboard * &gt;</label>
+        <link refid="classGeomap"/>
+        <childnode refid="52" relation="usage">
+          <edgelabel>-geomap</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>stringstream</label>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vector&lt; Binding * &gt;</label>
+        <childnode refid="13" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>vector&lt; rRigged * &gt;</label>
+        <childnode refid="38" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>rTree</label>
+        <link refid="structrTree"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>#tree</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>-sBarktexs</edgelabel>
+          <edgelabel>-sLeaftexs</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>-sTrees</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="46">
+        <label>Geomap&lt; rRigged * &gt;</label>
+        <link refid="classGeomap"/>
+        <childnode refid="47" relation="usage">
+          <edgelabel>-geomap</edgelabel>
+        </childnode>
+      </node>
+      <node id="48">
+        <label>list&lt; rRigged * &gt;</label>
+        <childnode refid="38" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+object</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>+prebinds</edgelabel>
+          <edgelabel>+postbinds</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>map&lt; int, float * &gt;</label>
+      </node>
+      <node id="22">
+        <label>TreeType</label>
+        <link refid="structrTree_1_1TreeType"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>+leaves</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vector&lt; long &gt;</label>
+      </node>
+      <node id="27">
+        <label>LevelStreamLogger</label>
+        <link refid="classLevelStreamLogger"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>-logstream</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>IModel</label>
+        <link refid="classIModel"/>
+      </node>
+      <node id="42">
+        <label>model</label>
+        <link refid="structMD5Format_1_1model"/>
+      </node>
+      <node id="43">
+        <label>joint</label>
+        <link refid="structMD5Format_1_1joint"/>
+      </node>
+      <node id="25">
+        <label>map&lt; OID, rTree::TreeType * &gt;</label>
+        <childnode refid="22" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>string</label>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>list&lt; rBillboard * &gt;</label>
+        <childnode refid="19" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>rRigged</label>
+        <link refid="structrRigged"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>#baseverts</edgelabel>
+          <edgelabel>#basenorms</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>+jointpoints</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>+materials</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>#model</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>+joints</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Particle</label>
+        <link refid="structParticle"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>+trail</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>map&lt; std::string, unsigned long &gt;</label>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="52">
+        <label>unordered_map&lt; Geokey, std::list&lt; rBillboard * &gt; &gt;</label>
+        <childnode refid="18" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Subsystem</label>
+        <link refid="classSubsystem"/>
+      </node>
+      <node id="11">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="49">
+        <label>Geomap&lt; rTree * &gt;</label>
+        <link refid="classGeomap"/>
+        <childnode refid="50" relation="usage">
+          <edgelabel>-geomap</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>-infoLogger</edgelabel>
+          <edgelabel>-traceLogger</edgelabel>
+          <edgelabel>-warnLogger</edgelabel>
+          <edgelabel>-errorLogger</edgelabel>
+          <edgelabel>-debugLogger</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>-globalAppender</edgelabel>
+          <edgelabel>-appender</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>-qualifiedLoggerName</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>-parentLogger</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Entity</label>
+        <link refid="classEntity"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>+components</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+name</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>unordered_map&lt; Geokey, std::list&lt; rTree * &gt; &gt;</label>
+        <childnode refid="45" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Binding</label>
+        <link refid="classBinding"/>
+      </node>
+      <node id="35">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+      <node id="33">
+        <label>ios_base</label>
+      </node>
+      <node id="40">
+        <label>map&lt; int, int &gt;</label>
+      </node>
+      <node id="45">
+        <label>list&lt; rTree * &gt;</label>
+        <childnode refid="21" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vector&lt; Component * &gt;</label>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>map&lt; int, long &gt;</label>
+      </node>
+      <node id="29">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>list&lt; rScatter * &gt;</label>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>vector&lt; rScatter * &gt;</label>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>unordered_map&lt; Geokey, std::list&lt; rScatter * &gt; &gt;</label>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>rScatter</label>
+        <link refid="classrScatter"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>+sTextures</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>#decalParticles</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>vector&lt; rTree * &gt;</label>
+        <childnode refid="21" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>vector&lt; float &gt;</label>
+      </node>
+      <node id="3">
+        <label>Geomap&lt; rScatter * &gt;</label>
+        <link refid="classGeomap"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-geomap</edgelabel>
+        </childnode>
+      </node>
+      <node id="44">
+        <label>vector&lt; rBillboard * &gt;</label>
+        <childnode refid="19" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="19">
+        <label>rBillboard</label>
+        <link refid="structrBillboard"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+cname</edgelabel>
+          <edgelabel>+name</edgelabel>
+          <edgelabel>+description</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ModelSystem</label>
+        <link refid="classModelSystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-scattersGeodex</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>-billboardsVisible</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>-trees</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-scattersVisible</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>-scatters</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>-riggeds</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>-billboards</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>-treesVisible</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>-riggedsGeodex</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>-instance</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>-riggedsVisible</edgelabel>
+        </childnode>
+        <childnode refid="49" relation="usage">
+          <edgelabel>-treesGeodex</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>-billboardsGeodex</edgelabel>
+        </childnode>
+      </node>
+      <node id="47">
+        <label>unordered_map&lt; Geokey, std::list&lt; rRigged * &gt; &gt;</label>
+        <childnode refid="48" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/model/ModelSystem.h" line="34" column="35" bodyfile="de/hackcraft/world/sub/model/ModelSystem.h" bodystart="34" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classModelSystem_1a9dd824417c1ef87818cd5ecf4cbdb8af" prot="public" virt="non-virtual"><scope>ModelSystem</scope><name>add</name></member>
+      <member refid="classModelSystem_1a52aaec08aa6011f877d381a169c780e9" prot="public" virt="non-virtual"><scope>ModelSystem</scope><name>add</name></member>
+      <member refid="classModelSystem_1a302ef4b70404c5a5ba03b95c48d0d98c" prot="public" virt="non-virtual"><scope>ModelSystem</scope><name>add</name></member>
+      <member refid="classModelSystem_1ac9b96bc1fc96307bf556a5e7c5680101" prot="public" virt="non-virtual"><scope>ModelSystem</scope><name>add</name></member>
+      <member refid="classModelSystem_1ad6a7b46bef07e40d079342cb85364f50" prot="public" virt="virtual"><scope>ModelSystem</scope><name>advanceTime</name></member>
+      <member refid="classModelSystem_1a1604b9015255299958252d39b1ebb942" prot="public" virt="virtual"><scope>ModelSystem</scope><name>animateObjects</name></member>
+      <member refid="classModelSystem_1a9edc733edce325337da4e63eccfe3ff6" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>billboards</name></member>
+      <member refid="classModelSystem_1a6b0bfc5b765ed8d14605beec47bd7763" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>billboardsGeodex</name></member>
+      <member refid="classModelSystem_1ae79dfe529ce0e7d1ce5b3d5242585dc0" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>billboardsVisible</name></member>
+      <member refid="classModelSystem_1a306921a31f28265fb44dce35ce857e87" prot="public" virt="virtual"><scope>ModelSystem</scope><name>clusterObjects</name></member>
+      <member refid="classModelSystem_1ad0f555122462d7c7444758ba58689010" prot="public" virt="virtual"><scope>ModelSystem</scope><name>constrainParticle</name></member>
+      <member refid="classModelSystem_1a1cfbbbc439131c5353cd1e766478da27" prot="public" virt="virtual"><scope>ModelSystem</scope><name>dispatchMessages</name></member>
+      <member refid="classModelSystem_1ad6ad3f680e505f98d83d049e15f0d797" prot="public" virt="virtual"><scope>ModelSystem</scope><name>drawBack</name></member>
+      <member refid="classModelSystem_1a777e1926a0150b45a189753046343765" prot="public" virt="virtual"><scope>ModelSystem</scope><name>drawEffect</name></member>
+      <member refid="classModelSystem_1a044d5ff7d7174ed434fcebbef82bc275" prot="public" virt="virtual"><scope>ModelSystem</scope><name>drawSolid</name></member>
+      <member refid="classSubsystem_1a8e36b642c7e1cc84986eee262c235b0b" prot="public" virt="virtual"><scope>ModelSystem</scope><name>getId</name></member>
+      <member refid="classModelSystem_1a570cf0832d2e5b7080c7dd8dce171c98" prot="public" virt="non-virtual"><scope>ModelSystem</scope><name>getInstance</name></member>
+      <member refid="classSubsystem_1a4ee385cf4aecac6d59e8fa07a9aa890d" prot="public" virt="virtual"><scope>ModelSystem</scope><name>getName</name></member>
+      <member refid="classModelSystem_1a5136e50fa3803f05a9ac1729c6cafc2f" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>instance</name></member>
+      <member refid="classModelSystem_1af42b1d8da46f0bd6298acdc159027857" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>logger</name></member>
+      <member refid="classModelSystem_1af4ac192491ef8c840a9c6fb96d7da78e" prot="public" virt="non-virtual"><scope>ModelSystem</scope><name>ModelSystem</name></member>
+      <member refid="classModelSystem_1a6a25f62b924d658f9781ed9ba6b16bc4" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>riggeds</name></member>
+      <member refid="classModelSystem_1a662784869161d47a0b0f9374fc0eaf84" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>riggedsGeodex</name></member>
+      <member refid="classModelSystem_1adca64c72af7353d648bf5ac8e0db0de5" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>riggedsVisible</name></member>
+      <member refid="classModelSystem_1ab72bfc0978707464f51ad0aa6d8328eb" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>scatters</name></member>
+      <member refid="classModelSystem_1a96bcb480ec9e2a24a09ec977a309d146" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>scattersGeodex</name></member>
+      <member refid="classModelSystem_1a0c3e2063abd2ca097f8d4e19a46ba8f4" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>scattersVisible</name></member>
+      <member refid="classModelSystem_1ad5fb828f792b28fac443a1e1311259b5" prot="public" virt="virtual"><scope>ModelSystem</scope><name>setupView</name></member>
+      <member refid="classModelSystem_1a56676650cac0479af5dde54ada1884e0" prot="public" virt="virtual"><scope>ModelSystem</scope><name>transformObjects</name></member>
+      <member refid="classModelSystem_1a31a3d8999ced144677ce956a28a5ae4c" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>trees</name></member>
+      <member refid="classModelSystem_1a465c676ea4e802fe70af9658f2e08cef" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>treesGeodex</name></member>
+      <member refid="classModelSystem_1a2e238cd910bba5b75aa21cea1c189c94" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>treesVisible</name></member>
+      <member refid="classModelSystem_1a3ed6eaefb9faf59f36c88dd7c53e2344" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>viewdistance</name></member>
+      <member refid="classModelSystem_1a1016b79f939323bd7f8420951bb0e5aa" prot="private" virt="non-virtual"><scope>ModelSystem</scope><name>visorigin</name></member>
+      <member refid="classModelSystem_1aa610f9e3cd36464cdee887c033301342" prot="public" virt="virtual"><scope>ModelSystem</scope><name>~ModelSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

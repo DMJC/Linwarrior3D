@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Surface_8cpp" kind="file" language="C++">
+    <compoundname>Surface.cpp</compoundname>
+    <includes refid="Surface_8h" local="yes">Surface.h</includes>
+    <includes refid="Distortion_8h" local="yes">de/hackcraft/proc/Distortion.h</includes>
+    <includes refid="Noise_8h" local="yes">de/hackcraft/proc/Noise.h</includes>
+    <includes refid="Solid_8h" local="yes">de/hackcraft/proc/Solid.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>de/hackcraft/proc/Noise.h</label>
+        <link refid="Noise_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/proc/Surface.cpp</label>
+        <link refid="Surface_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cmath</label>
+      </node>
+      <node id="2">
+        <label>Surface.h</label>
+        <link refid="Surface_8h"/>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/proc/Distortion.h</label>
+        <link refid="Distortion_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>de/hackcraft/proc/Solid.h</label>
+        <link refid="Solid_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/proc/Surface.cpp"/>
+  </compounddef>
+</doxygen>

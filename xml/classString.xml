@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classString" kind="class" language="C++" prot="public">
+    <compoundname>String</compoundname>
+    <basecompoundref refid="classObject" prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes local="no">String.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classString_1a5c33da5929c9f2f9ef8d006d2350e6ec" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/String.h" line="17" column="17" bodyfile="de/hackcraft/lang/String.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classString_1a8db865e64c3c3f65ec6a0b6fd8c09a94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>String</definition>
+        <argsstring>()</argsstring>
+        <name>String</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/String.h" line="19" column="5" bodyfile="de/hackcraft/lang/String.cpp" bodystart="4" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classString_1a88ffc95cc8ac550f8d44c30a88d00372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>String</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>String</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/String.h" line="21" column="5" bodyfile="de/hackcraft/lang/String.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classString_1a998ab66c7adb23a76179eec57d05de9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>~String</definition>
+        <argsstring>()</argsstring>
+        <name>~String</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/String.h" line="23" column="5" bodyfile="de/hackcraft/lang/String.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classString_1a74e537f9d314005510eff1f8ef72f255" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool equals</definition>
+        <argsstring>(String *str)</argsstring>
+        <name>equals</name>
+        <param>
+          <type><ref refid="classString" kindref="compound">String</ref> *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/String.h" line="25" column="10" bodyfile="de/hackcraft/lang/String.cpp" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classString_1a077e18fe97323c7194e2665ffc766399" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int hashCode</definition>
+        <argsstring>()</argsstring>
+        <name>hashCode</name>
+        <reimplements refid="classObject_1a077e18fe97323c7194e2665ffc766399">hashCode</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/String.h" line="27" column="9" bodyfile="de/hackcraft/lang/String.cpp" bodystart="21" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classString_1a719a81ee816e96b01f05361883d5435d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classString" kindref="compound">String</ref> *</type>
+        <definition>String * toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="classObject_1a719a81ee816e96b01f05361883d5435d">toString</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/String.h" line="29" column="12" bodyfile="de/hackcraft/lang/String.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classString_1a6498bb4bec5199f8d89f5baa0d375a43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * c_str</definition>
+        <argsstring>()</argsstring>
+        <name>c_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/String.h" line="31" column="16" bodyfile="de/hackcraft/lang/String.cpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>String</label>
+        <link refid="classString"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Object</label>
+        <link refid="classObject"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>String</label>
+        <link refid="classString"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-value</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Object</label>
+        <link refid="classObject"/>
+      </node>
+      <node id="4">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/lang/String.h" line="16" column="27" bodyfile="de/hackcraft/lang/String.h" bodystart="16" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classString_1a6498bb4bec5199f8d89f5baa0d375a43" prot="public" virt="non-virtual"><scope>String</scope><name>c_str</name></member>
+      <member refid="classObject_1a9d682ddd9db854c4c5800b816d8f071a" prot="protected" virt="virtual"><scope>String</scope><name>clone</name></member>
+      <member refid="classString_1a74e537f9d314005510eff1f8ef72f255" prot="public" virt="non-virtual"><scope>String</scope><name>equals</name></member>
+      <member refid="classObject_1a04ea2beb8d4571b0b4753ad3b4862699" prot="public" virt="virtual" ambiguityscope="Object::"><scope>String</scope><name>equals</name></member>
+      <member refid="classString_1a077e18fe97323c7194e2665ffc766399" prot="public" virt="virtual"><scope>String</scope><name>hashCode</name></member>
+      <member refid="classString_1a8db865e64c3c3f65ec6a0b6fd8c09a94" prot="public" virt="non-virtual"><scope>String</scope><name>String</name></member>
+      <member refid="classString_1a88ffc95cc8ac550f8d44c30a88d00372" prot="public" virt="non-virtual"><scope>String</scope><name>String</name></member>
+      <member refid="classString_1a719a81ee816e96b01f05361883d5435d" prot="public" virt="virtual"><scope>String</scope><name>toString</name></member>
+      <member refid="classString_1a5c33da5929c9f2f9ef8d006d2350e6ec" prot="private" virt="non-virtual"><scope>String</scope><name>value</name></member>
+      <member refid="classString_1a998ab66c7adb23a76179eec57d05de9d" prot="public" virt="non-virtual"><scope>String</scope><name>~String</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

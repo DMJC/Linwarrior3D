@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_bffe8f3954ac7fd7d8c5e613fe1007e2" kind="dir">
+    <compoundname>de/hackcraft/world/sub/weapon</compoundname>
+    <innerfile refid="rTarcom_8cpp">rTarcom.cpp</innerfile>
+    <innerfile refid="rTarcom_8h">rTarcom.h</innerfile>
+    <innerfile refid="rTarget_8cpp">rTarget.cpp</innerfile>
+    <innerfile refid="rTarget_8h">rTarget.h</innerfile>
+    <innerfile refid="rWeapon_8cpp">rWeapon.cpp</innerfile>
+    <innerfile refid="rWeapon_8h">rWeapon.h</innerfile>
+    <innerfile refid="rWeaponExplosion_8cpp">rWeaponExplosion.cpp</innerfile>
+    <innerfile refid="rWeaponExplosion_8h">rWeaponExplosion.h</innerfile>
+    <innerfile refid="rWeaponHoming_8cpp">rWeaponHoming.cpp</innerfile>
+    <innerfile refid="rWeaponHoming_8h">rWeaponHoming.h</innerfile>
+    <innerfile refid="rWeaponMachinegun_8cpp">rWeaponMachinegun.cpp</innerfile>
+    <innerfile refid="rWeaponMachinegun_8h">rWeaponMachinegun.h</innerfile>
+    <innerfile refid="rWeaponPlasmagun_8cpp">rWeaponPlasmagun.cpp</innerfile>
+    <innerfile refid="rWeaponPlasmagun_8h">rWeaponPlasmagun.h</innerfile>
+    <innerfile refid="rWeaponRaybeam_8cpp">rWeaponRaybeam.cpp</innerfile>
+    <innerfile refid="rWeaponRaybeam_8h">rWeaponRaybeam.h</innerfile>
+    <innerfile refid="rWeaponSparkgun_8cpp">rWeaponSparkgun.cpp</innerfile>
+    <innerfile refid="rWeaponSparkgun_8h">rWeaponSparkgun.h</innerfile>
+    <innerfile refid="rWepcom_8cpp">rWepcom.cpp</innerfile>
+    <innerfile refid="rWepcom_8h">rWepcom.h</innerfile>
+    <innerfile refid="WeaponSystem_8cpp">WeaponSystem.cpp</innerfile>
+    <innerfile refid="WeaponSystem_8h">WeaponSystem.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/weapon/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1082 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classWeaponSystem" kind="class" language="C++" prot="public">
+    <compoundname>WeaponSystem</compoundname>
+    <basecompoundref refid="classSubsystem" prot="public" virt="non-virtual">Subsystem</basecompoundref>
+    <includes local="no">WeaponSystem.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classWeaponSystem_1af42b1d8da46f0bd6298acdc159027857" prot="private" static="yes" mutable="no">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger * logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="classLogger_1ac11c529e5152e544fbc4c6594add48b6" kindref="member">Logger::getLogger</ref>(&quot;de.hackcraft.world.sub.weapon.WeaponSystem&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="109" column="19" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWeaponSystem_1af039db62b310509da5d18a47618a306d" prot="private" static="yes" mutable="no">
+        <type><ref refid="classWeaponSystem" kindref="compound">WeaponSystem</ref> *</type>
+        <definition>WeaponSystem * instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="111" column="25" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWeaponSystem_1a171d2c0098cdea943a53dfa44efc4d7c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structrTarcom" kindref="compound">rTarcom</ref> * &gt;</type>
+        <definition>std::vector&lt;rTarcom*&gt; tarcoms</definition>
+        <argsstring></argsstring>
+        <name>tarcoms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="114" column="17" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWeaponSystem_1af46a977057f267a3c838377e9af09562" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structrWepcom" kindref="compound">rWepcom</ref> * &gt;</type>
+        <definition>std::vector&lt;rWepcom*&gt; wepcoms</definition>
+        <argsstring></argsstring>
+        <name>wepcoms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="115" column="17" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWeaponSystem_1ab9771d5168e5c13ab726aa5bdc6f3053" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classrWeapon" kindref="compound">rWeapon</ref> * &gt;</type>
+        <definition>std::vector&lt;rWeapon*&gt; weapons</definition>
+        <argsstring></argsstring>
+        <name>weapons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="116" column="17" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWeaponSystem_1aaf7b8b9881794d76216c013904d8918f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structrTarget" kindref="compound">rTarget</ref> * &gt;</type>
+        <definition>std::vector&lt;rTarget*&gt; targets</definition>
+        <argsstring></argsstring>
+        <name>targets</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="117" column="17" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWeaponSystem_1ada740b2972eb75908f79c7b36d9f988c" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref>, <ref refid="structrTarcom" kindref="compound">rTarcom</ref> * &gt;</type>
+        <definition>std::map&lt;OID,rTarcom*&gt; tarcomsIndex</definition>
+        <argsstring></argsstring>
+        <name>tarcomsIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="119" column="14" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWeaponSystem_1ab36748d5d6197d86b7331060b6281a33" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref>, <ref refid="structrWepcom" kindref="compound">rWepcom</ref> * &gt;</type>
+        <definition>std::map&lt;OID,rWepcom*&gt; wepcomsIndex</definition>
+        <argsstring></argsstring>
+        <name>wepcomsIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="120" column="14" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWeaponSystem_1a757d91fe75dfd2dcc0aee08c068947f5" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref>, <ref refid="classrWeapon" kindref="compound">rWeapon</ref> * &gt;</type>
+        <definition>std::map&lt;OID,rWeapon*&gt; weaponsIndex</definition>
+        <argsstring></argsstring>
+        <name>weaponsIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="121" column="14" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWeaponSystem_1a191f9665d58cd951a6e2a0aafc78f860" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref>, <ref refid="structrTarget" kindref="compound">rTarget</ref> * &gt;</type>
+        <definition>std::map&lt;OID,rTarget*&gt; targetsIndex</definition>
+        <argsstring></argsstring>
+        <name>targetsIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="122" column="14" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWeaponSystem_1a41129200870456c2af184ae7e7953c7b" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref>, <ref refid="structrTarcom" kindref="compound">rTarcom</ref> * &gt;</type>
+        <definition>std::map&lt;OID,rTarcom*&gt; tarcomsByEntity</definition>
+        <argsstring></argsstring>
+        <name>tarcomsByEntity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="124" column="14" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWeaponSystem_1a34b76cc066d8e21845115aa7386ddd05" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref>, <ref refid="structrTarget" kindref="compound">rTarget</ref> * &gt;</type>
+        <definition>std::map&lt;OID,rTarget*&gt; targetsByEntity</definition>
+        <argsstring></argsstring>
+        <name>targetsByEntity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="125" column="14" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWeaponSystem_1a290391222cda6b6455c7cef3d2672523" prot="private" static="no" mutable="no">
+        <type><ref refid="classGeomap" kindref="compound">Geomap</ref>&lt; <ref refid="classrWeapon" kindref="compound">rWeapon</ref> * &gt;</type>
+        <definition>Geomap&lt;rWeapon*&gt; weaponsGeodex</definition>
+        <argsstring></argsstring>
+        <name>weaponsGeodex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="127" column="12" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWeaponSystem_1a96fa6518d106444265ed75391b260d72" prot="private" static="no" mutable="no">
+        <type><ref refid="classGeomap" kindref="compound">Geomap</ref>&lt; <ref refid="structrTarget" kindref="compound">rTarget</ref> * &gt;</type>
+        <definition>Geomap&lt;rTarget*&gt; targetsGeodex</definition>
+        <argsstring></argsstring>
+        <name>targetsGeodex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="128" column="12" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWeaponSystem_1a3ed6eaefb9faf59f36c88dd7c53e2344" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float viewdistance</definition>
+        <argsstring></argsstring>
+        <name>viewdistance</name>
+        <briefdescription>
+<para>Render only objects that far away. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="131" column="11" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWeaponSystem_1a1016b79f939323bd7f8420951bb0e5aa" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float visorigin[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>visorigin</name>
+        <briefdescription>
+<para>Rendering origin or camera position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="134" column="11" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWeaponSystem_1a28070bf1dd13f738472359ab8f8cbaa7" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="classrWeapon" kindref="compound">rWeapon</ref> * &gt; *</type>
+        <definition>std::list&lt;rWeapon*&gt;* weaponsVisible</definition>
+        <argsstring></argsstring>
+        <name>weaponsVisible</name>
+        <briefdescription>
+<para>Visible objects for next rendering - (re-)set in setupView. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="137" column="15" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classWeaponSystem_1ae238a32d86ab956d2ec49559724f1c82" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classWeaponSystem" kindref="compound">WeaponSystem</ref> *</type>
+        <definition>WeaponSystem * getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="37" column="25" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1adefc521350f2940aa9cb4ba50708ee9f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrWeapon" kindref="compound">rWeapon</ref> *</type>
+        <definition>rWeapon * buildWeapon</definition>
+        <argsstring>(const char *name, Entity *obj=NULL)</argsstring>
+        <name>buildWeapon</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>obj</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Creates new instances of weapons. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Valid names are: Plasma, Homing, Raybeam, Machinegun, Explosion. Throws an exception in case of an error. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="44" column="20" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="27" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWeaponSystem_1ad0823040cb1db6773e357b09ac10547c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WeaponSystem</definition>
+        <argsstring>()</argsstring>
+        <name>WeaponSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="47" column="5" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="59" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1a81100fd39b60ab16a89ee43ed1182909" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~WeaponSystem</definition>
+        <argsstring>()</argsstring>
+        <name>~WeaponSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="48" column="13" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="69" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1a8aa384ea8ab1f7eea350e0577dad2f68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add</definition>
+        <argsstring>(rTarcom *tarcom)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structrTarcom" kindref="compound">rTarcom</ref> *</type>
+          <declname>tarcom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="50" column="10" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1a2d9b71f828e982104a06c0b5badc8b6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add</definition>
+        <argsstring>(rWepcom *wepcom)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structrWepcom" kindref="compound">rWepcom</ref> *</type>
+          <declname>wepcom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="51" column="10" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1ae414585276fe9e64b07859fa489c7433" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add</definition>
+        <argsstring>(rWeapon *weapon)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="classrWeapon" kindref="compound">rWeapon</ref> *</type>
+          <declname>weapon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="52" column="10" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1a38653cce7b72bc7176c1345d6aca5e64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add</definition>
+        <argsstring>(rTarget *target)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structrTarget" kindref="compound">rTarget</ref> *</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="53" column="10" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1a218a4e5f4cea2a1abf504d87a820b83f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structrTarcom" kindref="compound">rTarcom</ref> *</type>
+        <definition>rTarcom * findTarcomByEntity</definition>
+        <argsstring>(OID entityID)</argsstring>
+        <name>findTarcomByEntity</name>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>entityID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="55" column="13" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="97" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1a5bd9f217e29d453b352e5eb908aeef8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structrTarget" kindref="compound">rTarget</ref> *</type>
+        <definition>rTarget * findTargetByEntity</definition>
+        <argsstring>(OID entityID)</argsstring>
+        <name>findTargetByEntity</name>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>entityID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="56" column="13" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="115" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1a5c4b43292d75206f1c5c38f4250265d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="structrTarget" kindref="compound">rTarget</ref> * &gt; *</type>
+        <definition>std::list&lt; rTarget * &gt; * filterByTags</definition>
+        <argsstring>(Entity *ex, std::set&lt; OID &gt; *rolemask, bool all, int maxamount, std::list&lt; rTarget * &gt; *objects)</argsstring>
+        <name>filterByTags</name>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>ex</declname>
+        </param>
+        <param>
+          <type>std::set&lt; <ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref> &gt; *</type>
+          <declname>rolemask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>all</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxamount</declname>
+        </param>
+        <param>
+          <type>std::list&lt; <ref refid="structrTarget" kindref="compound">rTarget</ref> * &gt; *</type>
+          <declname>objects</declname>
+        </param>
+        <briefdescription>
+<para>Filters the given objectlist by tags (ORed Bitmask) (excluding ex <ref refid="classObject" kindref="compound">Object</ref>). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>There is the option to match all tags (true=AND) or to select any given tag (false=OR). The returned list is fresh allocated - caller delete responsibility. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="63" column="15" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="290" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1a7c3db0512c1f78c69c1aa7012c8fb762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::list&lt; <ref refid="structrTarget" kindref="compound">rTarget</ref> * &gt; *</type>
+        <definition>std::list&lt; rTarget * &gt; * filterByRange</definition>
+        <argsstring>(Entity *ex, float *origin, float minrange, float maxrange, int maxamount, std::list&lt; rTarget * &gt; *objects=NULL)</argsstring>
+        <name>filterByRange</name>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>ex</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>origin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>minrange</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>maxrange</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxamount</declname>
+        </param>
+        <param>
+          <type>std::list&lt; <ref refid="structrTarget" kindref="compound">rTarget</ref> * &gt; *</type>
+          <declname>objects</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Returns a List of objects which are within minimum and maximum range (excluding ex <ref refid="classObject" kindref="compound">Object</ref>). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned list is fresh allocated - caller delete responsibility. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="68" column="15" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="319" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1ad0f555122462d7c7444758ba58689010" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float constrainParticle</definition>
+        <argsstring>(Entity *ex, float *worldpos, float radius)</argsstring>
+        <name>constrainParticle</name>
+        <reimplements refid="classSubsystem_1a1954eb6f5a3752d2f1fd6d119fd3fde8">constrainParticle</reimplements>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>ex</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>worldpos</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+<para>Limit position to accessible areas and returns impact depth. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>worldpos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The particle position to be constrained given in world coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the particle in terms of a radius. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if there was no collision, else the maximum impact depth. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="78" column="19" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1ad6a7b46bef07e40d079342cb85364f50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void advanceTime</definition>
+        <argsstring>(int deltamsec)</argsstring>
+        <name>advanceTime</name>
+        <reimplements refid="classSubsystem_1ae539443a3a32579b89439ec22aaba32b">advanceTime</reimplements>
+        <param>
+          <type>int</type>
+          <declname>deltamsec</declname>
+        </param>
+        <briefdescription>
+<para>Advance simulation time for one frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="82" column="18" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1a306921a31f28265fb44dce35ce857e87" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void clusterObjects</definition>
+        <argsstring>()</argsstring>
+        <name>clusterObjects</name>
+        <reimplements refid="classSubsystem_1aac346cec652a4bb213bee2a5e74c7fc9">clusterObjects</reimplements>
+        <briefdescription>
+<para>Re-build spatial clustering of objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="85" column="18" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="133" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1a1cfbbbc439131c5353cd1e766478da27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dispatchMessages</definition>
+        <argsstring>()</argsstring>
+        <name>dispatchMessages</name>
+        <reimplements refid="classSubsystem_1affbd764192264a4e1e440cf073999278">dispatchMessages</reimplements>
+        <briefdescription>
+<para>Deliver overdue messages to objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="88" column="18" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1a1604b9015255299958252d39b1ebb942" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void animateObjects</definition>
+        <argsstring>()</argsstring>
+        <name>animateObjects</name>
+        <reimplements refid="classSubsystem_1a1981e562883e5e69767bec35bcee7af1">animateObjects</reimplements>
+        <briefdescription>
+<para>Let all objects process input, adjust pose and calculate physics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="91" column="18" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="179" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1a56676650cac0479af5dde54ada1884e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void transformObjects</definition>
+        <argsstring>()</argsstring>
+        <name>transformObjects</name>
+        <reimplements refid="classSubsystem_1af1f4f853081af6fcb5037b99618009d2">transformObjects</reimplements>
+        <briefdescription>
+<para>Let all objects calculate transformation matrices etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="94" column="18" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="205" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1ad5fb828f792b28fac443a1e1311259b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void setupView</definition>
+        <argsstring>(float *pos, float *ori)</argsstring>
+        <name>setupView</name>
+        <reimplements refid="classSubsystem_1a7e9713a6b941a1ff3e85a2e10cd4946f">setupView</reimplements>
+        <param>
+          <type>float *</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>ori</declname>
+        </param>
+        <briefdescription>
+<para>Setup structures for rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="97" column="18" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="217" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1ad6ad3f680e505f98d83d049e15f0d797" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool drawBack</definition>
+        <argsstring>()</argsstring>
+        <name>drawBack</name>
+        <reimplements refid="classSubsystem_1ab6879b94c7c750768750669e7feb9c97">drawBack</reimplements>
+        <briefdescription>
+<para>Draws background (skybox). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="100" column="18" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1a044d5ff7d7174ed434fcebbef82bc275" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void drawSolid</definition>
+        <argsstring>()</argsstring>
+        <name>drawSolid</name>
+        <reimplements refid="classSubsystem_1a7037e4616081238dc81eb0e947cba4f1">drawSolid</reimplements>
+        <briefdescription>
+<para>Draw all <ref refid="classObject" kindref="compound">Object</ref>&apos;s solid surfaces (calls their drawSolid method). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="103" column="18" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="240" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classWeaponSystem_1a777e1926a0150b45a189753046343765" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void drawEffect</definition>
+        <argsstring>()</argsstring>
+        <name>drawEffect</name>
+        <reimplements refid="classSubsystem_1a743d69df45ff83f7531c4eeb0e225405">drawEffect</reimplements>
+        <briefdescription>
+<para>Draw all <ref refid="classObject" kindref="compound">Object</ref>&apos;s effects (calls their drawEffect method). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="106" column="18" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.cpp" bodystart="265" bodyend="287"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Manages weapons, targets and ranging-/targeting-devices. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>WeaponSystem</label>
+        <link refid="classWeaponSystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Subsystem</label>
+        <link refid="classSubsystem"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="30">
+        <label>list&lt; Particle * &gt;</label>
+        <childnode refid="31" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>stringstream</label>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>vector&lt; Binding * &gt;</label>
+        <childnode refid="13" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>map&lt; OID, float &gt;</label>
+      </node>
+      <node id="3">
+        <label>Geomap&lt; rTarget * &gt;</label>
+        <link refid="classGeomap"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-geomap</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>vector&lt; rWeapon * &gt;</label>
+        <childnode refid="18" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>unordered_map&lt; Geokey, std::list&lt; rWeapon * &gt; &gt;</label>
+        <childnode refid="17" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+object</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>+prebinds</edgelabel>
+          <edgelabel>+postbinds</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>LevelStreamLogger</label>
+        <link refid="classLevelStreamLogger"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>-logstream</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>map&lt; OID, rTarcom * &gt;</label>
+        <childnode refid="34" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>rWepcom</label>
+        <link refid="structrWepcom"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>+weapons</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>map&lt; OID, rTarget * &gt;</label>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>string</label>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>map&lt; OID, rWepcom * &gt;</label>
+        <childnode refid="37" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>WeaponSystem</label>
+        <link refid="classWeaponSystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-targetsGeodex</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>-instance</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>-targetsIndex</edgelabel>
+          <edgelabel>-targetsByEntity</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>-weaponsVisible</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>-weaponsIndex</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>-tarcoms</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>-weapons</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>-wepcomsIndex</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>-tarcomsByEntity</edgelabel>
+          <edgelabel>-tarcomsIndex</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>-targets</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>-weaponsGeodex</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>-wepcoms</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Particle</label>
+        <link refid="structParticle"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>+trail</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>Geomap&lt; rWeapon * &gt;</label>
+        <link refid="classGeomap"/>
+        <childnode refid="41" relation="usage">
+          <edgelabel>-geomap</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Subsystem</label>
+        <link refid="classSubsystem"/>
+      </node>
+      <node id="11">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="5">
+        <label>list&lt; rTarget * &gt;</label>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>-infoLogger</edgelabel>
+          <edgelabel>-traceLogger</edgelabel>
+          <edgelabel>-warnLogger</edgelabel>
+          <edgelabel>-errorLogger</edgelabel>
+          <edgelabel>-debugLogger</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>-globalAppender</edgelabel>
+          <edgelabel>-appender</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>-qualifiedLoggerName</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>-parentLogger</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Entity</label>
+        <link refid="classEntity"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>+components</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+name</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>vector&lt; rTarcom * &gt;</label>
+        <childnode refid="34" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Binding</label>
+        <link refid="classBinding"/>
+      </node>
+      <node id="29">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+      <node id="27">
+        <label>ios_base</label>
+      </node>
+      <node id="42">
+        <label>vector&lt; rWepcom * &gt;</label>
+        <childnode refid="37" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>rWeapon</label>
+        <link refid="classrWeapon"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>+sTextures</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>#logger</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>#missileParticles</edgelabel>
+          <edgelabel>#castoffParticles</edgelabel>
+          <edgelabel>#damageParticles</edgelabel>
+          <edgelabel>#shrapnelParticles</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>map&lt; OID, rWeapon * &gt;</label>
+        <childnode refid="18" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>list&lt; rWeapon * &gt;</label>
+        <childnode refid="18" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vector&lt; Component * &gt;</label>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>set&lt; OID &gt;</label>
+      </node>
+      <node id="19">
+        <label>map&lt; int, long &gt;</label>
+      </node>
+      <node id="23">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>rTarget</label>
+        <link refid="structrTarget"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>#damageImpulse</edgelabel>
+          <edgelabel>#damageAverage</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>#tags</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>vector&lt; rTarget * &gt;</label>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>rTarcom</label>
+        <link refid="structrTarcom"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+nearTargets</edgelabel>
+          <edgelabel>+enemies</edgelabel>
+          <edgelabel>+farTargets</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>+exc_allies</edgelabel>
+          <edgelabel>+inc_enemies</edgelabel>
+          <edgelabel>+inc_allies</edgelabel>
+          <edgelabel>+exc_enemies</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>unordered_map&lt; Geokey, std::list&lt; rTarget * &gt; &gt;</label>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/weapon/WeaponSystem.h" line="35" column="36" bodyfile="de/hackcraft/world/sub/weapon/WeaponSystem.h" bodystart="35" bodyend="138"/>
+    <listofallmembers>
+      <member refid="classWeaponSystem_1a8aa384ea8ab1f7eea350e0577dad2f68" prot="public" virt="non-virtual"><scope>WeaponSystem</scope><name>add</name></member>
+      <member refid="classWeaponSystem_1a2d9b71f828e982104a06c0b5badc8b6c" prot="public" virt="non-virtual"><scope>WeaponSystem</scope><name>add</name></member>
+      <member refid="classWeaponSystem_1ae414585276fe9e64b07859fa489c7433" prot="public" virt="non-virtual"><scope>WeaponSystem</scope><name>add</name></member>
+      <member refid="classWeaponSystem_1a38653cce7b72bc7176c1345d6aca5e64" prot="public" virt="non-virtual"><scope>WeaponSystem</scope><name>add</name></member>
+      <member refid="classWeaponSystem_1ad6a7b46bef07e40d079342cb85364f50" prot="public" virt="virtual"><scope>WeaponSystem</scope><name>advanceTime</name></member>
+      <member refid="classWeaponSystem_1a1604b9015255299958252d39b1ebb942" prot="public" virt="virtual"><scope>WeaponSystem</scope><name>animateObjects</name></member>
+      <member refid="classWeaponSystem_1adefc521350f2940aa9cb4ba50708ee9f" prot="public" virt="non-virtual"><scope>WeaponSystem</scope><name>buildWeapon</name></member>
+      <member refid="classWeaponSystem_1a306921a31f28265fb44dce35ce857e87" prot="public" virt="virtual"><scope>WeaponSystem</scope><name>clusterObjects</name></member>
+      <member refid="classWeaponSystem_1ad0f555122462d7c7444758ba58689010" prot="public" virt="virtual"><scope>WeaponSystem</scope><name>constrainParticle</name></member>
+      <member refid="classWeaponSystem_1a1cfbbbc439131c5353cd1e766478da27" prot="public" virt="virtual"><scope>WeaponSystem</scope><name>dispatchMessages</name></member>
+      <member refid="classWeaponSystem_1ad6ad3f680e505f98d83d049e15f0d797" prot="public" virt="virtual"><scope>WeaponSystem</scope><name>drawBack</name></member>
+      <member refid="classWeaponSystem_1a777e1926a0150b45a189753046343765" prot="public" virt="virtual"><scope>WeaponSystem</scope><name>drawEffect</name></member>
+      <member refid="classWeaponSystem_1a044d5ff7d7174ed434fcebbef82bc275" prot="public" virt="virtual"><scope>WeaponSystem</scope><name>drawSolid</name></member>
+      <member refid="classWeaponSystem_1a7c3db0512c1f78c69c1aa7012c8fb762" prot="public" virt="non-virtual"><scope>WeaponSystem</scope><name>filterByRange</name></member>
+      <member refid="classWeaponSystem_1a5c4b43292d75206f1c5c38f4250265d8" prot="public" virt="non-virtual"><scope>WeaponSystem</scope><name>filterByTags</name></member>
+      <member refid="classWeaponSystem_1a218a4e5f4cea2a1abf504d87a820b83f" prot="public" virt="non-virtual"><scope>WeaponSystem</scope><name>findTarcomByEntity</name></member>
+      <member refid="classWeaponSystem_1a5bd9f217e29d453b352e5eb908aeef8a" prot="public" virt="non-virtual"><scope>WeaponSystem</scope><name>findTargetByEntity</name></member>
+      <member refid="classSubsystem_1a8e36b642c7e1cc84986eee262c235b0b" prot="public" virt="virtual"><scope>WeaponSystem</scope><name>getId</name></member>
+      <member refid="classWeaponSystem_1ae238a32d86ab956d2ec49559724f1c82" prot="public" virt="non-virtual"><scope>WeaponSystem</scope><name>getInstance</name></member>
+      <member refid="classSubsystem_1a4ee385cf4aecac6d59e8fa07a9aa890d" prot="public" virt="virtual"><scope>WeaponSystem</scope><name>getName</name></member>
+      <member refid="classWeaponSystem_1af039db62b310509da5d18a47618a306d" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>instance</name></member>
+      <member refid="classWeaponSystem_1af42b1d8da46f0bd6298acdc159027857" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>logger</name></member>
+      <member refid="classWeaponSystem_1ad5fb828f792b28fac443a1e1311259b5" prot="public" virt="virtual"><scope>WeaponSystem</scope><name>setupView</name></member>
+      <member refid="classWeaponSystem_1a171d2c0098cdea943a53dfa44efc4d7c" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>tarcoms</name></member>
+      <member refid="classWeaponSystem_1a41129200870456c2af184ae7e7953c7b" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>tarcomsByEntity</name></member>
+      <member refid="classWeaponSystem_1ada740b2972eb75908f79c7b36d9f988c" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>tarcomsIndex</name></member>
+      <member refid="classWeaponSystem_1aaf7b8b9881794d76216c013904d8918f" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>targets</name></member>
+      <member refid="classWeaponSystem_1a34b76cc066d8e21845115aa7386ddd05" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>targetsByEntity</name></member>
+      <member refid="classWeaponSystem_1a96fa6518d106444265ed75391b260d72" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>targetsGeodex</name></member>
+      <member refid="classWeaponSystem_1a191f9665d58cd951a6e2a0aafc78f860" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>targetsIndex</name></member>
+      <member refid="classWeaponSystem_1a56676650cac0479af5dde54ada1884e0" prot="public" virt="virtual"><scope>WeaponSystem</scope><name>transformObjects</name></member>
+      <member refid="classWeaponSystem_1a3ed6eaefb9faf59f36c88dd7c53e2344" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>viewdistance</name></member>
+      <member refid="classWeaponSystem_1a1016b79f939323bd7f8420951bb0e5aa" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>visorigin</name></member>
+      <member refid="classWeaponSystem_1ab9771d5168e5c13ab726aa5bdc6f3053" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>weapons</name></member>
+      <member refid="classWeaponSystem_1a290391222cda6b6455c7cef3d2672523" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>weaponsGeodex</name></member>
+      <member refid="classWeaponSystem_1a757d91fe75dfd2dcc0aee08c068947f5" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>weaponsIndex</name></member>
+      <member refid="classWeaponSystem_1a28070bf1dd13f738472359ab8f8cbaa7" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>weaponsVisible</name></member>
+      <member refid="classWeaponSystem_1ad0823040cb1db6773e357b09ac10547c" prot="public" virt="non-virtual"><scope>WeaponSystem</scope><name>WeaponSystem</name></member>
+      <member refid="classWeaponSystem_1af46a977057f267a3c838377e9af09562" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>wepcoms</name></member>
+      <member refid="classWeaponSystem_1ab36748d5d6197d86b7331060b6281a33" prot="private" virt="non-virtual"><scope>WeaponSystem</scope><name>wepcomsIndex</name></member>
+      <member refid="classWeaponSystem_1a81100fd39b60ab16a89ee43ed1182909" prot="public" virt="virtual"><scope>WeaponSystem</scope><name>~WeaponSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

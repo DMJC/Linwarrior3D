@@ -1,0 +1,629 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="BackgroundSystem_8cpp" kind="file" language="C++">
+    <compoundname>BackgroundSystem.cpp</compoundname>
+    <includes refid="BackgroundSystem_8h" local="yes">BackgroundSystem.h</includes>
+    <includes refid="Texfile_8h" local="yes">de/hackcraft/io/Texfile.h</includes>
+    <includes refid="Logger_8h" local="yes">de/hackcraft/log/Logger.h</includes>
+    <includes refid="Ambient_8h" local="yes">de/hackcraft/proc/Ambient.h</includes>
+    <includes refid="Distortion_8h" local="yes">de/hackcraft/proc/Distortion.h</includes>
+    <includes refid="Landscape_8h" local="yes">de/hackcraft/proc/Landscape.h</includes>
+    <includes refid="Noise_8h" local="yes">de/hackcraft/proc/Noise.h</includes>
+    <includes refid="Solid_8h" local="yes">de/hackcraft/proc/Solid.h</includes>
+    <includes refid="GLS_8h" local="yes">de/hackcraft/psi3d/GLS.h</includes>
+    <includes refid="macros_8h" local="yes">de/hackcraft/psi3d/macros.h</includes>
+    <includes refid="Particle_8h" local="yes">de/hackcraft/psi3d/Particle.h</includes>
+    <includes refid="Primitive_8h" local="yes">de/hackcraft/psi3d/Primitive.h</includes>
+    <includes refid="Propmap_8h" local="yes">de/hackcraft/util/Propmap.h</includes>
+    <includes refid="World_8h" local="yes">de/hackcraft/world/World.h</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">cstdlib</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>list</label>
+      </node>
+      <node id="48">
+        <label>queue</label>
+      </node>
+      <node id="40">
+        <label>de/hackcraft/lang/OID.h</label>
+        <link refid="OID_8h"/>
+      </node>
+      <node id="20">
+        <label>de/hackcraft/proc/Noise.h</label>
+        <link refid="Noise_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>de/hackcraft/world/Component.h</label>
+        <link refid="Component_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>de/hackcraft/psi3d/GLS.h</label>
+        <link refid="GLS_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/world/sub/background/BackgroundSystem.cpp</label>
+        <link refid="BackgroundSystem_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>stdint.h</label>
+      </node>
+      <node id="32">
+        <label>de/hackcraft/psi3d/ctrl.h</label>
+        <link refid="ctrl_8h"/>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>de/hackcraft/log/LevelStreamLogger.h</label>
+        <link refid="LevelStreamLogger_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>de/hackcraft/io/Texfile.h</label>
+        <link refid="Texfile_8h"/>
+      </node>
+      <node id="31">
+        <label>de/hackcraft/psi3d/macros.h</label>
+        <link refid="macros_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>cmath</label>
+      </node>
+      <node id="27">
+        <label>de/hackcraft/opengl/GLU.h</label>
+        <link refid="GLU_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>string</label>
+      </node>
+      <node id="26">
+        <label>GL/glew.h</label>
+      </node>
+      <node id="7">
+        <label>map</label>
+      </node>
+      <node id="44">
+        <label>de/hackcraft/world/Entity.h</label>
+        <link refid="Entity_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BackgroundSystem.h</label>
+        <link refid="BackgroundSystem_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>stddef.h</label>
+      </node>
+      <node id="30">
+        <label>ostream</label>
+      </node>
+      <node id="17">
+        <label>de/hackcraft/proc/Distortion.h</label>
+        <link refid="Distortion_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>de/hackcraft/psi3d/math3d.h</label>
+        <link refid="math3d_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>de/hackcraft/util/Geomap.h</label>
+        <link refid="Geomap_8h"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>de/hackcraft/util/Timing.h</label>
+        <link refid="Timing_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>de/hackcraft/opengl/GL.h</label>
+        <link refid="GL_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>string.h</label>
+      </node>
+      <node id="36">
+        <label>cstdio</label>
+      </node>
+      <node id="19">
+        <label>de/hackcraft/proc/Landscape.h</label>
+        <link refid="Landscape_8h"/>
+      </node>
+      <node id="34">
+        <label>vector</label>
+      </node>
+      <node id="10">
+        <label>de/hackcraft/log/Logger.h</label>
+        <link refid="Logger_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/world/Subsystem.h</label>
+        <link refid="Subsystem_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>de/hackcraft/proc/Solid.h</label>
+        <link refid="Solid_8h"/>
+      </node>
+      <node id="15">
+        <label>sstream</label>
+      </node>
+      <node id="38">
+        <label>de/hackcraft/util/Propmap.h</label>
+        <link refid="Propmap_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>de/hackcraft/log/Appender.h</label>
+        <link refid="Appender_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>math.h</label>
+      </node>
+      <node id="51">
+        <label>cstdlib</label>
+      </node>
+      <node id="35">
+        <label>iostream</label>
+      </node>
+      <node id="16">
+        <label>de/hackcraft/proc/Ambient.h</label>
+        <link refid="Ambient_8h"/>
+      </node>
+      <node id="42">
+        <label>unordered_map</label>
+      </node>
+      <node id="33">
+        <label>de/hackcraft/psi3d/Particle.h</label>
+        <link refid="Particle_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>de/hackcraft/psi3d/Primitive.h</label>
+        <link refid="Primitive_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>de/hackcraft/world/World.h</label>
+        <link refid="World_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>de/hackcraft/util/Binding.h</label>
+        <link refid="Binding_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>set</label>
+      </node>
+      <node id="47">
+        <label>algorithm</label>
+      </node>
+      <node id="29">
+        <label>stdio.h</label>
+      </node>
+      <node id="50">
+        <label>memory</label>
+      </node>
+      <node id="12">
+        <label>de/hackcraft/log/LoggerEvent.h</label>
+        <link refid="LoggerEvent_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="BackgroundSystem_8cpp_1ab274d7de8fa0a424fea6c046b95d330f" prot="public" static="no">
+        <name>BKGDETAIL</name>
+        <initializer>+0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.cpp" line="27" column="9" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="BackgroundSystem_8cpp_1a22948f0a48158339c23f769ab45bea6d" prot="public" static="no">
+        <name>DOME_XRES</name>
+        <initializer>2*6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.cpp" line="29" column="9" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="BackgroundSystem_8cpp_1a7636ac411544037516bdb4aa5f50d85d" prot="public" static="no">
+        <name>DOME_YRES</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.cpp" line="30" column="9" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Texids</name>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5ade0f157fa62bc19b5bf7709cc3cb7763" prot="public">
+          <name>T_ICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5afa06ba022bcebf3c3e07690fde3a9519" prot="public">
+          <name>T_MOUNTAIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5a38bf4c8ee42611fbd5a37eaae4ac64c2" prot="public">
+          <name>T_EARTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5a31e1031708d636564fc9cb9e23b0a3ef" prot="public">
+          <name>T_LAVOS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5ae9b348a1475409394977aa34adee207a" prot="public">
+          <name>T_MOON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5ad179bfddbc7a551109e2413215bc44c6" prot="public">
+          <name>T_SUN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5acc64329fa17fd2dbcd1a31f2fa77f1a2" prot="public">
+          <name>T_CLOUDS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5a8479e370f5d705d95bfaf1f06afc97dd" prot="public">
+          <name>T_GALAXY_NEGX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5a1143d22afa73acb3374869a6662d2c2f" prot="public">
+          <name>T_GALAXY_POSX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5a813509acca59f01affa103f8ab4ec9e5" prot="public">
+          <name>T_GALAXY_NEGY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5a76dd50fef21778f46f1f2ea722da4763" prot="public">
+          <name>T_GALAXY_POSY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5a5b9a8e2ea0a479d2f69c712c50b629da" prot="public">
+          <name>T_GALAXY_NEGZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5a7c6dfdcc89173e1c364d50d1b74334fc" prot="public">
+          <name>T_GALAXY_POSZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5a327aa7678b9a9377069c2e9e7bbd7671" prot="public">
+          <name>T_SKY_NEGX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5aa18a73921c69889bd73724c343594bc7" prot="public">
+          <name>T_SKY_POSX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5a3a2f88603fcebf5069f8417c1d774fd5" prot="public">
+          <name>T_SKY_NEGY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5a5ffc630648c1fa753acd30db2396ce01" prot="public">
+          <name>T_SKY_POSY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5ade83652fafe9e1e9b259980d657ab5b2" prot="public">
+          <name>T_SKY_NEGZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5af066233e07fc958bc4fe1b433a90b4b1" prot="public">
+          <name>T_SKY_POSZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5a0ce770270a745431fa0226871158fff6" prot="public">
+          <name>T_CLOUDS_NEGX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5a29b3e37bcbb21a76954615fd149d810d" prot="public">
+          <name>T_CLOUDS_POSX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5aaef89f8c759350ff391b938c4c9ecfde" prot="public">
+          <name>T_CLOUDS_NEGY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5a1b22b152ecef03a6f98aea68484d7612" prot="public">
+          <name>T_CLOUDS_POSY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5ace1eeea31ace9a215ed2796d649500b5" prot="public">
+          <name>T_CLOUDS_NEGZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="BackgroundSystem_8cpp_1a0cce0cdd4b0cb7c325466716f58b09d5ab04775458a7914ed310ed93713bb81f2" prot="public">
+          <name>T_CLOUDS_POSZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.cpp" line="32" column="12" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="32" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="BackgroundSystem_8cpp_1aece8d58df7f46b5030b5810dff53ac8c" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gPermutationTexture256</definition>
+        <argsstring></argsstring>
+        <name>gPermutationTexture256</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.cpp" line="47" column="14" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/background/BackgroundSystem.cpp"/>
+  </compounddef>
+</doxygen>

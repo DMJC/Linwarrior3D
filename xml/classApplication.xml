@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classApplication" kind="class" language="C++" prot="public">
+    <compoundname>Application</compoundname>
+    <includes local="no">Application.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classApplication_1aec7d6461aa7be31d98eff24b9d69ae3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Application</definition>
+        <argsstring>()</argsstring>
+        <name>Application</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/app/Application.h" line="14" column="5" bodyfile="de/hackcraft/app/Application.cpp" bodystart="4" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classApplication_1ae9b6f98d02f4813607e4471ced342484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Application</definition>
+        <argsstring>(const Application &amp;orig)</argsstring>
+        <name>Application</name>
+        <param>
+          <type>const <ref refid="classApplication" kindref="compound">Application</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/app/Application.h" line="15" column="5" bodyfile="de/hackcraft/app/Application.cpp" bodystart="8" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classApplication_1a713b51c450f3ae9db74cd857c2419173" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~Application</definition>
+        <argsstring>()</argsstring>
+        <name>~Application</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/app/Application.h" line="16" column="13" bodyfile="de/hackcraft/app/Application.cpp" bodystart="12" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Application</label>
+        <link refid="classApplication"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/app/Application.h" line="12" column="18" bodyfile="de/hackcraft/app/Application.h" bodystart="12" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classApplication_1aec7d6461aa7be31d98eff24b9d69ae3d" prot="public" virt="non-virtual"><scope>Application</scope><name>Application</name></member>
+      <member refid="classApplication_1ae9b6f98d02f4813607e4471ced342484" prot="public" virt="non-virtual"><scope>Application</scope><name>Application</name></member>
+      <member refid="classApplication_1a713b51c450f3ae9db74cd857c2419173" prot="public" virt="virtual"><scope>Application</scope><name>~Application</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

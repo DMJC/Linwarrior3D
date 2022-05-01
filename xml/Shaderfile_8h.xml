@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Shaderfile_8h" kind="file" language="C++">
+    <compoundname>Shaderfile.h</compoundname>
+    <includedby refid="GameMain_8cpp" local="yes">de/hackcraft/game/GameMain.cpp</includedby>
+    <includedby refid="Shaderfile_8cpp" local="yes">de/hackcraft/io/Shaderfile.cpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>de/hackcraft/game/GameMain.cpp</label>
+        <link refid="GameMain_8cpp"/>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/io/Shaderfile.cpp</label>
+        <link refid="Shaderfile_8cpp"/>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/io/Shaderfile.h</label>
+        <link refid="Shaderfile_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classShaderfile" prot="public">Shaderfile</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/io/Shaderfile.h"/>
+  </compounddef>
+</doxygen>

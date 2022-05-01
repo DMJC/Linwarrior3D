@@ -1,0 +1,525 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classBatchMission" kind="class" language="C++" prot="public">
+    <compoundname>BatchMission</compoundname>
+    <basecompoundref refid="classGameMission" prot="public" virt="non-virtual">GameMission</basecompoundref>
+    <includes local="no">BatchMission.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classBatchMission_1af42b1d8da46f0bd6298acdc159027857" prot="private" static="yes" mutable="no">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger * logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="classLogger_1ac11c529e5152e544fbc4c6594add48b6" kindref="member">Logger::getLogger</ref>(&quot;de.hackcraft.game.BatchMission&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/game/BatchMission.h" line="25" column="19" bodyfile="de/hackcraft/game/BatchMission.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBatchMission_1ac5deae121b09664874fdd6c4d17e8e05" prot="private" static="no" mutable="no">
+        <type><ref refid="classPropmap" kindref="compound">Propmap</ref></type>
+        <definition>Propmap globalProperties</definition>
+        <argsstring></argsstring>
+        <name>globalProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/game/BatchMission.h" line="28" column="13" bodyfile="de/hackcraft/game/BatchMission.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBatchMission_1a14d8475e165a66365e720c939e609066" prot="private" static="no" mutable="no">
+        <type><ref refid="classrPlanetmap" kindref="compound">rPlanetmap</ref> *</type>
+        <definition>rPlanetmap* planetmap</definition>
+        <argsstring></argsstring>
+        <name>planetmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/game/BatchMission.h" line="29" column="16" bodyfile="de/hackcraft/game/BatchMission.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBatchMission_1ac747d003038a5ffc96be14d5e8d704b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BatchMission</definition>
+        <argsstring>()</argsstring>
+        <name>BatchMission</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/game/BatchMission.h" line="32" column="5" bodyfile="de/hackcraft/game/BatchMission.cpp" bodystart="50" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classBatchMission_1ad345e9ae07d282e6261f4d80fc143bac" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~BatchMission</definition>
+        <argsstring>()</argsstring>
+        <name>~BatchMission</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/game/BatchMission.h" line="33" column="13" bodyfile="de/hackcraft/game/BatchMission.cpp" bodystart="54" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classBatchMission_1ad55e1960bf790a173544ee50fe432b07" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+        <definition>Entity * init</definition>
+        <argsstring>(World *world)</argsstring>
+        <name>init</name>
+        <reimplements refid="classGameMission_1ad55e1960bf790a173544ee50fe432b07">init</reimplements>
+        <param>
+          <type><ref refid="classWorld" kindref="compound">World</ref> *</type>
+          <declname>world</declname>
+        </param>
+        <briefdescription>
+<para>Called with the world which needs to be populated by this mission. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>So this method should spawn objects into the world and setup other mission critical data of the derived mission. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/game/BatchMission.h" line="40" column="20" bodyfile="de/hackcraft/game/BatchMission.cpp" bodystart="58" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classBatchMission_1a5e2488526ff933464534e7935b73d49b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initSystems</definition>
+        <argsstring>()</argsstring>
+        <name>initSystems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/game/BatchMission.h" line="42" column="10" bodyfile="de/hackcraft/game/BatchMission.cpp" bodystart="126" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classBatchMission_1af3e5517fd1caa5d20e70365bcfedd501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int execScript</definition>
+        <argsstring>(std::istream *is)</argsstring>
+        <name>execScript</name>
+        <param>
+          <type>std::istream *</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/game/BatchMission.h" line="44" column="9" bodyfile="de/hackcraft/game/BatchMission.cpp" bodystart="154" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classBatchMission_1ad52f514c667dcdbcf34988f5de9f0665" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int execCommand</definition>
+        <argsstring>(std::list&lt; std::string &gt; *args)</argsstring>
+        <name>execCommand</name>
+        <param>
+          <type>std::list&lt; std::string &gt; *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/game/BatchMission.h" line="46" column="9" bodyfile="de/hackcraft/game/BatchMission.cpp" bodystart="201" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classBatchMission_1aee042e929bba09da32bc84c4ccc6c84e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int execCommandSet</definition>
+        <argsstring>(std::list&lt; std::string &gt; *args)</argsstring>
+        <name>execCommandSet</name>
+        <param>
+          <type>std::list&lt; std::string &gt; *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/game/BatchMission.h" line="48" column="9" bodyfile="de/hackcraft/game/BatchMission.cpp" bodystart="221" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classBatchMission_1a0676c337ac4a0355ed52fd04d86eecaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int execCommandSpawn</definition>
+        <argsstring>(std::list&lt; std::string &gt; *args)</argsstring>
+        <name>execCommandSpawn</name>
+        <param>
+          <type>std::list&lt; std::string &gt; *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/game/BatchMission.h" line="50" column="9" bodyfile="de/hackcraft/game/BatchMission.cpp" bodystart="238" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classBatchMission_1afb21fbf3b5e9b918de75e1645379f07f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spawnMech</definition>
+        <argsstring>()</argsstring>
+        <name>spawnMech</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/game/BatchMission.h" line="52" column="10" bodyfile="de/hackcraft/game/BatchMission.cpp" bodystart="256" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classBatchMission_1a78588fd4828cee99d4c0ab84e75e69ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+        <definition>Entity * initPlayerParty</definition>
+        <argsstring>(float *position)</argsstring>
+        <name>initPlayerParty</name>
+        <param>
+          <type>float *</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/game/BatchMission.h" line="54" column="12" bodyfile="de/hackcraft/game/BatchMission.cpp" bodystart="279" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classBatchMission_1acfddaac9af9a36cb101fe3ad8241520a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adjustHeight</definition>
+        <argsstring>(float *pos)</argsstring>
+        <name>adjustHeight</name>
+        <param>
+          <type>float *</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/game/BatchMission.h" line="56" column="10" bodyfile="de/hackcraft/game/BatchMission.cpp" bodystart="347" bodyend="351"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>BatchMission</label>
+        <link refid="classBatchMission"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GameMission</label>
+        <link refid="classGameMission"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="15">
+        <label>stringstream</label>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vector&lt; Binding * &gt;</label>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Propmap</label>
+        <link refid="classPropmap"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>-contents</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>rTree</label>
+        <link refid="structrTree"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>#tree</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>-sBarktexs</edgelabel>
+          <edgelabel>-sLeaftexs</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>-sTrees</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+object</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+prebinds</edgelabel>
+          <edgelabel>+postbinds</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>TreeType</label>
+        <link refid="structrTree_1_1TreeType"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>+leaves</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>vector&lt; long &gt;</label>
+      </node>
+      <node id="14">
+        <label>LevelStreamLogger</label>
+        <link refid="classLevelStreamLogger"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>-logstream</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>vector&lt; rPlanetmap::Growth * &gt;</label>
+        <childnode refid="33" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>IModel</label>
+        <link refid="classIModel"/>
+      </node>
+      <node id="33">
+        <label>Growth</label>
+        <link refid="structrPlanetmap_1_1Growth"/>
+      </node>
+      <node id="31">
+        <label>map&lt; OID, rTree::TreeType * &gt;</label>
+        <childnode refid="28" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>string</label>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>BatchMission</label>
+        <link refid="classBatchMission"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>-globalProperties</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>-planetmap</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GameMission</label>
+        <link refid="classGameMission"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>#mDefeat</edgelabel>
+          <edgelabel>#mVictory</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="13">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>-infoLogger</edgelabel>
+          <edgelabel>-traceLogger</edgelabel>
+          <edgelabel>-warnLogger</edgelabel>
+          <edgelabel>-errorLogger</edgelabel>
+          <edgelabel>-debugLogger</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>-globalAppender</edgelabel>
+          <edgelabel>-appender</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>-qualifiedLoggerName</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>-parentLogger</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Entity</label>
+        <link refid="classEntity"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+components</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>+name</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Binding</label>
+        <link refid="classBinding"/>
+      </node>
+      <node id="22">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+      <node id="20">
+        <label>ios_base</label>
+      </node>
+      <node id="3">
+        <label>vector&lt; Entity * &gt;</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vector&lt; Component * &gt;</label>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>vector&lt; rPlanetmap::sMod * &gt;</label>
+        <childnode refid="25" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>sMod</label>
+        <link refid="structrPlanetmap_1_1sMod"/>
+      </node>
+      <node id="12">
+        <label>map&lt; std::string, std::string &gt;</label>
+        <childnode refid="9" relation="usage">
+          <edgelabel>+elements</edgelabel>
+          <edgelabel>+keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>vector&lt; float &gt;</label>
+      </node>
+      <node id="23">
+        <label>rPlanetmap</label>
+        <link refid="classrPlanetmap"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>+mods</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>-tree</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>-sGrowth</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>-sGrasses</edgelabel>
+          <edgelabel>-sGrounds</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/game/BatchMission.h" line="22" column="38" bodyfile="de/hackcraft/game/BatchMission.h" bodystart="22" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classBatchMission_1acfddaac9af9a36cb101fe3ad8241520a" prot="public" virt="non-virtual"><scope>BatchMission</scope><name>adjustHeight</name></member>
+      <member refid="classGameMission_1a25e7e9f128cce679891e92d685f2c7d3" prot="public" virt="virtual"><scope>BatchMission</scope><name>advanceTime</name></member>
+      <member refid="classBatchMission_1ac747d003038a5ffc96be14d5e8d704b7" prot="public" virt="non-virtual"><scope>BatchMission</scope><name>BatchMission</name></member>
+      <member refid="classGameMission_1ab2a76c4b2866aa2c3b6803639053bbdf" prot="public" virt="virtual"><scope>BatchMission</scope><name>checkConditions</name></member>
+      <member refid="classBatchMission_1ad52f514c667dcdbcf34988f5de9f0665" prot="public" virt="non-virtual"><scope>BatchMission</scope><name>execCommand</name></member>
+      <member refid="classBatchMission_1aee042e929bba09da32bc84c4ccc6c84e" prot="public" virt="non-virtual"><scope>BatchMission</scope><name>execCommandSet</name></member>
+      <member refid="classBatchMission_1a0676c337ac4a0355ed52fd04d86eecaf" prot="public" virt="non-virtual"><scope>BatchMission</scope><name>execCommandSpawn</name></member>
+      <member refid="classBatchMission_1af3e5517fd1caa5d20e70365bcfedd501" prot="public" virt="non-virtual"><scope>BatchMission</scope><name>execScript</name></member>
+      <member refid="classGameMission_1abce17af5da784886b313bf794f9acc88" prot="public" virt="non-virtual"><scope>BatchMission</scope><name>GameMission</name></member>
+      <member refid="classBatchMission_1ac5deae121b09664874fdd6c4d17e8e05" prot="private" virt="non-virtual"><scope>BatchMission</scope><name>globalProperties</name></member>
+      <member refid="classBatchMission_1ad55e1960bf790a173544ee50fe432b07" prot="public" virt="virtual"><scope>BatchMission</scope><name>init</name></member>
+      <member refid="classBatchMission_1a78588fd4828cee99d4c0ab84e75e69ac" prot="public" virt="non-virtual"><scope>BatchMission</scope><name>initPlayerParty</name></member>
+      <member refid="classBatchMission_1a5e2488526ff933464534e7935b73d49b" prot="public" virt="non-virtual"><scope>BatchMission</scope><name>initSystems</name></member>
+      <member refid="classBatchMission_1af42b1d8da46f0bd6298acdc159027857" prot="private" virt="non-virtual"><scope>BatchMission</scope><name>logger</name></member>
+      <member refid="classGameMission_1aa04e1bb7a99c75dd82083ae19f988e7b" prot="protected" virt="non-virtual"><scope>BatchMission</scope><name>mDefeat</name></member>
+      <member refid="classGameMission_1a9170ea7c3cb727e1c86da45a7ed88a54" prot="protected" virt="non-virtual"><scope>BatchMission</scope><name>mState</name></member>
+      <member refid="classGameMission_1aa1ddd942bd057f8c2f6ccaaa671c600c" prot="protected" virt="non-virtual"><scope>BatchMission</scope><name>mVictory</name></member>
+      <member refid="classGameMission_1a315c3c1ae806d49d1ea5da46b8c59c9d" prot="public" virt="virtual"><scope>BatchMission</scope><name>onDefeat</name></member>
+      <member refid="classGameMission_1a413ec2fa2b3306f757a890190536dc94" prot="public" virt="virtual"><scope>BatchMission</scope><name>onVictory</name></member>
+      <member refid="classBatchMission_1a14d8475e165a66365e720c939e609066" prot="private" virt="non-virtual"><scope>BatchMission</scope><name>planetmap</name></member>
+      <member refid="classBatchMission_1afb21fbf3b5e9b918de75e1645379f07f" prot="public" virt="non-virtual"><scope>BatchMission</scope><name>spawnMech</name></member>
+      <member refid="classBatchMission_1ad345e9ae07d282e6261f4d80fc143bac" prot="public" virt="virtual"><scope>BatchMission</scope><name>~BatchMission</name></member>
+      <member refid="classGameMission_1afe6cdb0b729d6c325eb2e1d8a3e636a4" prot="public" virt="virtual"><scope>BatchMission</scope><name>~GameMission</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

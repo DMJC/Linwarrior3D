@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classPropmap" kind="class" language="C++" prot="public">
+    <compoundname>Propmap</compoundname>
+    <includes local="no">Propmap.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classPropmap_1af42b1d8da46f0bd6298acdc159027857" prot="private" static="yes" mutable="no">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger * logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="classLogger_1ac11c529e5152e544fbc4c6594add48b6" kindref="member">Logger::getLogger</ref>(&quot;de.hackcraft.util.Propmap&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="27" column="19" bodyfile="de/hackcraft/util/Propmap.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPropmap_1a40a99463cdfb759b595be10a68e69ec0" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>std::map&lt;std::string, std::string&gt; contents</definition>
+        <argsstring></argsstring>
+        <name>contents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="29" column="14" bodyfile="de/hackcraft/util/Propmap.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPropmap_1a5516a038f24cf3726baeb992792dfd95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void load</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>load</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="32" column="10" bodyfile="de/hackcraft/util/Propmap.cpp" bodystart="16" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classPropmap_1afe1e8222ec6e3a380bf228203c490d44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool contains</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>contains</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="34" column="10" bodyfile="de/hackcraft/util/Propmap.h" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classPropmap_1a749bb632958220f262b32e5259aa788f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool contains</definition>
+        <argsstring>(char *s)</argsstring>
+        <name>contains</name>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="38" column="10" bodyfile="de/hackcraft/util/Propmap.h" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classPropmap_1a24f1482e46d4b1c3806eb7eeb6cd1380" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool contains</definition>
+        <argsstring>(std::string s)</argsstring>
+        <name>contains</name>
+        <param>
+          <type>std::string</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="42" column="10" bodyfile="de/hackcraft/util/Propmap.h" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classPropmap_1a19427bcc38621b6a5d6b252c806b6db8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool contains</definition>
+        <argsstring>(std::string *s)</argsstring>
+        <name>contains</name>
+        <param>
+          <type>std::string *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="46" column="10" bodyfile="de/hackcraft/util/Propmap.h" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classPropmap_1a0598a98b0db77e0dd2c9daa739b5449b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string getProperty</definition>
+        <argsstring>(const char *k, const char *v)</argsstring>
+        <name>getProperty</name>
+        <param>
+          <type>const char *</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="50" column="17" bodyfile="de/hackcraft/util/Propmap.h" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classPropmap_1ad0e69165eec4ddfe5a689307d6dee593" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string getProperty</definition>
+        <argsstring>(std::string k, std::string v)</argsstring>
+        <name>getProperty</name>
+        <param>
+          <type>std::string</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="54" column="17" bodyfile="de/hackcraft/util/Propmap.h" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classPropmap_1a8d2209d49ce097e53d4a1665b7514215" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string getProperty</definition>
+        <argsstring>(std::string *k, std::string *v)</argsstring>
+        <name>getProperty</name>
+        <param>
+          <type>std::string *</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="58" column="17" bodyfile="de/hackcraft/util/Propmap.h" bodystart="58" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classPropmap_1a8d02214840d741453a2e882e4cc6be7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double getProperty</definition>
+        <argsstring>(const char *s, double defaultValue)</argsstring>
+        <name>getProperty</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="66" column="12" bodyfile="de/hackcraft/util/Propmap.h" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classPropmap_1a7457da5bf6edd159db95454e414a4cd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double getProperty</definition>
+        <argsstring>(char *s, double defaultValue)</argsstring>
+        <name>getProperty</name>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="70" column="12" bodyfile="de/hackcraft/util/Propmap.h" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classPropmap_1af95937b4348edc24760a190042a41168" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double getProperty</definition>
+        <argsstring>(std::string s, double defaultValue)</argsstring>
+        <name>getProperty</name>
+        <param>
+          <type>std::string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="74" column="12" bodyfile="de/hackcraft/util/Propmap.h" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classPropmap_1a3e08a3082753cba79fa05371d7414605" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double getProperty</definition>
+        <argsstring>(std::string *s, double defaultValue)</argsstring>
+        <name>getProperty</name>
+        <param>
+          <type>std::string *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="78" column="12" bodyfile="de/hackcraft/util/Propmap.h" bodystart="78" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classPropmap_1a09c45e57171f6900aece26372293e629" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void put</definition>
+        <argsstring>(const char *k, const char *v)</argsstring>
+        <name>put</name>
+        <param>
+          <type>const char *</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="86" column="10" bodyfile="de/hackcraft/util/Propmap.h" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classPropmap_1af2b8c1a3c2d3a14d28420ba4735a177c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void put</definition>
+        <argsstring>(char *k, char *v)</argsstring>
+        <name>put</name>
+        <param>
+          <type>char *</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="90" column="10" bodyfile="de/hackcraft/util/Propmap.h" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classPropmap_1a805189576b4d91b8da32549bfdc009a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void put</definition>
+        <argsstring>(std::string k, std::string v)</argsstring>
+        <name>put</name>
+        <param>
+          <type>std::string</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="94" column="10" bodyfile="de/hackcraft/util/Propmap.h" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classPropmap_1a5ffcf09f6083d383c52d2dbf57b9676c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void put</definition>
+        <argsstring>(std::string *k, std::string *v)</argsstring>
+        <name>put</name>
+        <param>
+          <type>std::string *</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>std::string *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Propmap.h" line="98" column="10" bodyfile="de/hackcraft/util/Propmap.h" bodystart="98" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Property map that can load configurations from property files. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Note that feasible property files do not allow whitespaces around keys or values. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>stringstream</label>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Propmap</label>
+        <link refid="classPropmap"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-contents</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>LevelStreamLogger</label>
+        <link refid="classLevelStreamLogger"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>-logstream</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="5">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>-infoLogger</edgelabel>
+          <edgelabel>-traceLogger</edgelabel>
+          <edgelabel>-warnLogger</edgelabel>
+          <edgelabel>-errorLogger</edgelabel>
+          <edgelabel>-debugLogger</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>-globalAppender</edgelabel>
+          <edgelabel>-appender</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-qualifiedLoggerName</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-parentLogger</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+      <node id="12">
+        <label>ios_base</label>
+      </node>
+      <node id="13">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>map&lt; std::string, std::string &gt;</label>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+elements</edgelabel>
+          <edgelabel>+keys</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/util/Propmap.h" line="25" column="14" bodyfile="de/hackcraft/util/Propmap.h" bodystart="25" bodyend="101"/>
+    <listofallmembers>
+      <member refid="classPropmap_1afe1e8222ec6e3a380bf228203c490d44" prot="public" virt="non-virtual"><scope>Propmap</scope><name>contains</name></member>
+      <member refid="classPropmap_1a749bb632958220f262b32e5259aa788f" prot="public" virt="non-virtual"><scope>Propmap</scope><name>contains</name></member>
+      <member refid="classPropmap_1a24f1482e46d4b1c3806eb7eeb6cd1380" prot="public" virt="non-virtual"><scope>Propmap</scope><name>contains</name></member>
+      <member refid="classPropmap_1a19427bcc38621b6a5d6b252c806b6db8" prot="public" virt="non-virtual"><scope>Propmap</scope><name>contains</name></member>
+      <member refid="classPropmap_1a40a99463cdfb759b595be10a68e69ec0" prot="private" virt="non-virtual"><scope>Propmap</scope><name>contents</name></member>
+      <member refid="classPropmap_1a0598a98b0db77e0dd2c9daa739b5449b" prot="public" virt="non-virtual"><scope>Propmap</scope><name>getProperty</name></member>
+      <member refid="classPropmap_1ad0e69165eec4ddfe5a689307d6dee593" prot="public" virt="non-virtual"><scope>Propmap</scope><name>getProperty</name></member>
+      <member refid="classPropmap_1a8d2209d49ce097e53d4a1665b7514215" prot="public" virt="non-virtual"><scope>Propmap</scope><name>getProperty</name></member>
+      <member refid="classPropmap_1a8d02214840d741453a2e882e4cc6be7f" prot="public" virt="non-virtual"><scope>Propmap</scope><name>getProperty</name></member>
+      <member refid="classPropmap_1a7457da5bf6edd159db95454e414a4cd5" prot="public" virt="non-virtual"><scope>Propmap</scope><name>getProperty</name></member>
+      <member refid="classPropmap_1af95937b4348edc24760a190042a41168" prot="public" virt="non-virtual"><scope>Propmap</scope><name>getProperty</name></member>
+      <member refid="classPropmap_1a3e08a3082753cba79fa05371d7414605" prot="public" virt="non-virtual"><scope>Propmap</scope><name>getProperty</name></member>
+      <member refid="classPropmap_1a5516a038f24cf3726baeb992792dfd95" prot="public" virt="non-virtual"><scope>Propmap</scope><name>load</name></member>
+      <member refid="classPropmap_1af42b1d8da46f0bd6298acdc159027857" prot="private" virt="non-virtual"><scope>Propmap</scope><name>logger</name></member>
+      <member refid="classPropmap_1a09c45e57171f6900aece26372293e629" prot="public" virt="non-virtual"><scope>Propmap</scope><name>put</name></member>
+      <member refid="classPropmap_1af2b8c1a3c2d3a14d28420ba4735a177c" prot="public" virt="non-virtual"><scope>Propmap</scope><name>put</name></member>
+      <member refid="classPropmap_1a805189576b4d91b8da32549bfdc009a9" prot="public" virt="non-virtual"><scope>Propmap</scope><name>put</name></member>
+      <member refid="classPropmap_1a5ffcf09f6083d383c52d2dbf57b9676c" prot="public" virt="non-virtual"><scope>Propmap</scope><name>put</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

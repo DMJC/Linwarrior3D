@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="MD5Format_8h" kind="file" language="C++">
+    <compoundname>MD5Format.h</compoundname>
+    <includes refid="Filesystem_8h" local="yes">de/hackcraft/io/Filesystem.h</includes>
+    <includes refid="math3d_8h" local="yes">de/hackcraft/psi3d/math3d.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">cassert</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includedby refid="rRigged_8h" local="yes">de/hackcraft/world/sub/model/rRigged.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>list</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="11">
+        <label>cassert</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>de/hackcraft/psi3d/math3d.h</label>
+        <link refid="math3d_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>string.h</label>
+      </node>
+      <node id="10">
+        <label>cstdio</label>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/io/MD5Format.h</label>
+        <link refid="MD5Format_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>sstream</label>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/io/Filesystem.h</label>
+        <link refid="Filesystem_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>math.h</label>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>de/hackcraft/world/sub/model/rRigged.h</label>
+        <link refid="rRigged_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>de/hackcraft/world/sub/model/rRigged.cpp</label>
+        <link refid="rRigged_8cpp"/>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/world/object/cMech.cpp</label>
+        <link refid="cMech_8cpp"/>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/io/MD5Format.h</label>
+        <link refid="MD5Format_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>de/hackcraft/world/sub/model/ModelSystem.cpp</label>
+        <link refid="ModelSystem_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structMD5Format" prot="public">MD5Format</innerclass>
+    <innerclass refid="structMD5Format_1_1animation" prot="public">MD5Format::animation</innerclass>
+    <innerclass refid="structMD5Format_1_1bound" prot="public">MD5Format::bound</innerclass>
+    <innerclass refid="structMD5Format_1_1model" prot="public">MD5Format::model</innerclass>
+    <innerclass refid="structMD5Format_1_1joint" prot="public">MD5Format::joint</innerclass>
+    <innerclass refid="structMD5Format_1_1mesh" prot="public">MD5Format::mesh</innerclass>
+    <innerclass refid="structMD5Format_1_1vert" prot="public">MD5Format::vert</innerclass>
+    <innerclass refid="structMD5Format_1_1tri" prot="public">MD5Format::tri</innerclass>
+    <innerclass refid="structMD5Format_1_1weight" prot="public">MD5Format::weight</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="MD5Format_8h_1a7d48e18bf41c2bebd5ef407d8bd18917" prot="public" static="no">
+        <name>MD5COMMLINE</name>
+        <initializer>4096</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/MD5Format.h" line="29" column="9" bodyfile="de/hackcraft/io/MD5Format.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MD5Format_8h_1ab3c5d590c0b1b3c61d5d903e419b6bf4" prot="public" static="no">
+        <name>MD5SHADERNAME</name>
+        <initializer>256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/MD5Format.h" line="30" column="9" bodyfile="de/hackcraft/io/MD5Format.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MD5Format_8h_1ad176eb161563eaf78afb88eb8dbac10e" prot="public" static="no">
+        <name>MD5JOINTNAME</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/MD5Format.h" line="31" column="9" bodyfile="de/hackcraft/io/MD5Format.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MD5Format_8h_1a1ddf0548b31f4281359200a1191fd7f9" prot="public" static="no">
+        <name>MD5MESHNAME</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/MD5Format.h" line="32" column="9" bodyfile="de/hackcraft/io/MD5Format.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MD5Format_8h_1aee4a1eac419e1f6ad565c1999428b44b" prot="public" static="no">
+        <name>MD5LINESIZE</name>
+        <initializer>4096</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/MD5Format.h" line="33" column="9" bodyfile="de/hackcraft/io/MD5Format.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/io/MD5Format.h"/>
+  </compounddef>
+</doxygen>

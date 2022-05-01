@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_e2689e3839a6a206db0c8c1fc660cd82" kind="dir">
+    <compoundname>de/hackcraft/world/sub/physics</compoundname>
+    <innerfile refid="PhysicsSystem_8cpp">PhysicsSystem.cpp</innerfile>
+    <innerfile refid="PhysicsSystem_8h">PhysicsSystem.h</innerfile>
+    <innerfile refid="rCollider_8cpp">rCollider.cpp</innerfile>
+    <innerfile refid="rCollider_8h">rCollider.h</innerfile>
+    <innerfile refid="rSpringlink_8cpp">rSpringlink.cpp</innerfile>
+    <innerfile refid="rSpringlink_8h">rSpringlink.h</innerfile>
+    <innerfile refid="rTraceable_8cpp">rTraceable.cpp</innerfile>
+    <innerfile refid="rTraceable_8h">rTraceable.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/physics/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Noise_8h" kind="file" language="C++">
+    <compoundname>Noise.h</compoundname>
+    <includes local="no">cmath</includes>
+    <includedby refid="Facade_8cpp" local="yes">de/hackcraft/proc/Facade.cpp</includedby>
+    <includedby refid="Landscape_8cpp" local="yes">de/hackcraft/proc/Landscape.cpp</includedby>
+    <includedby refid="Solid_8cpp" local="yes">de/hackcraft/proc/Solid.cpp</includedby>
+    <includedby refid="Surface_8cpp" local="yes">de/hackcraft/proc/Surface.cpp</includedby>
+    <includedby refid="BackgroundSystem_8cpp" local="yes">de/hackcraft/world/sub/background/BackgroundSystem.cpp</includedby>
+    <includedby refid="rBuilding_8cpp" local="yes">de/hackcraft/world/sub/cityscape/rBuilding.cpp</includedby>
+    <includedby refid="rPlanetmap_8cpp" local="yes">de/hackcraft/world/sub/landscape/rPlanetmap.cpp</includedby>
+    <includedby refid="rWeapon_8cpp" local="yes">de/hackcraft/world/sub/weapon/rWeapon.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>de/hackcraft/proc/Noise.h</label>
+        <link refid="Noise_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cmath</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>de/hackcraft/proc/Noise.h</label>
+        <link refid="Noise_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>de/hackcraft/proc/Surface.cpp</label>
+        <link refid="Surface_8cpp"/>
+      </node>
+      <node id="6">
+        <label>de/hackcraft/world/sub/background/BackgroundSystem.cpp</label>
+        <link refid="BackgroundSystem_8cpp"/>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/proc/Landscape.cpp</label>
+        <link refid="Landscape_8cpp"/>
+      </node>
+      <node id="8">
+        <label>de/hackcraft/world/sub/landscape/rPlanetmap.cpp</label>
+        <link refid="rPlanetmap_8cpp"/>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/proc/Facade.cpp</label>
+        <link refid="Facade_8cpp"/>
+      </node>
+      <node id="4">
+        <label>de/hackcraft/proc/Solid.cpp</label>
+        <link refid="Solid_8cpp"/>
+      </node>
+      <node id="7">
+        <label>de/hackcraft/world/sub/cityscape/rBuilding.cpp</label>
+        <link refid="rBuilding_8cpp"/>
+      </node>
+      <node id="9">
+        <label>de/hackcraft/world/sub/weapon/rWeapon.cpp</label>
+        <link refid="rWeapon_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structNoise" prot="public">Noise</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/proc/Noise.h"/>
+  </compounddef>
+</doxygen>

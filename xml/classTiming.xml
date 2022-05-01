@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classTiming" kind="class" language="C++" prot="public">
+    <compoundname>Timing</compoundname>
+    <includes local="no">Timing.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTiming_1a881729833d58714459492b5ddc65480c" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int mYear</definition>
+        <argsstring></argsstring>
+        <name>mYear</name>
+        <briefdescription>
+<para>Counts years of simulation universe. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="32" column="18" bodyfile="de/hackcraft/util/Timing.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTiming_1a62bf6a72a5398daac448d57fd7f7d94c" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int mDay</definition>
+        <argsstring></argsstring>
+        <name>mDay</name>
+        <briefdescription>
+<para>Counts 366-Days of simulation year (0-365). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="35" column="18" bodyfile="de/hackcraft/util/Timing.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTiming_1a1bdf2de1b8ca211c4c4914eed7dda6b2" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int mHour</definition>
+        <argsstring></argsstring>
+        <name>mHour</name>
+        <briefdescription>
+<para>Counts 24-Hours of simulation day (0-23). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="38" column="18" bodyfile="de/hackcraft/util/Timing.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTiming_1a30796b984f19eb7509b83a6f971f522b" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int mMinute</definition>
+        <argsstring></argsstring>
+        <name>mMinute</name>
+        <briefdescription>
+<para>Counts minutes of simulation hour. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="41" column="18" bodyfile="de/hackcraft/util/Timing.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTiming_1af813b6e0322edc55bdc5998b8cf68aa7" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int mSecond</definition>
+        <argsstring></argsstring>
+        <name>mSecond</name>
+        <briefdescription>
+<para>Counts seconds of simulation minute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="44" column="18" bodyfile="de/hackcraft/util/Timing.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTiming_1a14505cd62525f181ded602f890525ffd" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int mMSec</definition>
+        <argsstring></argsstring>
+        <name>mMSec</name>
+        <briefdescription>
+<para>Micro-Seconds, incremented by delta at every simulation timestep. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="47" column="18" bodyfile="de/hackcraft/util/Timing.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTiming_1a685a31ecb20c98a55c651ae08dd332a8" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int mFrame</definition>
+        <argsstring></argsstring>
+        <name>mFrame</name>
+        <briefdescription>
+<para>Incremented at every simulation timestep and reset on each second. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="50" column="18" bodyfile="de/hackcraft/util/Timing.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTiming_1a04ecda711d1e8c266111a7543b63fc94" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int mDeltacycle</definition>
+        <argsstring></argsstring>
+        <name>mDeltacycle</name>
+        <briefdescription>
+<para>Incremented for noteable events (eg. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>OID consumption). Reset each frame. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="53" column="18" bodyfile="de/hackcraft/util/Timing.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTiming_1a0ddb62b8525a76a0b4376d73df3af939" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mSPF</definition>
+        <argsstring></argsstring>
+        <name>mSPF</name>
+        <briefdescription>
+<para>seconds per frame = 1.0f/mFPS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="56" column="11" bodyfile="de/hackcraft/util/Timing.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTiming_1a279bf2c593cfbdff7139a8eacafed2cd" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float mFPS</definition>
+        <argsstring></argsstring>
+        <name>mFPS</name>
+        <briefdescription>
+<para>frames per second = 1.0f/mSPF. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="59" column="11" bodyfile="de/hackcraft/util/Timing.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTiming_1ae2a002da0c27ba18dad3dc5c62308f16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Timing</definition>
+        <argsstring>()</argsstring>
+        <name>Timing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="62" column="5" bodyfile="de/hackcraft/util/Timing.cpp" bodystart="7" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classTiming_1a3ff60b6c4a4ae78999fa75780b8e13be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float getSPF</definition>
+        <argsstring>()</argsstring>
+        <name>getSPF</name>
+        <briefdescription>
+<para>The seconds per frame or frame-rate-inverse. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="67" column="11" bodyfile="de/hackcraft/util/Timing.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classTiming_1a37fca10e76aa3a269c4d80d861de6bc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int getDeltacycle</definition>
+        <argsstring>()</argsstring>
+        <name>getDeltacycle</name>
+        <briefdescription>
+<para>The current deltacycle (i-th event within a frame). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="70" column="18" bodyfile="de/hackcraft/util/Timing.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classTiming_1ab85bc7329dbf042f6773bc7ca26986d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int getFrame</definition>
+        <argsstring>()</argsstring>
+        <name>getFrame</name>
+        <briefdescription>
+<para>The current frame number. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="73" column="18" bodyfile="de/hackcraft/util/Timing.cpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classTiming_1afeb98ad1065ab511d8f3999de77d9cea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setFPS</definition>
+        <argsstring>(float fps)</argsstring>
+        <name>setFPS</name>
+        <param>
+          <type>float</type>
+          <declname>fps</declname>
+        </param>
+        <briefdescription>
+<para>Set current frames per seconds and derived seconds per frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="76" column="10" bodyfile="de/hackcraft/util/Timing.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classTiming_1a5230bbeab1004d90f21a175d05e753d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setDate</definition>
+        <argsstring>(unsigned int year, unsigned int day)</argsstring>
+        <name>setDate</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>day</declname>
+        </param>
+        <briefdescription>
+<para>Set year and day in year. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="79" column="10" bodyfile="de/hackcraft/util/Timing.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classTiming_1a38ec0f9ec6b5c291c0318608b8373bed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setTime</definition>
+        <argsstring>(unsigned hour, unsigned minute=0, unsigned second=0)</argsstring>
+        <name>setTime</name>
+        <param>
+          <type>unsigned</type>
+          <declname>hour</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>minute</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>second</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Set hour, minute and second of day. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="82" column="10" bodyfile="de/hackcraft/util/Timing.cpp" bodystart="43" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classTiming_1ad08682a32077a9b310498ae7bc1cfac7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void advanceDelta</definition>
+        <argsstring>()</argsstring>
+        <name>advanceDelta</name>
+        <briefdescription>
+<para>Increment deltacycle by one (within-frame-notable-event-counter). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="85" column="10" bodyfile="de/hackcraft/util/Timing.cpp" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classTiming_1a25e7e9f128cce679891e92d685f2c7d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void advanceTime</definition>
+        <argsstring>(int deltamsec)</argsstring>
+        <name>advanceTime</name>
+        <param>
+          <type>int</type>
+          <declname>deltamsec</declname>
+        </param>
+        <briefdescription>
+<para>Increment time by the amount of milliseconds and propagate datetime changes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="88" column="10" bodyfile="de/hackcraft/util/Timing.cpp" bodystart="56" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classTiming_1af0dca24b332fba02055b188bacec94d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float getTime24</definition>
+        <argsstring>()</argsstring>
+        <name>getTime24</name>
+        <briefdescription>
+<para>The time in 24-hours format as a float - ie. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>0.00 to 23.99 (vs. 23.59) used for interpolation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="91" column="11" bodyfile="de/hackcraft/util/Timing.cpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classTiming_1acc25a75c870c5cd6219b6aee90cc38ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID getTimekey</definition>
+        <argsstring>()</argsstring>
+        <name>getTimekey</name>
+        <briefdescription>
+<para>Derive a unique key from current time (using deltacycle which needs to be incremented afterwards). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="94" column="9" bodyfile="de/hackcraft/util/Timing.cpp" bodystart="90" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classTiming_1a8c3c24b0d15d580269638ff73340ba6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string getDate</definition>
+        <argsstring>()</argsstring>
+        <name>getDate</name>
+        <briefdescription>
+<para>Get date-string YYYY-MM-DD. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="97" column="17" bodyfile="de/hackcraft/util/Timing.cpp" bodystart="100" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classTiming_1a65654ddbfb836255a8364628c37204ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string getTime</definition>
+        <argsstring>()</argsstring>
+        <name>getTime</name>
+        <briefdescription>
+<para>Get time-string HH:MM:SS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Timing.h" line="100" column="17" bodyfile="de/hackcraft/util/Timing.cpp" bodystart="106" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class that encapsulates the simulation time and animation timing. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Serious question: What time &amp; date format would be used as a common planetary calendar? Is that sensible at all?! So far I assume terran planetary dates everywhere. But time &amp; date should be adjusted to the planet and planet&apos;s date shall be mapped like beween maya, gregorian or moon calendars. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Timing</label>
+        <link refid="classTiming"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/util/Timing.h" line="29" column="13" bodyfile="de/hackcraft/util/Timing.h" bodystart="29" bodyend="102"/>
+    <listofallmembers>
+      <member refid="classTiming_1ad08682a32077a9b310498ae7bc1cfac7" prot="public" virt="non-virtual"><scope>Timing</scope><name>advanceDelta</name></member>
+      <member refid="classTiming_1a25e7e9f128cce679891e92d685f2c7d3" prot="public" virt="non-virtual"><scope>Timing</scope><name>advanceTime</name></member>
+      <member refid="classTiming_1a8c3c24b0d15d580269638ff73340ba6a" prot="public" virt="non-virtual"><scope>Timing</scope><name>getDate</name></member>
+      <member refid="classTiming_1a37fca10e76aa3a269c4d80d861de6bc7" prot="public" virt="non-virtual"><scope>Timing</scope><name>getDeltacycle</name></member>
+      <member refid="classTiming_1ab85bc7329dbf042f6773bc7ca26986d9" prot="public" virt="non-virtual"><scope>Timing</scope><name>getFrame</name></member>
+      <member refid="classTiming_1a3ff60b6c4a4ae78999fa75780b8e13be" prot="public" virt="non-virtual"><scope>Timing</scope><name>getSPF</name></member>
+      <member refid="classTiming_1a65654ddbfb836255a8364628c37204ea" prot="public" virt="non-virtual"><scope>Timing</scope><name>getTime</name></member>
+      <member refid="classTiming_1af0dca24b332fba02055b188bacec94d6" prot="public" virt="non-virtual"><scope>Timing</scope><name>getTime24</name></member>
+      <member refid="classTiming_1acc25a75c870c5cd6219b6aee90cc38ea" prot="public" virt="non-virtual"><scope>Timing</scope><name>getTimekey</name></member>
+      <member refid="classTiming_1a62bf6a72a5398daac448d57fd7f7d94c" prot="private" virt="non-virtual"><scope>Timing</scope><name>mDay</name></member>
+      <member refid="classTiming_1a04ecda711d1e8c266111a7543b63fc94" prot="private" virt="non-virtual"><scope>Timing</scope><name>mDeltacycle</name></member>
+      <member refid="classTiming_1a279bf2c593cfbdff7139a8eacafed2cd" prot="private" virt="non-virtual"><scope>Timing</scope><name>mFPS</name></member>
+      <member refid="classTiming_1a685a31ecb20c98a55c651ae08dd332a8" prot="private" virt="non-virtual"><scope>Timing</scope><name>mFrame</name></member>
+      <member refid="classTiming_1a1bdf2de1b8ca211c4c4914eed7dda6b2" prot="private" virt="non-virtual"><scope>Timing</scope><name>mHour</name></member>
+      <member refid="classTiming_1a30796b984f19eb7509b83a6f971f522b" prot="private" virt="non-virtual"><scope>Timing</scope><name>mMinute</name></member>
+      <member refid="classTiming_1a14505cd62525f181ded602f890525ffd" prot="private" virt="non-virtual"><scope>Timing</scope><name>mMSec</name></member>
+      <member refid="classTiming_1af813b6e0322edc55bdc5998b8cf68aa7" prot="private" virt="non-virtual"><scope>Timing</scope><name>mSecond</name></member>
+      <member refid="classTiming_1a0ddb62b8525a76a0b4376d73df3af939" prot="private" virt="non-virtual"><scope>Timing</scope><name>mSPF</name></member>
+      <member refid="classTiming_1a881729833d58714459492b5ddc65480c" prot="private" virt="non-virtual"><scope>Timing</scope><name>mYear</name></member>
+      <member refid="classTiming_1a5230bbeab1004d90f21a175d05e753d6" prot="public" virt="non-virtual"><scope>Timing</scope><name>setDate</name></member>
+      <member refid="classTiming_1afeb98ad1065ab511d8f3999de77d9cea" prot="public" virt="non-virtual"><scope>Timing</scope><name>setFPS</name></member>
+      <member refid="classTiming_1a38ec0f9ec6b5c291c0318608b8373bed" prot="public" virt="non-virtual"><scope>Timing</scope><name>setTime</name></member>
+      <member refid="classTiming_1ae2a002da0c27ba18dad3dc5c62308f16" prot="public" virt="non-virtual"><scope>Timing</scope><name>Timing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

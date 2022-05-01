@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Road_8h" kind="file" language="C++">
+    <compoundname>Road.h</compoundname>
+    <includedby refid="Road_8cpp" local="yes">de/hackcraft/proc/Road.cpp</includedby>
+    <includedby refid="rTile_8cpp" local="yes">de/hackcraft/world/sub/cityscape/rTile.cpp</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>de/hackcraft/world/sub/cityscape/rTile.cpp</label>
+        <link refid="rTile_8cpp"/>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/proc/Road.cpp</label>
+        <link refid="Road_8cpp"/>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/proc/Road.h</label>
+        <link refid="Road_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structRoad" prot="public">Road</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/proc/Road.h"/>
+  </compounddef>
+</doxygen>

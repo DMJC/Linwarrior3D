@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_579906e894248cf4bfd3c9847ef62364" kind="dir">
+    <compoundname>de/hackcraft/world/sub/misc</compoundname>
+    <innerfile refid="MiscSystem_8cpp">MiscSystem.cpp</innerfile>
+    <innerfile refid="MiscSystem_8h">MiscSystem.h</innerfile>
+    <innerfile refid="rInputsource_8cpp">rInputsource.cpp</innerfile>
+    <innerfile refid="rInputsource_8h">rInputsource.h</innerfile>
+    <innerfile refid="rLightsource_8cpp">rLightsource.cpp</innerfile>
+    <innerfile refid="rLightsource_8h">rLightsource.h</innerfile>
+    <innerfile refid="rSoundsource_8cpp">rSoundsource.cpp</innerfile>
+    <innerfile refid="rSoundsource_8h">rSoundsource.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/misc/"/>
+  </compounddef>
+</doxygen>

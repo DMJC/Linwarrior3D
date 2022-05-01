@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structrTree_1_1TreeType" kind="struct" language="C++" prot="protected">
+    <compoundname>rTree::TreeType</compoundname>
+    <includes local="no">rTree.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrTree_1_1TreeType_1ae21f357c223957d36046a0d71cc6aed7" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rTree.h" line="53" column="22" bodyfile="de/hackcraft/world/sub/model/rTree.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrTree_1_1TreeType_1aa5044999f3339d2ba3b1bf22fa6cfe95" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rTree.h" line="55" column="23" bodyfile="de/hackcraft/world/sub/model/rTree.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrTree_1_1TreeType_1aeddab45909ae27b1abff873da48f7ef9" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char age</definition>
+        <argsstring></argsstring>
+        <name>age</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rTree.h" line="57" column="23" bodyfile="de/hackcraft/world/sub/model/rTree.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrTree_1_1TreeType_1a07be1292540a64dd7f0e86bc338403c5" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rTree.h" line="59" column="22" bodyfile="de/hackcraft/world/sub/model/rTree.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrTree_1_1TreeType_1ade47dcf14ecc6f40e223aba87b825e29" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; leaves</definition>
+        <argsstring></argsstring>
+        <name>leaves</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rTree.h" line="61" column="21" bodyfile="de/hackcraft/world/sub/model/rTree.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrTree_1_1TreeType_1a48083b65ac9a863566dc3e3fff09a5b4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rTree.h" line="63" column="15" bodyfile="de/hackcraft/world/sub/model/rTree.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>rTree::TreeType</label>
+        <link refid="structrTree_1_1TreeType"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+leaves</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vector&lt; float &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/model/rTree.h" line="51" column="19" bodyfile="de/hackcraft/world/sub/model/rTree.h" bodystart="51" bodyend="64"/>
+    <listofallmembers>
+      <member refid="structrTree_1_1TreeType_1aeddab45909ae27b1abff873da48f7ef9" prot="public" virt="non-virtual"><scope>rTree::TreeType</scope><name>age</name></member>
+      <member refid="structrTree_1_1TreeType_1a48083b65ac9a863566dc3e3fff09a5b4" prot="public" virt="non-virtual"><scope>rTree::TreeType</scope><name>height</name></member>
+      <member refid="structrTree_1_1TreeType_1ade47dcf14ecc6f40e223aba87b825e29" prot="public" virt="non-virtual"><scope>rTree::TreeType</scope><name>leaves</name></member>
+      <member refid="structrTree_1_1TreeType_1a07be1292540a64dd7f0e86bc338403c5" prot="public" virt="non-virtual"><scope>rTree::TreeType</scope><name>list</name></member>
+      <member refid="structrTree_1_1TreeType_1ae21f357c223957d36046a0d71cc6aed7" prot="public" virt="non-virtual"><scope>rTree::TreeType</scope><name>seed</name></member>
+      <member refid="structrTree_1_1TreeType_1aa5044999f3339d2ba3b1bf22fa6cfe95" prot="public" virt="non-virtual"><scope>rTree::TreeType</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

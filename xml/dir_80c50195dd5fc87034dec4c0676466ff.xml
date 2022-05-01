@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_80c50195dd5fc87034dec4c0676466ff" kind="dir">
+    <compoundname>de/hackcraft/world/sub/landscape</compoundname>
+    <innerfile refid="LandscapeSystem_8cpp">LandscapeSystem.cpp</innerfile>
+    <innerfile refid="LandscapeSystem_8h">LandscapeSystem.h</innerfile>
+    <innerfile refid="rPlanetmap_8cpp">rPlanetmap.cpp</innerfile>
+    <innerfile refid="rPlanetmap_8h">rPlanetmap.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/landscape/"/>
+  </compounddef>
+</doxygen>

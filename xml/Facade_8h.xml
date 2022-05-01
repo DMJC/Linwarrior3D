@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Facade_8h" kind="file" language="C++">
+    <compoundname>Facade.h</compoundname>
+    <includedby refid="Facade_8cpp" local="yes">de/hackcraft/proc/Facade.cpp</includedby>
+    <includedby refid="rBuilding_8cpp" local="yes">de/hackcraft/world/sub/cityscape/rBuilding.cpp</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>de/hackcraft/proc/Facade.h</label>
+        <link refid="Facade_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/proc/Facade.cpp</label>
+        <link refid="Facade_8cpp"/>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/world/sub/cityscape/rBuilding.cpp</label>
+        <link refid="rBuilding_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structFacade" prot="public">Facade</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/proc/Facade.h"/>
+  </compounddef>
+</doxygen>

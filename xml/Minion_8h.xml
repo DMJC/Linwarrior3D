@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Minion_8h" kind="file" language="C++">
+    <compoundname>Minion.h</compoundname>
+    <includes refid="Thread_8h" local="yes">de/hackcraft/lang/Thread.h</includes>
+    <includes local="no">queue</includes>
+    <includedby refid="Minion_8cpp" local="yes">de/hackcraft/util/concurrent/Minion.cpp</includedby>
+    <includedby refid="Threadpool_8cpp" local="yes">de/hackcraft/util/concurrent/Threadpool.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>queue</label>
+      </node>
+      <node id="4">
+        <label>de/hackcraft/lang/Runnable.h</label>
+        <link refid="Runnable_8h"/>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/util/concurrent/Minion.h</label>
+        <link refid="Minion_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/lang/Thread.h</label>
+        <link refid="Thread_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/lang/Object.h</label>
+        <link refid="Object_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>de/hackcraft/util/concurrent/Minion.h</label>
+        <link refid="Minion_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/util/concurrent/Threadpool.cpp</label>
+        <link refid="Threadpool_8cpp"/>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/util/concurrent/Minion.cpp</label>
+        <link refid="Minion_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMinion" prot="public">Minion</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/util/concurrent/Minion.h"/>
+  </compounddef>
+</doxygen>

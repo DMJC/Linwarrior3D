@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Propmap_8cpp" kind="file" language="C++">
+    <compoundname>Propmap.cpp</compoundname>
+    <includes refid="Propmap_8h" local="yes">Propmap.h</includes>
+    <includes refid="Filesystem_8h" local="yes">de/hackcraft/io/Filesystem.h</includes>
+    <includes refid="Logger_8h" local="yes">de/hackcraft/log/Logger.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">sstream</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>list</label>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/util/Propmap.cpp</label>
+        <link refid="Propmap_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+      <node id="12">
+        <label>de/hackcraft/log/LevelStreamLogger.h</label>
+        <link refid="LevelStreamLogger_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>map</label>
+      </node>
+      <node id="9">
+        <label>de/hackcraft/log/Logger.h</label>
+        <link refid="Logger_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>sstream</label>
+      </node>
+      <node id="6">
+        <label>de/hackcraft/io/Filesystem.h</label>
+        <link refid="Filesystem_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Propmap.h</label>
+        <link refid="Propmap_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>de/hackcraft/log/Appender.h</label>
+        <link refid="Appender_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stdio.h</label>
+      </node>
+      <node id="11">
+        <label>de/hackcraft/log/LoggerEvent.h</label>
+        <link refid="LoggerEvent_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/util/Propmap.cpp"/>
+  </compounddef>
+</doxygen>

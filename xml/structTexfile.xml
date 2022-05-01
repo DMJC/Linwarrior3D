@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structTexfile" kind="struct" language="C++" prot="public">
+    <compoundname>Texfile</compoundname>
+    <includes local="no">Texfile.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="structTexfile_1af42b1d8da46f0bd6298acdc159027857" prot="private" static="yes" mutable="no">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger * logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="classLogger_1ac11c529e5152e544fbc4c6594add48b6" kindref="member">Logger::getLogger</ref>(&quot;de.hackcraft.io.Texfile&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/Texfile.h" line="19" column="19" bodyfile="de/hackcraft/io/Texfile.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structTexfile_1a8cea9e82cecffeeb0db26b5d89df2ba3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char * warningTexture</definition>
+        <argsstring>(const char *fname, int *w, int *h, int *bpp)</argsstring>
+        <name>warningTexture</name>
+        <param>
+          <type>const char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>bpp</declname>
+        </param>
+        <briefdescription>
+<para>Utility function that generates a warning image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Used by loaders in case of failure.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bpp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/Texfile.h" line="32" column="26" bodyfile="de/hackcraft/io/Texfile.cpp" bodystart="13" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="structTexfile_1a630ab3883216730d4acc8bc036bc9a32" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char * loadTGA</definition>
+        <argsstring>(const char *fname, int *w, int *h, int *bpp)</argsstring>
+        <name>loadTGA</name>
+        <param>
+          <type>const char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>bpp</declname>
+        </param>
+        <briefdescription>
+<para>Utility function to load uncompressed lower-left 24 or 32 bit tga bitmaps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that zipped tga files may be smaller than other common compressed formats when zipped =&gt; Distribution size is less than or similar to when png or jpg is used, the installation size is larger but the quality is as good as it gets - assuming 8 bits per pixel. Besides tga is one of the simplest and fastest to load. An enhancement may be to have *.tga.gz if at all.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bpp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/Texfile.h" line="48" column="26" bodyfile="de/hackcraft/io/Texfile.cpp" bodystart="29" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="structTexfile_1ac0db80e7c23e38a8bbdee283802d18bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int saveTGA</definition>
+        <argsstring>(const char *fname, int w, int h, int bpp, unsigned char *image)</argsstring>
+        <name>saveTGA</name>
+        <param>
+          <type>const char *</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bpp</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Utility function to save uncompressed lower-left 24 or 32 bit tga bitmaps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that zipped tga files may be smaller than other common compressed formats when zipped =&gt; Distribution size is less than or similar to when png or jpg is used, the installation size is larger but the quality is as good as it gets - assuming 8 bits per pixel. Besides tga is one of the simplest and fastest to load. An enhancement may be to have *.tga.gz if at all.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bpp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/io/Texfile.h" line="65" column="16" bodyfile="de/hackcraft/io/Texfile.cpp" bodystart="99" bodyend="175"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for loading (uncompressed tga) textures. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>stringstream</label>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>LevelStreamLogger</label>
+        <link refid="classLevelStreamLogger"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-logstream</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>string</label>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="2">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-infoLogger</edgelabel>
+          <edgelabel>-traceLogger</edgelabel>
+          <edgelabel>-warnLogger</edgelabel>
+          <edgelabel>-errorLogger</edgelabel>
+          <edgelabel>-debugLogger</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>-globalAppender</edgelabel>
+          <edgelabel>-appender</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>-qualifiedLoggerName</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-parentLogger</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Texfile</label>
+        <link refid="structTexfile"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+      <node id="9">
+        <label>ios_base</label>
+      </node>
+      <node id="10">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/io/Texfile.h" line="17" column="14" bodyfile="de/hackcraft/io/Texfile.h" bodystart="17" bodyend="66"/>
+    <listofallmembers>
+      <member refid="structTexfile_1a630ab3883216730d4acc8bc036bc9a32" prot="public" virt="non-virtual"><scope>Texfile</scope><name>loadTGA</name></member>
+      <member refid="structTexfile_1af42b1d8da46f0bd6298acdc159027857" prot="private" virt="non-virtual"><scope>Texfile</scope><name>logger</name></member>
+      <member refid="structTexfile_1ac0db80e7c23e38a8bbdee283802d18bd" prot="public" virt="non-virtual"><scope>Texfile</scope><name>saveTGA</name></member>
+      <member refid="structTexfile_1a8cea9e82cecffeeb0db26b5d89df2ba3" prot="public" virt="non-virtual"><scope>Texfile</scope><name>warningTexture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

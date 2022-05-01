@@ -1,0 +1,1082 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structrRigged" kind="struct" language="C++" prot="public">
+    <compoundname>rRigged</compoundname>
+    <basecompoundref refid="structComponent" prot="public" virt="non-virtual">Component</basecompoundref>
+    <basecompoundref refid="classIModel" prot="public" virt="non-virtual">IModel</basecompoundref>
+    <includes local="no">rRigged.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Jointpoints</name>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51acad5ca0336a54bf3542eb85634b7a7ba" prot="public">
+          <name>EYE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a93dce739d52555a36f8865b5f112c2b9" prot="public">
+          <name>HEADPITCH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a5c4aaaa725d07b423e0ae790bf110893" prot="public">
+          <name>HEADYAW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51abbeb1ef97fec1353986775fe0bd78970" prot="public">
+          <name>CTMOUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a2517101b6b17c9237d71b328964bd4ce" prot="public">
+          <name>LAMOUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a4da5b84c8687a8d16f043c5f584e1dfb" prot="public">
+          <name>RAMOUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a985083e21f42379c92a4bd29d44c2dda" prot="public">
+          <name>LSMOUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a4f447de7955eb00d1627f56846fec325" prot="public">
+          <name>RSMOUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a160a813975ca9468c8a40dbf7b1f309e" prot="public">
+          <name>BKMOUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a3cdb2c349c750208839b2ee4bf94171e" prot="public">
+          <name>JET0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a0784eea76babf724184f23860e63efe8" prot="public">
+          <name>JET1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51afef2684a50daf8e8694ae9fcad46c78f" prot="public">
+          <name>JET2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51ae0b30684830690ec7afc829764d7c0d4" prot="public">
+          <name>JET3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a7c566dbec21801d8211e1ecae2567f31" prot="public">
+          <name>JET4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a60ae774ecd1cf97a0e91f76970d64491" prot="public">
+          <name>YAW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51aa4ed247aa19723caf868d2b2dd5cf4ff" prot="public">
+          <name>PITCH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a22f3980816d3f0ca76b78fe48568250a" prot="public">
+          <name>LEFTLEG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51ad0215878e988cb3d13d0da37dda119e3" prot="public">
+          <name>RIGHTLEG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51ab21631c7d971c343d0e51815b3a38647" prot="public">
+          <name>LEFTCALF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a903dd4d60b03dd89b751e484d291fe65" prot="public">
+          <name>RIGHTCALF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a90ffee6c96b1e4f2e7ce99b4b674f4c3" prot="public">
+          <name>LEFTFOOT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a60a6383af10d871e67105127c422a08f" prot="public">
+          <name>RIGHTFOOT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structrRigged_1add4b785788f41d5e95f3fd1b88212b51abf57894330b4555b183e749ca88c9205" prot="public">
+          <name>MAX_JOINTPOINTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration for indexing joints in animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="33" column="21" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="33" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="structrRigged_1af42b1d8da46f0bd6298acdc159027857" prot="private" static="yes" mutable="no">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger * logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="classLogger_1ac11c529e5152e544fbc4c6594add48b6" kindref="member">Logger::getLogger</ref>(&quot;de.hackcraft.world.sub.model.rRigged&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="29" column="19" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structrRigged_1ab6a3de68965b8f71ff914a03321757f4" prot="public" static="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string cname</definition>
+        <argsstring></argsstring>
+        <name>cname</name>
+        <initializer>= &quot;RIGGED&quot;</initializer>
+        <briefdescription>
+<para>Identifier for this component (all uppercase letters without leading &quot;r&quot;). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="42" column="24" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1a08d90b44549babc6b8c5154f371aa12f" prot="public" static="yes" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int cid</definition>
+        <argsstring></argsstring>
+        <name>cid</name>
+        <initializer>= 4900</initializer>
+        <briefdescription>
+<para>A unique random number (0-9999) to identify this component. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="44" column="25" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1a07feb2ccbf817ae62a4886d0f87513f3" prot="public" static="yes" mutable="no">
+        <type>std::map&lt; std::string, unsigned long &gt;</type>
+        <definition>std::map&lt; std::string, unsigned long &gt; materials</definition>
+        <argsstring></argsstring>
+        <name>materials</name>
+        <briefdescription>
+<para>Shared material bindings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="46" column="21" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrRigged_1a1d28dec57cce925ad92342891bd71e7c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+<para>Model scale. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(1.0f, unused/removed now) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="50" column="11" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1a70fc306096de2bed127c1afdc92bd30d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float seconds</definition>
+        <argsstring></argsstring>
+        <name>seconds</name>
+        <briefdescription>
+<para>Animation time counter in seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="52" column="11" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1afd52379f479751aa5754bce955328aa5" prot="public" static="no" mutable="no">
+        <type><ref refid="math3d_8h_1aa12dddc6c5b49b59657f5b9262d3196c" kindref="member">vec3</ref></type>
+        <definition>vec3 pos0</definition>
+        <argsstring></argsstring>
+        <name>pos0</name>
+        <briefdescription>
+<para>Position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(hook i) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="54" column="10" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1a0854f6ba6bb461c5350a33905dce3f28" prot="public" static="no" mutable="no">
+        <type><ref refid="math3d_8h_1af5f140c7cfd64fec8b5126ae20ca327f" kindref="member">quat</ref></type>
+        <definition>quat ori0</definition>
+        <argsstring></argsstring>
+        <name>ori0</name>
+        <briefdescription>
+<para>Orientation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(hook i) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="56" column="10" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1a260bd26276f2c55c6f2e174a66be6e9e" prot="public" static="no" mutable="no">
+        <type><ref refid="math3d_8h_1aa12dddc6c5b49b59657f5b9262d3196c" kindref="member">vec3</ref></type>
+        <definition>vec3 vel</definition>
+        <argsstring></argsstring>
+        <name>vel</name>
+        <briefdescription>
+<para>Velocity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(hook i) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="58" column="10" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1a35f46d630c98337e175db95c7a05f29f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float grounded</definition>
+        <argsstring></argsstring>
+        <name>grounded</name>
+        <briefdescription>
+<para>Grounded. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(hook i) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="60" column="11" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1add95b125f98614c81f27d1d5bd1a0e03" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float jetting</definition>
+        <argsstring></argsstring>
+        <name>jetting</name>
+        <briefdescription>
+<para>Jetting. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(hook i) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="62" column="11" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1a92530365da45ba404aa4f179637b02b4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int basetexture3d</definition>
+        <argsstring></argsstring>
+        <name>basetexture3d</name>
+        <briefdescription>
+<para>Basic 3d texture bind when greater 0. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(still a hook i) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="64" column="9" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1a9822df05778e755cf73487b5e90123e2" prot="public" static="no" mutable="no">
+        <type><ref refid="structMD5Format_1_1joint" kindref="compound">MD5Format::joint</ref> *</type>
+        <definition>MD5Format::joint* joints</definition>
+        <argsstring></argsstring>
+        <name>joints</name>
+        <briefdescription>
+<para>Actual local-(model-)space joints for this instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="68" column="22" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1ab307b59d3b6c5916a6ca02bfad3fb471" prot="public" static="no" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int, int&gt; jointpoints</definition>
+        <argsstring></argsstring>
+        <name>jointpoints</name>
+        <briefdescription>
+<para>Maps jointpoint identifier to actual joint index of the model (-1 ~ NULL). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="70" column="14" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1af4aeeab86bcc543e9acd4e62af6968c4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float rotators[MAX_JOINTPOINTS][3]</definition>
+        <argsstring>[MAX_JOINTPOINTS][3]</argsstring>
+        <name>rotators</name>
+        <briefdescription>
+<para>Joint angles for animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="72" column="11" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1ad707ca61b2e9cacb87ccb4e20bcfe9f4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float rotatorsFactors[MAX_JOINTPOINTS][3]</definition>
+        <argsstring>[MAX_JOINTPOINTS][3]</argsstring>
+        <name>rotatorsFactors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="73" column="11" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1a48083b65ac9a863566dc3e3fff09a5b4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+<para>Current model height - only messured above ground ie. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>&gt; 0. (hook o) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="75" column="11" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1a5050a760c11da521cd4aee6336f6529f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+<para>Current model radius as seen from above. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>(hook o) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="77" column="11" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="structrRigged_1a924600c9e419ebab0374be28283599a6" prot="protected" static="no" mutable="no">
+        <type><ref refid="structMD5Format_1_1model" kindref="compound">MD5Format::model</ref> *</type>
+        <definition>MD5Format::model* model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+<para>The &quot;static&quot; model just as it is loaded. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="81" column="22" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1aa4b006434d5078ceae142b042ec29438" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; int, float * &gt;</type>
+        <definition>std::map&lt;int, float*&gt; baseverts</definition>
+        <argsstring></argsstring>
+        <name>baseverts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="83" column="14" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrRigged_1a02ce4954b9b4433a056943395d359402" prot="protected" static="no" mutable="no">
+        <type>std::map&lt; int, float * &gt;</type>
+        <definition>std::map&lt;int, float*&gt; basenorms</definition>
+        <argsstring></argsstring>
+        <name>basenorms</name>
+        <briefdescription>
+<para>Untransformed normals for mesh i. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="85" column="14" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structrRigged_1a22e6332a912be38d3656459039b70c2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rRigged</definition>
+        <argsstring>(Entity *obj=NULL)</argsstring>
+        <name>rRigged</name>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>obj</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="88" column="5" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="33" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a60b8f624c8331e9b3cae8ea57f2cdfcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>~rRigged</definition>
+        <argsstring>()</argsstring>
+        <name>~rRigged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="89" column="5" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a00ebec6b184985cbc02b754c3d5aa98c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string getJointname</definition>
+        <argsstring>(unsigned int num)</argsstring>
+        <name>getJointname</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="91" column="17" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="52" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a6fa26e502178805e62b1e0da9a7a731a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getMountpoint</definition>
+        <argsstring>(const char *point)</argsstring>
+        <name>getMountpoint</name>
+        <param>
+          <type>const char *</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="92" column="9" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="64" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a94ab66f32a732f5436cd9709d6bd9084" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string resolveFilename</definition>
+        <argsstring>(std::string modelname)</argsstring>
+        <name>resolveFilename</name>
+        <param>
+          <type>std::string</type>
+          <declname>modelname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="94" column="17" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="80" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a8f37bc268a766e87bea7bfc3004263fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void loadModel</definition>
+        <argsstring>(std::string filename)</argsstring>
+        <name>loadModel</name>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="95" column="10" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="114" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a524f2f68160160cc2bc0a87d112b2172" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int getPosX</definition>
+        <argsstring>()</argsstring>
+        <name>getPosX</name>
+        <reimplements refid="classIModel_1a20b934bae6654e29bcd9b204d10f2f7a">getPosX</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="97" column="17" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a357b246af92b63db4436f46b130b2229" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int getPosY</definition>
+        <argsstring>()</argsstring>
+        <name>getPosY</name>
+        <reimplements refid="classIModel_1a855b01b48bb7d09cd79ecb752545a21d">getPosY</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="98" column="17" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a87f720dc9bfa7937ca0e5004102181d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int getPosZ</definition>
+        <argsstring>()</argsstring>
+        <name>getPosZ</name>
+        <reimplements refid="classIModel_1a7d56539842687efc7ff93b3af2dda806">getPosZ</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="99" column="17" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a0a388523941d911d0c3dd369f72cc81d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void animate</definition>
+        <argsstring>(float spf)</argsstring>
+        <name>animate</name>
+        <reimplements refid="structComponent_1a21737bd2efddc8007d58214f722959f1">animate</reimplements>
+        <param>
+          <type>float</type>
+          <declname>spf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="100" column="18" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="185" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1abe0cf4a907cfd4631a4d7c7647692a0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void transform</definition>
+        <argsstring>()</argsstring>
+        <name>transform</name>
+        <reimplements refid="structComponent_1a620c3ab0c7ebcfa486e3f3c3d1c442b3">transform</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="101" column="18" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="197" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a044d5ff7d7174ed434fcebbef82bc275" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void drawSolid</definition>
+        <argsstring>()</argsstring>
+        <name>drawSolid</name>
+        <reimplements refid="structComponent_1a82d72d455a63508dd949d552ed3713b5">drawSolid</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="102" column="18" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="205" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a777e1926a0150b45a189753046343765" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void drawEffect</definition>
+        <argsstring>()</argsstring>
+        <name>drawEffect</name>
+        <reimplements refid="structComponent_1afa90087fb4f9485be9db86581d8ac822">drawEffect</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="103" column="18" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="219" bodyend="273"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structrRigged_1a507727ecd75e3c02ea819a5e9678772f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int loadMaterial</definition>
+        <argsstring>()</argsstring>
+        <name>loadMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="106" column="18" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="276" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a7456d40489fe1f7b28fbd1d84097c42a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initMaterials</definition>
+        <argsstring>()</argsstring>
+        <name>initMaterials</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="108" column="10" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="300" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a08d1c175da3f0eb0af1c53364dbbe745" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawBones</definition>
+        <argsstring>()</argsstring>
+        <name>drawBones</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="110" column="10" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="382" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1aa1d13061c41622da14b8a4505c59fce8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawMeshes</definition>
+        <argsstring>()</argsstring>
+        <name>drawMeshes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="111" column="10" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="411" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a13c3e66a63141172b3024ae272c5ef72" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void poseJumping</definition>
+        <argsstring>(float spf)</argsstring>
+        <name>poseJumping</name>
+        <param>
+          <type>float</type>
+          <declname>spf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="113" column="10" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="522" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a1bad6aef8f5cc5d762fe0e7b4397ce98" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void poseRunning</definition>
+        <argsstring>(float spf)</argsstring>
+        <name>poseRunning</name>
+        <param>
+          <type>float</type>
+          <declname>spf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="114" column="10" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="544" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="structrRigged_1a6464b6bf379c465efc98363f3b30e5df" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void transformJoints</definition>
+        <argsstring>()</argsstring>
+        <name>transformJoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/model/rRigged.h" line="116" column="10" bodyfile="de/hackcraft/world/sub/model/rRigged.cpp" bodystart="609" bodyend="705"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Encapsulates a rigged mesh in md5mesh format. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Component</label>
+        <link refid="structComponent"/>
+      </node>
+      <node id="3">
+        <label>IModel</label>
+        <link refid="classIModel"/>
+      </node>
+      <node id="1">
+        <label>rRigged</label>
+        <link refid="structrRigged"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="17">
+        <label>stringstream</label>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vector&lt; Binding * &gt;</label>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+object</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+prebinds</edgelabel>
+          <edgelabel>+postbinds</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>map&lt; int, float * &gt;</label>
+      </node>
+      <node id="16">
+        <label>LevelStreamLogger</label>
+        <link refid="classLevelStreamLogger"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>-logstream</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>IModel</label>
+        <link refid="classIModel"/>
+      </node>
+      <node id="13">
+        <label>model</label>
+        <link refid="structMD5Format_1_1model"/>
+      </node>
+      <node id="14">
+        <label>joint</label>
+        <link refid="structMD5Format_1_1joint"/>
+      </node>
+      <node id="5">
+        <label>string</label>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>rRigged</label>
+        <link refid="structrRigged"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>#baseverts</edgelabel>
+          <edgelabel>#basenorms</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>+jointpoints</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>+materials</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>#model</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>+joints</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>map&lt; std::string, unsigned long &gt;</label>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+keys</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="15">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>-infoLogger</edgelabel>
+          <edgelabel>-traceLogger</edgelabel>
+          <edgelabel>-warnLogger</edgelabel>
+          <edgelabel>-errorLogger</edgelabel>
+          <edgelabel>-debugLogger</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>-globalAppender</edgelabel>
+          <edgelabel>-appender</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-qualifiedLoggerName</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>-parentLogger</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Entity</label>
+        <link refid="classEntity"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+components</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+name</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Binding</label>
+        <link refid="classBinding"/>
+      </node>
+      <node id="24">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+      <node id="22">
+        <label>ios_base</label>
+      </node>
+      <node id="11">
+        <label>map&lt; int, int &gt;</label>
+      </node>
+      <node id="23">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector&lt; Component * &gt;</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/model/rRigged.h" line="27" column="46" bodyfile="de/hackcraft/world/sub/model/rRigged.h" bodystart="27" bodyend="117"/>
+    <listofallmembers>
+      <member refid="structComponent_1a03c996f9fcf0e10baeb3e700be0c409a" prot="public" virt="non-virtual"><scope>rRigged</scope><name>active</name></member>
+      <member refid="structComponent_1a9be6e2d0e81c55db1578d42ec617cbca" prot="public" virt="non-virtual"><scope>rRigged</scope><name>addBinding</name></member>
+      <member refid="structComponent_1a76752321cf3827ebb052e7b9b93f3db0" prot="public" virt="non-virtual"><scope>rRigged</scope><name>addBinding</name></member>
+      <member refid="structrRigged_1a0a388523941d911d0c3dd369f72cc81d" prot="public" virt="virtual"><scope>rRigged</scope><name>animate</name></member>
+      <member refid="structrRigged_1a02ce4954b9b4433a056943395d359402" prot="protected" virt="non-virtual"><scope>rRigged</scope><name>basenorms</name></member>
+      <member refid="structrRigged_1a92530365da45ba404aa4f179637b02b4" prot="public" virt="non-virtual"><scope>rRigged</scope><name>basetexture3d</name></member>
+      <member refid="structrRigged_1aa4b006434d5078ceae142b042ec29438" prot="protected" virt="non-virtual"><scope>rRigged</scope><name>baseverts</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a160a813975ca9468c8a40dbf7b1f309e" prot="public" virt="non-virtual"><scope>rRigged</scope><name>BKMOUNT</name></member>
+      <member refid="structComponent_1a2cd2e7e39bbe0feb04e3f49d92383051" prot="public" virt="virtual"><scope>rRigged</scope><name>camera</name></member>
+      <member refid="structrRigged_1a08d90b44549babc6b8c5154f371aa12f" prot="public" virt="non-virtual"><scope>rRigged</scope><name>cid</name></member>
+      <member refid="structComponent_1a12d7214a9a58d47b3bc3c2e91f6d0c32" prot="public" virt="virtual"><scope>rRigged</scope><name>clone</name></member>
+      <member refid="structrRigged_1ab6a3de68965b8f71ff914a03321757f4" prot="public" virt="non-virtual"><scope>rRigged</scope><name>cname</name></member>
+      <member refid="structComponent_1a6b5149d0ce5984ffa0fdfcb0660c7bd5" prot="public" virt="non-virtual"><scope>rRigged</scope><name>Component</name></member>
+      <member refid="structComponent_1af0c987007ef181ec233d8333d399bab6" prot="public" virt="virtual"><scope>rRigged</scope><name>constrain</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51abbeb1ef97fec1353986775fe0bd78970" prot="public" virt="non-virtual"><scope>rRigged</scope><name>CTMOUNT</name></member>
+      <member refid="structComponent_1abea7dc29223077e4c8b30eda0e487242" prot="public" virt="virtual"><scope>rRigged</scope><name>damage</name></member>
+      <member refid="structrRigged_1a08d1c175da3f0eb0af1c53364dbbe745" prot="private" virt="non-virtual"><scope>rRigged</scope><name>drawBones</name></member>
+      <member refid="structrRigged_1a777e1926a0150b45a189753046343765" prot="public" virt="virtual"><scope>rRigged</scope><name>drawEffect</name></member>
+      <member refid="structComponent_1a98233a0af860521dafed683b50128886" prot="public" virt="virtual"><scope>rRigged</scope><name>drawHUD</name></member>
+      <member refid="structrRigged_1aa1d13061c41622da14b8a4505c59fce8" prot="private" virt="non-virtual"><scope>rRigged</scope><name>drawMeshes</name></member>
+      <member refid="structrRigged_1a044d5ff7d7174ed434fcebbef82bc275" prot="public" virt="virtual"><scope>rRigged</scope><name>drawSolid</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51acad5ca0336a54bf3542eb85634b7a7ba" prot="public" virt="non-virtual"><scope>rRigged</scope><name>EYE</name></member>
+      <member refid="structComponent_1ad9819bfdd9490c9b319093ac5b97822f" prot="public" virt="virtual"><scope>rRigged</scope><name>frag</name></member>
+      <member refid="structComponent_1acdfa5be80a3b7f56ac515b1bb1305e68" prot="public" virt="virtual"><scope>rRigged</scope><name>getId</name></member>
+      <member refid="structrRigged_1a00ebec6b184985cbc02b754c3d5aa98c" prot="public" virt="non-virtual"><scope>rRigged</scope><name>getJointname</name></member>
+      <member refid="structrRigged_1a6fa26e502178805e62b1e0da9a7a731a" prot="public" virt="non-virtual"><scope>rRigged</scope><name>getMountpoint</name></member>
+      <member refid="structrRigged_1a524f2f68160160cc2bc0a87d112b2172" prot="public" virt="virtual"><scope>rRigged</scope><name>getPosX</name></member>
+      <member refid="structrRigged_1a357b246af92b63db4436f46b130b2229" prot="public" virt="virtual"><scope>rRigged</scope><name>getPosY</name></member>
+      <member refid="structrRigged_1a87f720dc9bfa7937ca0e5004102181d5" prot="public" virt="virtual"><scope>rRigged</scope><name>getPosZ</name></member>
+      <member refid="structrRigged_1a35f46d630c98337e175db95c7a05f29f" prot="public" virt="non-virtual"><scope>rRigged</scope><name>grounded</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a93dce739d52555a36f8865b5f112c2b9" prot="public" virt="non-virtual"><scope>rRigged</scope><name>HEADPITCH</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a5c4aaaa725d07b423e0ae790bf110893" prot="public" virt="non-virtual"><scope>rRigged</scope><name>HEADYAW</name></member>
+      <member refid="structrRigged_1a48083b65ac9a863566dc3e3fff09a5b4" prot="public" virt="non-virtual"><scope>rRigged</scope><name>height</name></member>
+      <member refid="structrRigged_1a7456d40489fe1f7b28fbd1d84097c42a" prot="private" virt="non-virtual"><scope>rRigged</scope><name>initMaterials</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a3cdb2c349c750208839b2ee4bf94171e" prot="public" virt="non-virtual"><scope>rRigged</scope><name>JET0</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a0784eea76babf724184f23860e63efe8" prot="public" virt="non-virtual"><scope>rRigged</scope><name>JET1</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51afef2684a50daf8e8694ae9fcad46c78f" prot="public" virt="non-virtual"><scope>rRigged</scope><name>JET2</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51ae0b30684830690ec7afc829764d7c0d4" prot="public" virt="non-virtual"><scope>rRigged</scope><name>JET3</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a7c566dbec21801d8211e1ecae2567f31" prot="public" virt="non-virtual"><scope>rRigged</scope><name>JET4</name></member>
+      <member refid="structrRigged_1add95b125f98614c81f27d1d5bd1a0e03" prot="public" virt="non-virtual"><scope>rRigged</scope><name>jetting</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51" prot="public" virt="non-virtual"><scope>rRigged</scope><name>Jointpoints</name></member>
+      <member refid="structrRigged_1ab307b59d3b6c5916a6ca02bfad3fb471" prot="public" virt="non-virtual"><scope>rRigged</scope><name>jointpoints</name></member>
+      <member refid="structrRigged_1a9822df05778e755cf73487b5e90123e2" prot="public" virt="non-virtual"><scope>rRigged</scope><name>joints</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a2517101b6b17c9237d71b328964bd4ce" prot="public" virt="non-virtual"><scope>rRigged</scope><name>LAMOUNT</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51ab21631c7d971c343d0e51815b3a38647" prot="public" virt="non-virtual"><scope>rRigged</scope><name>LEFTCALF</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a90ffee6c96b1e4f2e7ce99b4b674f4c3" prot="public" virt="non-virtual"><scope>rRigged</scope><name>LEFTFOOT</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a22f3980816d3f0ca76b78fe48568250a" prot="public" virt="non-virtual"><scope>rRigged</scope><name>LEFTLEG</name></member>
+      <member refid="structComponent_1ab92eb9c4dcb16f9e63ca5fe371144983" prot="public" virt="virtual"><scope>rRigged</scope><name>listener</name></member>
+      <member refid="structrRigged_1a507727ecd75e3c02ea819a5e9678772f" prot="private" virt="non-virtual"><scope>rRigged</scope><name>loadMaterial</name></member>
+      <member refid="structrRigged_1a8f37bc268a766e87bea7bfc3004263fc" prot="public" virt="non-virtual"><scope>rRigged</scope><name>loadModel</name></member>
+      <member refid="structrRigged_1af42b1d8da46f0bd6298acdc159027857" prot="private" virt="non-virtual"><scope>rRigged</scope><name>logger</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a985083e21f42379c92a4bd29d44c2dda" prot="public" virt="non-virtual"><scope>rRigged</scope><name>LSMOUNT</name></member>
+      <member refid="structrRigged_1a07feb2ccbf817ae62a4886d0f87513f3" prot="public" virt="non-virtual"><scope>rRigged</scope><name>materials</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51abf57894330b4555b183e749ca88c9205" prot="public" virt="non-virtual"><scope>rRigged</scope><name>MAX_JOINTPOINTS</name></member>
+      <member refid="structrRigged_1a924600c9e419ebab0374be28283599a6" prot="protected" virt="non-virtual"><scope>rRigged</scope><name>model</name></member>
+      <member refid="structComponent_1a4c442f22ef3b8c6790b56015beb57566" prot="public" virt="non-virtual"><scope>rRigged</scope><name>object</name></member>
+      <member refid="structrRigged_1a0854f6ba6bb461c5350a33905dce3f28" prot="public" virt="non-virtual"><scope>rRigged</scope><name>ori0</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51aa4ed247aa19723caf868d2b2dd5cf4ff" prot="public" virt="non-virtual"><scope>rRigged</scope><name>PITCH</name></member>
+      <member refid="structrRigged_1afd52379f479751aa5754bce955328aa5" prot="public" virt="non-virtual"><scope>rRigged</scope><name>pos0</name></member>
+      <member refid="structrRigged_1a13c3e66a63141172b3024ae272c5ef72" prot="private" virt="non-virtual"><scope>rRigged</scope><name>poseJumping</name></member>
+      <member refid="structrRigged_1a1bad6aef8f5cc5d762fe0e7b4397ce98" prot="private" virt="non-virtual"><scope>rRigged</scope><name>poseRunning</name></member>
+      <member refid="structComponent_1ab7bcd2366fafecdcdd8bbcbfb0a43c51" prot="public" virt="non-virtual"><scope>rRigged</scope><name>postbind</name></member>
+      <member refid="structComponent_1abc081daafef3ffd221d8746b1e4c2f78" prot="public" virt="non-virtual"><scope>rRigged</scope><name>postbinds</name></member>
+      <member refid="structComponent_1a5bd6391b052df5d5a0db4554b2c3fe66" prot="public" virt="non-virtual"><scope>rRigged</scope><name>prebind</name></member>
+      <member refid="structComponent_1a4d900b2c72ca399a620b6eefce26c018" prot="public" virt="non-virtual"><scope>rRigged</scope><name>prebinds</name></member>
+      <member refid="structrRigged_1a5050a760c11da521cd4aee6336f6529f" prot="public" virt="non-virtual"><scope>rRigged</scope><name>radius</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a4da5b84c8687a8d16f043c5f584e1dfb" prot="public" virt="non-virtual"><scope>rRigged</scope><name>RAMOUNT</name></member>
+      <member refid="structrRigged_1a94ab66f32a732f5436cd9709d6bd9084" prot="public" virt="non-virtual"><scope>rRigged</scope><name>resolveFilename</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a903dd4d60b03dd89b751e484d291fe65" prot="public" virt="non-virtual"><scope>rRigged</scope><name>RIGHTCALF</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a60a6383af10d871e67105127c422a08f" prot="public" virt="non-virtual"><scope>rRigged</scope><name>RIGHTFOOT</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51ad0215878e988cb3d13d0da37dda119e3" prot="public" virt="non-virtual"><scope>rRigged</scope><name>RIGHTLEG</name></member>
+      <member refid="structrRigged_1af4aeeab86bcc543e9acd4e62af6968c4" prot="public" virt="non-virtual"><scope>rRigged</scope><name>rotators</name></member>
+      <member refid="structrRigged_1ad707ca61b2e9cacb87ccb4e20bcfe9f4" prot="public" virt="non-virtual"><scope>rRigged</scope><name>rotatorsFactors</name></member>
+      <member refid="structrRigged_1a22e6332a912be38d3656459039b70c2e" prot="public" virt="non-virtual"><scope>rRigged</scope><name>rRigged</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a4f447de7955eb00d1627f56846fec325" prot="public" virt="non-virtual"><scope>rRigged</scope><name>RSMOUNT</name></member>
+      <member refid="structrRigged_1a1d28dec57cce925ad92342891bd71e7c" prot="public" virt="non-virtual"><scope>rRigged</scope><name>scale</name></member>
+      <member refid="structrRigged_1a70fc306096de2bed127c1afdc92bd30d" prot="public" virt="non-virtual"><scope>rRigged</scope><name>seconds</name></member>
+      <member refid="structComponent_1a2260c02c44eeca44f51bf4b76f3bd306" prot="public" virt="virtual"><scope>rRigged</scope><name>spawn</name></member>
+      <member refid="structrRigged_1abe0cf4a907cfd4631a4d7c7647692a0a" prot="public" virt="virtual"><scope>rRigged</scope><name>transform</name></member>
+      <member refid="structrRigged_1a6464b6bf379c465efc98363f3b30e5df" prot="private" virt="non-virtual"><scope>rRigged</scope><name>transformJoints</name></member>
+      <member refid="structrRigged_1a260bd26276f2c55c6f2e174a66be6e9e" prot="public" virt="non-virtual"><scope>rRigged</scope><name>vel</name></member>
+      <member refid="structrRigged_1add4b785788f41d5e95f3fd1b88212b51a60ae774ecd1cf97a0e91f76970d64491" prot="public" virt="non-virtual"><scope>rRigged</scope><name>YAW</name></member>
+      <member refid="structrRigged_1a60b8f624c8331e9b3cae8ea57f2cdfcb" prot="public" virt="non-virtual"><scope>rRigged</scope><name>~rRigged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classGLFramebuffer" kind="class" language="C++" prot="public">
+    <compoundname>GLFramebuffer</compoundname>
+    <includes local="no">GLFramebuffer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGLFramebuffer_1aca34d28e3d8bcbcadb8edb4e3af24f8c" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="31" column="18" bodyfile="de/hackcraft/psi3d/GLFramebuffer.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGLFramebuffer_1ab2e78c61905b4419fcc7b4cfc500fe85" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="32" column="18" bodyfile="de/hackcraft/psi3d/GLFramebuffer.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGLFramebuffer_1ab775df6008483df555d91b0b02c90990" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int framebuffer</definition>
+        <argsstring></argsstring>
+        <name>framebuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="33" column="18" bodyfile="de/hackcraft/psi3d/GLFramebuffer.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGLFramebuffer_1a92e345bcc3dae9245bcf4b8f72dbc9d2" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int colorbuffer</definition>
+        <argsstring></argsstring>
+        <name>colorbuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="34" column="18" bodyfile="de/hackcraft/psi3d/GLFramebuffer.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGLFramebuffer_1ad89004732a8c75264295825a7751c25c" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int depthbuffer</definition>
+        <argsstring></argsstring>
+        <name>depthbuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="35" column="18" bodyfile="de/hackcraft/psi3d/GLFramebuffer.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGLFramebuffer_1a1849977271f7696cd5adaa6ccfb40b21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GLFramebuffer</definition>
+        <argsstring>()</argsstring>
+        <name>GLFramebuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="38" column="5" bodyfile="de/hackcraft/psi3d/GLFramebuffer.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classGLFramebuffer_1a6af4d5beea4746878265f4d5edf1aad3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool isBuiltin</definition>
+        <argsstring>()</argsstring>
+        <name>isBuiltin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="40" column="10" bodyfile="de/hackcraft/psi3d/GLFramebuffer.cpp" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classGLFramebuffer_1aec55f71963b6f78d26da68aabc4df30e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int getFramebuffer</definition>
+        <argsstring>()</argsstring>
+        <name>getFramebuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="42" column="18" bodyfile="de/hackcraft/psi3d/GLFramebuffer.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classGLFramebuffer_1a0d43419434ebe69e53a406a5394dbc71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int getColorbuffer</definition>
+        <argsstring>()</argsstring>
+        <name>getColorbuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="44" column="18" bodyfile="de/hackcraft/psi3d/GLFramebuffer.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classGLFramebuffer_1a77b79ccc26628698a8663436c67ace14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int getDepthbuffer</definition>
+        <argsstring>()</argsstring>
+        <name>getDepthbuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="45" column="18" bodyfile="de/hackcraft/psi3d/GLFramebuffer.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classGLFramebuffer_1af7b195eefceae204238d0aa9bd4c2a17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int getWidth</definition>
+        <argsstring>()</argsstring>
+        <name>getWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="47" column="18" bodyfile="de/hackcraft/psi3d/GLFramebuffer.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classGLFramebuffer_1a1377c08e9a900cfab5b2170639ef0553" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int getHeight</definition>
+        <argsstring>()</argsstring>
+        <name>getHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="48" column="18" bodyfile="de/hackcraft/psi3d/GLFramebuffer.cpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classGLFramebuffer_1af72032230085e5d535bf08be6cffec3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initBuiltin</definition>
+        <argsstring>(int w, int h)</argsstring>
+        <name>initBuiltin</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="50" column="10" bodyfile="de/hackcraft/psi3d/GLFramebuffer.cpp" bodystart="41" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classGLFramebuffer_1a0cb1b54a79695497e85dbe3e009f11f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initBuffers</definition>
+        <argsstring>(int w, int h)</argsstring>
+        <name>initBuffers</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="51" column="10" bodyfile="de/hackcraft/psi3d/GLFramebuffer.cpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classGLFramebuffer_1abaf87d62c1d04ae19103dd5c497f67be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initBuffers</definition>
+        <argsstring>(int w, int h, int wrapModeX, int warpModeY)</argsstring>
+        <name>initBuffers</name>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>wrapModeX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>warpModeY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="52" column="10" bodyfile="de/hackcraft/psi3d/GLFramebuffer.cpp" bodystart="56" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classGLFramebuffer_1ac947cbe076da5fbab8f5e4c1c821b7a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cleanBuffers</definition>
+        <argsstring>()</argsstring>
+        <name>cleanBuffers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="53" column="10" bodyfile="de/hackcraft/psi3d/GLFramebuffer.cpp" bodystart="125" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classGLFramebuffer_1a9d0e3ff56e599e0846aecaf38e140626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bindBuffers</definition>
+        <argsstring>()</argsstring>
+        <name>bindBuffers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="55" column="10" bodyfile="de/hackcraft/psi3d/GLFramebuffer.cpp" bodystart="115" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classGLFramebuffer_1a46941f7eeea5a56ecfe00ba096e80993" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void unbindBuffers</definition>
+        <argsstring>()</argsstring>
+        <name>unbindBuffers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="56" column="10" bodyfile="de/hackcraft/psi3d/GLFramebuffer.cpp" bodystart="120" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Framebuffer-Object for offscreen and texture rendering according to: <ulink url="https://www.opengl.org/wiki/Framebuffer_Object_Examples">https://www.opengl.org/wiki/Framebuffer_Object_Examples</ulink>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>May change because it&apos;s said to deliver higher performance to recycle one frame-buffer and just exchange the textures. That is given they have the same size - which may/not be the case.</para>
+<para>Basically it just works by creating textures for buffers and binding them to the frame-buffer-object which is just a container for the bindings. Once that is done the frame-buffer-object can be bound and unbound to enable and disable rendering to that one instead of the usual screen-frame-buffer.</para>
+<para>There isn&apos;t much configuration of the buffer properties right now - just using sensible usual quality values. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>GLFramebuffer</label>
+        <link refid="classGLFramebuffer"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/psi3d/GLFramebuffer.h" line="29" column="20" bodyfile="de/hackcraft/psi3d/GLFramebuffer.h" bodystart="29" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classGLFramebuffer_1a9d0e3ff56e599e0846aecaf38e140626" prot="public" virt="non-virtual"><scope>GLFramebuffer</scope><name>bindBuffers</name></member>
+      <member refid="classGLFramebuffer_1ac947cbe076da5fbab8f5e4c1c821b7a6" prot="public" virt="non-virtual"><scope>GLFramebuffer</scope><name>cleanBuffers</name></member>
+      <member refid="classGLFramebuffer_1a92e345bcc3dae9245bcf4b8f72dbc9d2" prot="private" virt="non-virtual"><scope>GLFramebuffer</scope><name>colorbuffer</name></member>
+      <member refid="classGLFramebuffer_1ad89004732a8c75264295825a7751c25c" prot="private" virt="non-virtual"><scope>GLFramebuffer</scope><name>depthbuffer</name></member>
+      <member refid="classGLFramebuffer_1ab775df6008483df555d91b0b02c90990" prot="private" virt="non-virtual"><scope>GLFramebuffer</scope><name>framebuffer</name></member>
+      <member refid="classGLFramebuffer_1a0d43419434ebe69e53a406a5394dbc71" prot="public" virt="non-virtual"><scope>GLFramebuffer</scope><name>getColorbuffer</name></member>
+      <member refid="classGLFramebuffer_1a77b79ccc26628698a8663436c67ace14" prot="public" virt="non-virtual"><scope>GLFramebuffer</scope><name>getDepthbuffer</name></member>
+      <member refid="classGLFramebuffer_1aec55f71963b6f78d26da68aabc4df30e" prot="public" virt="non-virtual"><scope>GLFramebuffer</scope><name>getFramebuffer</name></member>
+      <member refid="classGLFramebuffer_1a1377c08e9a900cfab5b2170639ef0553" prot="public" virt="non-virtual"><scope>GLFramebuffer</scope><name>getHeight</name></member>
+      <member refid="classGLFramebuffer_1af7b195eefceae204238d0aa9bd4c2a17" prot="public" virt="non-virtual"><scope>GLFramebuffer</scope><name>getWidth</name></member>
+      <member refid="classGLFramebuffer_1a1849977271f7696cd5adaa6ccfb40b21" prot="public" virt="non-virtual"><scope>GLFramebuffer</scope><name>GLFramebuffer</name></member>
+      <member refid="classGLFramebuffer_1ab2e78c61905b4419fcc7b4cfc500fe85" prot="private" virt="non-virtual"><scope>GLFramebuffer</scope><name>height</name></member>
+      <member refid="classGLFramebuffer_1a0cb1b54a79695497e85dbe3e009f11f0" prot="public" virt="non-virtual"><scope>GLFramebuffer</scope><name>initBuffers</name></member>
+      <member refid="classGLFramebuffer_1abaf87d62c1d04ae19103dd5c497f67be" prot="public" virt="non-virtual"><scope>GLFramebuffer</scope><name>initBuffers</name></member>
+      <member refid="classGLFramebuffer_1af72032230085e5d535bf08be6cffec3f" prot="public" virt="non-virtual"><scope>GLFramebuffer</scope><name>initBuiltin</name></member>
+      <member refid="classGLFramebuffer_1a6af4d5beea4746878265f4d5edf1aad3" prot="public" virt="non-virtual"><scope>GLFramebuffer</scope><name>isBuiltin</name></member>
+      <member refid="classGLFramebuffer_1a46941f7eeea5a56ecfe00ba096e80993" prot="public" virt="non-virtual"><scope>GLFramebuffer</scope><name>unbindBuffers</name></member>
+      <member refid="classGLFramebuffer_1aca34d28e3d8bcbcadb8edb4e3af24f8c" prot="private" virt="non-virtual"><scope>GLFramebuffer</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

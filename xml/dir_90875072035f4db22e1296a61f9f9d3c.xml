@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_90875072035f4db22e1296a61f9f9d3c" kind="dir">
+    <compoundname>de/hackcraft/lang</compoundname>
+    <innerfile refid="Object_8cpp">Object.cpp</innerfile>
+    <innerfile refid="Object_8h">Object.h</innerfile>
+    <innerfile refid="OID_8h">OID.h</innerfile>
+    <innerfile refid="Runnable_8h">Runnable.h</innerfile>
+    <innerfile refid="String_8cpp">String.cpp</innerfile>
+    <innerfile refid="String_8h">String.h</innerfile>
+    <innerfile refid="Thread_8cpp">Thread.cpp</innerfile>
+    <innerfile refid="Thread_8h">Thread.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/lang/"/>
+  </compounddef>
+</doxygen>

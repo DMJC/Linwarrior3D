@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Pad_8h" kind="file" language="C++">
+    <compoundname>Pad.h</compoundname>
+    <includes local="no">cstring</includes>
+    <includes local="no">sstream</includes>
+    <includedby refid="GameMain_8cpp" local="yes">de/hackcraft/game/GameMain.cpp</includedby>
+    <includedby refid="cMech_8cpp" local="yes">de/hackcraft/world/object/cMech.cpp</includedby>
+    <includedby refid="rInputsource_8cpp" local="yes">de/hackcraft/world/sub/misc/rInputsource.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>de/hackcraft/io/Pad.h</label>
+        <link refid="Pad_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sstream</label>
+      </node>
+      <node id="2">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>de/hackcraft/io/Pad.h</label>
+        <link refid="Pad_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/world/object/cMech.cpp</label>
+        <link refid="cMech_8cpp"/>
+      </node>
+      <node id="2">
+        <label>de/hackcraft/game/GameMain.cpp</label>
+        <link refid="GameMain_8cpp"/>
+      </node>
+      <node id="4">
+        <label>de/hackcraft/world/sub/misc/rInputsource.cpp</label>
+        <link refid="rInputsource_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classPad" prot="public">Pad</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/io/Pad.h"/>
+  </compounddef>
+</doxygen>

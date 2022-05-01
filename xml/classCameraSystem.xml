@@ -1,0 +1,530 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classCameraSystem" kind="class" language="C++" prot="public">
+    <compoundname>CameraSystem</compoundname>
+    <basecompoundref refid="classSubsystem" prot="public" virt="non-virtual">Subsystem</basecompoundref>
+    <includes local="no">CameraSystem.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classCameraSystem_1af42b1d8da46f0bd6298acdc159027857" prot="private" static="yes" mutable="no">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger * logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="classLogger_1ac11c529e5152e544fbc4c6594add48b6" kindref="member">Logger::getLogger</ref>(&quot;de.hackcraft.world.sub.camera.CameraSystem&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="77" column="19" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCameraSystem_1a96238b3943cf7e002fc515a3a0fd9f13" prot="private" static="yes" mutable="no">
+        <type><ref refid="classCameraSystem" kindref="compound">CameraSystem</ref> *</type>
+        <definition>CameraSystem * instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+<para>Current singleton instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="80" column="25" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCameraSystem_1a4805dfe0f1b3c3b9fd490df9b2d63905" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structrCamera" kindref="compound">rCamera</ref> * &gt;</type>
+        <definition>std::vector&lt;rCamera*&gt; cameras</definition>
+        <argsstring></argsstring>
+        <name>cameras</name>
+        <briefdescription>
+<para>List of allocated components of this type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="84" column="17" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCameraSystem_1a37537854566fe14e9ba78e859b7a9e61" prot="private" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref>, <ref refid="structrCamera" kindref="compound">rCamera</ref> * &gt;</type>
+        <definition>std::map&lt;OID,rCamera*&gt; camerasIndex</definition>
+        <argsstring></argsstring>
+        <name>camerasIndex</name>
+        <briefdescription>
+<para>Index on id of leased components of this type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="86" column="14" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classCameraSystem_1a1eb3653bea7a86bd9080f90be278d613" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCameraSystem" kindref="compound">CameraSystem</ref> *</type>
+        <definition>CameraSystem * getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+<para>Get current singleton instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="27" column="25" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCameraSystem_1a03707a4be524a00ea9ecd954d4283010" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CameraSystem</definition>
+        <argsstring>()</argsstring>
+        <name>CameraSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="30" column="5" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.cpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classCameraSystem_1a6e7890b16b288757381b094dc30eaaa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~CameraSystem</definition>
+        <argsstring>()</argsstring>
+        <name>~CameraSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="31" column="13" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.cpp" bodystart="25" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classCameraSystem_1a7f4982d902c1b474bcd006eb12a92a43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add</definition>
+        <argsstring>(rCamera *camera)</argsstring>
+        <name>add</name>
+        <param>
+          <type><ref refid="structrCamera" kindref="compound">rCamera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+<para>Add a camera to the managed components. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="34" column="10" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classCameraSystem_1ad0f555122462d7c7444758ba58689010" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float constrainParticle</definition>
+        <argsstring>(Entity *ex, float *worldpos, float radius)</argsstring>
+        <name>constrainParticle</name>
+        <reimplements refid="classSubsystem_1a1954eb6f5a3752d2f1fd6d119fd3fde8">constrainParticle</reimplements>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>ex</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>worldpos</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+<para>Limit position to accessible areas and returns impact depth. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>worldpos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The particle position to be constrained given in world coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the particle in terms of a radius. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if there was no collision, else the maximum impact depth. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="44" column="19" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classCameraSystem_1ad6a7b46bef07e40d079342cb85364f50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void advanceTime</definition>
+        <argsstring>(int deltamsec)</argsstring>
+        <name>advanceTime</name>
+        <reimplements refid="classSubsystem_1ae539443a3a32579b89439ec22aaba32b">advanceTime</reimplements>
+        <param>
+          <type>int</type>
+          <declname>deltamsec</declname>
+        </param>
+        <briefdescription>
+<para>Advance simulation time for one frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="48" column="18" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classCameraSystem_1afca955411c811e1a0af97e0969f6956e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void clusterObjects</definition>
+        <argsstring>()</argsstring>
+        <name>clusterObjects</name>
+        <reimplements refid="classSubsystem_1aac346cec652a4bb213bee2a5e74c7fc9">clusterObjects</reimplements>
+        <briefdescription>
+<para>Re-build spatial clustering of objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="51" column="18" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classCameraSystem_1a1cfbbbc439131c5353cd1e766478da27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dispatchMessages</definition>
+        <argsstring>()</argsstring>
+        <name>dispatchMessages</name>
+        <reimplements refid="classSubsystem_1affbd764192264a4e1e440cf073999278">dispatchMessages</reimplements>
+        <briefdescription>
+<para>Deliver overdue messages to objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="54" column="18" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classCameraSystem_1a1604b9015255299958252d39b1ebb942" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void animateObjects</definition>
+        <argsstring>()</argsstring>
+        <name>animateObjects</name>
+        <reimplements refid="classSubsystem_1a1981e562883e5e69767bec35bcee7af1">animateObjects</reimplements>
+        <briefdescription>
+<para>Let all objects process input, adjust pose and calculate physics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="57" column="18" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.cpp" bodystart="35" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classCameraSystem_1a6f3997a696073fafdf6226143824eab4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void transformObjects</definition>
+        <argsstring>()</argsstring>
+        <name>transformObjects</name>
+        <reimplements refid="classSubsystem_1af1f4f853081af6fcb5037b99618009d2">transformObjects</reimplements>
+        <briefdescription>
+<para>Let all objects calculate transformation matrices etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="60" column="18" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classCameraSystem_1a079b6cd12491c571db088711044fa8bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setupView</definition>
+        <argsstring>(float *pos, float *ori)</argsstring>
+        <name>setupView</name>
+        <reimplements refid="classSubsystem_1a7e9713a6b941a1ff3e85a2e10cd4946f">setupView</reimplements>
+        <param>
+          <type>float *</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>ori</declname>
+        </param>
+        <briefdescription>
+<para>Setup structures for rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="63" column="18" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classCameraSystem_1ad6ad3f680e505f98d83d049e15f0d797" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool drawBack</definition>
+        <argsstring>()</argsstring>
+        <name>drawBack</name>
+        <reimplements refid="classSubsystem_1ab6879b94c7c750768750669e7feb9c97">drawBack</reimplements>
+        <briefdescription>
+<para>Draws background (skybox). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>False if the background was not painted or is not covered completely - true otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="68" column="18" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classCameraSystem_1a82d72d455a63508dd949d552ed3713b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawSolid</definition>
+        <argsstring>()</argsstring>
+        <name>drawSolid</name>
+        <reimplements refid="classSubsystem_1a7037e4616081238dc81eb0e947cba4f1">drawSolid</reimplements>
+        <briefdescription>
+<para>Draw all <ref refid="classObject" kindref="compound">Object</ref>&apos;s solid surfaces (calls their drawSolid method). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="71" column="18" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classCameraSystem_1afa90087fb4f9485be9db86581d8ac822" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawEffect</definition>
+        <argsstring>()</argsstring>
+        <name>drawEffect</name>
+        <reimplements refid="classSubsystem_1a743d69df45ff83f7531c4eeb0e225405">drawEffect</reimplements>
+        <briefdescription>
+<para>Draw all <ref refid="classObject" kindref="compound">Object</ref>&apos;s effects (calls their drawEffect method). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="74" column="18" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Subsystem</label>
+        <link refid="classSubsystem"/>
+      </node>
+      <node id="1">
+        <label>CameraSystem</label>
+        <link refid="classCameraSystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="15">
+        <label>stringstream</label>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vector&lt; Binding * &gt;</label>
+        <childnode refid="11" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+object</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>+prebinds</edgelabel>
+          <edgelabel>+postbinds</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>LevelStreamLogger</label>
+        <link refid="classLevelStreamLogger"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>-logstream</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>string</label>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>map&lt; OID, rCamera * &gt;</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Subsystem</label>
+        <link refid="classSubsystem"/>
+      </node>
+      <node id="4">
+        <label>rCamera</label>
+        <link refid="structrCamera"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="13">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>-infoLogger</edgelabel>
+          <edgelabel>-traceLogger</edgelabel>
+          <edgelabel>-warnLogger</edgelabel>
+          <edgelabel>-errorLogger</edgelabel>
+          <edgelabel>-debugLogger</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>-globalAppender</edgelabel>
+          <edgelabel>-appender</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>-qualifiedLoggerName</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>-parentLogger</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Entity</label>
+        <link refid="classEntity"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+components</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+name</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Binding</label>
+        <link refid="classBinding"/>
+      </node>
+      <node id="22">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+      <node id="20">
+        <label>ios_base</label>
+      </node>
+      <node id="21">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vector&lt; rCamera * &gt;</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vector&lt; Component * &gt;</label>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CameraSystem</label>
+        <link refid="classCameraSystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-cameras</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>-camerasIndex</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>-instance</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/camera/CameraSystem.h" line="24" column="36" bodyfile="de/hackcraft/world/sub/camera/CameraSystem.h" bodystart="24" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classCameraSystem_1a7f4982d902c1b474bcd006eb12a92a43" prot="public" virt="non-virtual"><scope>CameraSystem</scope><name>add</name></member>
+      <member refid="classCameraSystem_1ad6a7b46bef07e40d079342cb85364f50" prot="public" virt="virtual"><scope>CameraSystem</scope><name>advanceTime</name></member>
+      <member refid="classCameraSystem_1a1604b9015255299958252d39b1ebb942" prot="public" virt="virtual"><scope>CameraSystem</scope><name>animateObjects</name></member>
+      <member refid="classCameraSystem_1a4805dfe0f1b3c3b9fd490df9b2d63905" prot="private" virt="non-virtual"><scope>CameraSystem</scope><name>cameras</name></member>
+      <member refid="classCameraSystem_1a37537854566fe14e9ba78e859b7a9e61" prot="private" virt="non-virtual"><scope>CameraSystem</scope><name>camerasIndex</name></member>
+      <member refid="classCameraSystem_1a03707a4be524a00ea9ecd954d4283010" prot="public" virt="non-virtual"><scope>CameraSystem</scope><name>CameraSystem</name></member>
+      <member refid="classCameraSystem_1afca955411c811e1a0af97e0969f6956e" prot="public" virt="virtual"><scope>CameraSystem</scope><name>clusterObjects</name></member>
+      <member refid="classCameraSystem_1ad0f555122462d7c7444758ba58689010" prot="public" virt="virtual"><scope>CameraSystem</scope><name>constrainParticle</name></member>
+      <member refid="classCameraSystem_1a1cfbbbc439131c5353cd1e766478da27" prot="public" virt="virtual"><scope>CameraSystem</scope><name>dispatchMessages</name></member>
+      <member refid="classCameraSystem_1ad6ad3f680e505f98d83d049e15f0d797" prot="public" virt="virtual"><scope>CameraSystem</scope><name>drawBack</name></member>
+      <member refid="classCameraSystem_1afa90087fb4f9485be9db86581d8ac822" prot="public" virt="virtual"><scope>CameraSystem</scope><name>drawEffect</name></member>
+      <member refid="classCameraSystem_1a82d72d455a63508dd949d552ed3713b5" prot="public" virt="virtual"><scope>CameraSystem</scope><name>drawSolid</name></member>
+      <member refid="classSubsystem_1a8e36b642c7e1cc84986eee262c235b0b" prot="public" virt="virtual"><scope>CameraSystem</scope><name>getId</name></member>
+      <member refid="classCameraSystem_1a1eb3653bea7a86bd9080f90be278d613" prot="public" virt="non-virtual"><scope>CameraSystem</scope><name>getInstance</name></member>
+      <member refid="classSubsystem_1a4ee385cf4aecac6d59e8fa07a9aa890d" prot="public" virt="virtual"><scope>CameraSystem</scope><name>getName</name></member>
+      <member refid="classCameraSystem_1a96238b3943cf7e002fc515a3a0fd9f13" prot="private" virt="non-virtual"><scope>CameraSystem</scope><name>instance</name></member>
+      <member refid="classCameraSystem_1af42b1d8da46f0bd6298acdc159027857" prot="private" virt="non-virtual"><scope>CameraSystem</scope><name>logger</name></member>
+      <member refid="classCameraSystem_1a079b6cd12491c571db088711044fa8bd" prot="public" virt="virtual"><scope>CameraSystem</scope><name>setupView</name></member>
+      <member refid="classCameraSystem_1a6f3997a696073fafdf6226143824eab4" prot="public" virt="virtual"><scope>CameraSystem</scope><name>transformObjects</name></member>
+      <member refid="classCameraSystem_1a6e7890b16b288757381b094dc30eaaa4" prot="public" virt="virtual"><scope>CameraSystem</scope><name>~CameraSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

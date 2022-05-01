@@ -1,0 +1,763 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classBackgroundSystem" kind="class" language="C++" prot="public">
+    <compoundname>BackgroundSystem</compoundname>
+    <basecompoundref refid="classSubsystem" prot="public" virt="non-virtual">Subsystem</basecompoundref>
+    <includes local="no">BackgroundSystem.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classBackgroundSystem_1a1af57c5313ae535e583d037fb341f3c0" prot="private" static="yes" mutable="no">
+        <type><ref refid="classBackgroundSystem" kindref="compound">BackgroundSystem</ref> *</type>
+        <definition>BackgroundSystem * instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="97" column="29" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBackgroundSystem_1af42b1d8da46f0bd6298acdc159027857" prot="private" static="yes" mutable="no">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger * logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="classLogger_1ac11c529e5152e544fbc4c6594add48b6" kindref="member">Logger::getLogger</ref>(&quot;de.hackcraft.world.background.BackgroundSystem&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="98" column="19" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBackgroundSystem_1a67de28af71b51af3445e5dd4af334739" prot="private" static="yes" mutable="no">
+        <type>std::map&lt; int, unsigned int &gt;</type>
+        <definition>std::map&lt; int, unsigned int &gt; textures</definition>
+        <argsstring></argsstring>
+        <name>textures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="99" column="21" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBackgroundSystem_1ad080e1e2b6bd12fcf7465ff49f785d6c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hour</definition>
+        <argsstring></argsstring>
+        <name>hour</name>
+        <briefdescription>
+<para>Time in 24 hours format plus fractions of an hour - influences everything. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="103" column="11" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBackgroundSystem_1aa9d7f17963e9c57643ac65cd07afb8d2" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="structParticle" kindref="compound">Particle</ref> * &gt;</type>
+        <definition>std::list&lt;Particle*&gt; rain</definition>
+        <argsstring></argsstring>
+        <name>rain</name>
+        <briefdescription>
+<para>Currently simulated rain particles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="105" column="15" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBackgroundSystem_1a3d8f6ace169fa7061140e9e1770e47f5" prot="private" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="structParticle" kindref="compound">Particle</ref> * &gt;</type>
+        <definition>std::list&lt;Particle*&gt; dust</definition>
+        <argsstring></argsstring>
+        <name>dust</name>
+        <briefdescription>
+<para>Currently simulated pollution particles. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="107" column="15" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBackgroundSystem_1a1447ad288a0a73454510f5777bdc3ed1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <briefdescription>
+<para>Current randomizer seed backup (make local var?). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="109" column="9" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBackgroundSystem_1afacf234df3e1e6998f3d608b6f134a5c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int raininess</definition>
+        <argsstring></argsstring>
+        <name>raininess</name>
+        <briefdescription>
+<para>Total amount of rain drops at a time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="111" column="9" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBackgroundSystem_1a2c70a47f3f051113372bed99532e3b3b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float dustiness</definition>
+        <argsstring></argsstring>
+        <name>dustiness</name>
+        <briefdescription>
+<para>Factor for the max amount of dust particles generated per seconds. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="113" column="11" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBackgroundSystem_1a4493c8e27c89aad0ad22fd2db6421e65" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float heightshift</definition>
+        <argsstring></argsstring>
+        <name>heightshift</name>
+        <briefdescription>
+<para>Zero to negative shift (upward) makes horizontal curvature visible. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="115" column="11" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBackgroundSystem_1a024f5923d180436ba566147d3ee66532" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float cloudiness</definition>
+        <argsstring></argsstring>
+        <name>cloudiness</name>
+        <briefdescription>
+<para>Relative amount of clouds [0,1]. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="117" column="11" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBackgroundSystem_1afa29b9f010bdff1b6fde939b4af64eb4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float windspeed</definition>
+        <argsstring></argsstring>
+        <name>windspeed</name>
+        <briefdescription>
+<para>Windspeed for cloud movement per (scaled) time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="119" column="11" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBackgroundSystem_1a1a43d59287ce4d9e82db306da90bcb1f" prot="private" static="no" mutable="no">
+        <type><ref refid="math3d_8h_1afc55c9af3f7597c47e740938df257ec4" kindref="member">vec4</ref></type>
+        <definition>vec4 light</definition>
+        <argsstring></argsstring>
+        <name>light</name>
+        <briefdescription>
+<para>Light direction according to celestial bodies and time (sun/moon). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="121" column="10" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBackgroundSystem_1aa5ce982267c079ad6cf0fc2dbf507784" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classBackgroundSystem" kindref="compound">BackgroundSystem</ref> *</type>
+        <definition>BackgroundSystem * getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="35" column="22" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1af2c88c10fbb764f2d091eaa0da55e871" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BackgroundSystem</definition>
+        <argsstring>()</argsstring>
+        <name>BackgroundSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="38" column="5" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="61" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1afa64ab7ba3a75c1ac4792d381cf79a02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BackgroundSystem</definition>
+        <argsstring>(Propmap *properties)</argsstring>
+        <name>BackgroundSystem</name>
+        <param>
+          <type><ref refid="classPropmap" kindref="compound">Propmap</ref> *</type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="39" column="5" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="74" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1af6f93e7a14ee0758130442d533556f30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init</definition>
+        <argsstring>(Propmap *properties)</argsstring>
+        <name>init</name>
+        <param>
+          <type><ref refid="classPropmap" kindref="compound">Propmap</ref> *</type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="41" column="10" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="82" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1a3d68d735fc512acefb923aa328678e60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initTextures</definition>
+        <argsstring>()</argsstring>
+        <name>initTextures</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="42" column="10" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="104" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1ad0f555122462d7c7444758ba58689010" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>virtual float constrainParticle</definition>
+        <argsstring>(Entity *ex, float *worldpos, float radius)</argsstring>
+        <name>constrainParticle</name>
+        <reimplements refid="classSubsystem_1a1954eb6f5a3752d2f1fd6d119fd3fde8">constrainParticle</reimplements>
+        <param>
+          <type><ref refid="classEntity" kindref="compound">Entity</ref> *</type>
+          <declname>ex</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>worldpos</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+<para>Limit position to accessible areas and returns impact depth. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>worldpos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The particle position to be constrained given in world coordinates. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the particle in terms of a radius. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero if there was no collision, else the maximum impact depth. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="52" column="19" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1a25e7e9f128cce679891e92d685f2c7d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void advanceTime</definition>
+        <argsstring>(int deltamsec)</argsstring>
+        <name>advanceTime</name>
+        <reimplements refid="classSubsystem_1ae539443a3a32579b89439ec22aaba32b">advanceTime</reimplements>
+        <param>
+          <type>int</type>
+          <declname>deltamsec</declname>
+        </param>
+        <briefdescription>
+<para>Advance simulation time for one frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="56" column="18" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="436" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1afca955411c811e1a0af97e0969f6956e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void clusterObjects</definition>
+        <argsstring>()</argsstring>
+        <name>clusterObjects</name>
+        <reimplements refid="classSubsystem_1aac346cec652a4bb213bee2a5e74c7fc9">clusterObjects</reimplements>
+        <briefdescription>
+<para>Re-build spatial clustering of objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="59" column="18" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1a1cfbbbc439131c5353cd1e766478da27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void dispatchMessages</definition>
+        <argsstring>()</argsstring>
+        <name>dispatchMessages</name>
+        <reimplements refid="classSubsystem_1affbd764192264a4e1e440cf073999278">dispatchMessages</reimplements>
+        <briefdescription>
+<para>Deliver overdue messages to objects. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="62" column="18" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1a4291f25a3b069aa2b69f039cb45ff457" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void animateObjects</definition>
+        <argsstring>()</argsstring>
+        <name>animateObjects</name>
+        <reimplements refid="classSubsystem_1a1981e562883e5e69767bec35bcee7af1">animateObjects</reimplements>
+        <briefdescription>
+<para>Let all objects process input, adjust pose and calculate physics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="65" column="18" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1a6f3997a696073fafdf6226143824eab4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void transformObjects</definition>
+        <argsstring>()</argsstring>
+        <name>transformObjects</name>
+        <reimplements refid="classSubsystem_1af1f4f853081af6fcb5037b99618009d2">transformObjects</reimplements>
+        <briefdescription>
+<para>Let all objects calculate transformation matrices etc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="68" column="18" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1a079b6cd12491c571db088711044fa8bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void setupView</definition>
+        <argsstring>(float *pos, float *ori)</argsstring>
+        <name>setupView</name>
+        <reimplements refid="classSubsystem_1a7e9713a6b941a1ff3e85a2e10cd4946f">setupView</reimplements>
+        <param>
+          <type>float *</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>ori</declname>
+        </param>
+        <briefdescription>
+<para>Setup structures for rendering. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="71" column="18" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1a465916e327cf3644a812629c8dd6a123" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool drawBack</definition>
+        <argsstring>()</argsstring>
+        <name>drawBack</name>
+        <reimplements refid="classSubsystem_1ab6879b94c7c750768750669e7feb9c97">drawBack</reimplements>
+        <briefdescription>
+<para>Draws background (skybox). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>False if the background was not painted or is not covered completely - true otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="76" column="18" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="456" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1a82d72d455a63508dd949d552ed3713b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawSolid</definition>
+        <argsstring>()</argsstring>
+        <name>drawSolid</name>
+        <reimplements refid="classSubsystem_1a7037e4616081238dc81eb0e947cba4f1">drawSolid</reimplements>
+        <briefdescription>
+<para>Draw all <ref refid="classObject" kindref="compound">Object</ref>&apos;s solid surfaces (calls their drawSolid method). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="79" column="18" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1afa90087fb4f9485be9db86581d8ac822" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void drawEffect</definition>
+        <argsstring>()</argsstring>
+        <name>drawEffect</name>
+        <reimplements refid="classSubsystem_1a743d69df45ff83f7531c4eeb0e225405">drawEffect</reimplements>
+        <briefdescription>
+<para>Draw all <ref refid="classObject" kindref="compound">Object</ref>&apos;s effects (calls their drawEffect method). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="82" column="18" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classBackgroundSystem_1a6cd1dab5260cda7dd1fc037f84f1d56b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawGalaxy</definition>
+        <argsstring>()</argsstring>
+        <name>drawGalaxy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="85" column="10" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="553" bodyend="666"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1ab6d48e555c3e0ea6c2b516a69b91d0bd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawUpperDome</definition>
+        <argsstring>()</argsstring>
+        <name>drawUpperDome</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="86" column="10" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="669" bodyend="727"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1afe31cf54b204fb8fdc6748c754c07924" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawLowerDome</definition>
+        <argsstring>()</argsstring>
+        <name>drawLowerDome</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="87" column="10" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="730" bodyend="787"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1a9b3106970d7b7dd44d1451902edf5eac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawGround</definition>
+        <argsstring>()</argsstring>
+        <name>drawGround</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="88" column="10" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="790" bodyend="852"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1a4b190a84ac9b841a30822dc87fd8c85e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawClouds</definition>
+        <argsstring>()</argsstring>
+        <name>drawClouds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="89" column="10" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="855" bodyend="941"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1a7d1ae903b8861ce290de1aefa9dc3545" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawSun</definition>
+        <argsstring>()</argsstring>
+        <name>drawSun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="91" column="10" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="999" bodyend="1076"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1a4d2ff6700cf0c4163d28fc7cbf1d5a75" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawOrbit</definition>
+        <argsstring>()</argsstring>
+        <name>drawOrbit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="92" column="10" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="1079" bodyend="1131"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1a6bf55b9e687126a1d352d36781482e99" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawRain</definition>
+        <argsstring>()</argsstring>
+        <name>drawRain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="93" column="10" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="1134" bodyend="1209"/>
+      </memberdef>
+      <memberdef kind="function" id="classBackgroundSystem_1a3e3d660481a28c270e72826b87dde1fd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void drawPollution</definition>
+        <argsstring>()</argsstring>
+        <name>drawPollution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="94" column="10" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.cpp" bodystart="1212" bodyend="1311"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A background in form of a SkySphere just like those virtual horizons found in aviation instruments. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Sets lightsource 0 as skylight according to time. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>BackgroundSystem</label>
+        <link refid="classBackgroundSystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Subsystem</label>
+        <link refid="classSubsystem"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="16">
+        <label>list&lt; Particle * &gt;</label>
+        <childnode refid="17" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stringstream</label>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>map&lt; int, unsigned int &gt;</label>
+      </node>
+      <node id="1">
+        <label>BackgroundSystem</label>
+        <link refid="classBackgroundSystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>-instance</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-textures</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>-dust</edgelabel>
+          <edgelabel>-rain</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>LevelStreamLogger</label>
+        <link refid="classLevelStreamLogger"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>-logstream</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>string</label>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Particle</label>
+        <link refid="structParticle"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>+trail</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Subsystem</label>
+        <link refid="classSubsystem"/>
+      </node>
+      <node id="15">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="4">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-infoLogger</edgelabel>
+          <edgelabel>-traceLogger</edgelabel>
+          <edgelabel>-warnLogger</edgelabel>
+          <edgelabel>-errorLogger</edgelabel>
+          <edgelabel>-debugLogger</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>-globalAppender</edgelabel>
+          <edgelabel>-appender</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>-qualifiedLoggerName</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-parentLogger</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+      <node id="11">
+        <label>ios_base</label>
+      </node>
+      <node id="12">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/background/BackgroundSystem.h" line="33" column="40" bodyfile="de/hackcraft/world/sub/background/BackgroundSystem.h" bodystart="33" bodyend="122"/>
+    <listofallmembers>
+      <member refid="classBackgroundSystem_1a25e7e9f128cce679891e92d685f2c7d3" prot="public" virt="virtual"><scope>BackgroundSystem</scope><name>advanceTime</name></member>
+      <member refid="classBackgroundSystem_1a4291f25a3b069aa2b69f039cb45ff457" prot="public" virt="virtual"><scope>BackgroundSystem</scope><name>animateObjects</name></member>
+      <member refid="classBackgroundSystem_1af2c88c10fbb764f2d091eaa0da55e871" prot="public" virt="non-virtual"><scope>BackgroundSystem</scope><name>BackgroundSystem</name></member>
+      <member refid="classBackgroundSystem_1afa64ab7ba3a75c1ac4792d381cf79a02" prot="public" virt="non-virtual"><scope>BackgroundSystem</scope><name>BackgroundSystem</name></member>
+      <member refid="classBackgroundSystem_1a024f5923d180436ba566147d3ee66532" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>cloudiness</name></member>
+      <member refid="classBackgroundSystem_1afca955411c811e1a0af97e0969f6956e" prot="public" virt="virtual"><scope>BackgroundSystem</scope><name>clusterObjects</name></member>
+      <member refid="classBackgroundSystem_1ad0f555122462d7c7444758ba58689010" prot="public" virt="virtual"><scope>BackgroundSystem</scope><name>constrainParticle</name></member>
+      <member refid="classBackgroundSystem_1a1cfbbbc439131c5353cd1e766478da27" prot="public" virt="virtual"><scope>BackgroundSystem</scope><name>dispatchMessages</name></member>
+      <member refid="classBackgroundSystem_1a465916e327cf3644a812629c8dd6a123" prot="public" virt="virtual"><scope>BackgroundSystem</scope><name>drawBack</name></member>
+      <member refid="classBackgroundSystem_1a4b190a84ac9b841a30822dc87fd8c85e" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>drawClouds</name></member>
+      <member refid="classBackgroundSystem_1afa90087fb4f9485be9db86581d8ac822" prot="public" virt="virtual"><scope>BackgroundSystem</scope><name>drawEffect</name></member>
+      <member refid="classBackgroundSystem_1a6cd1dab5260cda7dd1fc037f84f1d56b" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>drawGalaxy</name></member>
+      <member refid="classBackgroundSystem_1a9b3106970d7b7dd44d1451902edf5eac" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>drawGround</name></member>
+      <member refid="classBackgroundSystem_1afe31cf54b204fb8fdc6748c754c07924" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>drawLowerDome</name></member>
+      <member refid="classBackgroundSystem_1a4d2ff6700cf0c4163d28fc7cbf1d5a75" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>drawOrbit</name></member>
+      <member refid="classBackgroundSystem_1a3e3d660481a28c270e72826b87dde1fd" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>drawPollution</name></member>
+      <member refid="classBackgroundSystem_1a6bf55b9e687126a1d352d36781482e99" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>drawRain</name></member>
+      <member refid="classBackgroundSystem_1a82d72d455a63508dd949d552ed3713b5" prot="public" virt="virtual"><scope>BackgroundSystem</scope><name>drawSolid</name></member>
+      <member refid="classBackgroundSystem_1a7d1ae903b8861ce290de1aefa9dc3545" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>drawSun</name></member>
+      <member refid="classBackgroundSystem_1ab6d48e555c3e0ea6c2b516a69b91d0bd" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>drawUpperDome</name></member>
+      <member refid="classBackgroundSystem_1a3d8f6ace169fa7061140e9e1770e47f5" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>dust</name></member>
+      <member refid="classBackgroundSystem_1a2c70a47f3f051113372bed99532e3b3b" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>dustiness</name></member>
+      <member refid="classSubsystem_1a8e36b642c7e1cc84986eee262c235b0b" prot="public" virt="virtual"><scope>BackgroundSystem</scope><name>getId</name></member>
+      <member refid="classBackgroundSystem_1aa5ce982267c079ad6cf0fc2dbf507784" prot="public" virt="non-virtual"><scope>BackgroundSystem</scope><name>getInstance</name></member>
+      <member refid="classSubsystem_1a4ee385cf4aecac6d59e8fa07a9aa890d" prot="public" virt="virtual"><scope>BackgroundSystem</scope><name>getName</name></member>
+      <member refid="classBackgroundSystem_1a4493c8e27c89aad0ad22fd2db6421e65" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>heightshift</name></member>
+      <member refid="classBackgroundSystem_1ad080e1e2b6bd12fcf7465ff49f785d6c" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>hour</name></member>
+      <member refid="classBackgroundSystem_1af6f93e7a14ee0758130442d533556f30" prot="public" virt="non-virtual"><scope>BackgroundSystem</scope><name>init</name></member>
+      <member refid="classBackgroundSystem_1a3d68d735fc512acefb923aa328678e60" prot="public" virt="non-virtual"><scope>BackgroundSystem</scope><name>initTextures</name></member>
+      <member refid="classBackgroundSystem_1a1af57c5313ae535e583d037fb341f3c0" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>instance</name></member>
+      <member refid="classBackgroundSystem_1a1a43d59287ce4d9e82db306da90bcb1f" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>light</name></member>
+      <member refid="classBackgroundSystem_1af42b1d8da46f0bd6298acdc159027857" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>logger</name></member>
+      <member refid="classBackgroundSystem_1aa9d7f17963e9c57643ac65cd07afb8d2" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>rain</name></member>
+      <member refid="classBackgroundSystem_1afacf234df3e1e6998f3d608b6f134a5c" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>raininess</name></member>
+      <member refid="classBackgroundSystem_1a1447ad288a0a73454510f5777bdc3ed1" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>seed</name></member>
+      <member refid="classBackgroundSystem_1a079b6cd12491c571db088711044fa8bd" prot="public" virt="virtual"><scope>BackgroundSystem</scope><name>setupView</name></member>
+      <member refid="classBackgroundSystem_1a67de28af71b51af3445e5dd4af334739" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>textures</name></member>
+      <member refid="classBackgroundSystem_1a6f3997a696073fafdf6226143824eab4" prot="public" virt="virtual"><scope>BackgroundSystem</scope><name>transformObjects</name></member>
+      <member refid="classBackgroundSystem_1afa29b9f010bdff1b6fde939b4af64eb4" prot="private" virt="non-virtual"><scope>BackgroundSystem</scope><name>windspeed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

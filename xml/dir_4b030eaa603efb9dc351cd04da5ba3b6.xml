@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_4b030eaa603efb9dc351cd04da5ba3b6" kind="dir">
+    <compoundname>de/hackcraft/world/sub/background</compoundname>
+    <innerfile refid="BackgroundSystem_8cpp">BackgroundSystem.cpp</innerfile>
+    <innerfile refid="BackgroundSystem_8h">BackgroundSystem.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/background/"/>
+  </compounddef>
+</doxygen>

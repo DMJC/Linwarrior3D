@@ -1,0 +1,423 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classrChatMessage" kind="class" language="C++" prot="public">
+    <compoundname>rChatMessage</compoundname>
+    <basecompoundref refid="structComponent" prot="public" virt="non-virtual">Component</basecompoundref>
+    <includes local="no">rChatMessage.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classrChatMessage_1aaf33815bdcad5d754ecdc3d9048df3ae" prot="private" static="no" mutable="no">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID mSender</definition>
+        <argsstring></argsstring>
+        <name>mSender</name>
+        <briefdescription>
+<para>Who sent this message (object id). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="26" column="9" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrChatMessage_1ac8a7a65c56e3451827a53d99671df8b0" prot="private" static="no" mutable="no">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID mReceiver</definition>
+        <argsstring></argsstring>
+        <name>mReceiver</name>
+        <briefdescription>
+<para>To whom this message is/was sent (object id). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="28" column="9" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrChatMessage_1a7876440808e7de9c61e0cc973276d3b0" prot="private" static="no" mutable="no">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID mTimestamp</definition>
+        <argsstring></argsstring>
+        <name>mTimestamp</name>
+        <briefdescription>
+<para>When was this message sent / valid only after this due date. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="30" column="9" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrChatMessage_1a16d1f670b5a0fb4e4370107042c67f50" prot="private" static="no" mutable="no">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID mBestbefore</definition>
+        <argsstring></argsstring>
+        <name>mBestbefore</name>
+        <briefdescription>
+<para>Until when is this message meant to be valid (0 == forever). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="32" column="9" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrChatMessage_1a3437227e441ef7e6d2b63197b26023ed" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mType</definition>
+        <argsstring></argsstring>
+        <name>mType</name>
+        <briefdescription>
+<para>Message type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="34" column="17" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrChatMessage_1a2d433c8878b20c2f190cf91cfab2833b" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mText</definition>
+        <argsstring></argsstring>
+        <name>mText</name>
+        <briefdescription>
+<para>Message <ref refid="classString" kindref="compound">String</ref> (lets say it&apos;s the subject). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="36" column="17" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classrChatMessage_1a4dd9aaa4ec80f09d4f4611b60882056e" prot="private" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* mBlob</definition>
+        <argsstring></argsstring>
+        <name>mBlob</name>
+        <briefdescription>
+<para>Binary large object - fresh allocated pointer to custom data (delete yourself). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="38" column="10" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classrChatMessage_1a2b27774f5b7fbef000ac8a13dad8513e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rChatMessage</definition>
+        <argsstring>(OID sender=0, OID receiver=0, OID timestamp=0, OID bestbefore=0, std::string type=&quot;&quot;, std::string text=&quot;&quot;, void *blob=NULL)</argsstring>
+        <name>rChatMessage</name>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>sender</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>receiver</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>timestamp</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+          <declname>bestbefore</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>type</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>text</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>blob</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="40" column="5" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.cpp" bodystart="3" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classrChatMessage_1a2f67a4be5b6187438f05959155b410df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rChatMessage</definition>
+        <argsstring>(const rChatMessage *orig)</argsstring>
+        <name>rChatMessage</name>
+        <param>
+          <type>const <ref refid="classrChatMessage" kindref="compound">rChatMessage</ref> *</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="41" column="5" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.cpp" bodystart="13" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classrChatMessage_1a7c87069dab1f3c4271e118ad9e9b7c9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~rChatMessage</definition>
+        <argsstring>()</argsstring>
+        <name>~rChatMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="42" column="13" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classrChatMessage_1ac162bb8aa6b5e645932516d38de3b4bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID getSender</definition>
+        <argsstring>()</argsstring>
+        <name>getSender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="44" column="9" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classrChatMessage_1a5ca506af95470684caae1ecb40cfab61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID getReceiver</definition>
+        <argsstring>()</argsstring>
+        <name>getReceiver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="45" column="9" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.cpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classrChatMessage_1acc9259ecb91fcaae45295e99931cb221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID getTimestamp</definition>
+        <argsstring>()</argsstring>
+        <name>getTimestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="46" column="9" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.cpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classrChatMessage_1a99e2f611f2d52320ffbc158f12a43e16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID getBestbefore</definition>
+        <argsstring>()</argsstring>
+        <name>getBestbefore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="47" column="9" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.cpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classrChatMessage_1abff4a74ab82d3f0e9470620181f7756e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string getType</definition>
+        <argsstring>()</argsstring>
+        <name>getType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="48" column="17" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.cpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classrChatMessage_1ac2ae7206576c12d4dd3333f2fa0e67f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string getText</definition>
+        <argsstring>()</argsstring>
+        <name>getText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="49" column="17" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.cpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classrChatMessage_1a9e4d9920cd3fbd630a60ad935885826c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * getBlob</definition>
+        <argsstring>()</argsstring>
+        <name>getBlob</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="50" column="10" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.cpp" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classrChatMessage_1ac62d86a3e775bb09506f6c95d5905c89" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator()</definition>
+        <argsstring>(rChatMessage const *a, rChatMessage const *b) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classrChatMessage" kindref="compound">rChatMessage</ref> const *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classrChatMessage" kindref="compound">rChatMessage</ref> const *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Compare time for message priority queue, fifo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="53" column="10" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.cpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sent event messages. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Component</label>
+        <link refid="structComponent"/>
+      </node>
+      <node id="1">
+        <label>rChatMessage</label>
+        <link refid="classrChatMessage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>vector&lt; Binding * &gt;</label>
+        <childnode refid="8" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+object</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>+prebinds</edgelabel>
+          <edgelabel>+postbinds</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+cname</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="3">
+        <label>Entity</label>
+        <link refid="classEntity"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+components</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>+name</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Binding</label>
+        <link refid="classBinding"/>
+      </node>
+      <node id="1">
+        <label>rChatMessage</label>
+        <link refid="classrChatMessage"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-mType</edgelabel>
+          <edgelabel>-mText</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector&lt; Component * &gt;</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/chat/rChatMessage.h" line="23" column="36" bodyfile="de/hackcraft/world/sub/chat/rChatMessage.h" bodystart="23" bodyend="54"/>
+    <listofallmembers>
+      <member refid="structComponent_1a03c996f9fcf0e10baeb3e700be0c409a" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>active</name></member>
+      <member refid="structComponent_1a9be6e2d0e81c55db1578d42ec617cbca" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>addBinding</name></member>
+      <member refid="structComponent_1a76752321cf3827ebb052e7b9b93f3db0" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>addBinding</name></member>
+      <member refid="structComponent_1a21737bd2efddc8007d58214f722959f1" prot="public" virt="virtual"><scope>rChatMessage</scope><name>animate</name></member>
+      <member refid="structComponent_1a2cd2e7e39bbe0feb04e3f49d92383051" prot="public" virt="virtual"><scope>rChatMessage</scope><name>camera</name></member>
+      <member refid="structComponent_1a08d90b44549babc6b8c5154f371aa12f" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>cid</name></member>
+      <member refid="structComponent_1a12d7214a9a58d47b3bc3c2e91f6d0c32" prot="public" virt="virtual"><scope>rChatMessage</scope><name>clone</name></member>
+      <member refid="structComponent_1ab6a3de68965b8f71ff914a03321757f4" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>cname</name></member>
+      <member refid="structComponent_1a6b5149d0ce5984ffa0fdfcb0660c7bd5" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>Component</name></member>
+      <member refid="structComponent_1af0c987007ef181ec233d8333d399bab6" prot="public" virt="virtual"><scope>rChatMessage</scope><name>constrain</name></member>
+      <member refid="structComponent_1abea7dc29223077e4c8b30eda0e487242" prot="public" virt="virtual"><scope>rChatMessage</scope><name>damage</name></member>
+      <member refid="structComponent_1afa90087fb4f9485be9db86581d8ac822" prot="public" virt="virtual"><scope>rChatMessage</scope><name>drawEffect</name></member>
+      <member refid="structComponent_1a98233a0af860521dafed683b50128886" prot="public" virt="virtual"><scope>rChatMessage</scope><name>drawHUD</name></member>
+      <member refid="structComponent_1a82d72d455a63508dd949d552ed3713b5" prot="public" virt="virtual"><scope>rChatMessage</scope><name>drawSolid</name></member>
+      <member refid="structComponent_1ad9819bfdd9490c9b319093ac5b97822f" prot="public" virt="virtual"><scope>rChatMessage</scope><name>frag</name></member>
+      <member refid="classrChatMessage_1a99e2f611f2d52320ffbc158f12a43e16" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>getBestbefore</name></member>
+      <member refid="classrChatMessage_1a9e4d9920cd3fbd630a60ad935885826c" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>getBlob</name></member>
+      <member refid="structComponent_1acdfa5be80a3b7f56ac515b1bb1305e68" prot="public" virt="virtual"><scope>rChatMessage</scope><name>getId</name></member>
+      <member refid="classrChatMessage_1a5ca506af95470684caae1ecb40cfab61" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>getReceiver</name></member>
+      <member refid="classrChatMessage_1ac162bb8aa6b5e645932516d38de3b4bf" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>getSender</name></member>
+      <member refid="classrChatMessage_1ac2ae7206576c12d4dd3333f2fa0e67f1" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>getText</name></member>
+      <member refid="classrChatMessage_1acc9259ecb91fcaae45295e99931cb221" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>getTimestamp</name></member>
+      <member refid="classrChatMessage_1abff4a74ab82d3f0e9470620181f7756e" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>getType</name></member>
+      <member refid="structComponent_1ab92eb9c4dcb16f9e63ca5fe371144983" prot="public" virt="virtual"><scope>rChatMessage</scope><name>listener</name></member>
+      <member refid="classrChatMessage_1a16d1f670b5a0fb4e4370107042c67f50" prot="private" virt="non-virtual"><scope>rChatMessage</scope><name>mBestbefore</name></member>
+      <member refid="classrChatMessage_1a4dd9aaa4ec80f09d4f4611b60882056e" prot="private" virt="non-virtual"><scope>rChatMessage</scope><name>mBlob</name></member>
+      <member refid="classrChatMessage_1ac8a7a65c56e3451827a53d99671df8b0" prot="private" virt="non-virtual"><scope>rChatMessage</scope><name>mReceiver</name></member>
+      <member refid="classrChatMessage_1aaf33815bdcad5d754ecdc3d9048df3ae" prot="private" virt="non-virtual"><scope>rChatMessage</scope><name>mSender</name></member>
+      <member refid="classrChatMessage_1a2d433c8878b20c2f190cf91cfab2833b" prot="private" virt="non-virtual"><scope>rChatMessage</scope><name>mText</name></member>
+      <member refid="classrChatMessage_1a7876440808e7de9c61e0cc973276d3b0" prot="private" virt="non-virtual"><scope>rChatMessage</scope><name>mTimestamp</name></member>
+      <member refid="classrChatMessage_1a3437227e441ef7e6d2b63197b26023ed" prot="private" virt="non-virtual"><scope>rChatMessage</scope><name>mType</name></member>
+      <member refid="structComponent_1a4c442f22ef3b8c6790b56015beb57566" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>object</name></member>
+      <member refid="classrChatMessage_1ac62d86a3e775bb09506f6c95d5905c89" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>operator()</name></member>
+      <member refid="structComponent_1ab7bcd2366fafecdcdd8bbcbfb0a43c51" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>postbind</name></member>
+      <member refid="structComponent_1abc081daafef3ffd221d8746b1e4c2f78" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>postbinds</name></member>
+      <member refid="structComponent_1a5bd6391b052df5d5a0db4554b2c3fe66" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>prebind</name></member>
+      <member refid="structComponent_1a4d900b2c72ca399a620b6eefce26c018" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>prebinds</name></member>
+      <member refid="classrChatMessage_1a2b27774f5b7fbef000ac8a13dad8513e" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>rChatMessage</name></member>
+      <member refid="classrChatMessage_1a2f67a4be5b6187438f05959155b410df" prot="public" virt="non-virtual"><scope>rChatMessage</scope><name>rChatMessage</name></member>
+      <member refid="structComponent_1a2260c02c44eeca44f51bf4b76f3bd306" prot="public" virt="virtual"><scope>rChatMessage</scope><name>spawn</name></member>
+      <member refid="structComponent_1a620c3ab0c7ebcfa486e3f3c3d1c442b3" prot="public" virt="virtual"><scope>rChatMessage</scope><name>transform</name></member>
+      <member refid="classrChatMessage_1a7c87069dab1f3c4271e118ad9e9b7c9b" prot="public" virt="virtual"><scope>rChatMessage</scope><name>~rChatMessage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

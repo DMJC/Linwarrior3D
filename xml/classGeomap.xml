@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classGeomap" kind="class" language="C++" prot="public">
+    <compoundname>Geomap</compoundname>
+    <includes local="no">Geomap.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classGeomap_1a28afe70303e3f8416b8c5d0396485aca" prot="private" static="no">
+        <type>unsigned long long</type>
+        <definition>typedef unsigned long long Geokey</definition>
+        <argsstring></argsstring>
+        <name>Geokey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Geomap.h" line="63" column="32" bodyfile="de/hackcraft/util/Geomap.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGeomap_1a520ff3a18094d48624075f9639d44c7a" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="classGeomap_1a28afe70303e3f8416b8c5d0396485aca" kindref="member">Geokey</ref>, std::list&lt; T &gt; &gt;</type>
+        <definition>std::unordered_map&lt;Geokey,std::list&lt;T&gt; &gt; geomap</definition>
+        <argsstring></argsstring>
+        <name>geomap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Geomap.h" line="64" column="24" bodyfile="de/hackcraft/util/Geomap.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGeomap_1ac8bb3912a3ce86b15842e79d0b421204" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Geomap.h" line="23" column="10" bodyfile="de/hackcraft/util/Geomap.h" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classGeomap_1a387fbff2e0e37362b2f88cbfb2370cbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void put</definition>
+        <argsstring>(long x, long z, T value)</argsstring>
+        <name>put</name>
+        <param>
+          <type>long</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Geomap.h" line="30" column="10" bodyfile="de/hackcraft/util/Geomap.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classGeomap_1a4a64ed50c55799333a9388a4dfa0969e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::list&lt; T &gt; *</type>
+        <definition>std::list&lt;T&gt;* getGeoInterval</definition>
+        <argsstring>(float *min2f, float *max2f)</argsstring>
+        <name>getGeoInterval</name>
+        <param>
+          <type>float *</type>
+          <declname>min2f</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>max2f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Geomap.h" line="36" column="15" bodyfile="de/hackcraft/util/Geomap.h" bodystart="36" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGeomap_1a29f68ce83877f186125e047d7f53e173" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGeomap_1a28afe70303e3f8416b8c5d0396485aca" kindref="member">Geokey</ref></type>
+        <definition>Geokey getGeokey</definition>
+        <argsstring>(long x, long z)</argsstring>
+        <name>getGeokey</name>
+        <param>
+          <type>long</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/Geomap.h" line="66" column="12" bodyfile="de/hackcraft/util/Geomap.h" bodystart="66" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic Geo-Hash-Table for spatial indexing. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>unordered_map&lt; Geokey, std::list&lt; T &gt; &gt;</label>
+      </node>
+      <node id="1">
+        <label>Geomap&lt; T &gt;</label>
+        <link refid="classGeomap"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-geomap</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/util/Geomap.h" line="21" column="13" bodyfile="de/hackcraft/util/Geomap.h" bodystart="21" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classGeomap_1ac8bb3912a3ce86b15842e79d0b421204" prot="public" virt="non-virtual"><scope>Geomap</scope><name>clear</name></member>
+      <member refid="classGeomap_1a28afe70303e3f8416b8c5d0396485aca" prot="private" virt="non-virtual"><scope>Geomap</scope><name>Geokey</name></member>
+      <member refid="classGeomap_1a520ff3a18094d48624075f9639d44c7a" prot="private" virt="non-virtual"><scope>Geomap</scope><name>geomap</name></member>
+      <member refid="classGeomap_1a4a64ed50c55799333a9388a4dfa0969e" prot="public" virt="non-virtual"><scope>Geomap</scope><name>getGeoInterval</name></member>
+      <member refid="classGeomap_1a29f68ce83877f186125e047d7f53e173" prot="private" virt="non-virtual"><scope>Geomap</scope><name>getGeokey</name></member>
+      <member refid="classGeomap_1a387fbff2e0e37362b2f88cbfb2370cbf" prot="public" virt="non-virtual"><scope>Geomap</scope><name>put</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

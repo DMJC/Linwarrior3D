@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classMinion" kind="class" language="C++" prot="public">
+    <compoundname>Minion</compoundname>
+    <basecompoundref refid="classThread" prot="public" virt="non-virtual">Thread</basecompoundref>
+    <includes local="no">Minion.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classMinion_1af42b1d8da46f0bd6298acdc159027857" prot="private" static="yes" mutable="no">
+        <type><ref refid="classLogger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger * logger</definition>
+        <argsstring></argsstring>
+        <name>logger</name>
+        <initializer>= <ref refid="classLogger_1ac11c529e5152e544fbc4c6594add48b6" kindref="member">Logger::getLogger</ref>(&quot;de.hackcraft.util.concurrent.Minion&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Minion.h" line="28" column="19" bodyfile="de/hackcraft/util/concurrent/Minion.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMinion_1a735670d5e1431838952025ad2a0428cd" prot="private" static="no" mutable="no">
+        <type><ref refid="classSemaphore" kindref="compound">Semaphore</ref> *</type>
+        <definition>Semaphore* jobMutex</definition>
+        <argsstring></argsstring>
+        <name>jobMutex</name>
+        <briefdescription>
+<para>Pointing to the main job-mutex. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To be replaced with framework class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Minion.h" line="30" column="15" bodyfile="de/hackcraft/util/concurrent/Minion.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMinion_1ae07f64c244bbad2e87c2114d6d86f67e" prot="private" static="no" mutable="no">
+        <type>std::queue&lt; <ref refid="classRunnable" kindref="compound">Runnable</ref> * &gt; *</type>
+        <definition>std::queue&lt;Runnable*&gt;* jobQueue</definition>
+        <argsstring></argsstring>
+        <name>jobQueue</name>
+        <briefdescription>
+<para>Pointing to the main job-queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Minion.h" line="32" column="16" bodyfile="de/hackcraft/util/concurrent/Minion.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMinion_1a027fe360c1c951bbf60c1ebb262cb04c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Minion</definition>
+        <argsstring>(Semaphore *jobMutex, std::queue&lt; Runnable * &gt; *jobQueue)</argsstring>
+        <name>Minion</name>
+        <param>
+          <type><ref refid="classSemaphore" kindref="compound">Semaphore</ref> *</type>
+          <declname>jobMutex</declname>
+        </param>
+        <param>
+          <type>std::queue&lt; <ref refid="classRunnable" kindref="compound">Runnable</ref> * &gt; *</type>
+          <declname>jobQueue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Minion.h" line="34" column="5" bodyfile="de/hackcraft/util/concurrent/Minion.cpp" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classMinion_1acda104b7c277d9c3a7d0259b308c4513" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~Minion</definition>
+        <argsstring>()</argsstring>
+        <name>~Minion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Minion.h" line="35" column="13" bodyfile="de/hackcraft/util/concurrent/Minion.cpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classMinion_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <reimplements refid="classThread_1a18954417d3124a8095783ea13dc6d00b">run</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/concurrent/Minion.h" line="36" column="10" bodyfile="de/hackcraft/util/concurrent/Minion.cpp" bodystart="25" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Models a minion worker thread that fetches jobs from the main job queue - basically one thread of a thread pool. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Minion</label>
+        <link refid="classMinion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Object</label>
+        <link refid="classObject"/>
+      </node>
+      <node id="2">
+        <label>Thread</label>
+        <link refid="classThread"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Runnable</label>
+        <link refid="classRunnable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>stringstream</label>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>queue&lt; Runnable * &gt;</label>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Minion</label>
+        <link refid="classMinion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-jobQueue</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>-jobMutex</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>LevelStreamLogger</label>
+        <link refid="classLevelStreamLogger"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>-logstream</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>-logger</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>basic_istream&lt; Char &gt;</label>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>string</label>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>basic_iostream&lt; Char &gt;</label>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Object</label>
+        <link refid="classObject"/>
+      </node>
+      <node id="18">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="7">
+        <label>Logger</label>
+        <link refid="classLogger"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>-infoLogger</edgelabel>
+          <edgelabel>-traceLogger</edgelabel>
+          <edgelabel>-warnLogger</edgelabel>
+          <edgelabel>-errorLogger</edgelabel>
+          <edgelabel>-debugLogger</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>-globalAppender</edgelabel>
+          <edgelabel>-appender</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>-qualifiedLoggerName</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>-parentLogger</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+      <node id="14">
+        <label>ios_base</label>
+      </node>
+      <node id="15">
+        <label>basic_ostream&lt; Char &gt;</label>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>basic_ios&lt; Char &gt;</label>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Thread</label>
+        <link refid="classThread"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-runnable</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Semaphore</label>
+        <link refid="classSemaphore"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Runnable</label>
+        <link refid="classRunnable"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/util/concurrent/Minion.h" line="26" column="27" bodyfile="de/hackcraft/util/concurrent/Minion.h" bodystart="26" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classObject_1a9d682ddd9db854c4c5800b816d8f071a" prot="protected" virt="virtual"><scope>Minion</scope><name>clone</name></member>
+      <member refid="classObject_1a04ea2beb8d4571b0b4753ad3b4862699" prot="public" virt="virtual"><scope>Minion</scope><name>equals</name></member>
+      <member refid="classThread_1a077e18fe97323c7194e2665ffc766399" prot="public" virt="virtual"><scope>Minion</scope><name>hashCode</name></member>
+      <member refid="classMinion_1a735670d5e1431838952025ad2a0428cd" prot="private" virt="non-virtual"><scope>Minion</scope><name>jobMutex</name></member>
+      <member refid="classMinion_1ae07f64c244bbad2e87c2114d6d86f67e" prot="private" virt="non-virtual"><scope>Minion</scope><name>jobQueue</name></member>
+      <member refid="classMinion_1af42b1d8da46f0bd6298acdc159027857" prot="private" virt="non-virtual"><scope>Minion</scope><name>logger</name></member>
+      <member refid="classMinion_1a027fe360c1c951bbf60c1ebb262cb04c" prot="public" virt="non-virtual"><scope>Minion</scope><name>Minion</name></member>
+      <member refid="classMinion_1a13a43e6d814de94978c515cb084873b1" prot="public" virt="virtual"><scope>Minion</scope><name>run</name></member>
+      <member refid="classThread_1af96dc80019779aec1839595c875b104e" prot="private" virt="non-virtual"><scope>Minion</scope><name>runnable</name></member>
+      <member refid="classThread_1a41adeb31ed2f82e869d0feef0cdcea34" prot="public" virt="non-virtual"><scope>Minion</scope><name>sleep</name></member>
+      <member refid="classThread_1a60de64d75454385b23995437f1d72669" prot="public" virt="non-virtual"><scope>Minion</scope><name>start</name></member>
+      <member refid="classThread_1a8c528baf37154d347366083f0f816846" prot="public" virt="non-virtual"><scope>Minion</scope><name>stop</name></member>
+      <member refid="classThread_1a7542b81caf3dbfcbd2b2f217fd10c240" prot="public" virt="non-virtual"><scope>Minion</scope><name>Thread</name></member>
+      <member refid="classThread_1a8ccb97f6ce042ae9e83c987b8543695e" prot="public" virt="non-virtual"><scope>Minion</scope><name>Thread</name></member>
+      <member refid="classThread_1a655146e857fdead2dad71ab4c7464587" prot="private" virt="non-virtual"><scope>Minion</scope><name>threadhandle</name></member>
+      <member refid="classObject_1a719a81ee816e96b01f05361883d5435d" prot="public" virt="virtual"><scope>Minion</scope><name>toString</name></member>
+      <member refid="classMinion_1acda104b7c277d9c3a7d0259b308c4513" prot="public" virt="virtual"><scope>Minion</scope><name>~Minion</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

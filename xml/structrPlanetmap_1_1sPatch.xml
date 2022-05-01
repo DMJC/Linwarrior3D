@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structrPlanetmap_1_1sPatch" kind="struct" language="C++" prot="private">
+    <compoundname>rPlanetmap::sPatch</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrPlanetmap_1_1sPatch_1ae571308b98c5a0d8c1ed0f4a5ec2ec71" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long touches</definition>
+        <argsstring></argsstring>
+        <name>touches</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="65" column="23" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrPlanetmap_1_1sPatch_1a966e5ed0946bcfca536ab5a2804aeceb" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="67" column="23" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrPlanetmap_1_1sPatch_1a2732f16940a33e6e4287d35ad1ebf9d5" prot="public" static="no" mutable="no">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID heightcolor[(1UL&lt;&lt; PLANETMAP_TILESIZE) *(1UL&lt;&lt; PLANETMAP_TILESIZE)]</definition>
+        <argsstring>[(1UL&lt;&lt; PLANETMAP_TILESIZE) *(1UL&lt;&lt; PLANETMAP_TILESIZE)]</argsstring>
+        <name>heightcolor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="69" column="13" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrPlanetmap_1_1sPatch_1a24ee909be2e67105269fafc92fffc722" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long normal[(1UL&lt;&lt; PLANETMAP_TILESIZE) *(1UL&lt;&lt; PLANETMAP_TILESIZE)]</definition>
+        <argsstring>[(1UL&lt;&lt; PLANETMAP_TILESIZE) *(1UL&lt;&lt; PLANETMAP_TILESIZE)]</argsstring>
+        <name>normal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="70" column="14" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>LRU <ref refid="structSurface" kindref="compound">Surface</ref> Cache-Tile. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>rPlanetmap::sPatch</label>
+        <link refid="structrPlanetmap_1_1sPatch"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/sub/landscape/rPlanetmap.h" line="63" column="17" bodyfile="de/hackcraft/world/sub/landscape/rPlanetmap.h" bodystart="63" bodyend="71"/>
+    <listofallmembers>
+      <member refid="structrPlanetmap_1_1sPatch_1a2732f16940a33e6e4287d35ad1ebf9d5" prot="public" virt="non-virtual"><scope>rPlanetmap::sPatch</scope><name>heightcolor</name></member>
+      <member refid="structrPlanetmap_1_1sPatch_1a966e5ed0946bcfca536ab5a2804aeceb" prot="public" virt="non-virtual"><scope>rPlanetmap::sPatch</scope><name>key</name></member>
+      <member refid="structrPlanetmap_1_1sPatch_1a24ee909be2e67105269fafc92fffc722" prot="public" virt="non-virtual"><scope>rPlanetmap::sPatch</scope><name>normal</name></member>
+      <member refid="structrPlanetmap_1_1sPatch_1ae571308b98c5a0d8c1ed0f4a5ec2ec71" prot="public" virt="non-virtual"><scope>rPlanetmap::sPatch</scope><name>touches</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

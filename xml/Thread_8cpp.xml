@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="Thread_8cpp" kind="file" language="C++">
+    <compoundname>Thread.cpp</compoundname>
+    <includes refid="Thread_8h" local="yes">Thread.h</includes>
+    <includes local="no">SDL/SDL_thread.h</includes>
+    <includes local="no">SDL/SDL_timer.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>de/hackcraft/lang/Runnable.h</label>
+        <link refid="Runnable_8h"/>
+      </node>
+      <node id="6">
+        <label>SDL/SDL_timer.h</label>
+      </node>
+      <node id="5">
+        <label>SDL/SDL_thread.h</label>
+      </node>
+      <node id="2">
+        <label>Thread.h</label>
+        <link refid="Thread_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>de/hackcraft/lang/Object.h</label>
+        <link refid="Object_8h"/>
+      </node>
+      <node id="1">
+        <label>de/hackcraft/lang/Thread.cpp</label>
+        <link refid="Thread_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="Thread_8cpp_1a0b8f1e894f2dd0cb8fc1bb8490acaafe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int runRunnable</definition>
+        <argsstring>(void *data)</argsstring>
+        <name>runRunnable</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/Thread.cpp" line="8" column="5" bodyfile="de/hackcraft/lang/Thread.cpp" bodystart="8" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/lang/Thread.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classRunnable" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Runnable</compoundname>
+    <derivedcompoundref refid="classThread" prot="public" virt="non-virtual">Thread</derivedcompoundref>
+    <includes local="no">Runnable.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRunnable_1a18954417d3124a8095783ea13dc6d00b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void run</definition>
+        <argsstring>()=0</argsstring>
+        <name>run</name>
+        <reimplementedby refid="classMinion_1a13a43e6d814de94978c515cb084873b1">run</reimplementedby>
+        <reimplementedby refid="classThread_1a18954417d3124a8095783ea13dc6d00b">run</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/lang/Runnable.h" line="18" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Thread-runnable object interface. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Minion</label>
+        <link refid="classMinion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Thread</label>
+        <link refid="classThread"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Runnable</label>
+        <link refid="classRunnable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Runnable</label>
+        <link refid="classRunnable"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/lang/Runnable.h" line="16" column="15" bodyfile="de/hackcraft/lang/Runnable.h" bodystart="16" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classRunnable_1a18954417d3124a8095783ea13dc6d00b" prot="public" virt="pure-virtual"><scope>Runnable</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

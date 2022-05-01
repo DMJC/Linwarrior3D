@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_8df6d49f51b8aedf611eba25030fe535" kind="dir">
+    <compoundname>de/hackcraft/world/object</compoundname>
+    <innerfile refid="cMech_8cpp">cMech.cpp</innerfile>
+    <innerfile refid="cMech_8h">cMech.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/object/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structGLF" kind="struct" language="C++" prot="public">
+    <compoundname>GLF</compoundname>
+    <includes local="no">GLF.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structGLF_1adb413c8c9577fa48cf280a257078b630" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t four_bytes</definition>
+        <argsstring></argsstring>
+        <name>four_bytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLF.h" line="303" column="22" bodyfile="de/hackcraft/psi3d/GLF.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structGLF_1aff1220023d0092f56d310324534a12e7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>static unsigned char getFontPixel</definition>
+        <argsstring>(four_bytes *font, unsigned char ascii, int x, int y)</argsstring>
+        <name>getFontPixel</name>
+        <param>
+          <type><ref refid="structGLF_1adb413c8c9577fa48cf280a257078b630" kindref="member">four_bytes</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>ascii</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the black(0) or white(255) pixel color of the given ascii character at position (x, y) ([0, 8] and [0, 15] range). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ascii</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLF.h" line="316" column="26" bodyfile="de/hackcraft/psi3d/GLF.h" bodystart="316" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="structGLF_1ad331f672211b5ee5d69d099f6f61402e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void getFontBitmap_8_16_mono</definition>
+        <argsstring>(four_bytes *font, unsigned char *bitmap, unsigned char ascii)</argsstring>
+        <name>getFontBitmap_8_16_mono</name>
+        <param>
+          <type><ref refid="structGLF_1adb413c8c9577fa48cf280a257078b630" kindref="member">four_bytes</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>ascii</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the 8x16 monochrome bitmap of the specified ascii character. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ascii</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLF.h" line="331" column="17" bodyfile="de/hackcraft/psi3d/GLF.h" bodystart="331" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="structGLF_1ae602463aa76d55016ab1372ca7b2dbb4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void getFontBitmap_8_16_rgb</definition>
+        <argsstring>(four_bytes *font, unsigned char *bitmap, unsigned char ascii)</argsstring>
+        <name>getFontBitmap_8_16_rgb</name>
+        <param>
+          <type><ref refid="structGLF_1adb413c8c9577fa48cf280a257078b630" kindref="member">four_bytes</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>ascii</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the white 8x16 rgb bitmap of the specified ascii character. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ascii</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLF.h" line="345" column="17" bodyfile="de/hackcraft/psi3d/GLF.h" bodystart="345" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="structGLF_1af24d0a9d6803a0542ae495f642771c1d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void getFontBitmap_8_16_rgba</definition>
+        <argsstring>(four_bytes *font, unsigned char *bitmap, unsigned char ascii)</argsstring>
+        <name>getFontBitmap_8_16_rgba</name>
+        <param>
+          <type><ref refid="structGLF_1adb413c8c9577fa48cf280a257078b630" kindref="member">four_bytes</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>ascii</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the white 8x16 rgba bitmap of the specified ascii character where every black pixel is translucent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ascii</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLF.h" line="363" column="17" bodyfile="de/hackcraft/psi3d/GLF.h" bodystart="363" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="function" id="structGLF_1ae69e1f2ed4a5dfef01612ee26c839d44" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int *</type>
+        <definition>static unsigned int* getFont</definition>
+        <argsstring>()</argsstring>
+        <name>getFont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLF.h" line="380" column="25" bodyfile="de/hackcraft/psi3d/GLF.h" bodystart="380" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="structGLF_1aa254ffdaccc28f51f65975ff392e0870" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int *</type>
+        <definition>static unsigned int* glUploadFont</definition>
+        <argsstring>()</argsstring>
+        <name>glUploadFont</name>
+        <briefdescription>
+<para>Use this function to generate and upload <ref refid="namespaceGL" kindref="compound">GL</ref> textures for ascii characters { start_ascii+0, start_ascii+1, ..., start_ascii+howmany-1 }, where start_ascii == 0 and howmany = 256. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The corresponding <ref refid="namespaceGL" kindref="compound">GL</ref> bind ids are stored back into gFontBind[0], gFontBindv[1], ..., gFontBind[howmany-1]. gFontBind is a user defined pointer - memory is allocated by this function and it is user-responsibility to free and set to NULL when not used anymore. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLF.h" line="396" column="25" bodyfile="de/hackcraft/psi3d/GLF.h" bodystart="396" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="structGLF_1a3d52622ccb405d7c5b8cf1aa25e10517" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void glTexturedSquare</definition>
+        <argsstring>(unsigned int bind)</argsstring>
+        <name>glTexturedSquare</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>bind</declname>
+        </param>
+        <briefdescription>
+<para>Draws a texture mapped square from (0,0,0) to (1,-1,0) with texture coords (0,0) to (1,1). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>With gluPerspective that&apos;s a square from left-top to right-low.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLF.h" line="433" column="17" bodyfile="de/hackcraft/psi3d/GLF.h" bodystart="433" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="structGLF_1a4f4cadcb531f339c7b961b60d7d9a20f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void glprint</definition>
+        <argsstring>(const char *buffer)</argsstring>
+        <name>glprint</name>
+        <param>
+          <type>const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Just call like printf but with asciibinds being all gl texture bindings for character pictures 0..255. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLF.h" line="453" column="17" bodyfile="de/hackcraft/psi3d/GLF.h" bodystart="453" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="structGLF_1a991091e2f41f0c53521440f30046efa4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void glprintf</definition>
+        <argsstring>(const char *format,...)</argsstring>
+        <name>glprintf</name>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/psi3d/GLF.h" line="489" column="17" bodyfile="de/hackcraft/psi3d/GLF.h" bodystart="489" bodyend="492"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Textured <ref refid="classConsole" kindref="compound">Console</ref> Font out of a box. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>For opengl use <ref refid="structGLF_1aa254ffdaccc28f51f65975ff392e0870" kindref="member">glUploadFont()</ref> and then glprintf(&quot;Hello World&quot;); used in <ref refid="classConsole" kindref="compound">Console</ref> class.</para>
+<para>See method definitions for further comment and information. See end of file for a testdriver/sample of use. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>GLF</label>
+        <link refid="structGLF"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/psi3d/GLF.h" line="302" column="10" bodyfile="de/hackcraft/psi3d/GLF.h" bodystart="302" bodyend="494"/>
+    <listofallmembers>
+      <member refid="structGLF_1adb413c8c9577fa48cf280a257078b630" prot="public" virt="non-virtual"><scope>GLF</scope><name>four_bytes</name></member>
+      <member refid="structGLF_1ae69e1f2ed4a5dfef01612ee26c839d44" prot="public" virt="non-virtual"><scope>GLF</scope><name>getFont</name></member>
+      <member refid="structGLF_1ad331f672211b5ee5d69d099f6f61402e" prot="public" virt="non-virtual"><scope>GLF</scope><name>getFontBitmap_8_16_mono</name></member>
+      <member refid="structGLF_1ae602463aa76d55016ab1372ca7b2dbb4" prot="public" virt="non-virtual"><scope>GLF</scope><name>getFontBitmap_8_16_rgb</name></member>
+      <member refid="structGLF_1af24d0a9d6803a0542ae495f642771c1d" prot="public" virt="non-virtual"><scope>GLF</scope><name>getFontBitmap_8_16_rgba</name></member>
+      <member refid="structGLF_1aff1220023d0092f56d310324534a12e7" prot="public" virt="non-virtual"><scope>GLF</scope><name>getFontPixel</name></member>
+      <member refid="structGLF_1a4f4cadcb531f339c7b961b60d7d9a20f" prot="public" virt="non-virtual"><scope>GLF</scope><name>glprint</name></member>
+      <member refid="structGLF_1a991091e2f41f0c53521440f30046efa4" prot="public" virt="non-virtual"><scope>GLF</scope><name>glprintf</name></member>
+      <member refid="structGLF_1a3d52622ccb405d7c5b8cf1aa25e10517" prot="public" virt="non-virtual"><scope>GLF</scope><name>glTexturedSquare</name></member>
+      <member refid="structGLF_1aa254ffdaccc28f51f65975ff392e0870" prot="public" virt="non-virtual"><scope>GLF</scope><name>glUploadFont</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

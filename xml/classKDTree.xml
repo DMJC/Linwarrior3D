@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classKDTree" kind="class" language="C++" prot="public">
+    <compoundname>KDTree</compoundname>
+    <includes local="no">KDTree.h</includes>
+    <innerclass refid="structKDTree_1_1KDNode" prot="public">KDTree::KDNode</innerclass>
+    <templateparamlist>
+      <param>
+        <type>class VALUE</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classKDTree_1a59f89e6783787be5ee5fa0f08d2a9274" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int kdim</definition>
+        <argsstring></argsstring>
+        <name>kdim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/KDTree.h" line="35" column="9" bodyfile="de/hackcraft/util/KDTree.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classKDTree_1a5ff2728dc64d5fe7c96809df43f1f7ba" prot="public" static="no" mutable="no">
+        <type><ref refid="structKDTree_1_1KDNode" kindref="compound">KDNode</ref> *</type>
+        <definition>KDNode* root</definition>
+        <argsstring></argsstring>
+        <name>root</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/KDTree.h" line="36" column="12" bodyfile="de/hackcraft/util/KDTree.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classKDTree_1ae35017a524591bd38c6206ccd7512236" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>KDTree</definition>
+        <argsstring>(unsigned int kdim, std::list&lt; float * &gt; *dataset, std::list&lt; VALUE &gt; *userset=NULL)</argsstring>
+        <name>KDTree</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>kdim</declname>
+        </param>
+        <param>
+          <type>std::list&lt; float * &gt; *</type>
+          <declname>dataset</declname>
+        </param>
+        <param>
+          <type>std::list&lt; VALUE &gt; *</type>
+          <declname>userset</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Constructs an immutable kd-tree of the given dimensionality (kdim) for the given dataset (and corresponding userset). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Datavectors must be of dimension kdim. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/KDTree.h" line="45" column="5" bodyfile="de/hackcraft/util/KDTree.h" bodystart="45" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classKDTree_1a9751ca30660b9a4003ff4e9b79e4e1b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>~KDTree</definition>
+        <argsstring>()</argsstring>
+        <name>~KDTree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/KDTree.h" line="53" column="5" bodyfile="de/hackcraft/util/KDTree.h" bodystart="53" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classKDTree_1af4b57d21919c42d55af03391f91a1c08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Returns amount of (not necessarily unique) stored datavectors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/KDTree.h" line="62" column="9" bodyfile="de/hackcraft/util/KDTree.h" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classKDTree_1a89a95bdaa016bd933ec39f27a83535b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int dim</definition>
+        <argsstring>()</argsstring>
+        <name>dim</name>
+        <briefdescription>
+<para>Returns the number of dimensions a stored datavector has/must have. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/KDTree.h" line="69" column="9" bodyfile="de/hackcraft/util/KDTree.h" bodystart="69" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classKDTree_1a3f37b042a1e7cd4bd38fc564de81f0da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool empty</definition>
+        <argsstring>()</argsstring>
+        <name>empty</name>
+        <briefdescription>
+<para>Returns true if the tree contains no data (as of now never). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/KDTree.h" line="76" column="10" bodyfile="de/hackcraft/util/KDTree.h" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classKDTree_1aa825ffe1e3289240876ef61482586d78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::list&lt; float * &gt; *</type>
+        <definition>std::list&lt;float*&gt;* findDataset</definition>
+        <argsstring>(float *datavec)</argsstring>
+        <name>findDataset</name>
+        <param>
+          <type>float *</type>
+          <declname>datavec</declname>
+        </param>
+        <briefdescription>
+<para>Returns a list of similar datavectors to the given datavector note that when the list contains more than one datavector then they are all equal (at least within an epsilon). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned list is freshly allocated (new&apos;ed). To delete is caller responsibility. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/KDTree.h" line="87" column="15" bodyfile="de/hackcraft/util/KDTree.h" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classKDTree_1aaf66c0aa281220e79ebd2879997728be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::list&lt; float * &gt; *</type>
+        <definition>std::list&lt;float*&gt;* findDatasetInterval</definition>
+        <argsstring>(float *min_datavec, float *max_datavec)</argsstring>
+        <name>findDatasetInterval</name>
+        <param>
+          <type>float *</type>
+          <declname>min_datavec</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>max_datavec</declname>
+        </param>
+        <briefdescription>
+<para>Similar to findDataset(..) but finds datavectors near to the given interval. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned list is freshly allocated (new&apos;ed). To delete is caller responsibility. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/KDTree.h" line="98" column="15" bodyfile="de/hackcraft/util/KDTree.h" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classKDTree_1adeff245803161ceeb98f5c59566721da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::list&lt; VALUE &gt; *</type>
+        <definition>std::list&lt;VALUE&gt;* findUserset</definition>
+        <argsstring>(float *datavec)</argsstring>
+        <name>findUserset</name>
+        <param>
+          <type>float *</type>
+          <declname>datavec</declname>
+        </param>
+        <briefdescription>
+<para>Returns a list of associated userdata for similar datavectors to the given datavector note that when the list contains more than one userdata then the found datavectors where all equal (at least within an epsilon). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned list is freshly allocated (new&apos;ed). To delete is caller responsibility. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/KDTree.h" line="110" column="15" bodyfile="de/hackcraft/util/KDTree.h" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classKDTree_1aa176330ce3bd84d490cbeb929ef86891" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::list&lt; VALUE &gt; *</type>
+        <definition>std::list&lt;VALUE&gt;* findUsersetInterval</definition>
+        <argsstring>(float *min_datavec, float *max_datavec)</argsstring>
+        <name>findUsersetInterval</name>
+        <param>
+          <type>float *</type>
+          <declname>min_datavec</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>max_datavec</declname>
+        </param>
+        <briefdescription>
+<para>Similar to findUserset(..) but finds userdata for datavectors near to the given interval. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The returned list is freshly allocated (new&apos;ed). To delete is caller responsibility. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/KDTree.h" line="121" column="15" bodyfile="de/hackcraft/util/KDTree.h" bodystart="121" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classKDTree_1a7982f8c3d5ab1f8b0424031f3e766936" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structKDTree_1_1KDNode" kindref="compound">KDNode</ref> *</type>
+        <definition>KDNode* build</definition>
+        <argsstring>(unsigned int kdim, unsigned int curlvl, unsigned int equaldims, std::list&lt; float * &gt; *dataset, std::list&lt; VALUE &gt; *userset=NULL)</argsstring>
+        <name>build</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>kdim</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>curlvl</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>equaldims</declname>
+        </param>
+        <param>
+          <type>std::list&lt; float * &gt; *</type>
+          <declname>dataset</declname>
+        </param>
+        <param>
+          <type>std::list&lt; VALUE &gt; *</type>
+          <declname>userset</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Constructs a KD-Tree of the given dimensionality (kdim) for the given dataset. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note that the pointers in the dataset are stored in the tree. The algorithm identifies equal dimensions and delivers optimized branches (throw/catch is used to return leafes upwards to the branch where the last difference in data was).</para>
+<para>kdim : Dimensionality of datavectors. curlvl : Current level, should be 0 initialy. equaldims : Equal dimensions, should be 0 initialy. dataset: List of datavectors of dimension kdim to cluster. userset: Associated userdata/objects for each datavector (or userset == NULL &lt;=&gt; no userdata at all).</para>
+<para>The function is roughly divided into:<itemizedlist>
+<listitem><para>Terminal case handling for leaves</para>
+</listitem><listitem><para>Partitioning data into two sets left and right</para>
+</listitem><listitem><para>Recursion for left sub-tree/partition</para>
+</listitem><listitem><para>Recursion for right sub-tree/partition </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/util/KDTree.h" line="148" column="13" bodyfile="de/hackcraft/util/KDTree.h" bodystart="148" bodyend="346"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic KD-Tree for clustering k-dimensional data vectors and finding the nearest stored data vectors (or associated data) for a given sample or for a given sample interval. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The current implementation is for float-array vectors but you may easily replace it with another typed array.</para>
+<para>Note: Geo-Hash-Tables have been sufficient and simpler for simple spatial indexing. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>list&lt; VALUE &gt;</label>
+      </node>
+      <node id="1">
+        <label>KDTree&lt; VALUE &gt;</label>
+        <link refid="classKDTree"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+root</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>KDNode</label>
+        <link refid="structKDTree_1_1KDNode"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+dataset</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>+userset</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+right</edgelabel>
+          <edgelabel>+left</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>list&lt; float * &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/util/KDTree.h" line="32" column="13" bodyfile="de/hackcraft/util/KDTree.h" bodystart="32" bodyend="638"/>
+    <listofallmembers>
+      <member refid="classKDTree_1a7982f8c3d5ab1f8b0424031f3e766936" prot="public" virt="non-virtual"><scope>KDTree</scope><name>build</name></member>
+      <member refid="classKDTree_1a89a95bdaa016bd933ec39f27a83535b4" prot="public" virt="non-virtual"><scope>KDTree</scope><name>dim</name></member>
+      <member refid="classKDTree_1a3f37b042a1e7cd4bd38fc564de81f0da" prot="public" virt="non-virtual"><scope>KDTree</scope><name>empty</name></member>
+      <member refid="classKDTree_1aa825ffe1e3289240876ef61482586d78" prot="public" virt="non-virtual"><scope>KDTree</scope><name>findDataset</name></member>
+      <member refid="classKDTree_1aaf66c0aa281220e79ebd2879997728be" prot="public" virt="non-virtual"><scope>KDTree</scope><name>findDatasetInterval</name></member>
+      <member refid="classKDTree_1adeff245803161ceeb98f5c59566721da" prot="public" virt="non-virtual"><scope>KDTree</scope><name>findUserset</name></member>
+      <member refid="classKDTree_1aa176330ce3bd84d490cbeb929ef86891" prot="public" virt="non-virtual"><scope>KDTree</scope><name>findUsersetInterval</name></member>
+      <member refid="classKDTree_1a59f89e6783787be5ee5fa0f08d2a9274" prot="public" virt="non-virtual"><scope>KDTree</scope><name>kdim</name></member>
+      <member refid="classKDTree_1ae35017a524591bd38c6206ccd7512236" prot="public" virt="non-virtual"><scope>KDTree</scope><name>KDTree</name></member>
+      <member refid="classKDTree_1a5ff2728dc64d5fe7c96809df43f1f7ba" prot="public" virt="non-virtual"><scope>KDTree</scope><name>root</name></member>
+      <member refid="classKDTree_1af4b57d21919c42d55af03391f91a1c08" prot="public" virt="non-virtual"><scope>KDTree</scope><name>size</name></member>
+      <member refid="classKDTree_1a9751ca30660b9a4003ff4e9b79e4e1b7" prot="public" virt="non-virtual"><scope>KDTree</scope><name>~KDTree</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

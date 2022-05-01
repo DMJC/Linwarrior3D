@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_5f25c511366c028c242ccaa2b16e4e34" kind="dir">
+    <compoundname>de/hackcraft/world/sub</compoundname>
+    <innerdir refid="dir_4b030eaa603efb9dc351cd04da5ba3b6">de/hackcraft/world/sub/background</innerdir>
+    <innerdir refid="dir_df7943ef70fd9c7c5f31f0acc18b22dc">de/hackcraft/world/sub/camera</innerdir>
+    <innerdir refid="dir_5895069c5fb62951a8de2a1531ecb4e9">de/hackcraft/world/sub/chat</innerdir>
+    <innerdir refid="dir_d786d481230fc08bc4940c1642c6f8a2">de/hackcraft/world/sub/cityscape</innerdir>
+    <innerdir refid="dir_54cad28e58a5ea1eb5737827e071bd7c">de/hackcraft/world/sub/computer</innerdir>
+    <innerdir refid="dir_80c50195dd5fc87034dec4c0676466ff">de/hackcraft/world/sub/landscape</innerdir>
+    <innerdir refid="dir_579906e894248cf4bfd3c9847ef62364">de/hackcraft/world/sub/misc</innerdir>
+    <innerdir refid="dir_26f125d0ebf1aa7d97b52ebf9c974e48">de/hackcraft/world/sub/mobile</innerdir>
+    <innerdir refid="dir_b539116f717cef54c348ac856193df1f">de/hackcraft/world/sub/model</innerdir>
+    <innerdir refid="dir_e2689e3839a6a206db0c8c1fc660cd82">de/hackcraft/world/sub/physics</innerdir>
+    <innerdir refid="dir_1b330a5233f38ba3ac0d2b80e34ac66c">de/hackcraft/world/sub/trigger</innerdir>
+    <innerdir refid="dir_bffe8f3954ac7fd7d8c5e613fe1007e2">de/hackcraft/world/sub/weapon</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="de/hackcraft/world/sub/"/>
+  </compounddef>
+</doxygen>

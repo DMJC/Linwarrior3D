@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structLandscape" kind="struct" language="C++" prot="public">
+    <compoundname>Landscape</compoundname>
+    <includes local="no">Landscape.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structLandscape_1a06fc87d81c62e9abb8790b6e5713c55b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@0</name>
+        <enumvalue id="structLandscape_1a06fc87d81c62e9abb8790b6e5713c55baf80f9a890089d211842d59625e561f88" prot="public">
+          <name>RED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structLandscape_1a06fc87d81c62e9abb8790b6e5713c55baa98f2d56c146922fd0b0c3834d2c715a" prot="public">
+          <name>GRN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structLandscape_1a06fc87d81c62e9abb8790b6e5713c55ba26d3f814fefb4d00336affb21a2f55b9" prot="public">
+          <name>BLU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structLandscape_1a06fc87d81c62e9abb8790b6e5713c55ba1e629c8afe379461a892b919de1c4ad0" prot="public">
+          <name>BUMP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/proc/Landscape.h" line="17" column="10" bodyfile="de/hackcraft/proc/Landscape.h" bodystart="17" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structLandscape_1a75db421a8c0fd7d2cb598b8ea77e0ba9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void land_rockies</definition>
+        <argsstring>(float x, float y, float z, float *color, unsigned char seed=131)</argsstring>
+        <name>land_rockies</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>seed</declname>
+          <defval>131</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/proc/Landscape.h" line="21" column="17" bodyfile="de/hackcraft/proc/Landscape.cpp" bodystart="6" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="structLandscape_1a3d6628d72c35163e059f5ba3a69185d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void land_dunes</definition>
+        <argsstring>(float x, float y, float z, float *color, unsigned char seed=131)</argsstring>
+        <name>land_dunes</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>seed</declname>
+          <defval>131</defval>
+        </param>
+        <briefdescription>
+<para>~[0,1] normalized desert sand dune landscape. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/proc/Landscape.h" line="26" column="17" bodyfile="de/hackcraft/proc/Landscape.cpp" bodystart="40" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="structLandscape_1a52352e9b389cef062defed2979699840" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void land_dunes_red</definition>
+        <argsstring>(float x, float y, float z, float *color, unsigned char seed=131)</argsstring>
+        <name>land_dunes_red</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>seed</declname>
+          <defval>131</defval>
+        </param>
+        <briefdescription>
+<para>~[0,1] normalized desert sand dune landscape. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/proc/Landscape.h" line="31" column="17" bodyfile="de/hackcraft/proc/Landscape.cpp" bodystart="73" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="structLandscape_1ae6f902f913f65e0863df84c662eaf0c7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void land_lava</definition>
+        <argsstring>(float x, float y, float z, float *color, unsigned char seed=131)</argsstring>
+        <name>land_lava</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>seed</declname>
+          <defval>131</defval>
+        </param>
+        <briefdescription>
+<para>~[0,1] normalized lavatic landscape. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/proc/Landscape.h" line="36" column="17" bodyfile="de/hackcraft/proc/Landscape.cpp" bodystart="103" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="structLandscape_1a82e0e5fcfe7ed50e2a74184d138f4fce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void land_grass</definition>
+        <argsstring>(float x, float y, float z, float *color, unsigned char seed=131)</argsstring>
+        <name>land_grass</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>seed</declname>
+          <defval>131</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/proc/Landscape.h" line="38" column="17" bodyfile="de/hackcraft/proc/Landscape.cpp" bodystart="148" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="structLandscape_1a17399bc71ad8ca0077264dbd29909abc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void land_snow</definition>
+        <argsstring>(float x, float y, float z, float *color, unsigned char seed=131)</argsstring>
+        <name>land_snow</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>seed</declname>
+          <defval>131</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/proc/Landscape.h" line="40" column="17" bodyfile="de/hackcraft/proc/Landscape.cpp" bodystart="181" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="structLandscape_1a7fae44125eb3f17d5ae66aef6b500eb4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void land_dirt</definition>
+        <argsstring>(float x, float y, float z, float *color, unsigned char seed=131)</argsstring>
+        <name>land_dirt</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>seed</declname>
+          <defval>131</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/proc/Landscape.h" line="42" column="17" bodyfile="de/hackcraft/proc/Landscape.cpp" bodystart="206" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="structLandscape_1aab06dea1cff6ed03fd618e8e121fa9e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void decoration_spikes</definition>
+        <argsstring>(float x, float y, float z, float *color, unsigned char seed=131)</argsstring>
+        <name>decoration_spikes</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>seed</declname>
+          <defval>131</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/proc/Landscape.h" line="44" column="17" bodyfile="de/hackcraft/proc/Landscape.cpp" bodystart="231" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="structLandscape_1aebc4128f7314c4e300a3e39afc16d51f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void decoration_stones</definition>
+        <argsstring>(float x, float y, float z, float *color, unsigned char seed=131)</argsstring>
+        <name>decoration_stones</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>seed</declname>
+          <defval>131</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/proc/Landscape.h" line="46" column="17" bodyfile="de/hackcraft/proc/Landscape.cpp" bodystart="258" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="structLandscape_1a156fe734b623dfb0f9b623d51658778f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mashup_lava</definition>
+        <argsstring>(float x, float y, float z, float *color, unsigned char seed=131)</argsstring>
+        <name>mashup_lava</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>seed</declname>
+          <defval>131</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/proc/Landscape.h" line="48" column="17" bodyfile="de/hackcraft/proc/Landscape.cpp" bodystart="288" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="structLandscape_1a9ede1237af34bff4cef70fe22137aa50" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void experimental_continents</definition>
+        <argsstring>(float x, float y, float z, float *color, unsigned char seed=131)</argsstring>
+        <name>experimental_continents</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>seed</declname>
+          <defval>131</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/proc/Landscape.h" line="50" column="17" bodyfile="de/hackcraft/proc/Landscape.cpp" bodystart="336" bodyend="371"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>~[0,1] normalized landscape materials. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Landscape</label>
+        <link refid="structLandscape"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/proc/Landscape.h" line="15" column="16" bodyfile="de/hackcraft/proc/Landscape.h" bodystart="15" bodyend="52"/>
+    <listofallmembers>
+      <member refid="structLandscape_1a06fc87d81c62e9abb8790b6e5713c55ba26d3f814fefb4d00336affb21a2f55b9" prot="public" virt="non-virtual"><scope>Landscape</scope><name>BLU</name></member>
+      <member refid="structLandscape_1a06fc87d81c62e9abb8790b6e5713c55ba1e629c8afe379461a892b919de1c4ad0" prot="public" virt="non-virtual"><scope>Landscape</scope><name>BUMP</name></member>
+      <member refid="structLandscape_1aab06dea1cff6ed03fd618e8e121fa9e6" prot="public" virt="non-virtual"><scope>Landscape</scope><name>decoration_spikes</name></member>
+      <member refid="structLandscape_1aebc4128f7314c4e300a3e39afc16d51f" prot="public" virt="non-virtual"><scope>Landscape</scope><name>decoration_stones</name></member>
+      <member refid="structLandscape_1a9ede1237af34bff4cef70fe22137aa50" prot="public" virt="non-virtual"><scope>Landscape</scope><name>experimental_continents</name></member>
+      <member refid="structLandscape_1a06fc87d81c62e9abb8790b6e5713c55baa98f2d56c146922fd0b0c3834d2c715a" prot="public" virt="non-virtual"><scope>Landscape</scope><name>GRN</name></member>
+      <member refid="structLandscape_1a7fae44125eb3f17d5ae66aef6b500eb4" prot="public" virt="non-virtual"><scope>Landscape</scope><name>land_dirt</name></member>
+      <member refid="structLandscape_1a3d6628d72c35163e059f5ba3a69185d5" prot="public" virt="non-virtual"><scope>Landscape</scope><name>land_dunes</name></member>
+      <member refid="structLandscape_1a52352e9b389cef062defed2979699840" prot="public" virt="non-virtual"><scope>Landscape</scope><name>land_dunes_red</name></member>
+      <member refid="structLandscape_1a82e0e5fcfe7ed50e2a74184d138f4fce" prot="public" virt="non-virtual"><scope>Landscape</scope><name>land_grass</name></member>
+      <member refid="structLandscape_1ae6f902f913f65e0863df84c662eaf0c7" prot="public" virt="non-virtual"><scope>Landscape</scope><name>land_lava</name></member>
+      <member refid="structLandscape_1a75db421a8c0fd7d2cb598b8ea77e0ba9" prot="public" virt="non-virtual"><scope>Landscape</scope><name>land_rockies</name></member>
+      <member refid="structLandscape_1a17399bc71ad8ca0077264dbd29909abc" prot="public" virt="non-virtual"><scope>Landscape</scope><name>land_snow</name></member>
+      <member refid="structLandscape_1a156fe734b623dfb0f9b623d51658778f" prot="public" virt="non-virtual"><scope>Landscape</scope><name>mashup_lava</name></member>
+      <member refid="structLandscape_1a06fc87d81c62e9abb8790b6e5713c55baf80f9a890089d211842d59625e561f88" prot="public" virt="non-virtual"><scope>Landscape</scope><name>RED</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

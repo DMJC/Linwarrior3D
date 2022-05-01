@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classAppender" kind="class" language="C++" prot="public">
+    <compoundname>Appender</compoundname>
+    <includes local="no">Appender.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAppender_1a8811afa719f86cb7ddde8770eb580fdc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int maxLevel</definition>
+        <argsstring></argsstring>
+        <name>maxLevel</name>
+        <briefdescription>
+<para>Maximum level that&apos;s still appended to output (printed). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/Appender.h" line="35" column="9" bodyfile="de/hackcraft/log/Appender.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAppender_1a2cb53a426918426f38551ae64ef74b22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Appender</definition>
+        <argsstring>()</argsstring>
+        <name>Appender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/Appender.h" line="25" column="5" bodyfile="de/hackcraft/log/Appender.cpp" bodystart="7" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classAppender_1a87dc06312fe062901009c797a9edcc5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~Appender</definition>
+        <argsstring>()</argsstring>
+        <name>~Appender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/Appender.h" line="26" column="13" bodyfile="de/hackcraft/log/Appender.cpp" bodystart="12" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classAppender_1a9565ec2d7af5dd77481b9164209ce030" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void append</definition>
+        <argsstring>(LoggerEvent *loggerEvent)</argsstring>
+        <name>append</name>
+        <param>
+          <type><ref refid="classLoggerEvent" kindref="compound">LoggerEvent</ref> *</type>
+          <declname>loggerEvent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/Appender.h" line="28" column="18" bodyfile="de/hackcraft/log/Appender.cpp" bodystart="16" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classAppender_1a5dc4494377ee6de8883d85c059cfe2f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setMaxLevel</definition>
+        <argsstring>(int maxLevel)</argsstring>
+        <name>setMaxLevel</name>
+        <param>
+          <type>int</type>
+          <declname>maxLevel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/Appender.h" line="30" column="10" bodyfile="de/hackcraft/log/Appender.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classAppender_1ad685f21e0bb3be3cea66a4995cd5833c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int getMaxLevel</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/log/Appender.h" line="31" column="9" bodyfile="de/hackcraft/log/Appender.cpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Used by the <ref refid="classLogger" kindref="compound">Logger</ref> class to output logger input. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This <ref refid="classAppender" kindref="compound">Appender</ref> class currently just forwards to std::cout. Subclass and override append-method to output elsewhere or to change the output format. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Appender</label>
+        <link refid="classAppender"/>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/log/Appender.h" line="23" column="15" bodyfile="de/hackcraft/log/Appender.h" bodystart="23" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classAppender_1a9565ec2d7af5dd77481b9164209ce030" prot="public" virt="virtual"><scope>Appender</scope><name>append</name></member>
+      <member refid="classAppender_1a2cb53a426918426f38551ae64ef74b22" prot="public" virt="non-virtual"><scope>Appender</scope><name>Appender</name></member>
+      <member refid="classAppender_1ad685f21e0bb3be3cea66a4995cd5833c" prot="public" virt="non-virtual"><scope>Appender</scope><name>getMaxLevel</name></member>
+      <member refid="classAppender_1a8811afa719f86cb7ddde8770eb580fdc" prot="private" virt="non-virtual"><scope>Appender</scope><name>maxLevel</name></member>
+      <member refid="classAppender_1a5dc4494377ee6de8883d85c059cfe2f1" prot="public" virt="non-virtual"><scope>Appender</scope><name>setMaxLevel</name></member>
+      <member refid="classAppender_1a87dc06312fe062901009c797a9edcc5a" prot="public" virt="virtual"><scope>Appender</scope><name>~Appender</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

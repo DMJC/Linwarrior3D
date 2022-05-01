@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structWorld_1_1Group" kind="struct" language="C++" prot="private">
+    <compoundname>World::Group</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structWorld_1_1Group_1a4682157fb003d2cb97e659e5502e1154" prot="public" static="no" mutable="no">
+        <type><ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref></type>
+        <definition>OID gid</definition>
+        <argsstring></argsstring>
+        <name>gid</name>
+        <briefdescription>
+<para><ref refid="structWorld_1_1Group" kindref="compound">Group</ref> id used for reference (later: use for tags) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/World.h" line="92" column="13" bodyfile="de/hackcraft/world/World.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structWorld_1_1Group_1a9b45b3e13bd9167aab02e17e08916231" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para><ref refid="structWorld_1_1Group" kindref="compound">Group</ref> id of parent group if not zero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the group (use qualified names like: &quot;world/enemies/squads/alpha&quot; or &quot;state/dead&quot;) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/World.h" line="96" column="21" bodyfile="de/hackcraft/world/World.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structWorld_1_1Group_1aa37ae6702e1b6bfe48399dec47b92227" prot="public" static="no" mutable="no">
+        <type>std::list&lt; <ref refid="OID_8h_1af76d31f8678f8d4900de60548747055e" kindref="member">OID</ref> &gt;</type>
+        <definition>std::list&lt;OID&gt; members</definition>
+        <argsstring></argsstring>
+        <name>members</name>
+        <briefdescription>
+<para>Objects in this group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="de/hackcraft/world/World.h" line="98" column="19" bodyfile="de/hackcraft/world/World.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Groups objects together for searching, messaging, tagging, ... </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>string</label>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>World::Group</label>
+        <link refid="structWorld_1_1Group"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>+members</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>+name</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>basic_string&lt; char &gt;</label>
+      </node>
+      <node id="2">
+        <label>list&lt; OID &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="de/hackcraft/world/World.h" line="90" column="16" bodyfile="de/hackcraft/world/World.h" bodystart="90" bodyend="99"/>
+    <listofallmembers>
+      <member refid="structWorld_1_1Group_1a4682157fb003d2cb97e659e5502e1154" prot="public" virt="non-virtual"><scope>World::Group</scope><name>gid</name></member>
+      <member refid="structWorld_1_1Group_1aa37ae6702e1b6bfe48399dec47b92227" prot="public" virt="non-virtual"><scope>World::Group</scope><name>members</name></member>
+      <member refid="structWorld_1_1Group_1a9b45b3e13bd9167aab02e17e08916231" prot="public" virt="non-virtual"><scope>World::Group</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
