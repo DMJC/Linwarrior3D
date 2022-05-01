@@ -9,6 +9,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: mkdir
+        run: mkdir -p docs/html
       - uses: DenverCoder1/doxygen-github-pages-action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
